@@ -1,0 +1,213 @@
+@media (max-width: 768px) {
+    .modules-container {
+        margin-top: 0 !important;
+    }
+    header {
+        background-image: none !important;
+        background-color: #121212;
+    }
+    .index-main {
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-image: url("../assets/images/ezgif.com-gif-maker.gif");
+        height: auto !important;
+    }
+    .main-card {
+        background: linear-gradient(120deg, rgba(26, 26, 26, 0.75) 0%, rgba(35, 35, 35, 0.75) 100%) !important;
+        -ms-flex-item-align: stretch !important;
+            align-self: stretch !important;
+    
+    }
+    .module-card-row {
+        height: 100%;
+    }
+    
+}
+
+
+header {
+    background-image: url("../assets/images/navbar-stone-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-family: 'Sansation', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+h4 {
+    font-family: 'Sansation', sans-serif;
+    letter-spacing: 2px;
+}
+
+.bg-dark {
+    background: #121212 !important;
+}
+
+.border-secondary {
+    border-color: #303030 !important;
+    padding-bottom: 11px;
+}
+
+.navbar-toggler {
+    border: none !important;
+}
+
+.header-navbar {
+    min-height: 75px;
+}
+
+.logo-img {
+      display: inline-block;
+      -webkit-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out;
+}
+
+        .logo-img:hover {
+          -webkit-transform: scale(1.075);
+                  transform: scale(1.075);
+        }
+
+.nav-item {
+    color: #FAFAFA !important;
+    font-family: 'Sansation', sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    
+}
+
+.rws-nav-item {
+          -webkit-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out; 
+}
+
+.rws-nav-item:hover {
+          -webkit-transform: scale(1.075);
+                  transform: scale(1.075);
+        }
+
+.nav-item.nav-separator {
+    background: -webkit-gradient(linear, left top, right top, color-stop(32.55%, #3D3D3D), color-stop(33.98%, #000000), color-stop(66.41%, #000000), color-stop(67.45%, #3D3D3D));
+    background: linear-gradient(90deg, #3D3D3D 32.55%, #000000 33.98%, #000000 66.41%, #3D3D3D 67.45%);
+    width: 3px;
+
+}
+
+.nav-item.new_quote {
+    color: black !important;
+    font-weight: 900 !important;
+}
+
+.index-main {
+    /*
+    background-image: url("../assets/images/index-forest-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    */
+    min-height: 580px;
+    background-size: cover;
+    height: 60vh;
+}
+
+#bgvideo1 {
+    background-position: top !important;
+}
+
+.main-card {
+    background: linear-gradient(120deg, rgba(26, 26, 26, 0.9) 0%, rgba(35, 35, 35, 0.9) 100%);
+
+}
+
+.index-main-container-row {
+    min-height: 580px;
+}
+
+.main-card-inner {
+    border: 2px solid #9d3131;
+}
+
+#modules {
+    background: #121212;
+}
+.module-card {
+    background: linear-gradient(120deg, rgba(26, 26, 26, 0.9) 0%, rgba(35, 35, 35, 0.9) 100%);
+}
+
+.module-cta-btn {
+    font-size: 14px;
+    font-family: 'Sansation', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.modules-container {
+    margin-top: -105px;
+}
+
+.services-main {
+background-position: center;
+}
+
+.services-container {
+    background: rgba(35, 35, 35, 0.5);
+    min-height: 480px;
+}
+
+.style1 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../assets/images/wolf-eyes.png");
+    background-position: center 100%;
+    
+}
+
+.univ--footer {
+    background-color: #26272b;
+    color: #9e9e9e;
+    font-size: 15px;
+    line-height: 24px;
+    padding: 45px 0 20px;
+}
+
+.univ--footer--container--row--col2 > ul > a > li,  .univ--footer--container--row--col2 > ul > a{
+    color: #9e9e9e;
+}
+
+.univ--footer--container--row--col3 > ul > a > li,  .univ--footer--container--row--col3 > ul > a{
+    color: #9e9e9e;
+}
+
+#career_main {
+    min-height: 650px;
+}
+
+.hover-cursor:hover {
+    cursor: pointer;
+}
+
+.btn-close {
+    opacity: 100%;
+    color: white !important;
+    background-color: #d4d4d46c !important;
+}
+
+.cursor-default:hover {
+    cursor: default;
+}
+
+.ls-1 {
+    letter-spacing: 1.5px;
+}
