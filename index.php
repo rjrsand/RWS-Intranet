@@ -8,6 +8,8 @@
     <title>Untitled Document</title>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Lustria&amp;family=Muli:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/sansation" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="bootstrap/5/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -20,10 +22,17 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light"></nav>
     </header>
+
+
+
     <main>
         <div class="container">
             <div class="row">
-                <div class="col"></div>
+                <div class="col">
+                    <h5>Operations Team</h5>
+                    <h1 class="text-left">Welcome to Raging Wolf Solutions</h1>
+                    <p class="mb-4 text-secondary" style="max-width: 770px !important">Here you can find helpful tools and resources that are commonly used in your department at Raging Wolf Solutions. If you need any additional information or resources, please contact your manager.</p>
+                </div>
             </div>
             <div class="row">
                 <div class="col-lg-6"></div>
