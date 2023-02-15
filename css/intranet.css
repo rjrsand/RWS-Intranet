@@ -2,3 +2,11 @@
 .w-100p{
     width: 100px;
 }
+
+.min-vh-75 {
+    min-height: 75vh !important;
+}
+
+.body-bg {
+    background: #121212 !important;
+}
