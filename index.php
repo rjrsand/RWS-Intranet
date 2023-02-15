@@ -13,6 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="bootstrap/5/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/intranet.css" />
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="dmxAppConnect/dmxBootstrap5Navigation/dmxBootstrap5Navigation.js" defer></script>
 
@@ -35,12 +36,53 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-6"></div>
-                <div class="col-lg-6"></div>
+                <div class="col-lg-6 align-self-center">
+                    <div class="d-flex pt-3 pb-3 ps-2 pe-2">
+                        <div class="d-flex align-items-center w-100p justify-content-center">
+                            <h1 class="mb-0"><i class="fas fa-link"></i></h1>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <h3>Training Resource Center</h3>
+                            <p class="mb-0">Use this page to learn more about commonly used tools.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex pt-3 pb-3 ps-2 pe-2">
+                        <div class="d-flex align-items-center w-100p justify-content-center">
+                            <h1 class="mb-0"><i class="fas fa-link"></i></h1>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <h3>Training Resource Center</h3>
+                            <p class="mb-0">Use this page to learn more about commonly used tools.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="row">
-                <div class="col-lg-6"></div>
-                <div class="col-lg-6"></div>
+                <div class="col-lg-6">
+                    <div class="d-flex pt-3 pb-3 ps-2 pe-2">
+                        <div class="d-flex align-items-center w-100p justify-content-center">
+                            <h1 class="mb-0"><i class="fas fa-link"></i></h1>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <h3>Training Resource Center</h3>
+                            <p class="mb-0">Use this page to learn more about commonly used tools.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex pt-3 pb-3 ps-2 pe-2">
+                        <div class="d-flex align-items-center w-100p justify-content-center">
+                            <h1 class="mb-0"><i class="fas fa-link"></i></h1>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <h3>Training Resource Center</h3>
+                            <p class="mb-0">Use this page to learn more about commonly used tools.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
