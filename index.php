@@ -28,63 +28,70 @@
 
     <main>
         <div class="container">
-            <div class="row">
+            <div class="row min-vh-75">
                 <div class="col">
-                    <h5>Operations Team</h5>
-                    <h1 class="text-left">Welcome to Raging Wolf Solutions</h1>
-                    <p class="mb-4 text-secondary" style="max-width: 770px !important">Here you can find helpful tools and resources that are commonly used in your department at Raging Wolf Solutions. If you need any additional information or resources, please contact your manager.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 align-self-center">
-                    <div class="d-flex pt-3 pb-3 ps-2 pe-2">
-                        <div class="d-flex align-items-center w-100p justify-content-center">
-                            <h1 class="mb-0"><i class="fas fa-link"></i></h1>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <h5>Operations Team</h5>
+                                <h1 class="text-left">Welcome to Raging Wolf Solutions</h1>
+                                <p class="mb-4 text-secondary" style="max-width: 770px !important">Here you can find helpful tools and resources that are commonly used in your department at Raging Wolf Solutions. If you need any additional information or resources, please contact your manager.</p>
+                            </div>
                         </div>
-                        <div class="d-flex flex-column">
-                            <h3>Training Resource Center</h3>
-                            <p class="mb-0">Use this page to learn more about commonly used tools.</p>
-                        </div>
-                    </div>
+                        <div class="row">
+                            <div class="col-lg-6 align-self-center">
+                                <div class="d-flex pt-3 pb-3 ps-2 pe-2">
+                                    <div class="d-flex align-items-center w-100p justify-content-center">
+                                        <h1 class="mb-0"><i class="fas fa-link"></i></h1>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <h3>Training Resource Center</h3>
+                                        <p class="mb-0">Use this page to learn more about commonly used tools.</p>
+                                    </div>
+                                </div>
 
-                </div>
-                <div class="col-lg-6">
-                    <div class="d-flex pt-3 pb-3 ps-2 pe-2">
-                        <div class="d-flex align-items-center w-100p justify-content-center">
-                            <h1 class="mb-0"><i class="fas fa-link"></i></h1>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex pt-3 pb-3 ps-2 pe-2">
+                                    <div class="d-flex align-items-center w-100p justify-content-center">
+                                        <h1 class="mb-0"><i class="fas fa-link"></i></h1>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <h3>Training Resource Center</h3>
+                                        <p class="mb-0">Use this page to learn more about commonly used tools.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="d-flex flex-column">
-                            <h3>Training Resource Center</h3>
-                            <p class="mb-0">Use this page to learn more about commonly used tools.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="d-flex pt-3 pb-3 ps-2 pe-2">
-                        <div class="d-flex align-items-center w-100p justify-content-center">
-                            <h1 class="mb-0"><i class="fas fa-link"></i></h1>
-                        </div>
-                        <div class="d-flex flex-column">
-                            <h3>Training Resource Center</h3>
-                            <p class="mb-0">Use this page to learn more about commonly used tools.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="d-flex pt-3 pb-3 ps-2 pe-2">
-                        <div class="d-flex align-items-center w-100p justify-content-center">
-                            <h1 class="mb-0"><i class="fas fa-link"></i></h1>
-                        </div>
-                        <div class="d-flex flex-column">
-                            <h3>Training Resource Center</h3>
-                            <p class="mb-0">Use this page to learn more about commonly used tools.</p>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="d-flex pt-3 pb-3 ps-2 pe-2">
+                                    <div class="d-flex align-items-center w-100p justify-content-center">
+                                        <h1 class="mb-0"><i class="fas fa-link"></i></h1>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <h3>Training Resource Center</h3>
+                                        <p class="mb-0">Use this page to learn more about commonly used tools.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex pt-3 pb-3 ps-2 pe-2">
+                                    <div class="d-flex align-items-center w-100p justify-content-center">
+                                        <h1 class="mb-0"><i class="fas fa-link"></i></h1>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <h3>Training Resource Center</h3>
+                                        <p class="mb-0">Use this page to learn more about commonly used tools.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </main>
 
     <script src="bootstrap/5/js/bootstrap.bundle.min.js"></script>
