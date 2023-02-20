@@ -10,3 +10,11 @@
 .body-bg {
     background: #121212 !important;
 }
+.tile-category {
+    background: linear-gradient(90.47deg, #191919 0%, #212121 100%);
+border: 1px solid #303030;
+border-radius: 3px;
+}
+.h-tile-default {
+    min-height: 89px;
+}
