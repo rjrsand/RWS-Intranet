@@ -33,7 +33,7 @@
                 <div class="col">
                     <h5 class="text-warning text-uppercase">Operations Team</h5>
                     <h1 class="text-left fw-bold text-light">Welcome to Raging Wolf Solutions</h1>
-                    <p class="mb-4 text-secondary" style="max-width: 770px !important">Here you can find helpful tools and resources that are commonly used in your department at Raging Wolf Solutions. If you need any additional information or resources, please contact your manager.</p>
+                    <p class="mb-4 text-secondary">Here you can find helpful tools and resources that are commonly used in your department at Raging Wolf Solutions. If you need any additional information or resources, please contact your manager.</p>
                 </div>
             </div>
             <div class="row">
