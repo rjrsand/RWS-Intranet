@@ -39,12 +39,8 @@
                             </button>
                             <div class="collapse navbar-collapse justify-content-end align-items-stretch" id="navbar1_collapse">
                                 <div class="navbar-nav align-items-stretch text-center">
-                                    <a class="nav-item nav-separator ms-2 me-2"></a><a class="nav-item nav-link active rws-nav-item" href="index.php"><i class="fas fa-arrow-left"></i>&nbsp;Go Back</a>
+                                    <a class="nav-item nav-separator ms-2 me-2"></a><a class="nav-item nav-link active rws-nav-item" href="https://ragingwolfsolutions.com"><i class="fas fa-arrow-left"></i>&nbsp;Go Back</a>
                                     <a class="nav-item nav-separator ms-2 me-2"></a>
-
-
-
-
 
                                 </div>
                             </div>
@@ -57,20 +53,20 @@
 
     </header>
 
-    <section class="border-top rounded-1 rounded-0 border-secondary min-vh-75 bg-dark">
-        <img src="assets/images/section-modal-bg-top-stone.png" class="w-100">
+    <section class="border-top rounded-1 rounded-0 border-secondary bg-dark">
+
         <div class="container modules-container mt-auto mb-auto">
-            <div class="row">
+            <div class="row min-vh-75 align-items-center">
 
                 <div class="col-md-12">
                     <div class="row justify-content-center">
-                        <div class="module-card border rounded-0 rounded-1 border-secondary mt-3 mb-3 ms-3 me-3 pt-4 pb-4 ps-3 pe-3 col-10">
+                        <div class="module-card border rounded-0 rounded-1 border-secondary mb-5 ms-3 me-3 pt-4 pb-4 ps-3 pe-3 col-lg-7">
                             <h4 class="text-light lh-sm text-center text-uppercase mt-2 mb-3">Log in</h4>
                             <p class="text-center mb-4 text-light">Access is restricted to Raging Wolf Solutions employees.</p>
 
                             <form id="form1" method="post" action="https://usebasin.com/f/dd70a6a52004">
                                 <div class="row justify-content-center">
-                                    <div class="col-md-9 text-center"><button id="btn4" class="btn module-cta-btn btn-warning btn-lg mb-3 ps-5 pe-5" type="submit">Log In With Microsoft&nbsp;<i class="fab fa-windows"></i></button>
+                                    <div class="col-md-9 text-center"><button id="btn4" class="btn module-cta-btn btn-warning btn-lg mb-3 ps-5 pe-5 fw-bold" type="submit">Log In With Microsoft&nbsp;<i class="fab fa-windows"></i></button>
                                         <p class="text-center mb-4 text-white-50">Having trouble logging in? Contact us.</p>
                                     </div>
                                 </div>
