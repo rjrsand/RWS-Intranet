@@ -31,5 +31,6 @@
   "useRouting": true,
   "addBase": true,
   "routingHandler": "apache",
-  "projectType": "web"
+  "projectType": "web",
+  "activeGitRemote": "upstream"
 }
