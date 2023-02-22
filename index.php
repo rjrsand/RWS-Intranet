@@ -68,7 +68,7 @@
                             <div class="col-lg-6">
                                 <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default">
                                     <div class="d-flex align-items-center w-100p justify-content-center">
-                                        <h1 class="mb-0 text-white-50"><i class="fas fa-phone-alt"></i></h1>
+                                        <h1 class="mb-0 text-white-50"><i class="fas fa-address-book"></i></h1>
                                     </div>
                                     <div class="d-flex flex-column w-100">
                                         <h3 class="text-light">Directory</h3>
@@ -100,15 +100,10 @@
         <div class="container">
             <div class="row align-items-top">
                 <div class="col-md-4 col-md text-center">
-                    <h5 class="text-secondary">Features</h5>
-                    <ul class="list-unstyled text-small">
-                        <li><a class="text-muted" href="#">Cool stuff</a></li>
-                        <li><a class="text-muted" href="#">Random feature</a></li>
-                        <li><a class="text-muted" href="#">Team feature</a></li>
-                        <li><a class="text-muted" href="#">Stuff for developers</a></li>
-                        <li><a class="text-muted" href="#">Another one</a></li>
-                        <li><a class="text-muted" href="#">Last time</a></li>
-                    </ul>
+                    <div class="d-flex">
+                        <img src="assets/images/navbar-logo.png" class="img-fluid footer-logo">
+                    </div>
+
                 </div>
                 <div class="col-md-4 col-md text-center">
                     <h5 class="text-secondary">Resources</h5>
