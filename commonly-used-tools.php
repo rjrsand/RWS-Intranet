@@ -18,6 +18,9 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="dmxAppConnect/dmxBootstrap5Navigation/dmxBootstrap5Navigation.js" defer></script>
 
+    <script src="dmxAppConnect/dmxDataTraversal/dmxDataTraversal.js" defer></script>
+    <script src="dmxAppConnect/dmxTyped/dmxTyped.js" defer></script>
+    <script src="dmxAppConnect/dmxTyped/typed.min.js" defer></script>
 </head>
 
 <body is="dmx-app" id="index" class="body-bg">
@@ -40,9 +43,31 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-sm-6 col-lg-4">
-                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default">
-                                    <img src="assets/images/Intranet/carrier411-logo-gray.png" class="w-50">
+                            <div class="col-sm-6 col-lg-4 text-white-50">
+                                <div class="d-flex tile-category h-tile-default text-start text-white-50 flex-column mb-3 pt-3 pb-3 ps-3 pe-3">
+                                    <div class="d-flex w-50"><img src="assets/images/Intranet/carrier411-logo-gray.png" class="img-fluid">
+                                    </div>
+
+
+
+
+
+                                    <h6 class="style10 text-secondary">
+                                        <font color="#6c757d"><span style="font-size: 14px;">Unqualified Carrier Lookup</span></font>
+                                    </h6>
+                                    <div class="d-flex">
+                                        <div class="container-fluid gx-0">
+                                            <div class="row">
+                                                <div class="col-lg-6"><button class="btn btn-outline-secondary w-100 mb-2 me-2 ps-5 pe-5" type="button">
+                                                        <i class="fas fa-share-square"></i>&nbsp;Open
+                                                    </button></div>
+                                                <div class="col-lg-6"><button class="btn btn-outline-secondary w-100 me-0 ps-5 pe-5" type="button"><i class="fas fa-eye"></i>&nbsp;View</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
                                 </div>
                             </div>
                         </div>
