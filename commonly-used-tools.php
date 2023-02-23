@@ -22,7 +22,7 @@
     <script src="dmxAppConnect/dmxTyped/dmxTyped.js" defer></script>
     <script src="dmxAppConnect/dmxTyped/typed.min.js" defer></script>
     <script src="dmxAppConnect/dmxBootstrap5Modal/dmxBootstrap5Modal.js" defer></script>
-<script src="dmxAppConnect/dmxFormRepeat/dmxFormRepeat.js"></script>
+    <script src="dmxAppConnect/dmxFormRepeat/dmxFormRepeat.js" defer></script>
 </head>
 
 <body is="dmx-app" id="index" class="body-bg">
@@ -46,6 +46,46 @@
                             </div>
                         </div>
                         <div class="container-fluid gx-0" is="dmx-form-repeat" id="formRepeat2" dmx-bind:items="1">
+                            <div class="row text-nowrap">
+                                <div class="col-auto">
+                                    <p class="h-100 ps-0 pe-4">Password: ********</p>
+                                </div>
+                                <div class="col"><button class="btn btn-outline-link text-warning pt-0 pb-0" data-bs-toggle="button">
+
+                                        <i class="fas fa-copy fa-fw"></i><span class="badge bg-warning text-dark rounded-pill ms-2">Copy</span></button></div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="modal-footer text-warning bg-dark border-0 justify-content-center">
+                    <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fw-bolder" id="modal2" is="dmx-bs5-modal" tabindex="-1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-warning border-bottom border-secondary border-2">
+                    <h5 class="modal-title text-light">Site Credentials</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-dark text-warning">
+                    <div class="flex-container">
+                        <div class="container-fluid gx-0" is="dmx-form-repeat" id="formRepeat3" dmx-bind:items="1">
+                            <div class="row text-nowrap">
+                                <div class="col-auto">
+                                    <p class="h-100">Username: RWS Email</p>
+                                </div>
+                                <div class="col"><button class="btn btn-outline-link text-warning pt-0 pb-0" data-bs-toggle="button">
+
+                                        <i class="fas fa-copy fa-fw"></i><span class="badge bg-warning text-dark rounded-pill ms-2">Copy</span></button></div>
+                            </div>
+                        </div>
+                        <div class="container-fluid gx-0" is="dmx-form-repeat" id="formRepeat3" dmx-bind:items="1">
                             <div class="row text-nowrap">
                                 <div class="col-auto">
                                     <p class="h-100 ps-0 pe-4">Password: ********</p>
@@ -106,6 +146,35 @@
                                                 <div class="col-lg-6">
 
                                                     <button class="btn btn-outline-secondary w-100 btn-sm text-nowrap mb-2" type="button" data-bs-toggle="modal" data-bs-target="#modal1"><i class="fas fa-eye"></i>&nbsp;View Details</button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 text-white-50">
+                                <div class="d-flex tile-category h-tile-default text-start text-white-50 flex-column pt-3 pb-2 ps-3 pe-3">
+                                    <div class="d-flex w-50 justify-content-center"><img src="assets/images/Intranet/Salesforce_Logo.png" class="img-fluid mb-1 w-50">
+                                    </div>
+
+                                    <h6 class="style10 text-secondary mb-3 text-start">
+                                        <font color="#6c757d"><span style="font-size: 14px;">Find all information about all accounts.</span></font>
+                                    </h6>
+                                    <div class="d-flex">
+                                        <div class="container-fluid gx-0">
+                                            <div class="row gx-3">
+                                                <div class="col-lg-6">
+                                                    <a href="https://staff.my.salesforce.com/" target="_blank">
+                                                        <button class="btn btn-outline-secondary w-100 btn-sm text-nowrap mb-2" type="button">
+                                                            <i class="fas fa-share-square"></i>&nbsp;Open
+                                                        </button>
+                                                    </a>
+                                                </div>
+                                                <div class="col-lg-6">
+
+                                                    <button class="btn btn-outline-secondary w-100 btn-sm text-nowrap mb-2" type="button" data-bs-toggle="modal" data-bs-target="#modal2"><i class="fas fa-eye"></i>&nbsp;View Details</button>
 
                                                 </div>
                                             </div>
