@@ -21,9 +21,29 @@
     <script src="dmxAppConnect/dmxDataTraversal/dmxDataTraversal.js" defer></script>
     <script src="dmxAppConnect/dmxTyped/dmxTyped.js" defer></script>
     <script src="dmxAppConnect/dmxTyped/typed.min.js" defer></script>
+    <script src="dmxAppConnect/dmxBootstrap5Modal/dmxBootstrap5Modal.js" defer></script>
 </head>
 
 <body is="dmx-app" id="index" class="body-bg">
+    <div class="modal fw-bolder" id="modal1" is="dmx-bs5-modal" tabindex="-1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-warning border-0">
+                    <h5 class="modal-title">Site Credentials</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-dark text-warning">
+
+                    <p>Username: wolfpack5</p>
+                    <p>Password: ********</p>
+                </div>
+                <div class="modal-footer text-warning bg-dark border-0">
+                    <button type="button" class="btn bg-danger btn-outline-dark text-light" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn bg-danger btn-outline-dark text-light">Copy to Clipboard</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light"></nav>
     </header>
@@ -56,15 +76,15 @@
                                             <div class="row gx-3">
                                                 <div class="col-lg-6">
                                                     <a href="https://www.carrier411.com/" target="_blank">
-                                                        <button class="btn btn-outline-secondary w-100 btn-sm mb-2 ps-5 pe-5 text-nowrap" type="button">
+                                                        <button class="btn btn-outline-secondary w-100 btn-sm text-nowrap mb-2" type="button">
                                                             <i class="fas fa-share-square"></i>&nbsp;Open
                                                         </button>
                                                     </a>
                                                 </div>
                                                 <div class="col-lg-6">
-                                                    <a href="" target="_blank">
-                                                        <button class="btn btn-outline-secondary w-100 btn-sm ps-5 pe-5 mb-2 text-nowrap" type="button"><i class="fas fa-eye"></i>&nbsp;View Details</button>
-                                                    </a>
+
+                                                    <button class="btn btn-outline-secondary w-100 btn-sm text-nowrap mb-2" type="button" data-bs-toggle="modal" data-bs-target="#modal1"><i class="fas fa-eye"></i>&nbsp;View Details</button>
+
                                                 </div>
                                             </div>
                                         </div>
