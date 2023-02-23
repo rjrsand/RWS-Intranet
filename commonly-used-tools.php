@@ -22,6 +22,7 @@
     <script src="dmxAppConnect/dmxTyped/dmxTyped.js" defer></script>
     <script src="dmxAppConnect/dmxTyped/typed.min.js" defer></script>
     <script src="dmxAppConnect/dmxBootstrap5Modal/dmxBootstrap5Modal.js" defer></script>
+<script src="dmxAppConnect/dmxFormRepeat/dmxFormRepeat.js"></script>
 </head>
 
 <body is="dmx-app" id="index" class="body-bg">
