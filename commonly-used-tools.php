@@ -28,8 +28,8 @@
     <div class="modal fw-bolder" id="modal1" is="dmx-bs5-modal" tabindex="-1">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="modal-header bg-dark text-warning border-0">
-                    <h5 class="modal-title">Site Credentials</h5>
+                <div class="modal-header bg-dark text-warning border-bottom border-secondary border-2">
+                    <h5 class="modal-title text-light">Site Credentials</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body bg-dark text-warning">
@@ -37,9 +37,8 @@
                     <p>Username: wolfpack5</p>
                     <p>Password: ********</p>
                 </div>
-                <div class="modal-footer text-warning bg-dark border-0">
-                    <button type="button" class="btn bg-danger btn-outline-dark text-light" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn bg-danger btn-outline-dark text-light">Copy to Clipboard</button>
+                <div class="modal-footer text-warning bg-dark border-0 justify-content-center">
+                    <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
