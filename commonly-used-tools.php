@@ -33,9 +33,31 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body bg-dark text-warning">
+                    <div class="flex-container">
+                        <div class="container-fluid gx-0" is="dmx-form-repeat" id="formRepeat1" dmx-bind:items="1">
+                            <div class="row text-nowrap">
+                                <div class="col-auto">
+                                    <p class="h-100">Username: wolfpack5</p>
+                                </div>
+                                <div class="col"><button class="btn btn-outline-link text-warning pt-0 pb-0" data-bs-toggle="button">
 
-                    <p>Username: wolfpack5</p>
-                    <p>Password: ********</p>
+                                        <i class="fas fa-copy fa-fw"></i><span class="badge bg-warning text-dark rounded-pill ms-2">Copy</span></button></div>
+                            </div>
+                        </div>
+                        <div class="container-fluid gx-0" is="dmx-form-repeat" id="formRepeat2" dmx-bind:items="1">
+                            <div class="row text-nowrap">
+                                <div class="col-auto">
+                                    <p class="h-100 ps-0 pe-4">Password: ********</p>
+                                </div>
+                                <div class="col"><button class="btn btn-outline-link text-warning pt-0 pb-0" data-bs-toggle="button">
+
+                                        <i class="fas fa-copy fa-fw"></i><span class="badge bg-warning text-dark rounded-pill ms-2">Copy</span></button></div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
                 </div>
                 <div class="modal-footer text-warning bg-dark border-0 justify-content-center">
                     <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
