@@ -155,14 +155,14 @@
                                 </div>
                             </div>
                             <div class="col-sm-6 col-lg-4 text-white-50">
-                                <div class="d-flex tile-category h-tile-default text-start text-white-50 flex-column pt-3 pb-2 ps-3 pe-3">
-                                    <div class="d-flex w-50 justify-content-center"><img src="assets/images/Intranet/Salesforce_Logo.png" class="img-fluid mb-1 w-50">
+                                <div class="d-flex tile-category h-tile-default text-start text-white-50 flex-column pt-2 pb-3 ps-3 pe-3">
+                                    <div class="d-flex w-50"><img src="assets/images/Intranet/Salesforce_Logo.png" class="w-50 img-fluid">
                                     </div>
 
-                                    <h6 class="style10 text-secondary mb-3 text-start">
+                                    <h6 class="style10 text-secondary text-start mb-2 pt-1">
                                         <font color="#6c757d"><span style="font-size: 14px;">Find all information about all accounts.</span></font>
                                     </h6>
-                                    <div class="d-flex">
+                                    <div class="d-flex pt-2">
                                         <div class="container-fluid gx-0">
                                             <div class="row gx-3">
                                                 <div class="col-lg-6">
