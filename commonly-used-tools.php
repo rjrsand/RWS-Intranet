@@ -55,17 +55,15 @@
                                         <div class="container-fluid gx-0">
                                             <div class="row gx-3">
                                                 <div class="col-lg-6">
-                                                    <a href="" target="_blank">
-                                                        <button class="btn btn-outline-secondary w-100 btn-sm mb-2 ps-5 pe-5" type="button">
+                                                    <a href="https://www.carrier411.com/" target="_blank">
+                                                        <button class="btn btn-outline-secondary w-100 btn-sm mb-2 ps-5 pe-5 text-nowrap" type="button">
                                                             <i class="fas fa-share-square"></i>&nbsp;Open
                                                         </button>
                                                     </a>
                                                 </div>
                                                 <div class="col-lg-6">
                                                     <a href="" target="_blank">
-                                                        <button class="btn btn-outline-secondary w-100 btn-sm ps-5 pe-5 mb-2" type="button">
-                                                            <i class="fas fa-eye"></i>&nbsp;View
-                                                        </button>
+                                                        <button class="btn btn-outline-secondary w-100 btn-sm ps-5 pe-5 mb-2 text-nowrap" type="button"><i class="fas fa-eye"></i>&nbsp;View Details</button>
                                                     </a>
                                                 </div>
                                             </div>
