@@ -229,7 +229,7 @@
                                     </div>
 
                                     <h6 class="style10 text-secondary text-start mb-3">
-                                        <font color="#6c757d"><span style="font-size: 14px;">Find unqualified freight carriers.</span></font>
+                                        <font color="#6c757d"><span style="font-size: 14px;">Find new unqualified freight carriers.</span></font>
                                     </h6>
                                     <div class="d-flex pt-2">
                                         <div class="container-fluid gx-0">
