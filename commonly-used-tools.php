@@ -253,7 +253,7 @@
                                     </div>
 
                                     <h6 class="style10 text-secondary text-start mb-3">
-                                        <font color="#6c757d"><span style="font-size: 14px;">Check credit of customer prospects.</span></font>
+                                        <font color="#6c757d"><span style="font-size: 14px;">Check credit of new customers.</span></font>
                                     </h6>
                                     <div class="d-flex pt-2">
                                         <div class="container-fluid gx-0">
@@ -334,13 +334,13 @@
 
                                 </div>
                             </div>
-                            <div class="col-sm-6 col-lg-4 text-white-50">
+                            <div class="col-sm-6 col-lg-4 text-white-50 col-1">
                                 <div class="tile-category h-tile-default text-start text-white-50 flex-column mb-3 pt-3 pb-3 ps-3 pe-3">
                                     <div class="d-flex cut-tool-logo mb-2"><img src="assets/images/Intranet/DAT_Solutions_Logo.png" class="img-fluid" alt="DAT">
                                     </div>
 
                                     <h6 class="style10 text-secondary text-start mb-3">
-                                        <font color="#6c757d"><span style="font-size: 14px;">Post loads to online load board.</span></font>
+                                        <font color="#6c757d"><span style="font-size: 14px;">Post loads onto online load board.</span></font>
                                     </h6>
                                     <div class="d-flex pt-2">
                                         <div class="container-fluid gx-0">
