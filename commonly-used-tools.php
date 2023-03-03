@@ -31,7 +31,7 @@
         <dmx-value id="blueship_username" dmx-bind:value="'RagingRW'"></dmx-value>
         <dmx-value id="forwardair_password" dmx-bind:value="'fast2013'"></dmx-value>
         <dmx-value id="forwardair_username" dmx-bind:value="'gallaghe'"></dmx-value>
-        <dmx-value id="dat_password" dmx-bind:value="'RagingWolf2022'"></dmx-value>
+        <dmx-value id="dat_password" dmx-bind:value="'Ragingwolf2023*'"></dmx-value>
         <dmx-value id="dat_username" dmx-bind:value="'ops@ragingwolfsolutions.com'"></dmx-value>
         <dmx-value id="bluejay_password" dmx-bind:value="'Pack*2023'"></dmx-value>
         <dmx-value id="bluejay_username" dmx-bind:value="'adminRAG4'"></dmx-value>
@@ -116,7 +116,7 @@
                                         <div class="container-fluid gx-0">
                                             <div class="row gx-3">
                                                 <div class="col-lg-6">
-                                                    <a href="Forwardair.com" target="_blank">
+                                                    <a href="https://www.forwardair.com/login/premier" target="_blank">
                                                         <button class="btn btn-outline-secondary w-100 btn-sm text-nowrap mb-2" type="button">
                                                             <i class="fas fa-share-square"></i>&nbsp;Open
                                                         </button>
@@ -145,7 +145,7 @@
                                         <div class="container-fluid gx-0">
                                             <div class="row gx-3">
                                                 <div class="col-lg-6">
-                                                    <a href="Identity.myblueship.com" target="_blank">
+                                                    <a href="https://app.tms.blujaysolutions.net/agent/webmessages.do?query.current=true" target="_blank">
                                                         <button class="btn btn-outline-secondary w-100 btn-sm text-nowrap mb-2" type="button">
                                                             <i class="fas fa-share-square"></i>&nbsp;Open
                                                         </button>
@@ -174,7 +174,7 @@
                                         <div class="container-fluid gx-0">
                                             <div class="row gx-3">
                                                 <div class="col-lg-6">
-                                                    <a href="Truckstop.com" target="_blank">
+                                                    <a href="https://truckstop.com/" target="_blank">
                                                         <button class="btn btn-outline-secondary w-100 btn-sm text-nowrap mb-2" type="button">
                                                             <i class="fas fa-share-square"></i>&nbsp;Open
                                                         </button>
@@ -203,7 +203,7 @@
                                         <div class="container-fluid gx-0">
                                             <div class="row gx-3">
                                                 <div class="col-lg-6">
-                                                    <a href="Wpg.org" target="_blank">
+                                                    <a href="http://www.wpg.org/Member/LinearFootCalc3.asp" target="_blank">
                                                         <button class="btn btn-outline-secondary w-100 btn-sm text-nowrap mb-2" type="button">
                                                             <i class="fas fa-share-square"></i>&nbsp;Open
                                                         </button>
@@ -230,7 +230,7 @@
                                         <div class="container-fluid gx-0">
                                             <div class="row gx-3">
                                                 <div class="col-lg-6">
-                                                    <a href="Identity.myblueship.com" target="_blank">
+                                                    <a href="https://identity.myblueship.com/Account/Login?ReturnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3Dblueship4%26redirect_uri%3Dhttps%253A%252F%252Fbeta.myblueship.com%252Fauth-callback%26response_type%3Did_token%2520token%26scope%3Dopenid%2520profile%2520blueship-api%26state%3D9219d853608e4070839b073c7a1cf61a%26nonce%3Dac45e660001f453e848dd0ce55e225c1" target="_blank">
                                                         <button class="btn btn-outline-secondary w-100 btn-sm text-nowrap mb-2" type="button">
                                                             <i class="fas fa-share-square"></i>&nbsp;Open
                                                         </button>
@@ -259,7 +259,7 @@
                                         <div class="container-fluid gx-0">
                                             <div class="row gx-3">
                                                 <div class="col-lg-6">
-                                                    <a href="Mylogin.creditsafe.com" target="_blank">
+                                                    <a href="https://mylogin.creditsafe.com/?ReturnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3Dupp%26redirect_uri%3Dhttps%253A%252F%252Fapp.creditsafe.com%252Fcallback%26response_type%3Dtoken%2520id_token%26scope%3Dopenid%2520profile%2520upp_api%2520connect_web%2520ubo_api_gateway%2520ubo_elastic_api%26state%3D9ff0ff02415844bd83d225e1bd4712db%26nonce%3Dcff3bc6842f948bd96812cdf619c8b68" target="_blank">
                                                         <button class="btn btn-outline-secondary w-100 btn-sm text-nowrap mb-2" type="button">
                                                             <i class="fas fa-share-square"></i>&nbsp;Open
                                                         </button>
