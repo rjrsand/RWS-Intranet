@@ -187,7 +187,7 @@
                                         <div class="container-fluid gx-0">
                                             <div class="row gx-3">
                                                 <div class="col-lg-6">
-                                                    <a href="https://www.carrier411.com/" target="_blank">
+                                                    <a href="Identity.myblueship.com" target="_blank">
                                                         <button class="btn btn-outline-secondary w-100 btn-sm text-nowrap mb-2" type="button">
                                                             <i class="fas fa-share-square"></i>&nbsp;Open
                                                         </button>
@@ -214,7 +214,7 @@
                                         <div class="container-fluid gx-0">
                                             <div class="row gx-3">
                                                 <div class="col-lg-6">
-                                                    <a href="https://login.dat.com/login?state=hKFo2SBETnJlYkw1ektrcTQxbWdNMjJfeWU1dGpER3Zkbkl0c6FupWxvZ2luo3RpZNkgSENXelNibHJWS0xDRmJqc3JrdVl5VEkwb0ZoSHUxUTWjY2lk2SBQcHl2b1JHMk5CcGdiQlZmWGpsMUdhZ1RuaTRSWkh4UA&amp;client=PpyvoRG2NBpgbBVfXjl1GagTni4RZHxP&amp;protocol=oauth2&amp;redirect_uri=https:%2F%2Fpower.dat.com%2Fsignin-auth0&amp;response_mode=form_post&amp;response_type=code%20id_token%20token&amp;scope=openid%20profile%20offline_access%20email&amp;nonce=638132235803550326.MmM3ZTVmZjktZTc1MS00Zjg3LWI3ZTQtYzI3MDZkZDlkNjQ1ZDJlYTU5NmYtM2IxYi00MWI0LTkyYWEtN2Q2Njg3Y2JkZDFm&amp;app_name=Power&amp;page_mode=Legacy&amp;audience=https:%2F%2Fprod-api.dat.com&amp;x-client-SKU=ID_NET451&amp;x-client-ver=5.2.1.0&amp;capturedTime=1677626781197" target="_blank">
+                                                    <a href="Forwardair.com" target="_blank">
                                                         <button class="btn btn-outline-secondary w-100 btn-sm text-nowrap mb-2" type="button">
                                                             <i class="fas fa-share-square"></i>&nbsp;Open
                                                         </button>
@@ -243,7 +243,7 @@
                                         <div class="container-fluid gx-0">
                                             <div class="row gx-3">
                                                 <div class="col-lg-6">
-                                                    <a href="https://staff.my.salesforce.com/" target="_blank">
+                                                    <a href="Truckstop.com" target="_blank">
                                                         <button class="btn btn-outline-secondary w-100 btn-sm text-nowrap mb-2" type="button">
                                                             <i class="fas fa-share-square"></i>&nbsp;Open
                                                         </button>
@@ -275,7 +275,7 @@
                                         <div class="container-fluid gx-0">
                                             <div class="row gx-3">
                                                 <div class="col-lg-6">
-                                                    <a href="https://www.carrier411.com/" target="_blank">
+                                                    <a href="Mylogin.creditsafe.com" target="_blank">
                                                         <button class="btn btn-outline-secondary w-100 btn-sm text-nowrap mb-2" type="button">
                                                             <i class="fas fa-share-square"></i>&nbsp;Open
                                                         </button>
@@ -302,7 +302,7 @@
                                         <div class="container-fluid gx-0">
                                             <div class="row gx-3">
                                                 <div class="col-lg-6">
-                                                    <a href="https://login.dat.com/login?state=hKFo2SBETnJlYkw1ektrcTQxbWdNMjJfeWU1dGpER3Zkbkl0c6FupWxvZ2luo3RpZNkgSENXelNibHJWS0xDRmJqc3JrdVl5VEkwb0ZoSHUxUTWjY2lk2SBQcHl2b1JHMk5CcGdiQlZmWGpsMUdhZ1RuaTRSWkh4UA&amp;client=PpyvoRG2NBpgbBVfXjl1GagTni4RZHxP&amp;protocol=oauth2&amp;redirect_uri=https:%2F%2Fpower.dat.com%2Fsignin-auth0&amp;response_mode=form_post&amp;response_type=code%20id_token%20token&amp;scope=openid%20profile%20offline_access%20email&amp;nonce=638132235803550326.MmM3ZTVmZjktZTc1MS00Zjg3LWI3ZTQtYzI3MDZkZDlkNjQ1ZDJlYTU5NmYtM2IxYi00MWI0LTkyYWEtN2Q2Njg3Y2JkZDFm&amp;app_name=Power&amp;page_mode=Legacy&amp;audience=https:%2F%2Fprod-api.dat.com&amp;x-client-SKU=ID_NET451&amp;x-client-ver=5.2.1.0&amp;capturedTime=1677626781197" target="_blank">
+                                                    <a href="Identity.myblueship.com" target="_blank">
                                                         <button class="btn btn-outline-secondary w-100 btn-sm text-nowrap mb-2" type="button">
                                                             <i class="fas fa-share-square"></i>&nbsp;Open
                                                         </button>
@@ -331,7 +331,7 @@
                                         <div class="container-fluid gx-0">
                                             <div class="row gx-3">
                                                 <div class="col-lg-6">
-                                                    <a href="https://staff.my.salesforce.com/" target="_blank">
+                                                    <a href="Wpg.org" target="_blank">
                                                         <button class="btn btn-outline-secondary w-100 btn-sm text-nowrap mb-2" type="button">
                                                             <i class="fas fa-share-square"></i>&nbsp;Open
                                                         </button>
