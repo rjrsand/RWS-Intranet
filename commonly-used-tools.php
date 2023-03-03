@@ -26,6 +26,26 @@
 </head>
 
 <body is="dmx-app" id="index" class="body-bg">
+    <section id="variables">
+        <dmx-value id="blueship_password" dmx-bind:value="'Thepack1!'"></dmx-value>
+        <dmx-value id="blueship_username" dmx-bind:value="'RagingRW'"></dmx-value>
+        <dmx-value id="forwardair_password" dmx-bind:value="'fast2013'"></dmx-value>
+        <dmx-value id="forwardair_username" dmx-bind:value="'gallaghe'"></dmx-value>
+        <dmx-value id="dat_password" dmx-bind:value="'RagingWolf2022'"></dmx-value>
+        <dmx-value id="dat_username" dmx-bind:value="'ops@ragingwolfsolutions.com'"></dmx-value>
+        <dmx-value id="bluejay_password" dmx-bind:value="'Pack*2023'"></dmx-value>
+        <dmx-value id="bluejay_username" dmx-bind:value="'adminRAG4'"></dmx-value>
+        <dmx-value id="salesforce_password" dmx-bind:value="'Created by You'"></dmx-value>
+        <dmx-value id="salesforce_username" dmx-bind:value="'RWS Email'"></dmx-value>
+        <dmx-value id="truckstop_password" dmx-bind:value="'J2G4ySep!'"></dmx-value>
+        <dmx-value id="truckstop_username" dmx-bind:value="'support@ragingwolfsolutions.com'"></dmx-value>
+        <dmx-value id="creditsafe_password" dmx-bind:value="'9rHz_4948'"></dmx-value>
+        <dmx-value id="creditsafe_username" dmx-bind:value="'RW8LFS'"></dmx-value>
+        <dmx-value id="linearfootcalc_password" dmx-bind:value="'n/a'"></dmx-value>
+        <dmx-value id="linearfootcalc_username" dmx-bind:value="'n/a'"></dmx-value>
+        <dmx-value id="carrier411_password" dmx-bind:value="'aadfp8jy!'"></dmx-value>
+        <dmx-value id="carrier411_username" dmx-bind:value="'wolfpack5'"></dmx-value>
+    </section>
     <div class="modal fw-bolder" id="modal1" is="dmx-bs5-modal" tabindex="-1">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
