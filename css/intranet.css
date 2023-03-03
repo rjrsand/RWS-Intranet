@@ -24,3 +24,7 @@ border-radius: 3px;
 .cut-tool-logo {
     height: 55px;
 }
+.tile-hover:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}

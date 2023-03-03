@@ -18,9 +18,11 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="dmxAppConnect/dmxBootstrap5Navigation/dmxBootstrap5Navigation.js" defer></script>
 
+    <script src="dmxAppConnect/dmxBrowser/dmxBrowser.js" defer></script>
 </head>
 
 <body is="dmx-app" id="index" class="body-bg">
+    <div is="dmx-browser" id="browser1"></div>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light"></nav>
     </header>
@@ -77,7 +79,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default">
+                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('commonly-used-tools.php')">
                                     <div class="d-flex align-items-center w-100p justify-content-center">
                                         <h1 class="mb-0 text-white-50"><i class="fas fa-toolbox"></i></h1>
                                     </div>
@@ -100,25 +102,27 @@
         <div class="container">
             <div class="row align-items-top">
                 <div class="col-md-4 col-md text-center">
-                    <div class="d-flex">
-                        <img src="assets/images/navbar-logo.png" class="img-fluid footer-logo">
+                    <div class="d-flex justify-content-center">
+                        <img src="assets/images/navbar-logo.png" class="img-fluid footer-logo mb-3">
                     </div>
 
                 </div>
                 <div class="col-md-4 col-md text-center">
-                    <h5 class="text-secondary">Resources</h5>
+                    <h5 class="text-secondary">Raging Wolf</h5>
                     <ul class="list-unstyled text-small">
-                        <li><a class="text-muted" href="#">Resource</a></li>
-                        <li><a class="text-muted" href="#">Resource name</a></li>
-                        <li><a class="text-muted" href="#">Another resource</a></li>
-                        <li><a class="text-muted" href="#">Final resource</a></li>
+                        <li><a class="text-muted" href="#">About</a>
+                        <li><a class="text-muted" href="#">Official Website</a></li>
+                        </li>
+                        <li><a class="text-muted" href="#">Handbook</a></li>
+
+                        <li><a class="text-muted" href="#">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 col-md text-center">
-                    <h5 class="text-secondary">About</h5>
+                    <h5 class="text-secondary">Your Manager</h5>
                     <ul class="list-unstyled text-small">
-                        <li><a class="text-muted" href="#">Team</a></li>
-                        <li><a class="text-muted" href="#">Locations</a></li>
+                        <li class="text-secondary">&lt;MANAGER NAME&gt;</li>
+                        <li class="text-secondary">&lt;MANAGER EMAIL&gt;</li>
                         <li><a class="text-muted" href="#">Privacy</a></li>
                         <li><a class="text-muted" href="#">Terms</a></li>
                     </ul>
