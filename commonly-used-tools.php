@@ -135,7 +135,7 @@
 
                                 </div>
                             </div>
-                            <div class="col-sm-6 col-lg-4 text-white-50 col-1">
+                            <div class="col-sm-6 col-lg-4 text-white-50 col">
                                 <div class="tile-category h-tile-default text-start text-white-50 flex-column mb-3 pt-3 pb-3 ps-3 pe-3">
                                     <div class="d-flex cut-tool-logo mb-2"><img src="assets/images/Intranet/DAT_Solutions_Logo.png" class="img-fluid" alt="DAT">
                                     </div>
@@ -143,7 +143,7 @@
                                     <h6 class="style10 text-secondary text-start mb-3">
                                         <font color="#6c757d"><span style="font-size: 14px;">Post loads onto online load board.</span></font>
                                     </h6>
-                                    <div class="d-flex pt-2">
+                                    <div class="d-flex pt-2 mt-md-auto">
                                         <div class="container-fluid gx-0">
                                             <div class="row gx-3">
                                                 <div class="col-lg-6">
@@ -155,7 +155,8 @@
                                                 </div>
                                                 <div class="col-lg-6">
 
-                                                    <button class="btn btn-outline-secondary w-100 btn-sm text-nowrap mb-2" type="button" data-bs-toggle="modal" data-bs-target="#modal2"><i class="fas fa-eye"></i>&nbsp;View Details</button>
+                                                    <button class="btn btn-outline-secondary w-100 btn-sm text-nowrap mb-2" type="button" data-bs-toggle="modal" data-bs-target="#modal1"><i class="fas fa-eye"></i>&nbsp;View Details
+                                                    </button>
 
                                                 </div>
                                             </div>
@@ -170,7 +171,7 @@
                                     </div>
 
                                     <h6 class="style10 text-secondary text-start mb-3">
-                                        <font color="#6c757d"><span style="font-size: 14px;">Post loads to online load board.</span></font>
+                                        <font color="#6c757d"><span style="font-size: 14px;">Post loads onto online load board.</span></font>
                                     </h6>
                                     <div class="d-flex pt-2">
                                         <div class="container-fluid gx-0">
@@ -184,7 +185,7 @@
                                                 </div>
                                                 <div class="col-lg-6">
 
-                                                    <button class="btn btn-outline-secondary w-100 btn-sm text-nowrap mb-2" type="button" data-bs-toggle="modal" data-bs-target="#modal2"><i class="fas fa-eye"></i>&nbsp;View Details</button>
+                                                    <button class="btn btn-outline-secondary w-100 btn-sm text-nowrap mb-2" type="button" data-bs-toggle="modal" data-bs-target="#modal1"><i class="fas fa-eye"></i>&nbsp;View Details</button>
 
                                                 </div>
                                             </div>
@@ -211,7 +212,7 @@
                                                 </div>
                                                 <div class="col-lg-6">
 
-                                                    <button class="btn btn-outline-secondary w-100 btn-sm text-nowrap mb-2" type="button" data-bs-toggle="modal" data-bs-target="#modal2"><i class="fas fa-eye"></i>&nbsp;View Details</button>
+                                                    <button class="btn btn-outline-secondary w-100 btn-sm text-nowrap mb-2" type="button" data-bs-toggle="modal" data-bs-target="#modal1"><i class="fas fa-eye"></i>&nbsp;View Details</button>
 
                                                 </div>
                                             </div>
@@ -238,7 +239,7 @@
                                                 </div>
                                                 <div class="col-lg-6">
 
-                                                    <button class="btn btn-outline-secondary w-100 btn-sm text-nowrap mb-2" type="button" data-bs-toggle="modal" data-bs-target="#modal2"><i class="fas fa-eye"></i>&nbsp;View Details</button>
+                                                    <button class="btn btn-outline-secondary w-100 btn-sm text-nowrap mb-2" type="button" data-bs-toggle="modal" data-bs-target="#modal1"><i class="fas fa-eye"></i>&nbsp;View Details</button>
 
                                                 </div>
                                             </div>
@@ -297,7 +298,7 @@
                                                 </div>
                                                 <div class="col-lg-6">
 
-                                                    <button class="btn btn-outline-secondary w-100 btn-sm text-nowrap mb-2" type="button" data-bs-toggle="modal" data-bs-target="#modal2"><i class="fas fa-eye"></i>&nbsp;View Details</button>
+                                                    <button class="btn btn-outline-secondary w-100 btn-sm text-nowrap mb-2" type="button" data-bs-toggle="modal" data-bs-target="#modal1"><i class="fas fa-eye"></i>&nbsp;View Details</button>
 
                                                 </div>
                                             </div>
@@ -343,7 +344,7 @@
                                     </div>
 
                                     <h6 class="style10 text-secondary text-start mb-3">
-                                        <font color="#6c757d"><span style="font-size: 14px;">Find all information about all accounts.</span></font>
+                                        <font color="#6c757d"><span style="font-size: 14px;">RWS load board &amp; account info.</span></font>
                                     </h6>
                                     <div class="d-flex pt-2">
                                         <div class="container-fluid gx-0">
@@ -357,7 +358,7 @@
                                                 </div>
                                                 <div class="col-lg-6">
 
-                                                    <button class="btn btn-outline-secondary w-100 btn-sm text-nowrap mb-2" type="button" data-bs-toggle="modal" data-bs-target="#modal2"><i class="fas fa-eye"></i>&nbsp;View Details</button>
+                                                    <button class="btn btn-outline-secondary w-100 btn-sm text-nowrap mb-2" type="button" data-bs-toggle="modal" data-bs-target="#modal1"><i class="fas fa-eye"></i>&nbsp;View Details</button>
 
                                                 </div>
                                             </div>
