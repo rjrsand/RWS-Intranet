@@ -141,7 +141,7 @@
                                     </div>
 
                                     <h6 class="style10 text-secondary text-start mb-3">
-                                        <font color="#6c757d"><span style="font-size: 14px;">Post loads onto online load board.</span></font>
+                                        <font color="#6c757d"><span style="font-size: 14px;">Post loads onto this online load board.</span></font>
                                     </h6>
                                     <div class="d-flex pt-2 mt-md-auto">
                                         <div class="container-fluid gx-0">
