@@ -148,66 +148,64 @@
     <!-- Firebase OAuth Login Handler -->
     <script>
         // Get the sign-in button
-        var microsoftSignInButton = document.getElementById("microsoftsigninbutton");
-        
-        // Add a click event listener to the button
-        microsoftSignInButton.addEventListener("click", function () {
-        // Sign in with Microsoft
-        var provider = new firebase.auth.OAuthProvider("microsoft.com");
-        provider.setCustomParameters({
-        tenant: "ragingwolfsolutions.com"
-        });
-        firebase.auth().signInWithPopup(provider)
-        .then(function (result) {
-        var user = result.user;
-        var userId = user.uid;
-        var userRef = firebase.firestore().collection("users").doc(userId);
-        
-        userRef.get().then(function (doc) {
-        if (doc.exists) {
-        // User record already exists, redirect to index.php
-        window.location.href = "index.php";
-        } else {
-        // User record does not exist, prompt user to enter first name, last name, and profile image
-        document.getElementById("onboarding").classList.remove("d-none");
-        document.getElementById("login_microsoft").classList.add("d-none");
-        
-        // Handle button click instead of form submission
-        var nameFormButton = document.getElementById("submit-name-btn");
-        nameFormButton.addEventListener("click", function () {
-        var firstName = document.getElementById("firstName").value;
-        var lastName = document.getElementById("lastName").value;
-        var department = document.getElementById("department").value;
-        
-        
-        createUserRecord()
-        // Create new user record in Firestore
-        userRef.set({
-        firstName: firstName,
-        lastName: lastName,
-        department: department,
-        })
-        .then(function () {
-        
-        // Redirect to index.php after successful creation of user record
-        window.location.href = "index.php";
-        })
-        .catch(function (error) {
-        console.log("Error creating user document:", error);
-        });
-        });
-        }
-        })
-        .catch(function (error) {
-        console.log("Error getting user document:", error);
-        });
-        })
-        .catch(function (error) {
-        // Handle sign-in errors
-        console.error("Error signing in with Microsoft:", error);
-        $("#error-card").text(error.message).show();
-        });
-        });
+var microsoftSignInButton = document.getElementById("microsoftsigninbutton");
+
+// Add a click event listener to the button
+microsoftSignInButton.addEventListener("click", function () {
+// Sign in with Microsoft
+var provider = new firebase.auth.OAuthProvider("microsoft.com");
+provider.setCustomParameters({
+tenant: "ragingwolfsolutions.com"
+});
+firebase.auth().signInWithPopup(provider)
+.then(function (result) {
+var user = result.user;
+var userId = user.uid;
+var userRef = firebase.firestore().collection("users").doc(userId);
+
+userRef.get().then(function (doc) {
+if (doc.exists) {
+// User record already exists, redirect to index.php
+window.location.href = "index.php";
+} else {
+// User record does not exist, prompt user to enter first name, last name, and profile image
+document.getElementById("onboarding").classList.remove("d-none");
+document.getElementById("login_microsoft").classList.add("d-none");
+
+// Handle button click instead of form submission
+var nameFormButton = document.getElementById("submit-name-btn");
+nameFormButton.addEventListener("click", function () {
+var firstName = document.getElementById("firstName").value;
+var lastName = document.getElementById("lastName").value;
+var department = document.getElementById("department").value;
+
+// Create new user record in Firestore
+userRef.set({
+firstName: firstName,
+lastName: lastName,
+department: department,
+})
+.then(function () {
+
+// Redirect to index.php after successful creation of user record
+window.location.href = "index.php";
+})
+.catch(function (error) {
+console.log("Error creating user document:", error);
+});
+});
+}
+})
+.catch(function (error) {
+console.log("Error getting user document:", error);
+});
+})
+.catch(function (error) {
+// Handle sign-in errors
+console.error("Error signing in with Microsoft:", error);
+$("#error-card").text(error.message).show();
+});
+});
     </script>
 </body>
 
