@@ -93,12 +93,12 @@
                                         <p class="text-center mb-4 text-light">Access is restricted to Raging Wolf Solutions employees.</p>
                                         <form id="login_microsoft">
                                             <div class="row justify-content-center">
-                                                <div class="col-md-9 text-center"><button id="microsoftsigninbutton" class="btn module-cta-btn btn-warning btn-lg mb-3 ps-5 pe-5 text-nowrap"><i class="fab fa-windows"></i>&nbsp;Log In With Microsoft</button>
+                                                <div class="col-md-9 text-center"><button id="microsoftsigninbutton" class="btn module-cta-btn btn-warning btn-lg text-center text-break"><i class="fab fa-windows"></i>&nbsp;Log In With Microsoft</button>
                                                     <p class="text-center mb-4 text-white-50">Having trouble logging in? Contact us.</p>
                                                 </div>
                                             </div>
                                         </form>
-                                        <form id="onboarding" class="d-none">
+                                        <form id="onboarding">
                                             <div class="row">
                                                 <div class="col-12 col-md-6">
                                                     <div class="form-group md-3 text-light mb-2"> <label for="firstName" class="form-label">First Name</label>
@@ -112,7 +112,8 @@
                                                 </div>
                                             </div>
 
-                                            <div class="form-group md-3 text-light col"> <label for="input1" class="form-label">Department</label>
+                                            <div class="form-group md-3 text-light col mt-4 mb-4">
+                                                <label for="input1" class="form-label">Department</label>
                                                 <select id="department" class="form-select text-secondary">
                                                     <option value="">Make a selection...</option>
                                                     <option value="operations">Operations</option>
@@ -121,8 +122,15 @@
                                                     <option value="technology">I.T.</option>
                                                 </select>
                                                 <small id="input1_help" class="form-text text-muted">If you are unsure of which department to choose, contact your manager.</small>
+                                                <div class="row mt-3">
+                                                    <div class="col-6 text-center w-50"><button class="btn btn-outline-secondary btn-sm text-nowrap w-100 mb-2" id="cancel-name-btn">Cancel</button></div>
+                                                    <div class="col-6 text-center w-50"> <button class="btn btn-outline-secondary btn-sm w-100 mb-2" id="submit-name-btn">Submit
+                                                        </button></div>
+                                                </div>
                                             </div>
-                                            <button id="submit-name-btn" class="btn">Submit</button>
+
+
+
 
 
                                         </form>
