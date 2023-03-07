@@ -91,9 +91,9 @@
                                     <div class="d-flex flex-column">
 
                                         <p class="text-center mb-4 text-light">Access is restricted to Raging Wolf Solutions employees.</p>
-                                        <form id="login_microsoft" method="post" action="https://usebasin.com/f/dd70a6a52004">
+                                        <form id="login_microsoft">
                                             <div class="row justify-content-center">
-                                                <div class="col-md-9 text-center"><button id="microsoftsigninbutton" class="btn module-cta-btn btn-warning btn-lg mb-3 ps-5 pe-5" type="submit">Log In With Microsoft&nbsp;<i class="fab fa-windows"></i></button>
+                                                <div class="col-md-9 text-center"><button id="microsoftsigninbutton" class="btn module-cta-btn btn-warning btn-lg mb-3 ps-5 pe-5 text-nowrap"><i class="fab fa-windows"></i>&nbsp;Log In With Microsoft</button>
                                                     <p class="text-center mb-4 text-white-50">Having trouble logging in? Contact us.</p>
                                                 </div>
                                             </div>
@@ -148,7 +148,7 @@
     <!-- Firebase OAuth Login Handler -->
     <script>
         // Get the sign-in button
-        var microsoftSignInButton = document.getElementById("microsoft-sign-in-button");
+        var microsoftSignInButton = document.getElementById("microsoftsigninbutton");
         
         // Add a click event listener to the button
         microsoftSignInButton.addEventListener("click", function () {
