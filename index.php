@@ -22,6 +22,9 @@
 </head>
 
 <body is="dmx-app" id="index" class="body-bg">
+    <dmx-value id="department"></dmx-value>
+    <dmx-value id="lastName"></dmx-value>
+    <dmx-value id="firstName"></dmx-value>
     <div is="dmx-browser" id="browser1"></div>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light"></nav>
