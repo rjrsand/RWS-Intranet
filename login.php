@@ -149,15 +149,14 @@
     <script>
         // Get the sign-in button
 var microsoftSignInButton = document.getElementById("microsoftsigninbutton");
-
-// Add a click event listener to the button
 microsoftSignInButton.addEventListener("click", function () {
 // Sign in with Microsoft
 var provider = new firebase.auth.OAuthProvider("microsoft.com");
 provider.setCustomParameters({
 tenant: "ragingwolfsolutions.com"
 });
-firebase.auth().signInWithPopup(provider)
+var auth = new FirebaseAuthOAuth(firebase);
+auth.openSignInFlow(provider)
 .then(function (result) {
 var user = result.user;
 var userId = user.uid;
