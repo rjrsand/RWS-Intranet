@@ -22,6 +22,7 @@ class SqlBuilder
     public $sortables;
     public $offset;
     public $limit;
+    public $query;
 
     public function __construct(App $app, Connection $connection) {
         $this->app = $app;
