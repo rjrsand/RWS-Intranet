@@ -17,6 +17,26 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="dmxAppConnect/dmxBootstrap5Navigation/dmxBootstrap5Navigation.js" defer></script>
 
+    <!-- Firebase Setup -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+    <script>
+        // Initialize Firebase
+        var firebaseConfig = {
+        apiKey: "AIzaSyAaQXNYPQNWe1fucHvFE28A8B2CGOmabRQ",
+        authDomain: "raging-wolf-solutions.firebaseapp.com",
+        projectId: "raging-wolf-solutions",
+        storageBucket: "raging-wolf-solutions.appspot.com",
+        messagingSenderId: "806897756992",
+        appId: "1:806897756992:web:431cbc44a285af46ea28a5",
+        measurementId: "G-NT24XFQC0C"
+        };
+        firebase.initializeApp(firebaseConfig);
+        var firestore = firebase.firestore();
+    </script>
+
 </head>
 
 <body is="dmx-app" id="index" class="body-bg">
@@ -73,12 +93,12 @@
                                         <p class="text-center mb-4 text-light">Access is restricted to Raging Wolf Solutions employees.</p>
                                         <form id="login_microsoft" method="post" action="https://usebasin.com/f/dd70a6a52004">
                                             <div class="row justify-content-center">
-                                                <div class="col-md-9 text-center"><button id="btn4" class="btn module-cta-btn btn-warning btn-lg mb-3 ps-5 pe-5" type="submit">Log In With Microsoft&nbsp;<i class="fab fa-windows"></i></button>
+                                                <div class="col-md-9 text-center"><button id="microsoftsigninbutton" class="btn module-cta-btn btn-warning btn-lg mb-3 ps-5 pe-5" type="submit">Log In With Microsoft&nbsp;<i class="fab fa-windows"></i></button>
                                                     <p class="text-center mb-4 text-white-50">Having trouble logging in? Contact us.</p>
                                                 </div>
                                             </div>
                                         </form>
-                                        <form id="onboarding">
+                                        <form id="onboarding" class="d-none">
                                             <div class="row">
                                                 <div class="col-12 col-md-6">
                                                     <div class="form-group md-3 text-light mb-2"> <label for="firstName" class="form-label">First Name</label>
@@ -102,6 +122,7 @@
                                                 </select>
                                                 <small id="input1_help" class="form-text text-muted">If you are unsure of which department to choose, contact your manager.</small>
                                             </div>
+                                            <button id="submit-name-btn" class="btn">Submit</button>
 
 
                                         </form>
@@ -123,6 +144,68 @@
 
 
     <script src="bootstrap/5/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Firebase OAuth Login Handler -->
+    <script>
+        // Get the sign-in button
+        var microsoftSignInButton = document.getElementById("microsoft-sign-in-button");
+        
+        // Add a click event listener to the button
+        microsoftSignInButton.addEventListener("click", function () {
+        // Sign in with Microsoft
+        var provider = new firebase.auth.OAuthProvider("microsoft.com");
+        firebase.auth().signInWithPopup(provider)
+        .then(function (result) {
+        var user = result.user;
+        var userId = user.uid;
+        var userRef = firebase.firestore().collection("users").doc(userId);
+        
+        userRef.get().then(function (doc) {
+        if (doc.exists) {
+        // User record already exists, redirect to index.php
+        window.location.href = "index.php";
+        } else {
+        // User record does not exist, prompt user to enter first name, last name, and profile image
+        document.getElementById("onboarding").classList.remove("d-none");
+        document.getElementById("login_microsoft").classList.add("d-none");
+        
+        // Handle button click instead of form submission
+        var nameFormButton = document.getElementById("submit-name-btn");
+        nameFormButton.addEventListener("click", function () {
+        var firstName = document.getElementById("firstName").value;
+        var lastName = document.getElementById("lastName").value;
+        var department = document.getElementById("department").value;
+        
+        
+        createUserRecord()
+        // Create new user record in Firestore
+        userRef.set({
+        firstName: firstName,
+        lastName: lastName,
+        department: department,
+        })
+        .then(function () {
+        
+        // Redirect to index.php after successful creation of user record
+        window.location.href = "index.php";
+        })
+        .catch(function (error) {
+        console.log("Error creating user document:", error);
+        });
+        });
+        }
+        })
+        .catch(function (error) {
+        console.log("Error getting user document:", error);
+        });
+        })
+        .catch(function (error) {
+        // Handle sign-in errors
+        console.error("Error signing in with Microsoft:", error);
+        $("#error-card").text(error.message).show();
+        });
+        });
+    </script>
 </body>
 
 </html>
