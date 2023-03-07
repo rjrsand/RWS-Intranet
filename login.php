@@ -66,15 +66,53 @@
                     <div class="row justify-content-center">
                         <div class="module-card border rounded-0 rounded-1 border-secondary mt-3 mb-3 ms-3 me-3 pt-4 pb-4 ps-3 pe-3 col-10">
                             <h4 class="text-light lh-sm text-center text-uppercase mt-2 mb-3">Log in</h4>
-                            <p class="text-center mb-4 text-light">Access is restricted to Raging Wolf Solutions employees.</p>
+                            <div class="row justify-content-center">
+                                <div class="col-7">
+                                    <div class="d-flex flex-column">
 
-                            <form id="form1" method="post" action="https://usebasin.com/f/dd70a6a52004">
-                                <div class="row justify-content-center">
-                                    <div class="col-md-9 text-center"><button id="btn4" class="btn module-cta-btn btn-warning btn-lg mb-3 ps-5 pe-5" type="submit">Log In With Microsoft&nbsp;<i class="fab fa-windows"></i></button>
-                                        <p class="text-center mb-4 text-white-50">Having trouble logging in? Contact us.</p>
+                                        <p class="text-center mb-4 text-light">Access is restricted to Raging Wolf Solutions employees.</p>
+                                        <form id="login_microsoft" method="post" action="https://usebasin.com/f/dd70a6a52004">
+                                            <div class="row justify-content-center">
+                                                <div class="col-md-9 text-center"><button id="btn4" class="btn module-cta-btn btn-warning btn-lg mb-3 ps-5 pe-5" type="submit">Log In With Microsoft&nbsp;<i class="fab fa-windows"></i></button>
+                                                    <p class="text-center mb-4 text-white-50">Having trouble logging in? Contact us.</p>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <form id="onboarding">
+                                            <div class="row">
+                                                <div class="col-12 col-md-6">
+                                                    <div class="form-group md-3 text-light mb-2"> <label for="firstName" class="form-label">First Name</label>
+                                                        <input type="text" class="form-control" id="firstName" name="firstName" aria-describedby="input1_help" placeholder="Your first name">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                    <div class="form-group md-3 text-light col-md-12 mb-2"> <label for="lastName" class="form-label">Last Name</label>
+                                                        <input type="text" class="form-control" id="lastName" name="lastName" aria-describedby="input1_help" placeholder="Your last name">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group md-3 text-light col"> <label for="input1" class="form-label">Department</label>
+                                                <select id="department" class="form-select text-secondary">
+                                                    <option value="">Make a selection...</option>
+                                                    <option value="operations">Operations</option>
+                                                    <option value="sales">Sales</option>
+                                                    <option value="accounting">Accounting</option>
+                                                    <option value="technology">I.T.</option>
+                                                </select>
+                                                <small id="input1_help" class="form-text text-muted">If you are unsure of which department to choose, contact your manager.</small>
+                                            </div>
+
+
+                                        </form>
                                     </div>
                                 </div>
-                            </form>
+                            </div>
+
+
+
+
+
                         </div>
                     </div>
 
