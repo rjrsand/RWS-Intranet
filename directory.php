@@ -130,7 +130,7 @@
                         </div>
                     </div>
                     <div class="container text-center mt-3">
-                        <table class="table table-bordered border-secondary table-sm">
+                        <table class="table table-sm border-secondary table-bordered">
                             <thead class="fw-bolder text-warning text-uppercase">
                                 <tr>
                                     <th scope="col">Name</th>
