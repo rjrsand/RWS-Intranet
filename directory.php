@@ -40,7 +40,7 @@
                 </div>
                 <div class="modal-body bg-dark text-warning">
                     <div class="container text-center">
-                        <table class="table table-bordered border-warning text-warning table-sm">
+                        <table class="table table-sm text-secondary border-secondary">
                             <thead>
                             </thead>
                             <tbody>
@@ -66,7 +66,7 @@
                                 </tr>
                                 <tr>
                                     <th scope="row">Email</th>
-                                    <td class="text-warning tile-hover" dmx-on:click="browser1.writeTextToClipboard('scottb@ragingwolfsolutions.com');browser1.alert('Copied to clipboard!')">scottb@ragingwolfsolutions.com&nbsp;<i class="far fa-copy"></i></td>
+                                    <td class="tile-hover" dmx-on:click="browser1.writeTextToClipboard('scottb@ragingwolfsolutions.com');browser1.alert('Copied to clipboard!')">scottb@ragingwolfsolutions.com&nbsp;<i class="far fa-copy"></i></td>
                                 </tr>
                             </tbody>
                         </table>
