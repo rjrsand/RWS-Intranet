@@ -1,87 +1,104 @@
 <!doctype html>
 <html>
+
 <head>
-<base href="/">
-    
-<script src="dmxAppConnect/dmxAppConnect.js"></script>
-<meta charset="UTF-8">
-<title>Untitled Document</title>
+  <base href="/">
+  <script src="dmxAppConnect/dmxAppConnect.js"></script>
+  <meta charset="UTF-8">
+  <title>Untitled Document</title>
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="stylesheet" href="bootstrap/5/css/bootstrap.min.css" />
-<link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Lustria&amp;family=Muli:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/sansation" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="bootstrap/5/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/stylesheet.css" />
+  <link rel="stylesheet" href="css/intranet.css" />
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="dmxAppConnect/dmxBootstrap5Navigation/dmxBootstrap5Navigation.js" defer></script>
+
+  <script src="dmxAppConnect/dmxDataTraversal/dmxDataTraversal.js" defer></script>
+  <script src="dmxAppConnect/dmxTyped/dmxTyped.js" defer></script>
+  <script src="dmxAppConnect/dmxTyped/typed.min.js" defer></script>
+  <script src="dmxAppConnect/dmxBootstrap5Modal/dmxBootstrap5Modal.js" defer></script>
+  <script src="dmxAppConnect/dmxFormRepeat/dmxFormRepeat.js" defer></script>
 </head>
-<body is="dmx-app" id="directory">
+
+<body is="dmx-app" id="directory" class="body-bg">
 
 
-<header></header>
-<main class="mt-5 mb-5">
-<div class="container">
-<div class="row min-vh-75"><div class="col">
-        <div class="container">
+  <header></header>
+  <main class="mt-5 mb-5">
+    <div class="container">
+      <div class="row min-vh-75">
+        <div class="col">
+          <div class="container">
             <div class="row">
-                <div class="col">
-                    <h5 class="text-warning text-uppercase">The Pack</h5>
-                    <h1 class="text-left fw-bold text-light">Directory</h1>
-                    <p class="mb-4 text-secondary">Here you can find the contact information for everyone at RWS.</p>
-                    </div>
-                </div>
-                <div class="row">
-                <div class="col">
-<div class="d-flex">
-<div class="card-deck w-25">
-<div class="card">
-  <div class="card-header">Operations</div>
-  <img class="card-img-top" alt="Card image cap" src="assets/images/Intranet/wolf-pack-png-image-wolf-pack-transparent-background-11562897883xolw6cjtyo_low.png">
-  <div class="card-body">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-   <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-</div>
-<div class="card-deck w-25">
-<div class="card">
-  <div class="card-header">Sales</div>
-  <img class="card-img-top" alt="Card image cap" src="assets/images/Intranet/62-621375_best-seller-best-selling-logo-png.png">
-  <div class="card-body">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-   <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-</div>
-<div class="card-deck w-25">
-<div class="card">
-  <div class="card-header">Accounting</div>
-  <img class="card-img-top" alt="Card image cap" src="assets/images/Intranet/0223.png_300.png">
-  <div class="card-body">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-   <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-</div>
-<div class="card-deck w-25">
-<div class="card">
-  <div class="card-header">I.T.</div>
-  <img class="card-img-top" alt="Card image cap" src="assets/images/Intranet/30-301075_the-it-crowd-mpi-home-video-it-crowd.png">
-  <div class="card-body">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-   <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-</div>
-</div>
-                    </div>
-                </div>
+              <div class="col">
+                <h5 class="text-warning text-uppercase">The Pack</h5>
+                <h1 class="text-left fw-bold text-light">Directory</h1>
+                <p class="mb-4 text-secondary">Here you can find the contact information for everyone at RWS.</p>
+              </div>
             </div>
-        </div></div>
-    
-</div> </main>
-<footer></footer>
-<script src="bootstrap/5/js/bootstrap.bundle.min.js"></script>
+            <div class="row">
+              <div class="col">
+                <div class="d-flex">
+                  <div class="card-deck w-25">
+                    <div class="card">
+                      <div class="card-header">Operations</div>
+                      <img class="card-img-top" alt="Card image cap" src="assets/images/Intranet/wolf-pack-png-image-wolf-pack-transparent-background-11562897883xolw6cjtyo_low.png">
+                      <div class="card-body">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-deck w-25">
+                    <div class="card">
+                      <div class="card-header">Sales</div>
+                      <img class="card-img-top" alt="Card image cap" src="assets/images/Intranet/62-621375_best-seller-best-selling-logo-png.png">
+                      <div class="card-body">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-deck w-25">
+                    <div class="card">
+                      <div class="card-header">Accounting</div>
+                      <img class="card-img-top" alt="Card image cap" src="assets/images/Intranet/0223.png_300.png">
+                      <div class="card-body">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-deck w-25">
+                    <div class="card">
+                      <div class="card-header">I.T.</div>
+                      <img class="card-img-top" alt="Card image cap" src="assets/images/Intranet/30-301075_the-it-crowd-mpi-home-video-it-crowd.png">
+                      <div class="card-body">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+  <footer></footer>
+  <script src="bootstrap/5/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
