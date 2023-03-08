@@ -48,8 +48,9 @@ h4 {
 }
 
 .border-secondary {
-    border-color: #303030 !important;
     padding-bottom: 11px;
+    border-width: 0px;
+    border-color: #303030;
 }
 
 .navbar-toggler {

@@ -25,11 +25,13 @@
     <script src="dmxAppConnect/dmxFormRepeat/dmxFormRepeat.js" defer></script>
     <link rel="stylesheet" href="dmxAppConnect/dmxBootstrap5TableGenerator/dmxBootstrap5TableGenerator.css" />
     <script src="dmxAppConnect/dmxBootstrap5Offcanvas/dmxBootstrap5Offcanvas.js" defer></script>
+    <script src="dmxAppConnect/dmxBrowser/dmxBrowser.js" defer></script>
 </head>
 
 <body is="dmx-app" id="directory" class="body-bg">
+    <div is="dmx-browser" id="browser1"></div>
 
-    <div class="modal fw-bolder" id="modal1" is="dmx-bs5-modal" tabindex="-1">
+    <div class="modal fw-bolder" id="modal1" is="dmx-bs5-modal" tabindex="-1" show="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header bg-dark text-warning border-bottom border-secondary border-2">
@@ -37,40 +39,34 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body bg-dark text-warning">
-                    <div class="container">
-                        <table class="table text-warning">
+                    <div class="container text-center">
+                        <table class="table table-bordered border-warning text-warning table-sm">
                             <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">First</th>
-                                    <th scope="col">Last</th>
-                                    <th scope="col">Handle</th>
-                                </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <th scope="row">1</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
+                                    <th scope="row">Full Name</th>
+                                    <td>Scott Brownfield</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">2</th>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>@fat</td>
+                                    <th scope="row">Department</th>
+                                    <td>Sales</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">3</th>
-                                    <td>Larry</td>
-                                    <td>the Bird</td>
-                                    <td>@twitter</td>
+                                    <th scope="row">Title</th>
+                                    <td>President</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">3</th>
-                                    <td>Larry</td>
-                                    <td>the Bird</td>
-                                    <td>@twitter</td>
+                                    <th scope="row">Intercom<br></th>
+                                    <td>xxx</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Direct Phone #</th>
+                                    <td>xxx</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Email</th>
+                                    <td class="text-warning tile-hover" dmx-on:click="browser1.writeTextToClipboard('scottb@ragingwolfsolutions.com');browser1.alert('Copied to clipboard!')">scottb@ragingwolfsolutions.com&nbsp;<i class="far fa-copy"></i></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -88,7 +84,7 @@
         </div>
     </div>
     <header></header>
-    <main class="mt-5 mb-5">
+    <main>
         <div class="container">
             <div class="row min-vh-75">
                 <div class="col">
@@ -101,60 +97,60 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container text-center">
-                        <table class="table text-warning table-bordered border-secondary table-sm">
-                            <thead class="fw-bolder">
+                    <div class="container text-center mt-3">
+                        <table class="table table-bordered border-secondary table-sm">
+                            <thead class="fw-bolder text-warning text-uppercase">
                                 <tr>
                                     <th scope="col">Name</th>
                                     <th scope="col">Phone Number</th>
                                     <th>Email</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody class="text-secondary">
                                 <tr>
-                                    <th scope="row" class="text-warning">Scott B.</th>
-                                    <td class="text-warning">330-592-6739</td>
-                                    <td class="btn text-warning">scottb@raginwolfsolutions.com</td>
+                                    <th scope="row" dmx-on:click="modal1.show()" class="tile-hover">Scott B.</th>
+                                    <td>330-592-6739</td>
+                                    <td class="tile-hover" dmx-on:click="browser1.writeTextToClipboard('scottb@raginwolfsolutions.com');browser1.alert('Copied to clipboard!')">scottb@raginwolfsolutions.com</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">Rich M.</th>
+                                    <th scope="row" dmx-on:click="modal1.show()" class="tile-hover">Rich M.</th>
                                     <td>330-858-8280</td>
-                                    <td class="btn text-warning">richm@ragingwolfsolutions.com</td>
+                                    <td class="tile-hover" dmx-on:click="browser1.writeTextToClipboard('richm@ragingwolfsolutions.com');browser1.alert('Copied to clipboard!')">richm@ragingwolfsolutions.com</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">Jenn R.</th>
+                                    <th scope="row" dmx-on:click="modal1.show()" class="tile-hover">Jenn R.</th>
                                     <td>216-798-6847</td>
-                                    <td class="btn text-warning">accounting@ragingwolfsolutions.com</td>
+                                    <td class="tile-hover" dmx-on:click="browser1.writeTextToClipboard('accounting@ragingwolfsolutions.com');browser1.alert('Copied to clipboard!')">accounting@ragingwolfsolutions.com</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">Ari V.</th>
+                                    <th scope="row" dmx-on:click="modal1.show()" class="tile-hover">Ari V.</th>
                                     <td>330-860-7234</td>
-                                    <td class="btn text-warning">arianna@ragingwolfsolutions.com</td>
+                                    <td class="tile-hover" dmx-on:click="browser1.writeTextToClipboard('arianna@ragingwolfsolutions.com');browser1.alert('Copied to clipboard!')">arianna@ragingwolfsolutions.com</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">Zak C.</th>
+                                    <th scope="row" dmx-on:click="modal1.show()" class="tile-hover">Zak C.</th>
                                     <td>330-840-9522</td>
-                                    <td class="btn text-warning">zakc@ragingwolfsolutions.com</td>
+                                    <td class="tile-hover" dmx-on:click="browser1.writeTextToClipboard('zakc@ragingwolfsolutions.com');browser1.alert('Copied to clipboard!')">zakc@ragingwolfsolutions.com</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">Brandon B.</th>
+                                    <th scope="row" dmx-on:click="modal1.show()" class="tile-hover">Brandon B.</th>
                                     <td>330-592-6902</td>
-                                    <td class="btn text-warning">brandon@ragingwolfsolutions.com</td>
+                                    <td class="tile-hover" dmx-on:click="browser1.writeTextToClipboard('brandon@ragingwolfsolutions.com');browser1.alert('Copied to clipboard!')">brandon@ragingwolfsolutions.com</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">Rob S.</th>
+                                    <th scope="row" dmx-on:click="modal1.show()" class="tile-hover">Rob S.</th>
                                     <td>812-314-1684</td>
-                                    <td class="btn text-warning">robs@ragingwolfsolutions.com</td>
+                                    <td class="tile-hover" dmx-on:click="browser1.writeTextToClipboard('robs@ragingwolfsolutions.com');browser1.alert('Cpoied to clipboard!')">robs@ragingwolfsolutions.com</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">Alaura R.</th>
+                                    <th scope="row" dmx-on:click="modal1.show()" class="tile-hover">Alaura R.</th>
                                     <td>330-931-1800</td>
-                                    <td class="btn text-warning">alaura@ragingwolfsolutions.com</td>
+                                    <td class="tile-hover" dmx-on:click="browser1.writeTextToClipboard('alaura@ragingwolfsolutions.com');browser1.alert('Copied to clipboard!')">alaura@ragingwolfsolutions.com</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">Johnathan W.</th>
-                                    <td>330-687-7662</td>
-                                    <td class="btn text-warning">johnathan@ragingwolfsolutions.com</td>
+                                    <th scope="row" dmx-on:click="modal1.show()" class="w-25 tile-hover">Johnathan W.</th>
+                                    <td class="w-25">330-687-7662</td>
+                                    <td class="tile-hover w-25" dmx-on:click="browser1.writeTextToClipboard('johnathan@ragingwolfsolutions.com');browser1.alert('Copied to clipboard!')">johnathan@ragingwolfsolutions.com</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -164,7 +160,43 @@
 
         </div>
     </main>
-    <footer></footer>
+    <footer class="wappler-block bg-dark pt-5 border-top border-secondary">
+        <div class="container">
+            <div class="row align-items-top">
+                <div class="col-md-4 col-md text-center">
+                    <div class="d-flex justify-content-center">
+                        <img src="assets/images/navbar-logo.png" class="img-fluid footer-logo mb-3">
+                    </div>
+
+                </div>
+                <div class="col-md-4 col-md text-center">
+                    <h5 class="text-secondary">Raging Wolf</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">About</a>
+                        <li><a class="text-muted" href="#">Official Website</a></li>
+                        </li>
+                        <li><a class="text-muted" href="#">Handbook</a></li>
+
+                        <li><a class="text-muted" href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-md text-center">
+                    <h5 class="text-secondary">Your Manager</h5>
+                    <ul class="list-unstyled text-small">
+                        <li class="text-secondary">&lt;MANAGER NAME&gt;</li>
+                        <li class="text-secondary">&lt;MANAGER EMAIL&gt;</li>
+                        <li><a class="text-muted" href="#">Privacy</a></li>
+                        <li><a class="text-muted" href="#">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-3 border-top border-secondary">
+                <div class="col">
+                    <p class="text-secondary text-center small pt-3">© Copyright 2023. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="bootstrap/5/js/bootstrap.bundle.min.js"></script>
 </body>
 
