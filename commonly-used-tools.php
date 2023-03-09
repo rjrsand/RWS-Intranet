@@ -23,9 +23,13 @@
     <script src="dmxAppConnect/dmxTyped/typed.min.js" defer></script>
     <script src="dmxAppConnect/dmxBootstrap5Modal/dmxBootstrap5Modal.js" defer></script>
     <script src="dmxAppConnect/dmxFormRepeat/dmxFormRepeat.js" defer></script>
+    <script src="dmxAppConnect/dmxBrowser/dmxBrowser.js" defer></script>
 </head>
 
 <body is="dmx-app" id="index" class="body-bg">
+
+    <dmx-json-datasource id="jsonDS1" is="dmx-serverconnect" url="commonlyUsedtools.json"></dmx-json-datasource>
+    <div is="dmx-browser" id="browser1"></div>
     <section id="variables">
         <dmx-value id="blueship_password" dmx-bind:value="'Thepack1!'"></dmx-value>
         <dmx-value id="blueship_username" dmx-bind:value="'RagingRW'"></dmx-value>
@@ -53,26 +57,26 @@
                     <h5 class="modal-title text-light">Site Credentials</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body bg-dark text-warning">
+                <div class="modal-body bg-dark text-warning" id="siteNameCarrier411">
                     <div class="flex-container">
                         <div class="container-fluid gx-0" is="dmx-form-repeat" id="formRepeat1" dmx-bind:items="1">
-                            <div class="row text-nowrap">
-                                <div class="col-auto">
+                            <div class="row text-nowrap tile-hover" dmx-on:click="browser1.writeTextToClipboard(jsonDS1.data.username);browser1.alert('Copied to clipboard!')">
+                                <div class="col-auto w-50">
                                     <p class="h-100">Username: wolfpack5</p>
                                 </div>
-                                <div class="col"><button class="btn btn-outline-link text-warning pt-0 pb-0" data-bs-toggle="button">
+                                <div class="col"><button class="btn btn-outline-link text-warning pt-0 pb-0" data-bs-toggle="button" dmx-on:click="">
 
-                                        <i class="fas fa-copy fa-fw"></i><span class="badge bg-warning text-dark rounded-pill ms-2">Copy</span></button></div>
+                                        <span class="badge bg-warning text-dark rounded-pill ms-2" dmx-on:click="">Copy</span></button></div>
                             </div>
                         </div>
                         <div class="container-fluid gx-0" is="dmx-form-repeat" id="formRepeat2" dmx-bind:items="1">
-                            <div class="row text-nowrap">
-                                <div class="col-auto">
+                            <div class="row text-nowrap tile-hover" dmx-on:click="browser1.writeTextToClipboard(jsonDS1.data.password);browser1.alert('Copied to clipboard!')">
+                                <div class="col-auto w-50">
                                     <p class="h-100 ps-0 pe-4">Password: ********</p>
                                 </div>
-                                <div class="col"><button class="btn btn-outline-link text-warning pt-0 pb-0" data-bs-toggle="button">
+                                <div class="col"><button class="btn btn-outline-link text-warning pt-0 pb-0" data-bs-toggle="button" dmx-on:click="browser1.writeTextToClipboard(jsonDS1.data.password);browser1.alert('Copied to clipboard!')">
 
-                                        <i class="fas fa-copy fa-fw"></i><span class="badge bg-warning text-dark rounded-pill ms-2">Copy</span></button></div>
+                                        <span class="badge bg-warning text-dark rounded-pill ms-2">Copy</span></button></div>
                             </div>
                         </div>
 
