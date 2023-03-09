@@ -27,12 +27,15 @@
     <script src="dmxAppConnect/dmxBootstrap5Offcanvas/dmxBootstrap5Offcanvas.js" defer></script>
     <script src="dmxAppConnect/dmxBrowser/dmxBrowser.js" defer></script>
     <script src="dmxAppConnect/dmxDatastore/dmxDatastore.js" defer></script>
+    <script src="dmxAppConnect/dmxFormatter/dmxFormatter.js" defer></script>
 </head>
 
 <body is="dmx-app" id="directory" class="body-bg">
+    <dmx-data-detail id="data_detail1" dmx-bind:data="jsonDS1.data" key="emailAddress"></dmx-data-detail>
+    <dmx-json-datasource id="jsonDS1" is="dmx-serverconnect" url="directoryContacts.json"></dmx-json-datasource>
     <div is="dmx-browser" id="browser1"></div>
 
-    <div class="modal fw-bolder" id="modal1" is="dmx-bs5-modal" tabindex="-1" show="true">
+    <div class="modal fw-bolder" id="modal1" is="dmx-bs5-modal" tabindex="-1">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header bg-dark text-warning border-bottom border-secondary border-2">
@@ -44,34 +47,34 @@
                         <table class="table table-sm text-secondary border-secondary">
                             <thead>
                             </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">Full Name</th>
-                                    <td>Scott Brownfield</td>
+                            <tbody class="text-start">
+                                <tr class="border-top-0">
+                                    <th scope="row" class="fw-normal">Full Name</th>
+                                    <td dmx-text="data_detail1.data.firstName+' '+data_detail1.data.lastName"></td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">Department</th>
-                                    <td>Sales</td>
+                                    <th scope="row" class="fw-normal">Department</th>
+                                    <td>{{data_detail1.data.department}}</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">Supervisor</th>
+                                    <th scope="row" class="fw-normal">Supervisor</th>
                                     <td>N/A<br></td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">Title</th>
-                                    <td>President</td>
+                                    <th scope="row" class="fw-normal">Title</th>
+                                    <td>{{data_detail1.data.title}}</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">Intercom<br></th>
-                                    <td>xxx</td>
+                                    <th scope="row" class="fw-normal">Office Phone<br></th>
+                                    <td>{{data_detail1.data.officePhone}}</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">Direct Phone #</th>
-                                    <td>xxx</td>
+                                    <th scope="row" class="fw-normal">Direct Phone</th>
+                                    <td>{{data_detail1.data.mobilePhone}}</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">Email</th>
-                                    <td class="tile-hover" dmx-on:click="browser1.writeTextToClipboard('scottb@ragingwolfsolutions.com');browser1.alert('Copied to clipboard!')">scottb@ragingwolfsolutions.com&nbsp;<i class="far fa-copy"></i></td>
+                                    <th scope="row" class="fw-normal">Email</th>
+                                    <td class="tile-hover" dmx-on:click="browser1.writeTextToClipboard('scottb@ragingwolfsolutions.com');browser1.alert('Copied to clipboard!')">{{data_detail1.data.emailAddress}}<i class="far fa-copy"></i></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -121,7 +124,7 @@
             </div>
         </div>
     </header>
-    <main class="border-top rounded-0 rounded-1 border-secondary">
+    <main class="border-top rounded-0 rounded-1 border-secondary mb-5 pt-5">
         <div class="container">
             <div class="row min-vh-75">
                 <div class="col">
@@ -135,6 +138,24 @@
                         </div>
                     </div>
                     <div class="container text-center mt-3">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Email Address</th>
+                                </tr>
+                            </thead>
+                            <tbody is="dmx-repeat" id="repeat1" dmx-bind:repeat="jsonDS1.data">
+                                <tr dmx-on:click="modal1.show();data_detail1.select(emailAddress)">
+                                    <td dmx-text="firstName"></td>
+                                    <td dmx-text="lastName"></td>
+                                    <td dmx-text="emailAddress"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+
                         <table class="table table-sm border-secondary table-bordered">
                             <thead class="fw-bolder text-warning text-uppercase">
                                 <tr>

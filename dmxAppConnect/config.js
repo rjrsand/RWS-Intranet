@@ -87,6 +87,36 @@ dmx.config({
       }
     ],
     "data_detail1": {
+      "meta": [
+        {
+          "name": "emailAddress",
+          "type": "text"
+        },
+        {
+          "name": "firstName",
+          "type": "text"
+        },
+        {
+          "name": "lastName",
+          "type": "text"
+        },
+        {
+          "name": "department",
+          "type": "text"
+        },
+        {
+          "name": "title",
+          "type": "text"
+        },
+        {
+          "name": "officePhone",
+          "type": "text"
+        },
+        {
+          "name": "mobilePhone",
+          "type": "text"
+        }
+      ],
       "outputType": "object"
     }
   }

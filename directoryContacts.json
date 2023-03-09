@@ -4,6 +4,7 @@
         "firstName": "Rob",
         "lastName": "Sandlin",
         "department": "Operations/IT",
+        "supervisor": "Rich Metz",
         "title": "Specialist",
         "officePhone": "+1 234 567 8900",
         "mobilePhone": "+1 987 654 3210"
@@ -13,6 +14,7 @@
         "firstName": "Richard",
         "lastName": "Metz",
         "department": "Operations",
+        "supervisor": "Scott Brownfield",
         "title": "Manager",
         "officePhone": "+1 234 567 8900",
         "mobilePhone": "+1 987 654 3210"
@@ -21,7 +23,7 @@
         "emailAddress": "scottb@ragingwolfsolutions.com",
         "firstName": "Scott",
         "lastName": "Brownfield",
-        "department": "N/A",
+        "department": "RWS",
         "title": "President",
         "officePhone": "+1 234 567 8900",
         "mobilePhone": "+1 987 654 3210"
@@ -31,6 +33,7 @@
         "firstName": "Jennifer",
         "lastName": "Reyes",
         "department": "Accounting/HR",
+        "supervisor": "Scott Brownfield",
         "title": "Specialist",
         "officePhone": "+1 234 567 8900",
         "mobilePhone": "+1 987 654 3210"
@@ -40,7 +43,8 @@
         "firstName": "Arianna",
         "lastName": "Vales",
         "department": "Accounting",
-        "title": "?",
+        "title": "Specialist",
+        "supervisor": "Jenn Reyes",
         "officePhone": "+1 234 567 8900",
         "mobilePhone": "+1 987 654 3210"
     },
@@ -49,6 +53,7 @@
         "firstName": "Zak",
         "lastName": "Cardillo",
         "department": "Operations",
+        "supervisor": "Rich Metz",
         "title": "Specialist",
         "officePhone": "+1 234 567 8900",
         "mobilePhone": "+1 987 654 3210"
@@ -58,6 +63,7 @@
         "firstName": "Brandon",
         "lastName": "Brownfield",
         "department": "Sales",
+        "supervisor": "Scott Brownfield",
         "title": "VP",
         "officePhone": "+1 234 567 8900",
         "mobilePhone": "+1 987 654 3210"
@@ -67,6 +73,7 @@
         "firstName": "Alaura",
         "lastName": "Richardson",
         "department": "Operations",
+        "supervisor": "Rich Metz",
         "title": "Specialist",
         "officePhone": "+1 234 567 8900",
         "mobilePhone": "+1 987 654 3210"
@@ -76,8 +83,9 @@
         "firstName": "Johnathon",
         "lastName": "Wierzbicki",
         "department": "I.T.",
+        "supervisor": "Scott Brownfield",
         "title": "Manager",
         "officePhone": "+1 234 567 8900",
         "mobilePhone": "+1 987 654 3210"
-    },
+    }
 ]
