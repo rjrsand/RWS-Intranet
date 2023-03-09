@@ -66,15 +66,15 @@
                                 </tr>
                                 <tr>
                                     <th scope="row" class="fw-normal">Office Phone<br></th>
-                                    <td>{{data_detail1.data.officePhone}}</td>
+                                    <td dmx-on:click="browser1.writeTextToClipboard(data_detail1.data.officePhone);browser1.alert('Copied to clipboard!')" class="tile-hover">{{data_detail1.data.officePhone}}</td>
                                 </tr>
                                 <tr>
                                     <th scope="row" class="fw-normal">Mobile Phone</th>
-                                    <td>{{data_detail1.data.mobilePhone}}</td>
+                                    <td dmx-on:click="browser1.writeTextToClipboard(data_detail1.data.mobilePhone);browser1.alert('Copied to clipboard!')" class="tile-hover">{{data_detail1.data.mobilePhone}}</td>
                                 </tr>
                                 <tr>
                                     <th scope="row" class="fw-normal">Email</th>
-                                    <td class="tile-hover" dmx-on:click="browser1.writeTextToClipboard('scottb@ragingwolfsolutions.com');browser1.alert('Copied to clipboard!')">{{data_detail1.data.emailAddress}}<i class="far fa-copy"></i></td>
+                                    <td class="tile-hover" dmx-on:click="browser1.writeTextToClipboard(data_detail1.data.emailAddress);browser1.alert('Copied to clipboard!')">{{data_detail1.data.emailAddress}}<i class="far fa-copy"></i></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -146,11 +146,11 @@
                                     <th>Email Address</th>
                                 </tr>
                             </thead>
-                            <tbody is="dmx-repeat" id="repeat1" dmx-bind:repeat="jsonDS1.data">
+                            <tbody is="dmx-repeat" id="table_body_directory" dmx-bind:repeat="jsonDS1.data">
                                 <tr dmx-on:click="modal1.show();data_detail1.select(emailAddress)">
-                                    <td dmx-text="firstName" class="w-25"></td>
+                                    <td dmx-text="firstName" class="w-25 tile-hover"></td>
                                     <td dmx-text="lastName" class="w-25"></td>
-                                    <td dmx-text="emailAddress" class="w-25"></td>
+                                    <td dmx-text="emailAddress" class="w-25 tile-hover"></td>
                                 </tr>
                             </tbody>
                         </table>
