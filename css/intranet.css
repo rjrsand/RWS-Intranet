@@ -28,3 +28,8 @@ border-radius: 3px;
     cursor: pointer;
     opacity: 0.7;
 }
+
+#table_body_directory tr:hover {
+    cursor: pointer;
+    background-color: #1B1B1B;
+}

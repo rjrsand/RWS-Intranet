@@ -1,0 +1,83 @@
+[
+    {
+        "emailAddress": "robs@ragingwolfsolutions.com",
+        "firstName": "Rob",
+        "lastName": "Sandlin",
+        "department": "Operations/IT",
+        "title": "Specialist",
+        "officePhone": "+1 234 567 8900",
+        "mobilePhone": "+1 987 654 3210"
+    },
+    {
+        "emailAddress": "richm@ragingwolfsolutions.com",
+        "firstName": "Richard",
+        "lastName": "Metz",
+        "department": "Operations",
+        "title": "Manager",
+        "officePhone": "+1 234 567 8900",
+        "mobilePhone": "+1 987 654 3210"
+    },
+    {
+        "emailAddress": "scottb@ragingwolfsolutions.com",
+        "firstName": "Scott",
+        "lastName": "Brownfield",
+        "department": "N/A",
+        "title": "President",
+        "officePhone": "+1 234 567 8900",
+        "mobilePhone": "+1 987 654 3210"
+    },
+    {
+        "emailAddress": "accounting@ragingwolfsolutions.com",
+        "firstName": "Jennifer",
+        "lastName": "Reyes",
+        "department": "Accounting/HR",
+        "title": "Specialist",
+        "officePhone": "+1 234 567 8900",
+        "mobilePhone": "+1 987 654 3210"
+    },
+    {
+        "emailAddress": "arianna@ragingwolfsolutions.com",
+        "firstName": "Arianna",
+        "lastName": "Vales",
+        "department": "Accounting",
+        "title": "?",
+        "officePhone": "+1 234 567 8900",
+        "mobilePhone": "+1 987 654 3210"
+    },
+    {
+        "emailAddress": "zakc@ragingwolfsolutions.com",
+        "firstName": "Zak",
+        "lastName": "Cardillo",
+        "department": "Operations",
+        "title": "Specialist",
+        "officePhone": "+1 234 567 8900",
+        "mobilePhone": "+1 987 654 3210"
+    },
+    {
+        "emailAddress": "brandon@ragingwolfsolutions.com",
+        "firstName": "Brandon",
+        "lastName": "Brownfield",
+        "department": "Sales",
+        "title": "VP",
+        "officePhone": "+1 234 567 8900",
+        "mobilePhone": "+1 987 654 3210"
+    },
+    {
+        "emailAddress": "alaura@ragingwolfsolutions.com",
+        "firstName": "Alaura",
+        "lastName": "Richardson",
+        "department": "Operations",
+        "title": "Specialist",
+        "officePhone": "+1 234 567 8900",
+        "mobilePhone": "+1 987 654 3210"
+    },
+    {
+        "emailAddress": "johnathon@ragingwolfsolutions.com",
+        "firstName": "Johnathon",
+        "lastName": "Wierzbicki",
+        "department": "I.T.",
+        "title": "Manager",
+        "officePhone": "+1 234 567 8900",
+        "mobilePhone": "+1 987 654 3210"
+    },
+]

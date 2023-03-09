@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="dmxAppConnect/dmxBootstrap5TableGenerator/dmxBootstrap5TableGenerator.css" />
     <script src="dmxAppConnect/dmxBootstrap5Offcanvas/dmxBootstrap5Offcanvas.js" defer></script>
     <script src="dmxAppConnect/dmxBrowser/dmxBrowser.js" defer></script>
+    <script src="dmxAppConnect/dmxDatastore/dmxDatastore.js" defer></script>
 </head>
 
 <body is="dmx-app" id="directory" class="body-bg">
@@ -51,6 +52,10 @@
                                 <tr>
                                     <th scope="row">Department</th>
                                     <td>Sales</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Supervisor</th>
+                                    <td>N/A<br></td>
                                 </tr>
                                 <tr>
                                     <th scope="row">Title</th>
@@ -138,7 +143,7 @@
                                     <th>Email</th>
                                 </tr>
                             </thead>
-                            <tbody class="text-secondary">
+                            <tbody class="text-secondary" id="table_body_directory">
                                 <tr>
                                     <th scope="row" dmx-on:click="modal1.show()" class="tile-hover">Scott B.</th>
                                     <td>330-592-6739</td>
