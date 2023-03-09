@@ -147,10 +147,10 @@
                                 </tr>
                             </thead>
                             <tbody is="dmx-repeat" id="table_body_directory" dmx-bind:repeat="jsonDS1.data">
-                                <tr dmx-on:click="modal1.show();data_detail1.select(emailAddress)">
-                                    <td dmx-text="firstName" class="w-25 tile-hover fw-bolder"></td>
+                                <tr>
+                                    <td dmx-text="firstName" class="w-25 tile-hover fw-bolder" dmx-on:click="modal1.show();data_detail1.select(emailAddress)"></td>
                                     <td dmx-text="lastName" class="w-25"></td>
-                                    <td dmx-text="emailAddress" class="w-25 tile-hover" dmx-on:click="browser1.writeTextToClipboard(data_detail1.data.emailAddress);browser1.alert('Copied to clipboard!')"></td>
+                                    <td dmx-text="emailAddress" class="w-25 tile-hover" dmx-on:click="browser1.writeTextToClipboard(emailAddress);browser1.alert('Copied to clipboard!')"></td>
                                 </tr>
                             </tbody>
                         </table>
