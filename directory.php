@@ -150,7 +150,7 @@
                                 <tr dmx-on:click="modal1.show();data_detail1.select(emailAddress)">
                                     <td dmx-text="firstName" class="w-25 tile-hover fw-bolder"></td>
                                     <td dmx-text="lastName" class="w-25"></td>
-                                    <td dmx-text="emailAddress" class="w-25 tile-hover"></td>
+                                    <td dmx-text="emailAddress" class="w-25 tile-hover" dmx-on:click="browser1.writeTextToClipboard(data_detail1.data.emailAddress);browser1.alert('Copied to clipboard!')"></td>
                                 </tr>
                             </tbody>
                         </table>
