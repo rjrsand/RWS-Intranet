@@ -148,7 +148,7 @@
                             </thead>
                             <tbody is="dmx-repeat" id="table_body_directory" dmx-bind:repeat="jsonDS1.data">
                                 <tr dmx-on:click="modal1.show();data_detail1.select(emailAddress)">
-                                    <td dmx-text="firstName" class="w-25 tile-hover"></td>
+                                    <td dmx-text="firstName" class="w-25 tile-hover fw-bolder"></td>
                                     <td dmx-text="lastName" class="w-25"></td>
                                     <td dmx-text="emailAddress" class="w-25 tile-hover"></td>
                                 </tr>
@@ -156,62 +156,6 @@
                         </table>
 
 
-                        <table class="table table-sm border-secondary table-bordered">
-                            <thead class="fw-bolder text-warning text-uppercase">
-                                <tr>
-                                    <th scope="col">Name</th>
-                                    <th scope="col">Phone Number</th>
-                                    <th>Email</th>
-                                </tr>
-                            </thead>
-                            <tbody class="text-secondary" id="table_body_directory">
-                                <tr>
-                                    <th scope="row" dmx-on:click="modal1.show()" class="tile-hover">Scott B.</th>
-                                    <td>330-592-6739</td>
-                                    <td class="tile-hover" dmx-on:click="browser1.writeTextToClipboard('scottb@raginwolfsolutions.com');browser1.alert('Copied to clipboard!')">scottb@raginwolfsolutions.com</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" dmx-on:click="modal1.show()" class="tile-hover">Rich M.</th>
-                                    <td>330-858-8280</td>
-                                    <td class="tile-hover" dmx-on:click="browser1.writeTextToClipboard('richm@ragingwolfsolutions.com');browser1.alert('Copied to clipboard!')">richm@ragingwolfsolutions.com</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" dmx-on:click="modal1.show()" class="tile-hover">Jenn R.</th>
-                                    <td>216-798-6847</td>
-                                    <td class="tile-hover" dmx-on:click="browser1.writeTextToClipboard('accounting@ragingwolfsolutions.com');browser1.alert('Copied to clipboard!')">accounting@ragingwolfsolutions.com</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" dmx-on:click="modal1.show()" class="tile-hover">Ari V.</th>
-                                    <td>330-860-7234</td>
-                                    <td class="tile-hover" dmx-on:click="browser1.writeTextToClipboard('arianna@ragingwolfsolutions.com');browser1.alert('Copied to clipboard!')">arianna@ragingwolfsolutions.com</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" dmx-on:click="modal1.show()" class="tile-hover">Zak C.</th>
-                                    <td>330-840-9522</td>
-                                    <td class="tile-hover" dmx-on:click="browser1.writeTextToClipboard('zakc@ragingwolfsolutions.com');browser1.alert('Copied to clipboard!')">zakc@ragingwolfsolutions.com</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" dmx-on:click="modal1.show()" class="tile-hover">Brandon B.</th>
-                                    <td>330-592-6902</td>
-                                    <td class="tile-hover" dmx-on:click="browser1.writeTextToClipboard('brandon@ragingwolfsolutions.com');browser1.alert('Copied to clipboard!')">brandon@ragingwolfsolutions.com</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" dmx-on:click="modal1.show()" class="tile-hover">Rob S.</th>
-                                    <td>812-314-1684</td>
-                                    <td class="tile-hover" dmx-on:click="browser1.writeTextToClipboard('robs@ragingwolfsolutions.com');browser1.alert('Cpoied to clipboard!')">robs@ragingwolfsolutions.com</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" dmx-on:click="modal1.show()" class="tile-hover">Alaura R.</th>
-                                    <td>330-931-1800</td>
-                                    <td class="tile-hover" dmx-on:click="browser1.writeTextToClipboard('alaura@ragingwolfsolutions.com');browser1.alert('Copied to clipboard!')">alaura@ragingwolfsolutions.com</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" dmx-on:click="modal1.show()" class="w-25 tile-hover">Johnathan W.</th>
-                                    <td class="w-25">330-687-7662</td>
-                                    <td class="tile-hover w-25" dmx-on:click="browser1.writeTextToClipboard('johnathan@ragingwolfsolutions.com');browser1.alert('Copied to clipboard!')">johnathan@ragingwolfsolutions.com</td>
-                                </tr>
-                            </tbody>
-                        </table>
                     </div>
                 </div>
             </div>
