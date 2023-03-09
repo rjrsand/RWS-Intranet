@@ -138,8 +138,8 @@
                         </div>
                     </div>
                     <div class="container text-center mt-3">
-                        <table class="table">
-                            <thead>
+                        <table class="table text-secondary table-sm border-secondary table-bordered">
+                            <thead class="text-warning fw-bolder text-uppercase">
                                 <tr>
                                     <th>First Name</th>
                                     <th>Last Name</th>
@@ -148,9 +148,9 @@
                             </thead>
                             <tbody is="dmx-repeat" id="repeat1" dmx-bind:repeat="jsonDS1.data">
                                 <tr dmx-on:click="modal1.show();data_detail1.select(emailAddress)">
-                                    <td dmx-text="firstName"></td>
-                                    <td dmx-text="lastName"></td>
-                                    <td dmx-text="emailAddress"></td>
+                                    <td dmx-text="firstName" class="w-25"></td>
+                                    <td dmx-text="lastName" class="w-25"></td>
+                                    <td dmx-text="emailAddress" class="w-25"></td>
                                 </tr>
                             </tbody>
                         </table>
