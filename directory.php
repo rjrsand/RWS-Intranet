@@ -58,7 +58,7 @@
                                 </tr>
                                 <tr>
                                     <th scope="row" class="fw-normal">Supervisor</th>
-                                    <td>N/A<br></td>
+                                    <td>{{data_detail1.data.supervisor}}<br></td>
                                 </tr>
                                 <tr>
                                     <th scope="row" class="fw-normal">Title</th>
@@ -69,7 +69,7 @@
                                     <td>{{data_detail1.data.officePhone}}</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row" class="fw-normal">Direct Phone</th>
+                                    <th scope="row" class="fw-normal">Mobile Phone</th>
                                     <td>{{data_detail1.data.mobilePhone}}</td>
                                 </tr>
                                 <tr>
