@@ -131,8 +131,8 @@
                     <div class="container">
                         <div class="row">
                             <div class="col">
-                                <h5 class="text-warning text-uppercase">Welcome to the pack</h5>
-                                <h1 class="text-left fw-bold text-light">Welcome to Raging Wolf Solutions</h1>
+                                <h5 class="text-warning text-uppercase">Welcome to the pack!</h5>
+                                <h1 class="text-left fw-bold text-light">Welcome to Raging Wolf Solutions!</h1>
                                 <p class="mb-4 text-secondary">Here you can find your onboarding documents, if you need any additional information or resources, please contact your manager.</p>
                             </div>
                             <div class="row">
@@ -145,7 +145,7 @@
                                                 </div>
                                                 <div class="d-flex flex-column w-100">
                                                     <h3 class="text-light">Broker-Carrier Agreement</h3>
-                                                    <p class="mb-0 text-secondary">Click here to open a PDF.</p>
+                                                    <p class="mb-0 text-secondary">Click here to open a document.</p>
                                                 </div>
                                             </div>
 
@@ -157,7 +157,7 @@
                                                 </div>
                                                 <div class="d-flex flex-column w-100">
                                                     <h3 class="text-light">Direct Deposite Authorization</h3>
-                                                    <p class="mb-0 text-secondary">Click here to open PDF.</p>
+                                                    <p class="mb-0 text-secondary">Click here to open document.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -167,17 +167,17 @@
                             <div class="row">
                                 <div class="col">
                                     <div class="row">
-                                        <div class="col-lg-6 align-self-center">
-                                            <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('https://netorg5121535-my.sharepoint.com/:w:/r/personal/johnathan_ragingwolfsolutions_com/_layouts/15/Doc.aspx?sourcedoc=%7B4D2D1119-EE4F-4582-8E6A-8BD8E5EB7AB6%7D&amp;file=Employee%20Emergency%20Contacts_Printable.docx&amp;action=default&amp;mobileredirect=true')">
+
+                                        <div class="col-lg-6">
+                                            <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('https://netorg5121535-my.sharepoint.com/personal/johnathan_ragingwolfsolutions_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fjohnathan%5Fragingwolfsolutions%5Fcom%2FDocuments%2FRaging%20Wolf%20Solutions%2FMISC%2E%20DOCUMENTS%20to%20SHARE%2FOnboarding%2FHandbook%20revisions%20included%5F090721%2Epdf&amp;parent=%2Fpersonal%2Fjohnathan%5Fragingwolfsolutions%5Fcom%2FDocuments%2FRaging%20Wolf%20Solutions%2FMISC%2E%20DOCUMENTS%20to%20SHARE%2FOnboarding')">
                                                 <div class="d-flex align-items-center w-100p justify-content-center">
                                                     <h1 class="mb-0 text-white-50"><i class="fas fa-link"></i></h1>
                                                 </div>
                                                 <div class="d-flex flex-column w-100">
-                                                    <h3 class="text-light">Emergency Contact</h3>
-                                                    <p class="mb-0 text-secondary">Click here to open a PDF.</p>
+                                                    <h3 class="text-light">Employee Handbook</h3>
+                                                    <p class="mb-0 text-secondary">Click here to open document.</p>
                                                 </div>
                                             </div>
-
                                         </div>
                                         <div class="col-lg-6">
                                             <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('https://netorg5121535-my.sharepoint.com/:w:/r/personal/johnathan_ragingwolfsolutions_com/_layouts/15/Doc.aspx?sourcedoc=%7BF82AB7E1-CAE8-4A74-9DE6-8B8201B7C64D%7D&amp;file=Employee%20Handbook%20Acknowledgement%20and%20Receipt_Printable.docx&amp;action=default&amp;mobileredirect=true')">
@@ -186,7 +186,7 @@
                                                 </div>
                                                 <div class="d-flex flex-column w-100">
                                                     <h3 class="text-light lh-1">Employee Handbook Acknowledgement</h3>
-                                                    <p class="mb-0 text-secondary">Click here to open PDF.</p>
+                                                    <p class="mb-0 text-secondary">Click here to open document.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -203,22 +203,24 @@
                                                 </div>
                                                 <div class="d-flex flex-column w-100">
                                                     <h3 class="text-light">Overtime Request</h3>
-                                                    <p class="mb-0 text-secondary">Click here to open a PDF.</p>
+                                                    <p class="mb-0 text-secondary">Click here to open a document.</p>
                                                 </div>
                                             </div>
 
                                         </div>
-                                        <div class="col-lg-6">
-                                            <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('https://netorg5121535-my.sharepoint.com/:w:/r/personal/johnathan_ragingwolfsolutions_com/_layouts/15/Doc.aspx?sourcedoc=%7BC27E4B03-9FA6-41D9-B635-9BAD567F73BE%7D&amp;file=Employee%20Disciplanary%20Action%20Form_Printable.docx&amp;action=default&amp;mobileredirect=true')">
+                                        <div class="col-lg-6 align-self-center">
+                                            <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('https://netorg5121535-my.sharepoint.com/:w:/r/personal/johnathan_ragingwolfsolutions_com/_layouts/15/Doc.aspx?sourcedoc=%7B4D2D1119-EE4F-4582-8E6A-8BD8E5EB7AB6%7D&amp;file=Employee%20Emergency%20Contacts_Printable.docx&amp;action=default&amp;mobileredirect=true')">
                                                 <div class="d-flex align-items-center w-100p justify-content-center">
                                                     <h1 class="mb-0 text-white-50"><i class="fas fa-link"></i></h1>
                                                 </div>
                                                 <div class="d-flex flex-column w-100">
-                                                    <h3 class="text-light">Employee Disciplanary Action Form</h3>
-                                                    <p class="mb-0 text-secondary">Click here to open PDF.</p>
+                                                    <h3 class="text-light">Emergency Contact</h3>
+                                                    <p class="mb-0 text-secondary">Click here to open a document.</p>
                                                 </div>
                                             </div>
+
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -232,19 +234,19 @@
                                                 </div>
                                                 <div class="d-flex flex-column w-100">
                                                     <h3 class="text-light">Employee Review</h3>
-                                                    <p class="mb-0 text-secondary">Click here to open a PDF.</p>
+                                                    <p class="mb-0 text-secondary">Click here to open a document.</p>
                                                 </div>
                                             </div>
 
                                         </div>
                                         <div class="col-lg-6">
-                                            <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('https://netorg5121535-my.sharepoint.com/personal/johnathan_ragingwolfsolutions_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fjohnathan%5Fragingwolfsolutions%5Fcom%2FDocuments%2FRaging%20Wolf%20Solutions%2FMISC%2E%20DOCUMENTS%20to%20SHARE%2FOnboarding%2FHandbook%20revisions%20included%5F090721%2Epdf&amp;parent=%2Fpersonal%2Fjohnathan%5Fragingwolfsolutions%5Fcom%2FDocuments%2FRaging%20Wolf%20Solutions%2FMISC%2E%20DOCUMENTS%20to%20SHARE%2FOnboarding')">
+                                            <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('https://netorg5121535-my.sharepoint.com/:w:/r/personal/johnathan_ragingwolfsolutions_com/_layouts/15/Doc.aspx?sourcedoc=%7BC27E4B03-9FA6-41D9-B635-9BAD567F73BE%7D&amp;file=Employee%20Disciplanary%20Action%20Form_Printable.docx&amp;action=default&amp;mobileredirect=true')">
                                                 <div class="d-flex align-items-center w-100p justify-content-center">
                                                     <h1 class="mb-0 text-white-50"><i class="fas fa-link"></i></h1>
                                                 </div>
                                                 <div class="d-flex flex-column w-100">
-                                                    <h3 class="text-light">Employee Handbook</h3>
-                                                    <p class="mb-0 text-secondary">Click here to open PDF.</p>
+                                                    <h3 class="text-light">Employee Disciplanary Action Form</h3>
+                                                    <p class="mb-0 text-secondary">Click here to open document.</p>
                                                 </div>
                                             </div>
                                         </div>
