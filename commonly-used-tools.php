@@ -60,7 +60,7 @@
                 <div class="modal-body bg-dark text-warning" id="siteNameCarrier411">
                     <div class="flex-container">
                         <div class="container-fluid gx-0" is="dmx-form-repeat" id="formRepeat1" dmx-bind:items="1">
-                            <div class="row text-nowrap tile-hover" dmx-on:click="browser1.writeTextToClipboard(jsonDS1.data.username);browser1.alert('Copied to clipboard!')">
+                            <div class="row text-nowrap tile-hover" dmx-on:click="browser1.writeTextToClipboard(carrier411_username.value);browser1.alert('Copied to clipboard!')" dmx-bind:title="">
                                 <div class="col-auto w-50">
                                     <p class="h-100">Username: wolfpack5</p>
                                 </div>
@@ -70,7 +70,7 @@
                             </div>
                         </div>
                         <div class="container-fluid gx-0" is="dmx-form-repeat" id="formRepeat2" dmx-bind:items="1">
-                            <div class="row text-nowrap tile-hover" dmx-on:click="browser1.writeTextToClipboard(jsonDS1.data.password);browser1.alert('Copied to clipboard!')">
+                            <div class="row text-nowrap tile-hover" dmx-on:click="browser1.writeTextToClipboard(carrier411_password.value);browser1.alert('Copied to clipboard!')">
                                 <div class="col-auto w-50">
                                     <p class="h-100 ps-0 pe-4">Password: ********</p>
                                 </div>
