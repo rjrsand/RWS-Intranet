@@ -26,13 +26,43 @@
     <dmx-value id="lastName"></dmx-value>
     <dmx-value id="firstName"></dmx-value>
     <div is="dmx-browser" id="browser1"></div>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light"></nav>
+    <header id="navbar_main" class="border-top rounded-1 border-secondary rounded-0 pb-0">
+        <div class="container-fluid navbar-container pb-1 bg-dark">
+            <div class="row bg-dark">
+                <div class="col">
+                    <div class="container-xl header-container ps-3 pe-3">
+                        <nav class="header-navbar navbar navbar-expand-lg navbar-dark bg-transparent align-items-stretch pt-0 pb-0">
+
+                            <!-- Quote Modal -->
+
+                            <!-- End Quote Modal -->
+
+                            <a class="navbar-brand mt-1 mb-1 align-self-center" href="index.php">
+                                <img src="assets/images/navbar-logo.png" class="logo-img"></a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1_collapse" aria-controls="navbar1_collapse" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse justify-content-end align-items-stretch" id="navbar1_collapse">
+                                <div class="navbar-nav align-items-stretch text-center">
+                                    <a class="nav-item nav-separator ms-2 me-2"></a><a class="nav-item nav-link active rws-nav-item" href="index.php"><i class="fas fa-arrow-left"></i>&nbsp;Go Back</a>
+                                    <a class="nav-item nav-separator ms-2 me-2"></a>
+
+
+
+
+
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
 
 
 
-    <main class="mt-5">
+    <main class="border-top rounded-0 rounded-1 border-secondary pt-5">
         <div class="container">
             <div class="row min-vh-75">
                 <div class="col">
