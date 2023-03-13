@@ -61,9 +61,7 @@ class dbconnector extends Module
             $results = $connection->execute($sql->query, $sql->params);
 
             if (count($results)) {
-                if (isset($options->sql->sub)) {
-                    $this->processSubQueries($connection, $results, $options->sql->sub);
-                }
+                $this->processSubQueries($connection, $results, $options->sql->sub);
 
                 if (isset($options->sql->joins) && count($options->sql->joins)) {
                     foreach ($options->sql->joins as $join) {
@@ -120,9 +118,7 @@ class dbconnector extends Module
             $results = $connection->execute($sql->query, $sql->params);
 
             if (count($results)) {
-                if (isset($options->sql->sub)) {
-                    $this->processSubQueries($connection, $results, $options->sql->sub);
-                }
+                $this->processSubQueries($connection, $results, $options->sql->sub);
 
                 if (isset($options->sql->joins) && count($options->sql->joins)) {
                     foreach ($options->sql->joins as $join) {
@@ -260,9 +256,7 @@ class dbconnector extends Module
             $results = $connection->execute($sql->query, $sql->params);
 
             if (count($results)) {
-                if (isset($options->sql->sub)) {
-                    $this->processSubQueries($connection, $results, $options->sql->sub);
-                }
+                $this->processSubQueries($connection, $results, $options->sql->sub);
 
                 if (isset($options->sql->joins) && count($options->sql->joins)) {
                     foreach ($options->sql->joins as $join) {
