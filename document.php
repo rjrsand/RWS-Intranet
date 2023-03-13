@@ -28,6 +28,7 @@
     <script src="dmxAppConnect/dmxBrowser/dmxBrowser.js" defer></script>
     <script src="dmxAppConnect/dmxDatastore/dmxDatastore.js" defer></script>
     <script src="dmxAppConnect/dmxFormatter/dmxFormatter.js" defer></script>
+    <script src="dmxAppConnect/dmxBootstrap5Tooltips/dmxBootstrap5Tooltips.js" defer></script>
 </head>
 
 <body is="dmx-app" id="directory" class="body-bg">
@@ -257,6 +258,7 @@
                     </div>
                 </div>
             </div>
+        </div>
     </main>
     <footer class="wappler-block bg-dark pt-5 border-top border-secondary">
         <div class="container">
