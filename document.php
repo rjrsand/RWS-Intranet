@@ -132,9 +132,9 @@
                     <div class="container">
                         <div class="row">
                             <div class="col">
-                                <h5 class="text-warning text-uppercase">Welcome to the pack!</h5>
-                                <h1 class="text-left fw-bold text-light">Welcome to Raging Wolf Solutions!</h1>
-                                <p class="mb-4 text-secondary">Here you can find your onboarding documents, if you need any additional information or resources, please contact your manager.</p>
+                                <h5 class="text-warning text-uppercase">Documentaion</h5>
+                                <h1 class="text-left fw-bold text-light">RWS Documents</h1>
+                                <p class="mb-4 text-secondary">Here you can find all the documents needed within RWS, if you need additional information or resources, please contact your manager.</p>
                             </div>
                             <div class="row">
                                 <div class="col">
