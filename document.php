@@ -230,6 +230,36 @@
                                 <div class="col">
                                     <div class="row">
 
+                                        <div class="col-lg-6">
+                                            <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('https://www.irs.gov/pub/irs-pdf/fw4.pdf')">
+                                                <div class="d-flex align-items-center w-100p justify-content-center">
+                                                    <h1 class="mb-0 text-white-50"><i class="fas fa-link"></i></h1>
+                                                </div>
+                                                <div class="d-flex flex-column w-100">
+                                                    <h3 class="text-light">Federal W-4</h3>
+                                                    <p class="mb-0 text-secondary">Click here to open document.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 align-self-center">
+                                            <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('https://tax.ohio.gov/static/forms/employer_withholding/generic/wth-it4-combined.pdf')">
+                                                <div class="d-flex align-items-center w-100p justify-content-center">
+                                                    <h1 class="mb-0 text-white-50"><i class="fas fa-link"></i></h1>
+                                                </div>
+                                                <div class="d-flex flex-column w-100">
+                                                    <h3 class="text-light">Ohio Income Tax Form</h3>
+                                                    <p class="mb-0 text-secondary">Click here to open a document.</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="row">
                                         <div class="col-lg-6 align-self-center">
                                             <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('https://netorg5121535-my.sharepoint.com/:w:/r/personal/johnathan_ragingwolfsolutions_com/_layouts/15/Doc.aspx?sourcedoc=%7B5D77C555-EB3C-43F4-A3B2-083FA2BE612A%7D&amp;file=Employee%20Review_Printable.docx&amp;action=default&amp;mobileredirect=true')">
                                                 <div class="d-flex align-items-center w-100p justify-content-center">
@@ -253,35 +283,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <div class="row">
-                                        <div class="col-lg-6 align-self-center">
-                                            <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('https://tax.ohio.gov/static/forms/employer_withholding/generic/wth-it4-combined.pdf')">
-                                                <div class="d-flex align-items-center w-100p justify-content-center">
-                                                    <h1 class="mb-0 text-white-50"><i class="fas fa-link"></i></h1>
-                                                </div>
-                                                <div class="d-flex flex-column w-100">
-                                                    <h3 class="text-light">Ohio Income Tax Form</h3>
-                                                    <p class="mb-0 text-secondary">Click here to open a document.</p>
-                                                </div>
-                                            </div>
 
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('https://www.irs.gov/pub/irs-pdf/fw4.pdf')">
-                                                <div class="d-flex align-items-center w-100p justify-content-center">
-                                                    <h1 class="mb-0 text-white-50"><i class="fas fa-link"></i></h1>
-                                                </div>
-                                                <div class="d-flex flex-column w-100">
-                                                    <h3 class="text-light">Federal W-4</h3>
-                                                    <p class="mb-0 text-secondary">Click here to open document.</p>
-                                                </div>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
