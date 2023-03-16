@@ -66,30 +66,28 @@
             <div class="row">
                 <div class="col-md-12">
                     <dmx-api-datasource id="api1" is="dmx-fetch" url="https://staff.my.salesforce-sites.com/services/apexrest/Loads"></dmx-api-datasource>
-                    <table class="table table-sm table-hover style10 table-dark">
-                        <thead class="style3">
-                            <tr class="text-dark">
+                    <table class="table table-hover style10 table-dark text-center table-sm">
+                        <thead class="style3 fw-bolder text-uppercase">
+                            <tr class="text-nowrap text-secondary">
                                 <th class="d-none">Load ID</th>
-                                <th class="text-h3 text-secondary">Load Reference</th>
+                                <th class="text-h3 text-secondary">Load #</th>
                                 <th class="text-h3 text-secondary">Customer</th>
-                                <th class="text-h3 text-secondary">Total Customer Amount</th>
-                                <th class="text-h3 text-secondary">Carrier (OLD)</th>
-                                <th class="text-h3 text-secondary">Carrier (NEW)</th>
-                                <th class="text-h3 text-secondary">Total Carrier Amount</th>
+                                <th class="text-h3 text-secondary">Customer rate</th>
+                                <th class="text-h3 text-secondary">Carrier&nbsp;</th>
+                                <th class="text-h3 text-secondary">Carrier Rate</th>
                                 <th class="text-h3 text-secondary">Created</th>
                                 <th class="text-h3 text-secondary">Status</th>
                             </tr>
                         </thead>
-                        <tbody is="dmx-repeat" dmx-generator="bs4table" dmx-bind:repeat="api1.data.top(100)" id="tableRepeat1" class="style1 text-body">
+                        <tbody is="dmx-repeat" dmx-generator="bs4table" dmx-bind:repeat="api1.data.top(100)" id="tableRepeat1" class="style1 text-light">
                             <tr>
                                 <td dmx-text="Name" class="d-none"></td>
                                 <td dmx-text="Load_Reference__c"></td>
-                                <td dmx-text="Customer_Name__c"></td>
+                                <td dmx-text="Customer_Name__c" class="text-truncate"></td>
                                 <td dmx-text="Total_Customer_Amount__c.formatCurrency(&quot;$&quot;,&quot;.&quot;,&quot;,&quot;,&quot;2&quot;)"></td>
-                                <td dmx-text="Carrier_Name__c"></td>
-                                <td dmx-text="Carrier_Contact_Name__c"></td>
+                                <td dmx-text="Carrier_Contact_Name__c" class="text-truncate"></td>
                                 <td dmx-text="Total_Carrier_Amount__c.formatCurrency(&quot;$&quot;,&quot;.&quot;,&quot;,&quot;,&quot;2&quot;)"></td>
-                                <td dmx-text="CreatedDate.toDate()"></td>
+                                <td dmx-text="CreatedDate.toDate()" class="text-nowrap"></td>
                                 <td dmx-text="FreightTM__Status__c"></td>
                             </tr>
                         </tbody>
