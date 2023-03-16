@@ -29,6 +29,7 @@
     <script src="dmxAppConnect/dmxDatastore/dmxDatastore.js" defer></script>
     <script src="dmxAppConnect/dmxFormatter/dmxFormatter.js" defer></script>
     <script src="dmxAppConnect/dmxBootstrap5Tooltips/dmxBootstrap5Tooltips.js" defer></script>
+    <script src="dmxAppConnect/dmxRouting/dmxRouting.js" defer></script>
 </head>
 
 <body is="dmx-app" id="directory" class="body-bg">
@@ -135,6 +136,38 @@
                                 <h5 class="text-warning text-uppercase">Documentaion</h5>
                                 <h1 class="text-left fw-bold text-light">RWS Documents</h1>
                                 <p class="mb-4 text-secondary">Here you can find all the documents needed within RWS, if you need additional information or resources, please contact your manager.</p>
+                                <h5 class="text-warning fw-bolder text-center">Select your department:</h5>
+                            </div>
+                            <div class="row fw-bolder container-fluid">
+
+                                <div class="col-sm-12 col-xs-12 col-md-12 col-lg-3 col-xl-3 col-xxl-3">
+
+                                    <div class="d-flex">
+                                        <button id="btn_operations3" class="btn btn-outline-secondary btn-md lh-1 fw-bolder mb-2 w-100" wappler-command="editContent" is="dmx-button" value="">Operations</button>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-xs-12 col-md-12 col-lg-3 col-xl-3 col-xxl-3">
+                                    <div class="d-flex">
+                                        <button id="btn_sales1" class="btn btn-md btn-outline-secondary lh-1 fw-bolder mb-2 w-100" wappler-command="editContent" is="dmx-button" value="">Sales</button>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-xs-12 col-md-12 col-lg-3 col-xl-3 col-xxl-3">
+                                    <div class="d-flex">
+                                        <button id="btn_accounting3" class="btn btn-outline-secondary btn-md lh-1 fw-bolder mb-2 w-100" wappler-command="editContent" is="dmx-button" value="">Accounting</button>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-xs-12 col-md-12 col-lg-3 col-xl-3 col-xxl-3">
+                                    <div class="d-flex">
+                                        <button id="btn_technology3" class="btn btn-outline-secondary btn-md lh-1 fw-bolder w-100 mb-2" wappler-command="editContent" is="dmx-button" value="">Technology</button>
+                                    </div>
+                                </div>
+                                flex
+                                <div class="mb-4">
+
+
+
+
+                                </div>
                             </div>
                             <div class="row">
                                 <div class="col">
