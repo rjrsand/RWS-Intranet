@@ -24,31 +24,17 @@
     <script src="dmxAppConnect/dmxBootstrap5Modal/dmxBootstrap5Modal.js" defer></script>
     <script src="dmxAppConnect/dmxFormRepeat/dmxFormRepeat.js" defer></script>
     <script src="dmxAppConnect/dmxBrowser/dmxBrowser.js" defer></script>
+
+
 </head>
 
 <body is="dmx-app" id="index" class="body-bg">
+    <dmx-json-datasource id="jsonDS2" is="dmx-serverconnect" url="commonlyUsedtools.json"></dmx-json-datasource>
 
-    <dmx-json-datasource id="jsonDS1" is="dmx-serverconnect" url="commonlyUsedtools.json"></dmx-json-datasource>
+    <dmx-data-detail id="jsonDS1" dmx-bind:data="jsonDS1.data" key="siteName" dmx-bind:value="jsonDS1.data.id"></dmx-data-detail>
     <div is="dmx-browser" id="browser1"></div>
     <section id="variables">
-        <dmx-value id="blueship_password" dmx-bind:value="'Thepack1!'"></dmx-value>
-        <dmx-value id="blueship_username" dmx-bind:value="'RagingRW'"></dmx-value>
-        <dmx-value id="forwardair_password" dmx-bind:value="'fast2013'"></dmx-value>
-        <dmx-value id="forwardair_username" dmx-bind:value="'gallaghe'"></dmx-value>
-        <dmx-value id="dat_password" dmx-bind:value="'Ragingwolf2023*'"></dmx-value>
-        <dmx-value id="dat_username" dmx-bind:value="'ops@ragingwolfsolutions.com'"></dmx-value>
-        <dmx-value id="bluejay_password" dmx-bind:value="'Pack*2023'"></dmx-value>
-        <dmx-value id="bluejay_username" dmx-bind:value="'adminRAG4'"></dmx-value>
-        <dmx-value id="salesforce_password" dmx-bind:value="'Created by You'"></dmx-value>
-        <dmx-value id="salesforce_username" dmx-bind:value="'RWS Email'"></dmx-value>
-        <dmx-value id="truckstop_password" dmx-bind:value="'J2G4ySep!'"></dmx-value>
-        <dmx-value id="truckstop_username" dmx-bind:value="'support@ragingwolfsolutions.com'"></dmx-value>
-        <dmx-value id="creditsafe_password" dmx-bind:value="'9rHz_4948'"></dmx-value>
-        <dmx-value id="creditsafe_username" dmx-bind:value="'RW8LFS'"></dmx-value>
-        <dmx-value id="linearfootcalc_password" dmx-bind:value="'n/a'"></dmx-value>
-        <dmx-value id="linearfootcalc_username" dmx-bind:value="'n/a'"></dmx-value>
-        <dmx-value id="carrier411_password" dmx-bind:value="'aadfp8jy!'"></dmx-value>
-        <dmx-value id="carrier411_username" dmx-bind:value="'wolfpack5'"></dmx-value>
+        <dmx-value id="activeTool"></dmx-value>
     </section>
     <div class="modal fw-bolder" id="modal1" is="dmx-bs5-modal" tabindex="-1">
         <div class="modal-dialog" role="document">
@@ -60,6 +46,11 @@
                 <div class="modal-body bg-dark text-warning" id="siteNameCarrier411">
                     <div class="flex-container">
                         <div class="container-fluid gx-0" is="dmx-form-repeat" id="formRepeat1" dmx-bind:items="1">
+                            <div class="row">
+                                <div class="col">
+                                    <h6 class="text-light" dmx-text="jsonDS2.data.username">SiteName</h6>
+                                </div>
+                            </div>
                             <div class="row text-nowrap tile-hover" dmx-on:click="browser1.writeTextToClipboard(carrier411_username.value);browser1.alert('Copied to clipboard!')" dmx-bind:title="">
                                 <div class="col-auto w-50">
                                     <p class="h-100">Username: wolfpack5</p>
@@ -160,7 +151,7 @@
                                                 </div>
                                                 <div class="col-lg-6">
 
-                                                    <button class="btn btn-outline-secondary w-100 btn-sm text-nowrap mb-2" type="button" data-bs-toggle="modal" data-bs-target="#modal1"><i class="fas fa-eye"></i>&nbsp;View Details</button>
+                                                    <button class="btn btn-outline-secondary w-100 btn-sm text-nowrap mb-2" type="button" data-bs-toggle="modal" data-bs-target="#modal1" dmx-on:click="activeTool.setValue('Carrier411');dmx.parse('jsonDS2', 'commonlyUsedtools.json');dmx.data('jsonDS2').where('service_name', activeTools, '==').select('username', 'password')"><i class="fas fa-eye"></i>&nbsp;View Details</button>
 
                                                 </div>
                                             </div>
@@ -189,7 +180,7 @@
                                                 </div>
                                                 <div class="col-lg-6">
 
-                                                    <button class="btn btn-outline-secondary w-100 btn-sm text-nowrap mb-2" type="button" data-bs-toggle="modal" data-bs-target="#modal1"><i class="fas fa-eye"></i>&nbsp;View Details
+                                                    <button class="btn btn-outline-secondary w-100 btn-sm text-nowrap mb-2" type="button" data-bs-toggle="modal" data-bs-target="#modal1" dmx-on:click="activeTool.setValue('DAT')"><i class="fas fa-eye"></i>&nbsp;View Details
                                                     </button>
 
                                                 </div>
@@ -219,7 +210,7 @@
                                                 </div>
                                                 <div class="col-lg-6">
 
-                                                    <button class="btn btn-outline-secondary w-100 btn-sm text-nowrap mb-2" type="button" data-bs-toggle="modal" data-bs-target="#modal1"><i class="fas fa-eye"></i>&nbsp;View Details</button>
+                                                    <button class="btn btn-outline-secondary w-100 btn-sm text-nowrap mb-2" type="button" data-bs-toggle="modal" data-bs-target="#modal1" dmx-on:click="activeTool.setValue('TruckStop')"><i class="fas fa-eye"></i>&nbsp;View Details</button>
 
                                                 </div>
                                             </div>
@@ -246,7 +237,7 @@
                                                 </div>
                                                 <div class="col-lg-6">
 
-                                                    <button class="btn btn-outline-secondary w-100 btn-sm text-nowrap mb-2" type="button" data-bs-toggle="modal" data-bs-target="#modal1"><i class="fas fa-eye"></i>&nbsp;View Details</button>
+                                                    <button class="btn btn-outline-secondary w-100 btn-sm text-nowrap mb-2" type="button" data-bs-toggle="modal" data-bs-target="#modal1" dmx-on:click="activeTool.setValue('Forward Air')"><i class="fas fa-eye"></i>&nbsp;View Details</button>
 
                                                 </div>
                                             </div>
@@ -446,8 +437,10 @@
             </div>
         </div>
     </footer>
-
     <script src="bootstrap/5/js/bootstrap.bundle.min.js"></script>
+    <script>
+
+    </script>
 </body>
 
 </html>
