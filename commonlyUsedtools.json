@@ -18,7 +18,7 @@
         "img_alt": "Linear Foot Calc.",
         "link": "http://www.wpg.org/Member/LinearFootCalc3.asp",
         "button_text": "Open",
-        "view_details": "DAT",
+        "view_details": "Linear Foot Calculator",
         "siteName": "Linear Foot Calculator",
         "username": "None!",
         "password": "None!"
@@ -73,7 +73,7 @@
     },
     {
         "id": 2,
-        "title": "Post loads onto this online load board.",
+        "title": "Post loads onto online load board.",
         "img_src": "assets/images/Intranet/DAT_Solutions_Logo.png",
         "img_alt": "DAT",
         "link": "https://login.dat.com/login?state=hKFo2SBETnJlYkw1ektrcTQxbWdNMjJfeWU1dGpER3Zkbkl0c6FupWxvZ2luo3RpZNkgSENXelNibHJWS0xDRmJqc3JrdVl5VEkwb0ZoSHUxUTWjY2lk2SBQcHl2b1JHMk5CcGdiQlZmWGpsMUdhZ1RuaTRSWkh4UA&client=PpyvoRG2NBpgbBVfXjl1GagTni4RZHxP&protocol=oauth2&redirect_uri=https:%2F%2Fpower.dat.com%2Fsignin-auth0&response_mode=form_post&response_type=code%20id_token%20token&scope=openid%20profile%20offline_access%20email&nonce=638132235803550326.MmM3ZTVmZjktZTc1MS00Zjg3LWI3ZTQtYzI3MDZkZDlkNjQ1ZDJlYTU5NmYtM2IxYi00MWI0LTkyYWEtN2Q2Njg3Y2JkZDFm&app_name=Power&page_mode=Legacy&audience=https:%2F%2Fprod-api.dat.com&x-client-SKU=ID_NET451&x-client-ver=5.2.1.0&capturedTime=1677626781197",
