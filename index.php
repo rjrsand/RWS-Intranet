@@ -27,6 +27,7 @@
     <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
 
     <script>
+        document.addEventListener('DOMContentLoaded', function() {
         // Initialize Firebase
         var firebaseConfig = {
         apiKey: "AIzaSyAaQXNYPQNWe1fucHvFE28A8B2CGOmabRQ",
@@ -77,6 +78,7 @@
         });
         });
         }
+        });
     </script>
 
 </head>
