@@ -104,7 +104,7 @@
                                 <span class="navbar-toggler-icon"></span>
                             </button>
                             <div class="collapse navbar-collapse justify-content-end align-items-stretch" id="navbar1_collapse">
-                                <h4 class="text-warning lh-sm mt-2"><span dmx-text="Hello, firstName!">n/a</span></h4>
+                                <h4 class="text-warning lh-sm mt-2">Hello, <span dmx-text="firstName">n/a !</span></h4>
                                 <div class="navbar-nav align-items-stretch text-center">
                                     <a class="nav-item nav-separator ms-2 me-2"></a><a class="nav-item nav-link active rws-nav-item" href="index.php"><i class="fas fa-arrow-left"></i>&nbsp;Go Back</a>
                                     <a class="nav-item nav-separator ms-2 me-2"></a>
