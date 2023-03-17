@@ -85,7 +85,7 @@
     },
     {
         "id": 4,
-        "title": "Quote and book LTL shipments.",
+        "title": "Quote, book and track LTL shipments.",
         "img_src": "assets/images/Intranet/Forward_Air_Logo.png",
         "img_alt": "ForwardAir",
         "link": "https://www.forwardair.com/login/premier",
@@ -97,7 +97,7 @@
     },
     {
         "id": 5,
-        "title": "Quote and book LTL shipments.",
+        "title": "Quote, book and track LTL shipments.",
         "img_src": "assets/images/Intranet/132052600611026787.png",
         "img_alt": "BlueGrace/BlueShip",
         "link": "https://identity.myblueship.com/Account/Login?ReturnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3Dblueship4%26redirect_uri%3Dhttps%253A%252F%252Fbeta.myblueship.com%252Fauth-callback%26response_type%3Did_token%2520token%26scope%3Dopenid%2520profile%2520blueship-api%26state%3D9219d853608e4070839b073c7a1cf61a%26nonce%3Dac45e660001f453e848dd0ce55e225c1",
