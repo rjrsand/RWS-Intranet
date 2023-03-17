@@ -20,8 +20,15 @@
 
     <script src="dmxAppConnect/dmxBrowser/dmxBrowser.js" defer></script>
 
+    <!-- Firebase Setup -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+
     <script>
-        const firebaseConfig = {
+        // Initialize Firebase
+        var firebaseConfig = {
         apiKey: "AIzaSyAaQXNYPQNWe1fucHvFE28A8B2CGOmabRQ",
         authDomain: "raging-wolf-solutions.firebaseapp.com",
         projectId: "raging-wolf-solutions",
@@ -30,10 +37,7 @@
         appId: "1:806897756992:web:431cbc44a285af46ea28a5",
         measurementId: "G-NT24XFQC0C"
         };
-        
         firebase.initializeApp(firebaseConfig);
-        
-        // Initialize Firebase Firestore
         var firestore = firebase.firestore();
         
         // Restrict access to authenticated users
