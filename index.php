@@ -27,6 +27,7 @@
     <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
 
     <script>
+        window.onload=function(){
         // Initialize Firebase
         var firebaseConfig = {
         apiKey: "AIzaSyAaQXNYPQNWe1fucHvFE28A8B2CGOmabRQ",
@@ -80,6 +81,7 @@
         loadUserData();
         });
         }
+}
     </script>
 
 </head>
