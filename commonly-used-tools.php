@@ -131,19 +131,19 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-sm-6 col-lg-4 text-white-50">
+                            <div class="col-sm-6 col-lg-4 text-white-50" dmx-repeat:commonlyusedtools-repeat="jsonDS2.data">
                                 <div class="tile-category h-tile-default text-start text-white-50 flex-column mb-3 pt-3 pb-3 ps-3 pe-3">
-                                    <div class="d-flex cut-tool-logo mb-2"><img src="assets/images/Intranet/carrier411-logo-gray.png" class="img-fluid" alt="Carrier411">
+                                    <div class="d-flex cut-tool-logo mb-2"><img src="assets/images/Intranet/carrier411-logo-gray.png" class="img-fluid" alt="Carrier411" dmx-bind:src="img_src">
                                     </div>
 
-                                    <h6 class="style10 text-secondary text-start mb-3">
+                                    <h6 class="style10 text-secondary text-start mb-3" dmx-text="title">
                                         <font color="#6c757d"><span style="font-size: 14px;">Find &amp; qualify registered freight carriers.</span></font>
                                     </h6>
                                     <div class="d-flex pt-2">
                                         <div class="container-fluid gx-0">
                                             <div class="row gx-3">
                                                 <div class="col-lg-6">
-                                                    <a href="https://www.carrier411.com/" target="_blank">
+                                                    <a target="_blank" dmx-bind:href="link">
                                                         <button class="btn btn-outline-secondary w-100 btn-sm text-nowrap mb-2" type="button">
                                                             <i class="fas fa-share-square"></i>&nbsp;Open
                                                         </button>
@@ -160,6 +160,7 @@
 
                                 </div>
                             </div>
+
 
 
 
