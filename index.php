@@ -76,6 +76,9 @@
         console.log(error);
         });
         });
+        document.addEventListener("DOMContentLoaded", function() {
+        loadUserData();
+        });
         }
     </script>
 
