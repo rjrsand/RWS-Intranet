@@ -27,7 +27,6 @@
     <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
 
     <script>
-        window.onload=function(){
         // Initialize Firebase
         var firebaseConfig = {
         apiKey: "AIzaSyAaQXNYPQNWe1fucHvFE28A8B2CGOmabRQ",
@@ -77,16 +76,13 @@
         console.log(error);
         });
         });
-        document.addEventListener("DOMContentLoaded", function() {
-        loadUserData();
-        });
         }
-}
+
     </script>
 
 </head>
 
-<body is="dmx-app" id="index" class="body-bg">
+<body is="dmx-app" id="index" class="body-bg" onload="loadUserData();">
     <dmx-value id="department"></dmx-value>
     <dmx-value id="lastName"></dmx-value>
     <dmx-value id="firstName"></dmx-value>
