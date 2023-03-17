@@ -65,7 +65,7 @@
         });
         } else {
         // No user is signed in, redirect to 'login.php'
-        // window.location.href = "login.php";
+        window.location.href = "login.php";
         }
         });
         document.getElementById("logout-btn").addEventListener("click", function () {
