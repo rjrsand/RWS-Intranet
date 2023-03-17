@@ -19,6 +19,62 @@
     <script src="dmxAppConnect/dmxBootstrap5Navigation/dmxBootstrap5Navigation.js" defer></script>
 
     <script src="dmxAppConnect/dmxBrowser/dmxBrowser.js" defer></script>
+
+    <script>
+        const firebaseConfig = {
+        apiKey: "AIzaSyAaQXNYPQNWe1fucHvFE28A8B2CGOmabRQ",
+        authDomain: "raging-wolf-solutions.firebaseapp.com",
+        projectId: "raging-wolf-solutions",
+        storageBucket: "raging-wolf-solutions.appspot.com",
+        messagingSenderId: "806897756992",
+        appId: "1:806897756992:web:431cbc44a285af46ea28a5",
+        measurementId: "G-NT24XFQC0C"
+        };
+        
+        firebase.initializeApp(firebaseConfig);
+        
+        // Initialize Firebase Firestore
+        var firestore = firebase.firestore();
+        
+        // Restrict access to authenticated users
+        function loadUserData() {
+        firebase.auth().onAuthStateChanged(function (user) {
+        if (user) {
+        var userId = user.uid;
+        firestore.collection("users").doc(userId).get().then(function (doc) {
+        var firstName = doc.data().firstName;
+        var lastName = doc.data().lastName;
+        var email = user.email;
+        var role = doc.data().role;
+        var department = doc.data().department;
+        
+        // Assign values from Firestore data to DMX App Connect variables
+        dmx.app.set("firstName", firstName);
+        dmx.app.set("lastName", lastName);
+        dmx.app.set("email", email);
+        dmx.app.set("role", role);
+        dmx.app.set("department", department);
+        
+        // Update data bindings on web page
+        dmx.parse(document.body);
+        });
+        } else {
+        // No user is signed in, redirect to 'login.php'
+        // window.location.href = "login.php";
+        }
+        });
+        document.getElementById("logout-btn").addEventListener("click", function () {
+        firebase.auth().signOut().then(function () {
+        // Sign-out successful, redirect to 'login.php'
+        window.location.href = "login.php";
+        }).catch(function (error) {
+        // An error occurred, handle it here
+        console.log(error);
+        });
+        });
+        }
+    </script>
+
 </head>
 
 <body is="dmx-app" id="index" class="body-bg">
@@ -72,6 +128,7 @@
                                 <h5 class="text-warning text-uppercase">Operations Team</h5>
                                 <h1 class="text-left fw-bold text-light">Welcome to Raging Wolf Solutions</h1>
                                 <p class="mb-4 text-secondary">Here you can find helpful tools and resources that are commonly used in your department at Raging Wolf Solutions. If you need any additional information or resources, please contact your manager.</p>
+                                <p class="mb-4 text-secondary" dmx-text="email">TEST</p>
                             </div>
                         </div>
                         <div class="row">

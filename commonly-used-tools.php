@@ -131,8 +131,8 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-sm-6 col-lg-4 text-white-50" dmx-repeat:commonlyusedtools-repeat="jsonDS2.data">
-                                <div class="tile-category h-tile-default text-start text-white-50 flex-column mb-3 pt-3 pb-3 ps-3 pe-3">
+                            <div class="col-sm-6 col-lg-4 text-white-50 col" dmx-repeat:commonlyusedtools-repeat="jsonDS2.data">
+                                <div class="tile-category h-tile-default text-start text-white-50 flex-column mb-3 pt-3 pb-3 ps-3 pe-3 tile-minheight" dmx-class="">
                                     <div class="d-flex cut-tool-logo mb-2"><img src="assets/images/Intranet/carrier411-logo-gray.png" class="img-fluid" alt="Carrier411" dmx-bind:src="img_src">
                                     </div>
 

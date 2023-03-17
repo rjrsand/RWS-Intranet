@@ -143,7 +143,7 @@
                                 <div class="col-sm-12 col-xs-12 col-md-12 col-lg-3 col-xl-3 col-xxl-3">
 
                                     <div class="d-flex">
-                                        <button id="btn_operations3" class="btn btn-outline-secondary btn-md lh-1 fw-bolder mb-2 w-100" wappler-command="editContent" is="dmx-button" value="">Operations</button>
+                                        <button id="btn_operations3" class="btn btn-outline-secondary btn-md lh-1 fw-bolder mb-2 w-100" wappler-command="editContent" is="dmx-button" value="" dmx-on:click="">Operations</button>
                                     </div>
                                 </div>
                                 <div class="col-sm-12 col-xs-12 col-md-12 col-lg-3 col-xl-3 col-xxl-3">
