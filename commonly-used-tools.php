@@ -31,7 +31,7 @@
 <body is="dmx-app" id="index" class="body-bg">
     <dmx-json-datasource id="jsonDS2" is="dmx-serverconnect" url="commonlyUsedtools.json"></dmx-json-datasource>
 
-    <dmx-data-detail id="jsonDS1" dmx-bind:data="jsonDS1.data" key="siteName" dmx-bind:value="jsonDS1.data.id"></dmx-data-detail>
+    <dmx-data-detail id="jsonDS1" key="siteName" dmx-bind:value="activeTool.value" dmx-bind:data="jsonDS2.data"></dmx-data-detail>
     <div is="dmx-browser" id="browser1"></div>
     <section id="variables">
         <dmx-value id="activeTool"></dmx-value>
@@ -48,12 +48,12 @@
                         <div class="container-fluid gx-0" is="dmx-form-repeat" id="formRepeat1" dmx-bind:items="1">
                             <div class="row">
                                 <div class="col">
-                                    <h6 class="text-light" dmx-text="jsonDS2.data.username">SiteName</h6>
+                                    <h5 class="text-light mb-2" dmx-text="jsonDS1.data.siteName">SiteName</h5>
                                 </div>
                             </div>
                             <div class="row text-nowrap tile-hover" dmx-on:click="browser1.writeTextToClipboard(carrier411_username.value);browser1.alert('Copied to clipboard!')" dmx-bind:title="">
                                 <div class="col-auto w-50">
-                                    <p class="h-100">Username: wolfpack5</p>
+                                    <p class="h-100">Username: <span dmx-text="jsonDS1.data.username">wolfpack5</span></p>
                                 </div>
                                 <div class="col"><button class="btn btn-outline-link text-warning pt-0 pb-0" data-bs-toggle="button" dmx-on:click="">
 
@@ -63,7 +63,7 @@
                         <div class="container-fluid gx-0" is="dmx-form-repeat" id="formRepeat2" dmx-bind:items="1">
                             <div class="row text-nowrap tile-hover" dmx-on:click="browser1.writeTextToClipboard(carrier411_password.value);browser1.alert('Copied to clipboard!')">
                                 <div class="col-auto w-50">
-                                    <p class="h-100 ps-0 pe-4">Password: ********</p>
+                                    <p class="h-100 ps-0 pe-4">Password: <span dmx-text="jsonDS1.data.password">n/a</span></p>
                                 </div>
                                 <div class="col"><button class="btn btn-outline-link text-warning pt-0 pb-0" data-bs-toggle="button" dmx-on:click="browser1.writeTextToClipboard(jsonDS1.data.password);browser1.alert('Copied to clipboard!')">
 
@@ -151,7 +151,7 @@
                                                 </div>
                                                 <div class="col-lg-6">
 
-                                                    <button class="btn btn-outline-secondary w-100 btn-sm text-nowrap mb-2" type="button" data-bs-toggle="modal" data-bs-target="#modal1" dmx-on:click="activeTool.setValue('Carrier411');dmx.parse('jsonDS2', 'commonlyUsedtools.json');dmx.data('jsonDS2').where('service_name', activeTools, '==').select('username', 'password')"><i class="fas fa-eye"></i>&nbsp;View Details</button>
+                                                    <button class="btn btn-outline-secondary w-100 btn-sm text-nowrap mb-2" type="button" data-bs-toggle="modal" data-bs-target="#modal1" dmx-on:click="activeTool.setValue(siteName)"><i class="fas fa-eye"></i>&nbsp;View Details</button>
 
                                                 </div>
                                             </div>

@@ -210,6 +210,51 @@ dmx.config({
         }
       ],
       "outputType": "object"
+    },
+    "jsonDS1": {
+      "meta": [
+        {
+          "name": "id",
+          "type": "number"
+        },
+        {
+          "name": "title",
+          "type": "text"
+        },
+        {
+          "name": "img_src",
+          "type": "text"
+        },
+        {
+          "name": "img_alt",
+          "type": "text"
+        },
+        {
+          "name": "link",
+          "type": "text"
+        },
+        {
+          "name": "button_text",
+          "type": "text"
+        },
+        {
+          "name": "view_details",
+          "type": "text"
+        },
+        {
+          "name": "siteName",
+          "type": "text"
+        },
+        {
+          "name": "username",
+          "type": "text"
+        },
+        {
+          "name": "password",
+          "type": "text"
+        }
+      ],
+      "outputType": "object"
     }
   }
 });
