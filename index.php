@@ -64,7 +64,7 @@
         });
         } else {
         // No user is signed in, redirect to 'login.php'
-        window.location.href = "login.php";
+        // window.location.href = "login.php";
         }
         });
         document.getElementById("logout-btn").addEventListener("click", function () {
@@ -130,10 +130,9 @@
                     <div class="container">
                         <div class="row">
                             <div class="col">
-                                <h5 class="text-warning text-uppercase">Operations Team</h5>
+                                <h5 class="text-warning text-uppercase"><span dmx-text="department">n/a</span> Team</h5>
                                 <h1 class="text-left fw-bold text-light">Welcome to Raging Wolf Solutions</h1>
                                 <p class="mb-4 text-secondary">Here you can find helpful tools and resources that are commonly used in your department at Raging Wolf Solutions. If you need any additional information or resources, please contact your manager.</p>
-                                <p class="mb-4 text-secondary" dmx-text="email">TEST</p>
                             </div>
                         </div>
                         <div class="row">
