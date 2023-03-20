@@ -108,11 +108,6 @@
                                 <div class="navbar-nav align-items-stretch text-center">
                                     <a class="nav-item nav-separator ms-2 me-2"></a><a class="nav-item nav-link active rws-nav-item" href="index.php"><i class="fas fa-arrow-left"></i>&nbsp;Go Back</a>
                                     <a class="nav-item nav-separator ms-2 me-2"></a>
-
-
-
-
-
                                 </div>
                             </div>
                         </nav>
@@ -121,8 +116,6 @@
             </div>
         </div>
     </header>
-
-
 
     <main class="border-top rounded-0 rounded-1 border-secondary pt-5">
         <div class="container">
@@ -147,7 +140,6 @@
                                         <p class="mb-0 text-secondary">Use this page to learn more about commonly used tools.</p>
                                     </div>
                                 </div>
-
                             </div>
                             <div class="col-lg-6">
                                 <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('document.php')">
@@ -212,11 +204,9 @@
                     </div>
                 </div>
             </div>
-
-
-
         </div>
     </main>
+
     <footer class="wappler-block bg-dark pt-5 border-top border-secondary">
         <div class="container">
             <div class="row align-items-top">
@@ -224,7 +214,6 @@
                     <div class="d-flex justify-content-center">
                         <img src="assets/images/navbar-logo.png" class="img-fluid footer-logo mb-3">
                     </div>
-
                 </div>
                 <div class="col-md-4 col-md text-center">
                     <h5 class="text-secondary">Raging Wolf</h5>
@@ -233,7 +222,6 @@
                         <li><a class="text-muted" href="#">Official Website</a></li>
                         </li>
                         <li><a class="text-muted" href="#">Handbook</a></li>
-
                         <li><a class="text-muted" href="#">Contact Us</a></li>
                     </ul>
                 </div>

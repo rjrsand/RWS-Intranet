@@ -42,6 +42,7 @@
                             </button>
                             <div class="collapse navbar-collapse justify-content-end align-items-stretch" id="navbar1_collapse">
                                 <div class="navbar-nav align-items-stretch text-center">
+                                    <h4 class="text-warning align-self-center mt-2">Hello, <span dmx-text="firstName">n/a</span></h4>
                                     <a class="nav-item nav-separator ms-2 me-2"></a><a class="nav-item nav-link active rws-nav-item" href="index.php"><i class="fas fa-arrow-left"></i>&nbsp;Go Back</a>
                                     <a class="nav-item nav-separator ms-2 me-2"></a>
 
