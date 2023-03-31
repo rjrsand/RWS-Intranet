@@ -50,31 +50,31 @@
                             <tbody class="text-start">
                                 <tr class="border-top-0">
                                     <th scope="row" class="fw-normal">Full Name</th>
-                                    <td dmx-text="data_detail1.data.firstName+' '+data_detail1.data.lastName"></td>
+                                    <td dmx-text="data_detail1.data.firstName+' '+data_detail1.data.lastName" class="text-light"></td>
                                 </tr>
                                 <tr>
                                     <th scope="row" class="fw-normal">Department</th>
-                                    <td>{{data_detail1.data.department}}</td>
+                                    <td class="text-light">{{data_detail1.data.department}}</td>
                                 </tr>
                                 <tr>
                                     <th scope="row" class="fw-normal">Supervisor</th>
-                                    <td>{{data_detail1.data.supervisor}}<br></td>
+                                    <td class="text-light">{{data_detail1.data.supervisor}}<br></td>
                                 </tr>
                                 <tr>
                                     <th scope="row" class="fw-normal">Title</th>
-                                    <td>{{data_detail1.data.title}}</td>
+                                    <td class="text-light">{{data_detail1.data.title}}</td>
                                 </tr>
                                 <tr>
                                     <th scope="row" class="fw-normal">Office Phone<br></th>
-                                    <td dmx-on:click="browser1.writeTextToClipboard(data_detail1.data.officePhone);browser1.alert('Copied to clipboard!')" class="tile-hover">{{data_detail1.data.officePhone}}</td>
+                                    <td dmx-on:click="browser1.writeTextToClipboard(data_detail1.data.officePhone);browser1.alert('Copied to clipboard!')" class="tile-hover text-light">{{data_detail1.data.officePhone}}</td>
                                 </tr>
                                 <tr>
                                     <th scope="row" class="fw-normal">Mobile Phone</th>
-                                    <td dmx-on:click="browser1.writeTextToClipboard(data_detail1.data.mobilePhone);browser1.alert('Copied to clipboard!')" class="tile-hover">{{data_detail1.data.mobilePhone}}</td>
+                                    <td dmx-on:click="browser1.writeTextToClipboard(data_detail1.data.mobilePhone);browser1.alert('Copied to clipboard!')" class="tile-hover text-light">{{data_detail1.data.mobilePhone}}</td>
                                 </tr>
                                 <tr>
                                     <th scope="row" class="fw-normal">Email</th>
-                                    <td class="tile-hover" dmx-on:click="browser1.writeTextToClipboard(data_detail1.data.emailAddress);browser1.alert('Copied to clipboard!')">{{data_detail1.data.emailAddress}}<i class="far fa-copy"></i></td>
+                                    <td class="tile-hover text-light" dmx-on:click="browser1.writeTextToClipboard(data_detail1.data.emailAddress);browser1.alert('Copied to clipboard!')">{{data_detail1.data.emailAddress}}&nbsp;<i class="far fa-copy"></i></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -129,6 +129,7 @@
         <div class="container">
             <div class="row min-vh-75">
                 <div class="col">
+
                     <div class="container">
                         <div class="row">
                             <div class="col">
@@ -138,25 +139,26 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container text-center mt-3">
-                        <table class="table text-secondary table-sm border-secondary table-bordered">
-                            <thead class="text-warning fw-bolder text-uppercase">
-                                <tr>
-                                    <th>First Name</th>
-                                    <th>Last Name</th>
-                                    <th>Email Address</th>
-                                </tr>
-                            </thead>
-                            <tbody is="dmx-repeat" id="table_body_directory" dmx-bind:repeat="jsonDS1.data">
-                                <tr>
-                                    <td dmx-text="firstName" class="w-25 tile-hover fw-bolder" dmx-on:click="modal1.show();data_detail1.select(emailAddress)"></td>
-                                    <td dmx-text="lastName" class="w-25"></td>
-                                    <td dmx-text="emailAddress" class="w-25 tile-hover" dmx-on:click="browser1.writeTextToClipboard(emailAddress);browser1.alert('Copied to clipboard!')"></td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div class="container" id="contacts">
+                        <div class="row">
+                            <div class="col-4" dmx-repeat:directory="jsonDS1.data">
+                                <div class="d-flex justify-content-between tile-category mb-3 pt-3 pb-3 ps-3 pe-3">
+                                    <div class="d-flex flex-column text-truncate">
+                                        <h5 class="text-light"><span dmx-text="firstName">Rob</span>&nbsp;<span dmx-text="lastName">Sandlin</span></h5>
+                                        <h6 class="text-white-50"><span dmx-text="department">Operations/IT</span>,&nbsp;<span dmx-text="title">Specialist</span></h6>
+                                        <h6 class="text-white-50 tile-hover" dmx-on:click="browser1.writeTextToClipboard(emailAddress);browser1.alert('Copied to clipboard!')"><span dmx-text="emailAddress">robs@ragingwolfsolutions.com</span>&nbsp;<i class="far fa-copy"></i></h6>
+                                    </div>
+                                    <div class="d-flex align-items-start">
+                                        <button id="btn1" class="btn btn-outline-warning border-0 pt-0 pb-0 ps-1 pe-1 text-nowrap" dmx-on:click="modal1.show();data_detail1.select(emailAddress)">More&nbsp;<i class="fas fa-external-link-alt"></i></button>
+                                    </div>
+                                </div>
 
 
+
+
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

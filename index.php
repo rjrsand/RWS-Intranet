@@ -124,9 +124,27 @@
                     <div class="container">
                         <div class="row">
                             <div class="col">
-                                <h5 class="text-warning text-uppercase"><span dmx-text="department">n/a</span> Team</h5>
-                                <h1 class="text-left fw-bold text-light">Welcome to Raging Wolf Solutions</h1>
-                                <p class="mb-4 text-secondary">Here you can find helpful tools and resources that are commonly used in your department at Raging Wolf Solutions. If you need any additional information or resources, please contact your manager.</p>
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <div class="d-flex flex-column">
+                                            <h5 class="text-warning text-uppercase"><span dmx-text="department">n/a</span> Team</h5>
+                                            <h1 class="text-left fw-bold text-light">Welcome to Raging Wolf Solutions</h1>
+                                            <p class="mb-4 text-secondary">Here you can find helpful tools and resources that are commonly used in your department at Raging Wolf Solutions. If you need any additional information or resources, please contact your manager.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col align-self-end">
+                                        <div class="d-flex justify-content-end align-items-end">
+                                            <div class="d-flex flex-row-reverse position-relative mb-4">
+                                                <input id="filter_carriers_input" name="text1" type="text" class="form-control bg-light mb-1" placeholder="Search this list..." is="dmx-input" value="">
+                                                <i class="fa fa-search fa-fw position-absolute top-50 translate-middle-y pe-4 pb-1"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
                             </div>
                         </div>
                         <div class="row">
