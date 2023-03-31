@@ -90,7 +90,7 @@
     </script>
 </head>
 
-<body is="dmx-app" id="directory" class="body-bg">
+<body is="dmx-app" id="directory" class="body-bg" onload="loadUserData();">
     <dmx-data-detail id="data_detail1" dmx-bind:data="jsonDS1.data" key="emailAddress"></dmx-data-detail>
     <dmx-json-datasource id="jsonDS1" is="dmx-serverconnect" url="directoryContacts.json"></dmx-json-datasource>
     <div is="dmx-browser" id="browser1"></div>
