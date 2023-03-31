@@ -28,6 +28,13 @@
     <script src="dmxAppConnect/dmxBrowser/dmxBrowser.js" defer></script>
     <script src="dmxAppConnect/dmxDatastore/dmxDatastore.js" defer></script>
     <script src="dmxAppConnect/dmxFormatter/dmxFormatter.js" defer></script>
+
+    <!-- Firebase Setup -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+
     <script>
         // Initialize Firebase
                 var firebaseConfig = {
