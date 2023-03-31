@@ -30,9 +30,70 @@
     <script src="dmxAppConnect/dmxFormatter/dmxFormatter.js" defer></script>
     <script src="dmxAppConnect/dmxBootstrap5Tooltips/dmxBootstrap5Tooltips.js" defer></script>
     <script src="dmxAppConnect/dmxRouting/dmxRouting.js" defer></script>
+
+    <!-- Firebase Setup -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+
+    <script>
+        // Initialize Firebase
+            var firebaseConfig = {
+            apiKey: "AIzaSyAaQXNYPQNWe1fucHvFE28A8B2CGOmabRQ",
+            authDomain: "raging-wolf-solutions.firebaseapp.com",
+            projectId: "raging-wolf-solutions",
+            storageBucket: "raging-wolf-solutions.appspot.com",
+            messagingSenderId: "806897756992",
+            appId: "1:806897756992:web:431cbc44a285af46ea28a5",
+            measurementId: "G-NT24XFQC0C"
+            };
+            firebase.initializeApp(firebaseConfig);
+            var firestore = firebase.firestore();
+            
+            // Restrict access to authenticated users
+            function loadUserData() {
+            firebase.auth().onAuthStateChanged(function (user) {
+            if (user) {
+            var userId = user.uid;
+            firestore.collection("users").doc(userId).get().then(function (doc) {
+            var firstName = doc.data().firstName;
+            var lastName = doc.data().lastName;
+            var email = user.email;
+            var role = doc.data().role;
+            var department = doc.data().department;
+            
+            // Assign values from Firestore data to DMX App Connect variables
+            dmx.app.set("firstName", firstName);
+            dmx.app.set("lastName", lastName);
+            dmx.app.set("email", email);
+            dmx.app.set("role", role);
+            dmx.app.set("department", department);
+            
+            // Update data bindings on web page
+            dmx.parse(document.body);
+            });
+            } else {
+            // No user is signed in, redirect to 'login.php'
+            // window.location.href = "login.php";
+            }
+            });
+            document.getElementById("logout-btn").addEventListener("click", function () {
+            firebase.auth().signOut().then(function () {
+            // Sign-out successful, redirect to 'login.php'
+            window.location.href = "login.php";
+            }).catch(function (error) {
+            // An error occurred, handle it here
+            console.log(error);
+            });
+            });
+            }
+    
+    </script>
+
 </head>
 
-<body is="dmx-app" id="directory" class="body-bg">
+<body is="dmx-app" id="directory" class="body-bg" onload="loadUserData();">
     <dmx-data-detail id="data_detail1" dmx-bind:data="jsonDS1.data" key="emailAddress"></dmx-data-detail>
     <dmx-json-datasource id="jsonDS1" is="dmx-serverconnect" url="directoryContacts.json"></dmx-json-datasource>
     <div is="dmx-browser" id="browser1"></div>
@@ -135,45 +196,41 @@
                         <div class="row">
 
 
+
                             <div class="col-lg-12">
-                                <h5 class="text-warning text-uppercase">Document Center</h5>
+                                <h5 class="text-warning text-uppercase"><span dmx-text="department">n/a</span> Team</h5>
                                 <h1 class="text-left fw-bold text-light">RWS Documents</h1>
                                 <p class="mb-4 text-secondary">Here you can find all the documents needed within RWS, if you need additional information or resources, please contact your manager.</p>
-                                <h5 class="text-warning fw-bolder text-center">Select your department:</h5>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="row fw-bolder justify-content-center container mb-3 ms-auto me-auto">
-                                    <div class="row">
-                                        <div class="col-sm-12 col-xs-12 col-md-12 col-lg-3 col-xl-3 col-xxl-3">
 
-                                            <div class="d-flex">
-                                                <button id="btn_operations3" class="btn btn-outline-secondary btn-md lh-1 fw-bolder mb-2 w-100" wappler-command="editContent" is="dmx-button" value="" dmx-on:click="">Operations</button>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-12 col-xs-12 col-md-12 col-lg-3 col-xl-3 col-xxl-3">
-                                            <div class="d-flex">
-                                                <button id="btn_sales1" class="btn btn-md btn-outline-secondary lh-1 fw-bolder mb-2 w-100" wappler-command="editContent" is="dmx-button" value="">Sales</button>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-12 col-xs-12 col-md-12 col-lg-3 col-xl-3 col-xxl-3">
-                                            <div class="d-flex">
-                                                <button id="btn_accounting3" class="btn btn-outline-secondary btn-md lh-1 fw-bolder mb-2 w-100" wappler-command="editContent" is="dmx-button" value="">Accounting</button>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-12 col-xs-12 col-md-12 col-lg-3 col-xl-3 col-xxl-3">
-                                            <div class="d-flex">
-                                                <button id="btn_technology3" class="btn btn-outline-secondary btn-md lh-1 fw-bolder w-100 mb-2" wappler-command="editContent" is="dmx-button" value="">Technology</button>
+                            </div>
+                            <div class="col">
+                                <div class="row justify-content-between mb-4">
+                                    <div class="col-4">
+                                        <div class="d-flex">
+                                            <div class="d-flex flex-row-reverse position-relative w-100">
+                                                <input id="filter_documents_input" name="text1" type="text" class="form-control bg-light" placeholder="Search this list..." is="dmx-input" value="">
+                                                <i class="fa fa-search fa-fw position-absolute top-50 translate-middle-y pe-4"></i>
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="col-auto align-self-center">
+                                        <div class="d-flex justify-content-between">
 
-
-
-
-
+                                            <div class="d-flex align-items-center">
+                                                <h5 class="text-nowrap mb-0 me-2 text-warning">Selected Department:&nbsp;</h5>
+                                                <select id="select2" class="form-select bg-transparent btn-outline-secondary fw-bolder mb-0 pt-1 pb-1">
+                                                    <option value="Operations" class="bg-dark">Operations</option>
+                                                    <option value="Sales" class="bg-dark">Sales</option>
+                                                    <option value="Accounting" class="bg-dark">Accounting</option>
+                                                    <option value="Technology" class="bg-dark">Technology</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+
                             </div>
-                            <div class="col-lg-12">
+                            <div class="col-lg-12" id="documents_container">
                                 <div class="row">
                                     <div class="col">
                                         <div class="row">
@@ -182,9 +239,9 @@
                                                     <div class="d-flex align-items-center w-100p justify-content-center">
                                                         <h1 class="mb-0 text-white-50"><i class="fas fa-link"></i></h1>
                                                     </div>
-                                                    <div class="d-flex flex-column w-100">
+                                                    <div class="d-flex flex-column w-100 document-title">
                                                         <h3 class="text-light">Broker-Carrier Agreement</h3>
-                                                        <p class="mb-0 text-secondary">Click here to open a document.</p>
+                                                        <p class="mb-0 text-white-50">Click here to open a document.</p>
                                                     </div>
                                                 </div>
 
@@ -194,7 +251,7 @@
                                                     <div class="d-flex align-items-center w-100p justify-content-center">
                                                         <h1 class="mb-0 text-white-50"><i class="fas fa-link"></i></h1>
                                                     </div>
-                                                    <div class="d-flex flex-column w-100">
+                                                    <div class="d-flex flex-column w-100 document-title">
                                                         <h3 class="text-light">Overtime Request</h3>
                                                         <p class="mb-0 text-secondary">Click here to open a document.</p>
                                                     </div>
@@ -213,7 +270,7 @@
                                                     <div class="d-flex align-items-center w-100p justify-content-center">
                                                         <h1 class="mb-0 text-white-50"><i class="fas fa-link"></i></h1>
                                                     </div>
-                                                    <div class="d-flex flex-column w-100">
+                                                    <div class="d-flex flex-column w-100 document-title">
                                                         <h3 class="text-light">Employee Handbook</h3>
                                                         <p class="mb-0 text-secondary">Click here to open document.</p>
                                                     </div>
@@ -224,7 +281,7 @@
                                                     <div class="d-flex align-items-center w-100p justify-content-center">
                                                         <h1 class="mb-0 text-white-50"><i class="fas fa-link"></i></h1>
                                                     </div>
-                                                    <div class="d-flex flex-column w-100">
+                                                    <div class="d-flex flex-column w-100 document-title">
                                                         <h3 class="text-light lh-1">Employee Handbook Acknowledgement</h3>
                                                         <p class="mb-0 text-secondary">Click here to open document.</p>
                                                     </div>
@@ -242,7 +299,7 @@
                                                     <div class="d-flex align-items-center w-100p justify-content-center">
                                                         <h1 class="mb-0 text-white-50"><i class="fas fa-link"></i></h1>
                                                     </div>
-                                                    <div class="d-flex flex-column w-100">
+                                                    <div class="d-flex flex-column w-100 document-title">
                                                         <h3 class="text-light">Emergency Contact</h3>
                                                         <p class="mb-0 text-secondary">Click here to open a document.</p>
                                                     </div>
@@ -254,7 +311,7 @@
                                                     <div class="d-flex align-items-center w-100p justify-content-center">
                                                         <h1 class="mb-0 text-white-50"><i class="fas fa-link"></i></h1>
                                                     </div>
-                                                    <div class="d-flex flex-column w-100">
+                                                    <div class="d-flex flex-column w-100 document-title">
                                                         <h3 class="text-light">Direct Deposite Authorization</h3>
                                                         <p class="mb-0 text-secondary">Click here to open document.</p>
                                                     </div>
@@ -273,7 +330,7 @@
                                                     <div class="d-flex align-items-center w-100p justify-content-center">
                                                         <h1 class="mb-0 text-white-50"><i class="fas fa-link"></i></h1>
                                                     </div>
-                                                    <div class="d-flex flex-column w-100">
+                                                    <div class="d-flex flex-column w-100 document-title">
                                                         <h3 class="text-light">Federal W-4</h3>
                                                         <p class="mb-0 text-secondary">Click here to open document.</p>
                                                     </div>
@@ -284,7 +341,7 @@
                                                     <div class="d-flex align-items-center w-100p justify-content-center">
                                                         <h1 class="mb-0 text-white-50"><i class="fas fa-link"></i></h1>
                                                     </div>
-                                                    <div class="d-flex flex-column w-100">
+                                                    <div class="d-flex flex-column w-100 document-title">
                                                         <h3 class="text-light">Ohio Income Tax Form</h3>
                                                         <p class="mb-0 text-secondary">Click here to open a document.</p>
                                                     </div>
@@ -303,7 +360,7 @@
                                                     <div class="d-flex align-items-center w-100p justify-content-center">
                                                         <h1 class="mb-0 text-white-50"><i class="fas fa-link"></i></h1>
                                                     </div>
-                                                    <div class="d-flex flex-column w-100">
+                                                    <div class="d-flex flex-column w-100 document-title">
                                                         <h3 class="text-light">Employee Review</h3>
                                                         <p class="mb-0 text-secondary">Click here to open a document.</p>
                                                     </div>
@@ -315,7 +372,7 @@
                                                     <div class="d-flex align-items-center w-100p justify-content-center">
                                                         <h1 class="mb-0 text-white-50"><i class="fas fa-link"></i></h1>
                                                     </div>
-                                                    <div class="d-flex flex-column w-100">
+                                                    <div class="d-flex flex-column w-100 document-title">
                                                         <h3 class="text-light">Employee Disciplanary Action Form</h3>
                                                         <p class="mb-0 text-secondary">Click here to open document.</p>
                                                     </div>
@@ -373,6 +430,27 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const searchInput = document.getElementById('filter_documents_input');
+        
+        searchInput.addEventListener('input', function() {
+        const searchTerm = searchInput.value.toLowerCase();
+        const documentTitles = document.querySelectorAll('.document-title');
+        
+        for (const title of documentTitles) {
+        const documentTitle = title.textContent.toLowerCase();
+        const parentDiv = title.closest('.col-lg-6');
+        
+        if (documentTitle.includes(searchTerm)) {
+        parentDiv.style.display = 'block';
+        } else {
+        parentDiv.style.display = 'none';
+        }
+        }
+        });
+        });
+    </script>
     <script src="bootstrap/5/js/bootstrap.bundle.min.js"></script>
 </body>
 
