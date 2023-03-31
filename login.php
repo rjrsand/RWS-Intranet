@@ -76,79 +76,109 @@
 
 
     </header>
+    <main>
+        <section class="border-top rounded-1 rounded-0 border-secondary min-vh-75 bg-dark">
+            <img src="assets/images/section-modal-bg-top-stone.png" class="w-100">
+            <div class="container modules-container mt-auto mb-auto">
+                <div class="row">
 
-    <section class="border-top rounded-1 rounded-0 border-secondary min-vh-75 bg-dark">
-        <img src="assets/images/section-modal-bg-top-stone.png" class="w-100">
-        <div class="container modules-container mt-auto mb-auto">
-            <div class="row">
+                    <div class="col-md-12">
+                        <div class="row justify-content-center">
+                            <div class="module-card border rounded-0 rounded-1 border-secondary col-8 mt-3 mb-3 ms-3 me-3 pt-4 pb-4">
+                                <h4 class="text-light lh-sm text-center text-uppercase mt-3 mb-3">Log in</h4>
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-7">
+                                        <div class="d-flex flex-column">
 
-                <div class="col-md-12">
-                    <div class="row justify-content-center">
-                        <div class="module-card border rounded-0 rounded-1 border-secondary mt-3 mb-3 ms-3 me-3 pt-4 pb-4 ps-3 pe-3 col-10">
-                            <h4 class="text-light lh-sm text-center text-uppercase mt-2 mb-3">Log in</h4>
-                            <div class="row justify-content-center">
-                                <div class="col-7">
-                                    <div class="d-flex flex-column">
-
-                                        <p class="text-center mb-4 text-light">Access is restricted to Raging Wolf Solutions employees.</p>
-                                        <form id="login_microsoft">
-                                            <div class="row justify-content-center">
-                                                <div class="col-md-9 text-center"><button id="microsoftsigninbutton" class="btn module-cta-btn btn-warning btn-lg text-center text-break"><i class="fab fa-windows"></i>&nbsp;Log In With Microsoft</button>
-                                                    <p class="text-center mb-4 text-white-50">Having trouble logging in? Contact us.</p>
-                                                </div>
-                                            </div>
-                                        </form>
-                                        <form id="onboarding">
-                                            <div class="row">
-                                                <div class="col-12 col-md-6">
-                                                    <div class="form-group md-3 text-light mb-2"> <label for="firstName" class="form-label">First Name</label>
-                                                        <input type="text" class="form-control" id="firstName" name="firstName" aria-describedby="input1_help" placeholder="Your first name">
+                                            <p class="text-center mb-4 text-light">Access is restricted to Raging Wolf Solutions employees.</p>
+                                            <form id="login_microsoft">
+                                                <div class="row justify-content-center">
+                                                    <div class="col-md-9 text-center"><button id="microsoftsigninbutton" class="btn module-cta-btn btn-warning btn-lg text-center text-break mb-2"><i class="fab fa-windows"></i>&nbsp;Log In With Microsoft</button>
+                                                        <p class="text-center mb-4 text-white-50">Having trouble logging in? Contact us.</p>
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-md-6">
-                                                    <div class="form-group md-3 text-light col-md-12 mb-2"> <label for="lastName" class="form-label">Last Name</label>
-                                                        <input type="text" class="form-control" id="lastName" name="lastName" aria-describedby="input1_help" placeholder="Your last name">
+                                            </form>
+                                            <form id="onboarding" class="d-none">
+                                                <div class="row">
+                                                    <div class="col-12 col-md-6">
+                                                        <div class="form-group md-3 text-light mb-2"> <label for="firstName" class="form-label">First Name</label>
+                                                            <input type="text" class="form-control" id="firstName" name="firstName" aria-describedby="input1_help" placeholder="Your first name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <div class="form-group md-3 text-light col-md-12 mb-2"> <label for="lastName" class="form-label">Last Name</label>
+                                                            <input type="text" class="form-control" id="lastName" name="lastName" aria-describedby="input1_help" placeholder="Your last name">
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
 
-                                            <div class="form-group md-3 text-light col mt-4 mb-4">
-                                                <label for="input1" class="form-label">Department</label>
-                                                <select id="department" class="form-select text-secondary">
-                                                    <option value="">Make a selection...</option>
-                                                    <option value="operations">Operations</option>
-                                                    <option value="sales">Sales</option>
-                                                    <option value="accounting">Accounting</option>
-                                                    <option value="technology">I.T.</option>
-                                                </select>
-                                                <small id="input1_help" class="form-text text-muted">If you are unsure of which department to choose, contact your manager.</small>
-                                                <div class="row mt-3">
-                                                    <div class="col-6 text-center w-50"><button class="btn btn-outline-secondary btn-sm text-nowrap w-100 mb-2" id="cancel-name-btn">Cancel</button></div>
-                                                    <div class="col-6 text-center w-50"> <button class="btn btn-outline-secondary btn-sm w-100 mb-2" id="submit-name-btn">Submit
-                                                        </button></div>
+                                                <div class="form-group md-3 text-light col mt-4 mb-4">
+                                                    <label for="input1" class="form-label">Department</label>
+                                                    <select id="department" class="form-select text-secondary">
+                                                        <option value="">Make a selection...</option>
+                                                        <option value="operations">Operations</option>
+                                                        <option value="sales">Sales</option>
+                                                        <option value="accounting">Accounting</option>
+                                                        <option value="technology">I.T.</option>
+                                                    </select>
+                                                    <small id="input1_help" class="form-text text-muted">If you are unsure of which department to choose, contact your manager.</small>
+                                                    <div class="row mt-3">
+                                                        <div class="col-6 text-center w-50"><button class="btn btn-outline-secondary btn-sm text-nowrap w-100 mb-2" id="cancel-name-btn">Cancel</button></div>
+                                                        <div class="col-6 text-center w-50"> <button class="btn btn-outline-secondary btn-sm w-100 mb-2" id="submit-name-btn">Submit
+                                                            </button></div>
+                                                    </div>
                                                 </div>
-                                            </div>
 
-
-
-
-
-                                        </form>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
+
                             </div>
-
-
-
-
-
                         </div>
-                    </div>
 
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="wappler-block bg-dark pt-5 border-top border-secondary">
+        <div class="container">
+            <div class="row align-items-top">
+                <div class="col-md-4 col-md text-center">
+                    <div class="d-flex justify-content-center">
+                        <img src="assets/images/navbar-logo.png" class="img-fluid footer-logo mb-3">
+                    </div>
+                </div>
+                <div class="col-md-4 col-md text-center">
+                    <h5 class="text-secondary">Raging Wolf</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">About</a>
+                        <li><a class="text-muted" href="#">Official Website</a></li>
+                        </li>
+                        <li><a class="text-muted" href="#">Handbook</a></li>
+                        <li><a class="text-muted" href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-md text-center">
+                    <h5 class="text-secondary">Your Manager</h5>
+                    <ul class="list-unstyled text-small">
+                        <li class="text-secondary">&lt;MANAGER NAME&gt;</li>
+                        <li class="text-secondary">&lt;MANAGER EMAIL&gt;</li>
+                        <li><a class="text-muted" href="#">Privacy</a></li>
+                        <li><a class="text-muted" href="#">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-3 border-top border-secondary">
+                <div class="col">
+                    <p class="text-secondary text-center small pt-3">© Copyright 2023. All Rights Reserved.</p>
                 </div>
             </div>
         </div>
-    </section>
+    </footer>
+
+
 
 
     <script src="bootstrap/5/js/bootstrap.bundle.min.js"></script>
