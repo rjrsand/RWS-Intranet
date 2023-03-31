@@ -80,6 +80,7 @@
 
     </script>
 
+    <link rel="stylesheet" href="dmxAppConnect/dmxBootstrap5TableGenerator/dmxBootstrap5TableGenerator.css" />
 </head>
 
 <body is="dmx-app" id="index" class="body-bg" onload="loadUserData();">

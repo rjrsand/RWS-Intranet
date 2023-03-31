@@ -83,7 +83,7 @@
 </head>
 
 <body is="dmx-app" id="index" class="body-bg" onload="loadUserData();">
-    <!-- Wappler include head-page="index.php" appconnect="local" is="dmx-app" bootstrap5="local" fontawesome_5="cdn" jquery_slim_35="local" components="{dmxBootstrap5Navigation:{}}" id="index" -->
+    <!-- Wappler include head-page="index.php" appconnect="local" is="dmx-app" bootstrap5="local" fontawesome_5="cdn" jquery_slim_35="local" components="{dmxBootstrap5Navigation:{},dmxBootstrap5TableGenerator:{}}" id="index" -->
     <header id="navbar_main" class="border-top rounded-1 border-secondary rounded-0 pb-0">
         <div class="container-fluid navbar-container pb-1 bg-dark">
             <div class="row bg-dark">
@@ -102,13 +102,9 @@
                             </button>
                             <div class="collapse navbar-collapse justify-content-end align-items-stretch" id="navbar1_collapse">
                                 <div class="navbar-nav align-items-stretch text-center">
-                                    <h4 class="text-warning align-self-center mt-2">Hello, <span dmx-text="firstName">n/a</span></h4>
+                                    <h5 class="text-warning align-self-center mt-2">Hello, <span dmx-text="firstName">n/a</span></h5>
                                     <a class="nav-item nav-separator ms-2 me-2"></a><a class="nav-item nav-link active rws-nav-item" href="index.php"><i class="fas fa-arrow-left"></i>&nbsp;Go Back</a>
                                     <a class="nav-item nav-separator ms-2 me-2"></a>
-
-
-
-
 
                                 </div>
                             </div>
@@ -146,34 +142,36 @@
             <div class="row">
                 <div class="col-md-12">
                     <dmx-api-datasource id="api1" is="dmx-fetch" url="https://staff.my.salesforce-sites.com/services/apexrest/Loads"></dmx-api-datasource>
-                    <table class="table table-hover style10 table-dark text-center table-sm">
-                        <thead class="style3 fw-bolder text-uppercase">
-                            <tr class="text-nowrap text-secondary">
+                    <table class="table table-hover table-sm table-dark">
+                        <thead>
+                            <tr>
                                 <th class="d-none">Load ID</th>
-                                <th class="text-h3 text-secondary">Load #</th>
-                                <th class="text-h3 text-secondary">Customer</th>
-                                <th class="text-h3 text-secondary">Customer rate</th>
-                                <th class="text-h3 text-secondary">Carrier&nbsp;</th>
-                                <th class="text-h3 text-secondary">Carrier Rate</th>
-                                <th class="text-h3 text-secondary">Created</th>
-                                <th class="text-h3 text-secondary">Status</th>
+                                <th>Load #</th>
+                                <th>Customer</th>
+                                <th>Customer rate</th>
+                                <th>Carrier&nbsp;</th>
+                                <th>Carrier Rate</th>
+                                <th>Created</th>
+                                <th>Status</th>
                             </tr>
                         </thead>
-                        <tbody is="dmx-repeat" dmx-generator="bs4table" dmx-bind:repeat="api1.data.top(100)" id="tableRepeat1" class="style1 text-light">
+                        <tbody is="dmx-repeat" dmx-generator="bs5table" dmx-bind:repeat="api1.data.top(100)" id="tableRepeat2">
                             <tr>
                                 <td dmx-text="Name" class="d-none"></td>
-                                <td dmx-text="Load_Reference__c" class="pe-3"></td>
-                                <td dmx-text="Customer_Name__c" class="text-truncate text-start"></td>
+                                <td dmx-text="Load_Reference__c"></td>
+                                <td dmx-text="Customer_Name__c"></td>
                                 <td dmx-text="Total_Customer_Amount__c.formatCurrency(&quot;$&quot;,&quot;.&quot;,&quot;,&quot;,&quot;2&quot;)"></td>
-                                <td dmx-text="Carrier_Contact_Name__c" class="text-truncate text-start"></td>
+                                <td dmx-text="Carrier_Contact_Name__c"></td>
                                 <td dmx-text="Total_Carrier_Amount__c.formatCurrency(&quot;$&quot;,&quot;.&quot;,&quot;,&quot;,&quot;2&quot;)"></td>
-                                <td dmx-text="CreatedDate.toDate()" class="text-nowrap"></td>
+                                <td dmx-text="CreatedDate.toDate()"></td>
                                 <td dmx-text="FreightTM__Status__c"></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
+                </table>
             </div>
+        </div>
         </div>
     </section>
 
