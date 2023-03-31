@@ -210,11 +210,11 @@
                             <div class="col-lg-6">
                                 <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="">
                                     <div class="d-flex align-items-center w-100p justify-content-center">
-                                        <h1 class="mb-0 text-white-50"><i class="fas fa-toolbox"></i></h1>
+                                        <h1 class="mb-0 text-white-50"><i class="fas fa-thumbs-up"></i></h1>
                                     </div>
                                     <div class="d-flex flex-column w-100">
-                                        <h3 class="text-light">Unknown</h3>
-                                        <p class="mb-0 text-secondary">As of yet, this tile is unknown.</p>
+                                        <h3 class="text-light">Standard Procedures</h3>
+                                        <p class="mb-0 text-secondary">Procedures for various aspects of the business.</p>
                                     </div>
                                 </div>
                             </div>
