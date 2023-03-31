@@ -184,10 +184,20 @@
                 <div class="col">
                     <div class="container">
                         <div class="row">
-                            <div class="col">
-                                <h5 class="text-warning text-uppercase"><span dmx-text="department">n/a</span> Team</h5>
-                                <h1 class="text-left fw-bold text-light">Commonly Used Tools</h1>
-                                <p class="mb-4 text-secondary">Here you can find helpful links and logins used in the daily operations of RWS.</p>
+                            <div class="col-lg-8">
+                                <div class="d-flex flex-column">
+                                    <h5 class="text-warning text-uppercase"><span dmx-text="department">n/a</span> Team</h5>
+                                    <h1 class="text-left fw-bold text-light">Commonly Used Tools</h1>
+                                    <p class="mb-4 text-secondary">Here you can find helpful links and logins used in the daily operations of RWS.</p>
+                                </div>
+                            </div>
+                            <div class="col align-self-end">
+                                <div class="d-flex justify-content-end align-items-end">
+                                    <div class="d-flex flex-row-reverse position-relative mb-4">
+                                        <input id="filter_tools_input" name="text1" type="text" class="form-control bg-light" placeholder="Search this list..." is="dmx-input" value="">
+                                        <i class="fa fa-search fa-fw position-absolute top-50 translate-middle-y pe-4"></i>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="row align-items-stretch">
@@ -231,10 +241,6 @@
 
                                 </div>
                             </div>
-
-
-
-
 
                         </div>
                     </div>
@@ -282,7 +288,24 @@
     </footer>
     <script src="bootstrap/5/js/bootstrap.bundle.min.js"></script>
     <script>
-
+        document.addEventListener('DOMContentLoaded', function() {
+                const filterInput = document.getElementById('filter_tools_input');
+                const toolItems = document.querySelectorAll('[dmx-repeat\\:commonlyusedtools-repeat]');
+                
+                filterInput.addEventListener('input', function() {
+                    const filterValue = filterInput.value.toLowerCase();
+                    
+                    toolItems.forEach(function(toolItem) {
+                        const toolTitle = toolItem.querySelector('[dmx-text="title"]').textContent.toLowerCase();
+                        
+                        if (toolTitle.includes(filterValue)) {
+                            toolItem.style.display = 'block';
+                        } else {
+                            toolItem.style.display = 'none';
+                        }
+                    });
+                });
+            });
     </script>
 </body>
 
