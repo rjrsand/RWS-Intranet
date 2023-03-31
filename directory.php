@@ -28,23 +28,7 @@
     <script src="dmxAppConnect/dmxBrowser/dmxBrowser.js" defer></script>
     <script src="dmxAppConnect/dmxDatastore/dmxDatastore.js" defer></script>
     <script src="dmxAppConnect/dmxFormatter/dmxFormatter.js" defer></script>
-    <script>
-        document.getElementById('filter_contacts_input').addEventListener('input', function() {
-        const filterValue = this.value.trim().toLowerCase();
-        const contacts = document.querySelectorAll('#contacts .col-4');
-    
-        contacts.forEach(function(contact) {
-          const name = contact.querySelector('h5').textContent.toLowerCase();
-          const department = contact.querySelector('h6.text-white-50').textContent.toLowerCase();
-    
-          if (name.includes(filterValue) || department.includes(filterValue)) {
-            contact.style.display = '';
-          } else {
-            contact.style.display = 'none';
-          }
-        });
-      });
-    </script>
+
 </head>
 
 <body is="dmx-app" id="directory" class="body-bg">
@@ -230,6 +214,23 @@
         </div>
     </footer>
     <script src="bootstrap/5/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('filter_contacts_input').addEventListener('input', function() {
+                const filterValue = this.value.trim().toLowerCase();
+                const contacts = document.querySelectorAll('#contacts .col-4');
+            
+                contacts.forEach(function(contact) {
+                  const name = contact.querySelector('h5').textContent.toLowerCase();
+                  const department = contact.querySelector('h6.text-white-50').textContent.toLowerCase();
+            
+                  if (name.includes(filterValue) || department.includes(filterValue)) {
+                    contact.style.display = '';
+                  } else {
+                    contact.style.display = 'none';
+                  }
+                });
+              });
+    </script>
 </body>
 
 </html>
