@@ -140,7 +140,7 @@
                 <div class="col align-self-end">
                     <div class="d-flex justify-content-end align-items-end">
                         <div class="d-flex flex-row-reverse position-relative mb-4">
-                            <input id="filter_contacts_input" name="text1" type="text" class="form-control bg-light" placeholder="Search load number..." is="dmx-input" value="">
+                            <input id="filter_loads_input" name="text1" type="text" class="form-control bg-light" placeholder="Search load number..." is="dmx-input" value="">
                             <i class="fa fa-search fa-fw position-absolute top-50 translate-middle-y pe-4"></i>
                         </div>
                     </div>
@@ -151,7 +151,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <dmx-api-datasource id="api1" is="dmx-fetch" url="https://staff.my.salesforce-sites.com/services/apexrest/Loads"></dmx-api-datasource>
-                    <table class="table table-hover table-sm table-dark">
+                    <table id="loads_table" class="table table-hover table-sm table-dark">
                         <thead>
                             <tr>
                                 <th class="d-none">Load ID</th>
@@ -185,6 +185,32 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+      let input = document.getElementById('filter_loads_input');
+      let table = document.getElementById('loads_table');
+    
+      input.addEventListener('keyup', function(event) {
+        let filterValue = event.target.value.toUpperCase();
+        let tableRows = table.getElementsByTagName('tr');
+    
+        for (let i = 0; i < tableRows.length; i++) {
+          let loadNumberCell = tableRows[i].getElementsByTagName('td')[1];
+    
+          if (loadNumberCell) {
+            let loadNumberText = loadNumberCell.textContent || loadNumberCell.innerText;
+    
+            if (loadNumberText.toUpperCase().indexOf(filterValue) > -1) {
+              tableRows[i].style.display = '';
+            } else {
+              tableRows[i].style.display = 'none';
+            }
+          }
+        }
+      });
+    });
+    </script>
 
 
 </body>
