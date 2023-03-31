@@ -20,9 +20,69 @@
     <link rel="stylesheet" href="dmxAppConnect/dmxAnimateCSS/animate.min.css">
     <script src="dmxAppConnect/dmxAnimateCSS/dmxAnimateCSS.js" defer=""></script>
 
+    <!-- Firebase Setup -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+
+    <script>
+        // Initialize Firebase
+                        var firebaseConfig = {
+                        apiKey: "AIzaSyAaQXNYPQNWe1fucHvFE28A8B2CGOmabRQ",
+                        authDomain: "raging-wolf-solutions.firebaseapp.com",
+                        projectId: "raging-wolf-solutions",
+                        storageBucket: "raging-wolf-solutions.appspot.com",
+                        messagingSenderId: "806897756992",
+                        appId: "1:806897756992:web:431cbc44a285af46ea28a5",
+                        measurementId: "G-NT24XFQC0C"
+                        };
+                        firebase.initializeApp(firebaseConfig);
+                        var firestore = firebase.firestore();
+                        
+                        // Restrict access to authenticated users
+                        function loadUserData() {
+                        firebase.auth().onAuthStateChanged(function (user) {
+                        if (user) {
+                        var userId = user.uid;
+                        firestore.collection("users").doc(userId).get().then(function (doc) {
+                        var firstName = doc.data().firstName;
+                        var lastName = doc.data().lastName;
+                        var email = user.email;
+                        var role = doc.data().role;
+                        var department = doc.data().department;
+                        
+                        // Assign values from Firestore data to DMX App Connect variables
+                        dmx.app.set("firstName", firstName);
+                        dmx.app.set("lastName", lastName);
+                        dmx.app.set("email", email);
+                        dmx.app.set("role", role);
+                        dmx.app.set("department", department);
+                        
+                        // Update data bindings on web page
+                        dmx.parse(document.body);
+                        });
+                        } else {
+                        // No user is signed in, redirect to 'login.php'
+                        // window.location.href = "login.php";
+                        }
+                        });
+                        document.getElementById("logout-btn").addEventListener("click", function () {
+                        firebase.auth().signOut().then(function () {
+                        // Sign-out successful, redirect to 'login.php'
+                        window.location.href = "login.php";
+                        }).catch(function (error) {
+                        // An error occurred, handle it here
+                        console.log(error);
+                        });
+                        });
+                        }
+                
+    </script>
+
 </head>
 
-<body is="dmx-app" id="index" class="body-bg">
+<body is="dmx-app" id="index" class="body-bg" onload="loadUserData();">
     <!-- Wappler include head-page="index.php" appconnect="local" is="dmx-app" bootstrap5="local" fontawesome_5="cdn" jquery_slim_35="local" components="{dmxBootstrap5Navigation:{}}" id="index" -->
     <header id="navbar_main" class="border-top rounded-1 border-secondary rounded-0 pb-0">
         <div class="container-fluid navbar-container pb-1 bg-dark">
@@ -63,6 +123,25 @@
 
     <section class="border-top rounded-1 rounded-0 border-secondary min-vh-75 bg-dark">
         <img src="assets/images/section-modal-bg-top-stone.png" class="w-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="d-flex flex-column">
+                        <h5 class="text-warning text-uppercase"><span dmx-text="department">n/a</span> Team</h5>
+                        <h1 class="text-left fw-bold text-light">Customer Invoice Approvals</h1>
+                        <p class="mb-4 text-secondary">Explore past orders using this live and up-to-date information from Salesforce.</p>
+                    </div>
+                </div>
+                <div class="col align-self-end">
+                    <div class="d-flex justify-content-end align-items-end">
+                        <div class="d-flex flex-row-reverse position-relative mb-4">
+                            <input id="filter_contacts_input" name="text1" type="text" class="form-control bg-light" placeholder="Search load number..." is="dmx-input" value="">
+                            <i class="fa fa-search fa-fw position-absolute top-50 translate-middle-y pe-4"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container modules-container mt-auto mb-auto">
             <div class="row">
                 <div class="col-md-12">
@@ -83,10 +162,10 @@
                         <tbody is="dmx-repeat" dmx-generator="bs4table" dmx-bind:repeat="api1.data.top(100)" id="tableRepeat1" class="style1 text-light">
                             <tr>
                                 <td dmx-text="Name" class="d-none"></td>
-                                <td dmx-text="Load_Reference__c"></td>
-                                <td dmx-text="Customer_Name__c" class="text-truncate"></td>
+                                <td dmx-text="Load_Reference__c" class="pe-3"></td>
+                                <td dmx-text="Customer_Name__c" class="text-truncate text-start"></td>
                                 <td dmx-text="Total_Customer_Amount__c.formatCurrency(&quot;$&quot;,&quot;.&quot;,&quot;,&quot;,&quot;2&quot;)"></td>
-                                <td dmx-text="Carrier_Contact_Name__c" class="text-truncate"></td>
+                                <td dmx-text="Carrier_Contact_Name__c" class="text-truncate text-start"></td>
                                 <td dmx-text="Total_Carrier_Amount__c.formatCurrency(&quot;$&quot;,&quot;.&quot;,&quot;,&quot;,&quot;2&quot;)"></td>
                                 <td dmx-text="CreatedDate.toDate()" class="text-nowrap"></td>
                                 <td dmx-text="FreightTM__Status__c"></td>
