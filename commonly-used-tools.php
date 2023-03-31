@@ -25,10 +25,69 @@
     <script src="dmxAppConnect/dmxFormRepeat/dmxFormRepeat.js" defer></script>
     <script src="dmxAppConnect/dmxBrowser/dmxBrowser.js" defer></script>
 
+    <!-- Firebase Setup -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+
+    <script>
+        // Initialize Firebase
+                        var firebaseConfig = {
+                        apiKey: "AIzaSyAaQXNYPQNWe1fucHvFE28A8B2CGOmabRQ",
+                        authDomain: "raging-wolf-solutions.firebaseapp.com",
+                        projectId: "raging-wolf-solutions",
+                        storageBucket: "raging-wolf-solutions.appspot.com",
+                        messagingSenderId: "806897756992",
+                        appId: "1:806897756992:web:431cbc44a285af46ea28a5",
+                        measurementId: "G-NT24XFQC0C"
+                        };
+                        firebase.initializeApp(firebaseConfig);
+                        var firestore = firebase.firestore();
+                        
+                        // Restrict access to authenticated users
+                        function loadUserData() {
+                        firebase.auth().onAuthStateChanged(function (user) {
+                        if (user) {
+                        var userId = user.uid;
+                        firestore.collection("users").doc(userId).get().then(function (doc) {
+                        var firstName = doc.data().firstName;
+                        var lastName = doc.data().lastName;
+                        var email = user.email;
+                        var role = doc.data().role;
+                        var department = doc.data().department;
+                        
+                        // Assign values from Firestore data to DMX App Connect variables
+                        dmx.app.set("firstName", firstName);
+                        dmx.app.set("lastName", lastName);
+                        dmx.app.set("email", email);
+                        dmx.app.set("role", role);
+                        dmx.app.set("department", department);
+                        
+                        // Update data bindings on web page
+                        dmx.parse(document.body);
+                        });
+                        } else {
+                        // No user is signed in, redirect to 'login.php'
+                        // window.location.href = "login.php";
+                        }
+                        });
+                        document.getElementById("logout-btn").addEventListener("click", function () {
+                        firebase.auth().signOut().then(function () {
+                        // Sign-out successful, redirect to 'login.php'
+                        window.location.href = "login.php";
+                        }).catch(function (error) {
+                        // An error occurred, handle it here
+                        console.log(error);
+                        });
+                        });
+                        }
+                
+    </script>
 
 </head>
 
-<body is="dmx-app" id="index" class="body-bg">
+<body is="dmx-app" id="index" class="body-bg" onload="loadUserData();">
     <dmx-json-datasource id="jsonDS2" is="dmx-serverconnect" url="commonlyUsedtools.json"></dmx-json-datasource>
 
     <dmx-data-detail id="jsonDS1" key="siteName" dmx-bind:value="activeTool.value" dmx-bind:data="jsonDS2.data"></dmx-data-detail>
@@ -126,38 +185,49 @@
                     <div class="container">
                         <div class="row">
                             <div class="col">
-                                <h5 class="text-warning text-uppercase">Operations Team</h5>
+                                <h5 class="text-warning text-uppercase"><span dmx-text="department">n/a</span> Team</h5>
                                 <h1 class="text-left fw-bold text-light">Commonly Used Tools</h1>
                                 <p class="mb-4 text-secondary">Here you can find helpful links and logins used in the daily operations of RWS.</p>
                             </div>
                         </div>
                         <div class="row align-items-stretch">
-                            <div class="col-sm-6 col-lg-4 text-white-50 col d-flex" dmx-repeat:commonlyusedtools-repeat="jsonDS2.data">
-                                <div class="tile-category h-tile-default text-start text-white-50 flex-column mb-3 pt-3 pb-3 ps-3 pe-3 tile-minheight w-100" dmx-class="">
-                                    <div class="d-flex cut-tool-logo mb-2"><img src="assets/images/Intranet/carrier411-logo-gray.png" class="img-fluid" alt="Carrier411" dmx-bind:src="img_src">
+                            <div class="col-sm-6 col-lg-4 text-white-50 col" dmx-repeat:commonlyusedtools-repeat="jsonDS2.data">
+
+
+                                <div class="container tile-category h-tile-default text-start text-white-50 flex-column mb-3 pt-3 pb-3 ps-3 pe-3 tile-minheight w-100" dmx-class="">
+                                    <div class="row">
+                                        <div class="col-auto">
+                                            <div class="d-flex cut-tool-logo mb-2" style="width: fit-content;"><img src="assets/images/Intranet/carrier411-logo-gray.png" class="img-fluid" alt="Carrier411" dmx-bind:src="img_src">
+                                            </div>
+                                        </div>
                                     </div>
 
-                                    <h6 class="style10 text-secondary text-start mb-3" dmx-text="title">
-                                        <font color="#6c757d"><span style="font-size: 14px;">Find &amp; qualify registered freight carriers.</span></font>
-                                    </h6>
-                                    <div class="d-flex pt-2">
-                                        <div class="container-fluid gx-0">
-                                            <div class="row gx-3">
-                                                <div class="col-lg-6">
-                                                    <a target="_blank" dmx-bind:href="link">
-                                                        <button class="btn btn-outline-secondary w-100 btn-sm text-nowrap mb-2" type="button">
-                                                            <i class="fas fa-share-square"></i>&nbsp;Open
-                                                        </button>
-                                                    </a>
-                                                </div>
-                                                <div class="col-lg-6">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h6 class="style10 text-secondary text-start mb-3" dmx-text="title">
+                                                <font color="#6c757d"><span style="font-size: 14px;">Find &amp; qualify registered freight carriers.</span></font>
+                                            </h6>
+                                            <div class="d-flex pt-2">
+                                                <div class="container-fluid gx-0">
+                                                    <div class="row gx-3">
+                                                        <div class="col-lg-6">
+                                                            <a target="_blank" dmx-bind:href="link">
+                                                                <button class="btn btn-outline-secondary w-100 btn-sm text-nowrap mb-2" type="button">
+                                                                    <i class="fas fa-share-square"></i>&nbsp;Open
+                                                                </button>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-lg-6">
 
-                                                    <button class="btn btn-outline-secondary w-100 btn-sm text-nowrap mb-2" type="button" data-bs-toggle="modal" data-bs-target="#modal1" dmx-on:click="activeTool.setValue(siteName)"><i class="fas fa-eye"></i>&nbsp;View Details</button>
+                                                            <button class="btn btn-outline-secondary w-100 btn-sm text-nowrap mb-2" type="button" data-bs-toggle="modal" data-bs-target="#modal1" dmx-on:click="activeTool.setValue(siteName)"><i class="fas fa-eye"></i>&nbsp;View Details</button>
 
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+
 
                                 </div>
                             </div>
