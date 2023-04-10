@@ -188,7 +188,7 @@
     <main class="border-top rounded-0 rounded-1 border-secondary mb-5 pt-5">
         <div class="container">
             <div class="row min-vh-75">
-                <div class="col">
+                <div class="col ">
 
                     <div class="container">
                         <div class="row">
@@ -211,7 +211,7 @@
                     </div>
                     <div class="container" id="contacts">
                         <div class="row">
-                            <div class="col-4" dmx-repeat:directory="jsonDS1.data">
+                            <div class="col-12 col-xl-4 col-xxl-4 col-sm-12 col-md-6" dmx-repeat:directory="jsonDS1.data">
                                 <div class="d-flex justify-content-between tile-category mb-3 pt-3 pb-3 ps-3 pe-3">
                                     <div class="d-flex flex-column text-truncate">
                                         <h5 class="text-light"><span dmx-text="firstName">Rob</span>&nbsp;<span dmx-text="lastName">Sandlin</span></h5>
