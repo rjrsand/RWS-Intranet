@@ -215,11 +215,11 @@
                                 <div class="d-flex justify-content-between tile-category mb-3 pt-3 pb-3 ps-3 pe-3">
                                     <div class="d-flex flex-column text-truncate">
                                         <h5 class="text-light"><span dmx-text="firstName">Rob</span>&nbsp;<span dmx-text="lastName">Sandlin</span></h5>
-                                        <h6 class="text-white-50"><span dmx-text="department">Operations/IT</span>,&nbsp;<span dmx-text="title">Specialist</span></h6>
-                                        <h6 class="text-white-50 tile-hover" dmx-on:click="browser1.writeTextToClipboard(emailAddress);browser1.alert('Copied to clipboard!')"><span dmx-text="emailAddress">robs@ragingwolfsolutions.com</span>&nbsp;<i class="far fa-copy"></i></h6>
+                                        <h6 class="text-secondary"><span dmx-text="department">Operations/IT</span>,&nbsp;<span dmx-text="title">Specialist</span></h6>
+                                        <h6 class="tile-hover text-secondary" dmx-on:click="browser1.writeTextToClipboard(emailAddress);browser1.alert('Copied to clipboard!')"><span dmx-text="emailAddress">robs@ragingwolfsolutions.com</span>&nbsp;<i class="far fa-copy"></i></h6>
                                     </div>
                                     <div class="d-flex align-items-start">
-                                        <button id="btn1" class="btn btn-outline-warning border-0 pt-0 pb-0 ps-1 pe-1 text-nowrap" dmx-on:click="modal1.show();data_detail1.select(emailAddress)">More&nbsp;<i class="fas fa-external-link-alt"></i></button>
+                                        <button id="btn1" class="btn btn-outline-warning border-0 pt-0 pb-0 ps-1 pe-1 text-nowrap fw-lighter" dmx-on:click="modal1.show();data_detail1.select(emailAddress)">More&nbsp;<i class="fas fa-external-link-alt fa-sm"></i></button>
                                     </div>
                                 </div>
 
