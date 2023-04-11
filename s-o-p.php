@@ -130,7 +130,7 @@
                                         <div class="d-flex flex-column">
                                             <h5 class="text-warning text-uppercase"><span dmx-text="department">n/a</span> Team</h5>
                                             <h1 class="text-left fw-bold text-light">Welcome to RWS S.O.P.</h1>
-                                            <p class="mb-4 text-secondary">Here you can find helpful tools and Standard Operating Procedures according to your department. If you need further information, please contact your manager.</p>
+                                            <p class="mb-4 text-secondary">Here you can find helpful tools and guides for Standard Operating Procedures according to your department. If you need further information, please contact your manager.</p>
                                         </div>
                                     </div>
                                     <div class="col align-self-end">
