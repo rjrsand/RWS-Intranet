@@ -2,7 +2,6 @@
 <html>
 
 <head>
-    <base href="/" id="browser1">
     <script src="dmxAppConnect/dmxAppConnect.js"></script>
     <meta charset="UTF-8">
     <title>Untitled Document</title>
