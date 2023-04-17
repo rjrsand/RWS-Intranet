@@ -151,7 +151,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <dmx-api-datasource id="api1" is="dmx-fetch" url="https://staff.my.salesforce-sites.com/services/apexrest/Loads"></dmx-api-datasource>
-                    <div style="height: 400px; overflow-y: auto;">
+                    <div style="height: 480px; overflow-y: auto;">
                         <table id="loads_table" class="table table-hover table-sm table-dark">
                             <thead>
                                 <tr>
@@ -165,7 +165,7 @@
                                     <th>Status</th>
                                 </tr>
                             </thead>
-                            <tbody is="dmx-repeat" dmx-generator="bs5table" dmx-bind:repeat="api1.data.top(100)" id="tableRepeat2">
+                            <tbody is="dmx-repeat" dmx-generator="bs5table" dmx-bind:repeat="api1.data.top(500)" id="tableRepeat2">
                                 <tr>
                                     <td dmx-text="Name" class="d-none"></td>
                                     <td dmx-text="Load_Reference__c" class="ps-2 pe-2"></td>
