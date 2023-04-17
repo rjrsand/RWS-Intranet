@@ -93,7 +93,7 @@
 
                                             <h1 class="text-warning">HALT! WHO GOES THERE!?</h1>
                                             <p class="text-center mb-4 text-white-50">You do no have authorization to access this page. Please go back and login using the correct credential.</p>
-                                            <button id="btn1" class="btn align-self-center btn-lg tile-hover fw-bolder bg-warning text-dark active" dmx-on:click="browser1.goto('https://team.ragingwolfsolutions.com/login')">Go Home</button>
+                                            <button id="btn1" class="btn align-self-center btn-lg tile-hover fw-bolder bg-warning text-dark active" dmx-on:click="browser1.goto('index.php')">Go Home</button>
                                         </div>
                                     </div>
                                 </div>
