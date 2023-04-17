@@ -78,11 +78,12 @@
     </header>
     <main>
         <section class="border-top rounded-1 rounded-0 border-secondary min-vh-75 bg-dark">
+            <img src="assets/images/section-modal-bg-top-stone.png" class="w-100">
             <div class="container modules-container mt-auto mb-auto">
                 <div class="row">
 
                     <div class="col-md-12">
-                        <div class="row justify-content-center mt-5 pt-4">
+                        <div class="row justify-content-center">
                             <div class="module-card border rounded-0 rounded-1 border-secondary mt-3 mb-3 ms-3 me-3 pt-4 pb-4 align-self-center text-center text-uppercase fw-bolder col-8">
                                 <div class="row justify-content-center">
                                     <div class="col-lg-7">
