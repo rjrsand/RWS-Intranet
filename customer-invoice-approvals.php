@@ -158,7 +158,7 @@
                                     <th class="d-none">Load ID</th>
                                     <th class="ps-2 pe-2">Load #</th>
                                     <th>Customer</th>
-                                    <th>Customer rate</th>
+                                    <th>Customer Rate</th>
                                     <th>Carrier&nbsp;</th>
                                     <th>Carrier Rate</th>
                                     <th>Created</th>
