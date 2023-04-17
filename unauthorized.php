@@ -39,7 +39,7 @@
 </head>
 
 <body is="dmx-app" id="index" class="body-bg">
-    <!-- Wappler include head-page="index.php" appConnect="local" is="dmx-app" bootstrap5="local" fontawesome_5="cdn" jquery_slim_35="local" components="{dmxBootstrap5Navigation:{},dmxBrowser:{}}" -->
+    <!-- Wappler include head-page="index.php" appConnect="local" is="dmx-app" bootstrap5="local" fontawesome_5="cdn" jquery_slim_35="local" components="{dmxBootstrap5Navigation:{}}" -->
     <div is="dmx-browser" id="browser1"></div>
     <header id="navbar_main" class="border-top rounded-1 border-secondary rounded-0 pb-0">
         <div class="container-fluid navbar-container pb-1 bg-dark">
