@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+
+<head>
+    <base href="/">
+    <script src="dmxAppConnect/dmxAppConnect.js"></script>
+    <meta charset="UTF-8">
+    <title>Untitled Document</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Lustria&amp;family=Muli:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/sansation" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="bootstrap/5/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <link rel="stylesheet" href="css/intranet.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="dmxAppConnect/dmxBootstrap5Navigation/dmxBootstrap5Navigation.js" defer></script>
+
+    <script src="dmxAppConnect/dmxDataTraversal/dmxDataTraversal.js" defer></script>
+    <script src="dmxAppConnect/dmxTyped/dmxTyped.js" defer></script>
+    <script src="dmxAppConnect/dmxTyped/typed.min.js" defer></script>
+    <script src="dmxAppConnect/dmxBootstrap5Modal/dmxBootstrap5Modal.js" defer></script>
+    <script src="dmxAppConnect/dmxFormRepeat/dmxFormRepeat.js" defer></script>
+    <script src="dmxAppConnect/dmxBrowser/dmxBrowser.js" defer></script>
+
+    <!-- Firebase Setup -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+
+    <script>
+        // Initialize Firebase
+                        var firebaseConfig = {
+                        apiKey: "AIzaSyAaQXNYPQNWe1fucHvFE28A8B2CGOmabRQ",
+                        authDomain: "raging-wolf-solutions.firebaseapp.com",
+                        projectId: "raging-wolf-solutions",
+                        storageBucket: "raging-wolf-solutions.appspot.com",
+                        messagingSenderId: "806897756992",
+                        appId: "1:806897756992:web:431cbc44a285af46ea28a5",
+                        measurementId: "G-NT24XFQC0C"
+                        };
+                        firebase.initializeApp(firebaseConfig);
+                        var firestore = firebase.firestore();
+                        
+                        // Restrict access to authenticated users
+                        function loadUserData() {
+                        firebase.auth().onAuthStateChanged(function (user) {
+                        if (user) {
+                        var userId = user.uid;
+                        firestore.collection("users").doc(userId).get().then(function (doc) {
+                        var firstName = doc.data().firstName;
+                        var lastName = doc.data().lastName;
+                        var email = user.email;
+                        var role = doc.data().role;
+                        var department = doc.data().department;
+                        
+                        // Assign values from Firestore data to DMX App Connect variables
+                        dmx.app.set("firstName", firstName);
+                        dmx.app.set("lastName", lastName);
+                        dmx.app.set("email", email);
+                        dmx.app.set("role", role);
+                        dmx.app.set("department", department);
+                        
+                        // Update data bindings on web page
+                        dmx.parse(document.body);
+                        });
+                        } else {
+                        // No user is signed in, redirect to 'login.php'
+                        // window.location.href = "login.php";
+                        }
+                        });
+                        document.getElementById("logout-btn").addEventListener("click", function () {
+                        firebase.auth().signOut().then(function () {
+                        // Sign-out successful, redirect to 'login.php'
+                        window.location.href = "login.php";
+                        }).catch(function (error) {
+                        // An error occurred, handle it here
+                        console.log(error);
+                        });
+                        });
+                        }
+                
+    </script>
+
+</head>
+
+<body>
+    <header id="navbar_main" class="border-top rounded-1 border-secondary rounded-0 pb-0">
+        <div class="container-fluid navbar-container pb-1 bg-dark">
+            <div class="row bg-dark">
+                <div class="col">
+                    <div class="container-xl header-container ps-3 pe-3">
+                        <nav class="header-navbar navbar navbar-expand-lg navbar-dark bg-transparent align-items-stretch pt-0 pb-0">
+
+                            <!-- Quote Modal -->
+
+                            <!-- End Quote Modal -->
+
+                            <a class="navbar-brand mt-1 mb-1 align-self-center" href="index.php">
+                                <img src="assets/images/navbar-logo.png" class="logo-img"></a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1_collapse" aria-controls="navbar1_collapse" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse justify-content-end align-items-stretch" id="navbar1_collapse">
+                                <div class="navbar-nav align-items-stretch text-center">
+                                    <h5 class="text-warning align-self-center mt-2">Hello, <span dmx-text="firstName">n/a</span></h5>
+                                    <a class="nav-item nav-separator ms-2 me-2"></a><a class="nav-item nav-link active rws-nav-item" href="index.php"><i class="fas fa-arrow-left"></i>&nbsp;Go Back</a>
+                                    <a class="nav-item nav-separator ms-2 me-2"></a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="border-top border-secondary mb-5 pt-5">
+        <div class="container">
+            <div class="row min-vh-75">
+                <div class="col fw-bolder lh-lg align-self-center text-center text-uppercase">
+                    <a><img src="assets/images/Intranet/access_denied-removebg-preview.png" class="img-fluid mt-2 mb-2"></a>
+
+                    <h1 class="text-left fw-bold text-light">Access Denied!</h1>
+                    <p class="mb-4 text-secondary">You do no have authorization to access this page. Please go back and login using the correct credentials.</p>
+                </div>
+            </div>
+
+
+
+        </div>
+    </main>
+    <footer class="wappler-block bg-dark pt-5 border-top border-secondary">
+        <div class="container">
+            <div class="row align-items-top">
+                <div class="col-md-4 col-md text-center">
+                    <div class="d-flex">
+                        <img src="assets/images/navbar-logo.png" class="img-fluid footer-logo">
+                    </div>
+
+                </div>
+                <div class="col-md-4 col-md text-center">
+                    <h5 class="text-secondary">Resources</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Resource</a></li>
+                        <li><a class="text-muted" href="#">Resource name</a></li>
+                        <li><a class="text-muted" href="#">Another resource</a></li>
+                        <li><a class="text-muted" href="#">Final resource</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-md text-center">
+                    <h5 class="text-secondary">About</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Team</a></li>
+                        <li><a class="text-muted" href="#">Locations</a></li>
+                        <li><a class="text-muted" href="#">Privacy</a></li>
+                        <li><a class="text-muted" href="#">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-3 border-top border-secondary">
+                <div class="col">
+                    <p class="text-secondary text-center small pt-3">© Copyright 2023. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
