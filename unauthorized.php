@@ -94,7 +94,7 @@
 
                                             <h1 class="text-warning">HALT! WHO GOES THERE!?</h1>
                                             <p class="text-center mb-4 text-white-50">You do no have authorization to access this page. Please go back and login using the correct credential.</p>
-                                            <button id="btn1" class="btn align-self-center btn-outline-warning lh-lg btn-lg tile-hover active fw-bolder text-black-50" dmx-on:click="browser1.goto('login.php')" data-bs-toggle="button">Go Home</button>
+                                            <button id="btn1" class="btn align-self-center btn-lg tile-hover active fw-bolder btn-warning" dmx-on:click="browser1.goto('login.php')" data-bs-toggle="button">Go Home</button>
                                         </div>
                                     </div>
                                 </div>
