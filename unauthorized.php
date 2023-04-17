@@ -3,6 +3,7 @@
 
 <head>
     <base href="/">
+    <script src="dmxAppConnect/dmxAppConnect.js"></script>
     <meta charset="UTF-8">
     <title>Untitled Document</title>
 
@@ -12,33 +13,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="bootstrap/5/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/stylesheet.css" />
     <link rel="stylesheet" href="css/intranet.css" />
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="dmxAppConnect/dmxBootstrap5Navigation/dmxBootstrap5Navigation.js" defer></script>
 
-    <!-- Firebase Setup -->
-    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-storage.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
-    <script>
-        // Initialize Firebase
-        var firebaseConfig = {
-        apiKey: "AIzaSyAaQXNYPQNWe1fucHvFE28A8B2CGOmabRQ",
-        authDomain: "raging-wolf-solutions.firebaseapp.com",
-        projectId: "raging-wolf-solutions",
-        storageBucket: "raging-wolf-solutions.appspot.com",
-        messagingSenderId: "806897756992",
-        appId: "1:806897756992:web:431cbc44a285af46ea28a5",
-        measurementId: "G-NT24XFQC0C"
-        };
-        firebase.initializeApp(firebaseConfig);
-        var firestore = firebase.firestore();
-    </script>
+    <script src="dmxAppConnect/dmxBrowser/dmxBrowser.js" defer></script>
 
 </head>
 
-<body is="dmx-app" id="index" class="body-bg">
+<body is="dmx-app" id="index">
+    <div is="dmx-browser" id="browser1"></div>
     <header id="navbar_main" class="border-top rounded-1 border-secondary rounded-0 pb-0">
         <div class="container-fluid navbar-container pb-1 bg-dark">
             <div class="row bg-dark">
@@ -91,7 +76,7 @@
 
                                             <h1 class="text-warning">HALT! WHO GOES THERE!?</h1>
                                             <p class="text-center mb-4 text-white-50">You do no have authorization to access this page. Please go back and login using the correct credential.</p>
-                                            <button id="btn1" class="btn align-self-center btn-lg tile-hover fw-bolder bg-warning text-dark active">Go Home</button>
+                                            <button id="btn1" class="btn align-self-center btn-lg tile-hover fw-bolder bg-warning text-dark active" dmx-on:click="browser1.goto('index.php')">Go Home</button>
                                         </div>
                                     </div>
                                 </div>
