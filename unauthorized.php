@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <script src="dmxAppConnect/dmxAppConnect.js"></script>
+    <base href="/">
     <meta charset="UTF-8">
     <title>Untitled Document</title>
 
@@ -39,8 +39,6 @@
 </head>
 
 <body is="dmx-app" id="index" class="body-bg">
-    <!-- Wappler include head-page="index.php" appConnect="local" is="dmx-app" bootstrap5="local" fontawesome_5="cdn" jquery_slim_35="local" components="{dmxBootstrap5Navigation:{}}" -->
-    <div is="dmx-browser" id="browser1"></div>
     <header id="navbar_main" class="border-top rounded-1 border-secondary rounded-0 pb-0">
         <div class="container-fluid navbar-container pb-1 bg-dark">
             <div class="row bg-dark">
@@ -93,7 +91,7 @@
 
                                             <h1 class="text-warning">HALT! WHO GOES THERE!?</h1>
                                             <p class="text-center mb-4 text-white-50">You do no have authorization to access this page. Please go back and login using the correct credential.</p>
-                                            <button id="btn1" class="btn align-self-center btn-lg tile-hover fw-bolder bg-warning text-dark active" dmx-on:click="browser1.goto('index.php')">Go Home</button>
+                                            <button id="btn1" class="btn align-self-center btn-lg tile-hover fw-bolder bg-warning text-dark active">Go Home</button>
                                         </div>
                                     </div>
                                 </div>
