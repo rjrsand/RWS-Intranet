@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <base href="/">
+    <base href="/" id="browser1">
     <script src="dmxAppConnect/dmxAppConnect.js"></script>
     <meta charset="UTF-8">
     <title>Untitled Document</title>
@@ -40,7 +40,8 @@
 </head>
 
 <body is="dmx-app" id="index" class="body-bg">
-    <!-- Wappler include head-page="index.php" appConnect="local" is="dmx-app" bootstrap5="local" fontawesome_5="cdn" jquery_slim_35="local" components="{dmxBootstrap5Navigation:{}}" -->
+    <!-- Wappler include head-page="index.php" appConnect="local" is="dmx-app" bootstrap5="local" fontawesome_5="cdn" jquery_slim_35="local" components="{dmxBootstrap5Navigation:{},dmxBrowser:{}}" -->
+    <div is="dmx-browser" id="browser1"></div>
     <header id="navbar_main" class="border-top rounded-1 border-secondary rounded-0 pb-0">
         <div class="container-fluid navbar-container pb-1 bg-dark">
             <div class="row bg-dark">
@@ -84,7 +85,7 @@
 
                     <div class="col-md-12">
                         <div class="row justify-content-center">
-                            <div class="module-card border rounded-0 rounded-1 border-secondary mt-3 mb-3 ms-3 me-3 pt-4 pb-4 align-self-center text-center text-uppercase fw-bolder col-8">
+                            <div class="module-card border rounded-0 rounded-1 border-secondary mt-3 mb-3 ms-3 me-3 pt-4 pb-4 align-self-center text-center col-8">
                                 <div class="row justify-content-center">
                                     <div class="col-lg-7">
                                         <div class="d-flex flex-column">
@@ -92,7 +93,8 @@
                                             <a><img src="assets/images/Intranet/access_denied-removebg-preview.png" class="img-fluid"></a>
 
                                             <h1 class="text-warning">HALT! WHO GOES THERE!?</h1>
-                                            <p class="text-center mb-4 text-uppercase text-white-50">You do no have authorization to access this page. Please go back and login using the correct credentials.</p>
+                                            <p class="text-center mb-4 text-white-50">You do no have authorization to access this page. Please go back and login using the correct credential.</p>
+                                            <button id="btn1" class="btn align-self-center btn-outline-warning lh-lg btn-lg tile-hover active fw-bolder" dmx-on:click="browser1.goto('login.php')" data-bs-toggle="button">Go Home</button>
                                         </div>
                                     </div>
                                 </div>
