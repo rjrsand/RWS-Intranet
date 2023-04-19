@@ -61,6 +61,8 @@
         var role = doc.data().role;
         var department = doc.data().department;
         
+        // Check if user is in the 'accounting' department
+        if (department === 'accounting') {
         // Assign values from Firestore data to DMX App Connect variables
         dmx.app.set("firstName", firstName);
         dmx.app.set("lastName", lastName);
@@ -70,10 +72,14 @@
         
         // Update data bindings on web page
         dmx.parse(document.body);
+        } else {
+        // User is not in the 'accounting' department, redirect to 'unauthorized.php' or another relevant page
+        window.location.href = "unauthorized.php";
+        }
         });
         } else {
         // No user is signed in, redirect to 'login.php'
-        // window.location.href = "login.php";
+        window.location.href = "login.php";
         }
         });
         document.getElementById("logout-btn").addEventListener("click", function () {
