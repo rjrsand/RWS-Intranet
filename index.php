@@ -198,11 +198,9 @@
                 <div class="col-md-4 col-md text-center">
                     <h5 class="text-secondary">Raging Wolf</h5>
                     <ul class="list-unstyled text-small">
-                        <li><a class="text-muted" href="#">About</a>
-                        <li><a class="text-muted" href="#">Official Website</a></li>
-                        </li>
-                        <li><a class="text-muted" href="#">Handbook</a></li>
-                        <li><a class="text-muted" href="#">Contact Us</a></li>
+                        <li><a class="text-muted" href="https://ragingwolfsolutions.com" target="_blank">Official Website</a></li>
+                        <li><a class="text-muted" href="handbook.php" target="_blank">Handbook</a></li>
+                        <li><a class="text-muted" href="mailto:technology@ragingwolfsolutions.com" target="_blank">User Support</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 col-md text-center">
@@ -210,8 +208,6 @@
                     <ul class="list-unstyled text-small">
                         <li class="text-secondary"><span dmx-text="manager">n/a</span></li>
                         <li class="text-secondary">&lt;MANAGER EMAIL&gt;</li>
-                        <li><a class="text-muted" href="#">Privacy</a></li>
-                        <li><a class="text-muted" href="#">Terms</a></li>
                     </ul>
                 </div>
             </div>
