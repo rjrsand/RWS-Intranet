@@ -26,59 +26,7 @@
     <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-storage.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
 
-    <script>
-        // Initialize Firebase
-        var firebaseConfig = {
-        apiKey: "AIzaSyAaQXNYPQNWe1fucHvFE28A8B2CGOmabRQ",
-        authDomain: "raging-wolf-solutions.firebaseapp.com",
-        projectId: "raging-wolf-solutions",
-        storageBucket: "raging-wolf-solutions.appspot.com",
-        messagingSenderId: "806897756992",
-        appId: "1:806897756992:web:431cbc44a285af46ea28a5",
-        measurementId: "G-NT24XFQC0C"
-        };
-        firebase.initializeApp(firebaseConfig);
-        var firestore = firebase.firestore();
-        
-        // Restrict access to authenticated users
-        function loadUserData() {
-        firebase.auth().onAuthStateChanged(function (user) {
-        if (user) {
-        var userId = user.uid;
-        firestore.collection("users").doc(userId).get().then(function (doc) {
-        var firstName = doc.data().firstName;
-        var lastName = doc.data().lastName;
-        var email = user.email;
-        var role = doc.data().role;
-        var department = doc.data().department;
-        
-        // Assign values from Firestore data to DMX App Connect variables
-        dmx.app.set("firstName", firstName);
-        dmx.app.set("lastName", lastName);
-        dmx.app.set("email", email);
-        dmx.app.set("role", role);
-        dmx.app.set("department", department);
-        
-        // Update data bindings on web page
-        dmx.parse(document.body);
-        });
-        } else {
-        // No user is signed in, redirect to 'login.php'
-        // window.location.href = "login.php";
-        }
-        });
-        document.getElementById("logout-btn").addEventListener("click", function () {
-        firebase.auth().signOut().then(function () {
-        // Sign-out successful, redirect to 'login.php'
-        window.location.href = "login.php";
-        }).catch(function (error) {
-        // An error occurred, handle it here
-        console.log(error);
-        });
-        });
-        }
-
-    </script>
+    <script src="js/univ.js"></script>
 
     <link rel="stylesheet" href="dmxAppConnect/dmxBootstrap5TableGenerator/dmxBootstrap5TableGenerator.css" />
 </head>
@@ -107,7 +55,7 @@
                             <div class="collapse navbar-collapse justify-content-end align-items-stretch" id="navbar1_collapse">
                                 <h5 class="text-warning align-self-center mt-2">Hello, <span dmx-text="firstName">n/a</span></h5>
                                 <div class="navbar-nav align-items-stretch text-center">
-                                    <a class="nav-item nav-separator ms-2 me-2"></a><a class="nav-item nav-link active rws-nav-item" href="login.php"><i class="fas fa-arrow-left"></i>&nbsp;Go Back</a>
+                                    <a class="nav-item nav-separator ms-2 me-2"></a><a class="nav-item nav-link active rws-nav-item" href="index.php"><i class="fas fa-arrow-left"></i>&nbsp;Go Back</a>
                                     <a class="nav-item nav-separator ms-2 me-2"></a>
                                 </div>
                             </div>
@@ -129,7 +77,7 @@
                                     <div class="col-lg-8">
                                         <div class="d-flex flex-column">
                                             <h5 class="text-warning text-uppercase"><span dmx-text="department">n/a</span> Team</h5>
-                                            <h1 class="text-left fw-bold text-light">Welcome to RWS S.O.P.</h1>
+                                            <h1 class="text-left fw-bold text-light">Standard Procedures</h1>
                                             <p class="mb-4 text-secondary">Here you can find helpful tools and guides for Standard Operating Procedures according to your department. If you need further information, please contact your manager.</p>
                                         </div>
                                     </div>
