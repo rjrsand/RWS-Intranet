@@ -50,7 +50,7 @@
                                     <div class="col-lg-8">
                                         <div class="d-flex flex-column">
                                             <h5 class="text-warning text-uppercase"><span dmx-text="department">n/a</span> Team</h5>
-                                            <h1 class="text-left fw-bold text-light">Standard Procedures</h1>
+                                            <h1 class="text-left fw-bold text-light">Standard Operating Procedures</h1>
                                             <p class="mb-4 text-secondary">Here you can find helpful tools and guides for Standard Operating Procedures according to your department. If you need further information, please contact your manager.</p>
                                         </div>
                                     </div>
@@ -82,13 +82,37 @@
                                 </div>
                             </div>
                             <div class="col-lg-6">
+                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('assets/Docs/CreditSafe%20SOP%2003-27-2023.pdf')">
+                                    <div class="d-flex align-items-center w-100p justify-content-center">
+                                        <h1 class="mb-0 text-white-50"><i class="fas fa-credit-card"></i></h1>
+                                    </div>
+                                    <div class="d-flex flex-column w-100">
+                                        <h3 class="text-light">CreditSafe Tutorial</h3>
+                                        <p class="mb-0 text-secondary">Access this page to learn what to look for when checking a prospect's credit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 align-self-center">
+                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('../../../Desktop/Imp%20Doc/Tutorial-Docs/Shipping-Order-Tutorial.dotx')">
+                                    <div class="d-flex align-items-center w-100p justify-content-center">
+                                        <h1 class="mb-0 text-white-50"><i class="fab fa-salesforce"></i></h1>
+                                    </div>
+                                    <div class="d-flex flex-column w-100">
+                                        <h3 class="text-light">Shipping Order Tutorial</h3>
+                                        <p class="mb-0 text-secondary">Use this page to learn general information uploading SO's.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
                                 <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('document.php')">
                                     <div class="d-flex align-items-center w-100p justify-content-center">
                                         <h1 class="mb-0 text-white-50"><i class="fas fa-credit-card"></i></h1>
                                     </div>
                                     <div class="d-flex flex-column w-100">
-                                        <h3 class="text-light">CreditSafe</h3>
-                                        <p class="mb-0 text-secondary">Access this page to learn what to look for when checking a prospect's credit.</p>
+                                        <h3 class="text-light">xxx</h3>
+                                        <p class="mb-0 text-secondary">xxx</p>
                                     </div>
                                 </div>
                             </div>
