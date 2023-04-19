@@ -101,18 +101,18 @@
                                     </div>
                                     <div class="d-flex flex-column w-100">
                                         <h3 class="text-light">Shipping Order Tutorial</h3>
-                                        <p class="mb-0 text-secondary">Use this page to learn general information uploading SO's.</p>
+                                        <p class="mb-0 text-secondary">Use this page to learn general information about uploading SO's.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('document.php')">
+                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('assets/Docs/Invoices-POD-Tutorial.pdf')">
                                     <div class="d-flex align-items-center w-100p justify-content-center">
-                                        <h1 class="mb-0 text-white-50"><i class="fas fa-credit-card"></i></h1>
+                                        <h1 class="mb-0 text-white-50"><i class="fas fa-file-invoice-dollar"></i></h1>
                                     </div>
                                     <div class="d-flex flex-column w-100">
-                                        <h3 class="text-light">xxx</h3>
-                                        <p class="mb-0 text-secondary">xxx</p>
+                                        <h3 class="text-light">POD &amp; Invoice Tutorial</h3>
+                                        <p class="mb-0 text-secondary">Use this page to learn how to upload POD's and Invoices.</p>
                                     </div>
                                 </div>
                             </div>
