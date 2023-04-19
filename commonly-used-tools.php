@@ -199,41 +199,9 @@
 
         </div>
     </main>
-    <footer class="wappler-block bg-dark pt-5 border-top border-secondary">
-        <div class="container">
-            <div class="row align-items-top">
-                <div class="col-md-4 col-md text-center">
-                    <div class="d-flex">
-                        <img src="assets/images/navbar-logo.png" class="img-fluid footer-logo">
-                    </div>
 
-                </div>
-                <div class="col-md-4 col-md text-center">
-                    <h5 class="text-secondary">Resources</h5>
-                    <ul class="list-unstyled text-small">
-                        <li><a class="text-muted" href="#">Resource</a></li>
-                        <li><a class="text-muted" href="#">Resource name</a></li>
-                        <li><a class="text-muted" href="#">Another resource</a></li>
-                        <li><a class="text-muted" href="#">Final resource</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4 col-md text-center">
-                    <h5 class="text-secondary">About</h5>
-                    <ul class="list-unstyled text-small">
-                        <li><a class="text-muted" href="#">Team</a></li>
-                        <li><a class="text-muted" href="#">Locations</a></li>
-                        <li><a class="text-muted" href="#">Privacy</a></li>
-                        <li><a class="text-muted" href="#">Terms</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row mt-3 border-top border-secondary">
-                <div class="col">
-                    <p class="text-secondary text-center small pt-3">© Copyright 2023. All Rights Reserved.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <?php include 'footer.php'; ?>
+
     <script src="bootstrap/5/js/bootstrap.bundle.min.js"></script>
 
     <script>

@@ -142,44 +142,8 @@
             </div>
         </section>
     </main>
-    <footer class="wappler-block bg-dark pt-5 border-top border-secondary">
-        <div class="container">
-            <div class="row align-items-top">
-                <div class="col-md-4 col-md text-center">
-                    <div class="d-flex justify-content-center">
-                        <img src="assets/images/navbar-logo.png" class="img-fluid footer-logo mb-3">
-                    </div>
-                </div>
-                <div class="col-md-4 col-md text-center">
-                    <h5 class="text-secondary">Raging Wolf</h5>
-                    <ul class="list-unstyled text-small">
-                        <li><a class="text-muted" href="#">About</a>
-                        <li><a class="text-muted" href="#">Official Website</a></li>
-                        </li>
-                        <li><a class="text-muted" href="#">Handbook</a></li>
-                        <li><a class="text-muted" href="#">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4 col-md text-center">
-                    <h5 class="text-secondary">Your Manager</h5>
-                    <ul class="list-unstyled text-small">
-                        <li class="text-secondary">&lt;MANAGER NAME&gt;</li>
-                        <li class="text-secondary">&lt;MANAGER EMAIL&gt;</li>
-                        <li><a class="text-muted" href="#">Privacy</a></li>
-                        <li><a class="text-muted" href="#">Terms</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row mt-3 border-top border-secondary">
-                <div class="col">
-                    <p class="text-secondary text-center small pt-3">© Copyright 2023. All Rights Reserved.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
 
-
-
+    <?php include 'footer.php'; ?>
 
     <script src="bootstrap/5/js/bootstrap.bundle.min.js"></script>
 

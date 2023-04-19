@@ -131,41 +131,8 @@
             </div>
         </div>
     </section>
-    <footer class="wappler-block bg-dark pt-5 border-top border-secondary">
-        <div class="container">
-            <div class="row align-items-top">
-                <div class="col-md-4 col-md text-center">
-                    <div class="d-flex justify-content-center">
-                        <img src="assets/images/navbar-logo.png" class="img-fluid footer-logo mb-3">
-                    </div>
-                </div>
-                <div class="col-md-4 col-md text-center">
-                    <h5 class="text-secondary">Raging Wolf</h5>
-                    <ul class="list-unstyled text-small">
-                        <li><a class="text-muted" href="#">About</a>
-                        <li><a class="text-muted" href="#">Official Website</a></li>
-                        </li>
-                        <li><a class="text-muted" href="#">Handbook</a></li>
-                        <li><a class="text-muted" href="#">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4 col-md text-center">
-                    <h5 class="text-secondary">Your Manager</h5>
-                    <ul class="list-unstyled text-small">
-                        <li class="text-secondary">&lt;MANAGER NAME&gt;</li>
-                        <li class="text-secondary">&lt;MANAGER EMAIL&gt;</li>
-                        <li><a class="text-muted" href="#">Privacy</a></li>
-                        <li><a class="text-muted" href="#">Terms</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row mt-3 border-top border-secondary">
-                <div class="col">
-                    <p class="text-secondary text-center small pt-3">© Copyright 2023. All Rights Reserved.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+
+    <?php include 'footer.php'; ?>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
