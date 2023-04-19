@@ -112,7 +112,7 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="form-group md-3 text-light col mt-4 mb-4">
+                                                <div class="form-group md-3 text-light col mt-3 mb-4">
                                                     <label for="input1" class="form-label">Department</label>
                                                     <select id="department" class="form-select text-secondary">
                                                         <option value="">Make a selection...</option>
@@ -122,9 +122,9 @@
                                                         <option value="technology">I.T.</option>
                                                     </select>
                                                     <small id="input1_help" class="form-text text-muted">If you are unsure of which department to choose, contact your manager.</small>
-                                                    <div class="row mt-3">
+                                                    <div class="row mt-4">
                                                         <div class="col-6 text-center w-50"><button class="btn btn-outline-secondary btn-sm text-nowrap w-100 mb-2" id="cancel-name-btn">Cancel</button></div>
-                                                        <div class="col-6 text-center w-50"> <button class="btn btn-outline-secondary btn-sm w-100 mb-2" id="submit-name-btn">Submit
+                                                        <div class="col-6 text-center w-50"> <button class="btn btn-sm w-100 mb-2 btn-warning" id="submit-name-btn">Submit
                                                             </button></div>
                                                     </div>
                                                 </div>
