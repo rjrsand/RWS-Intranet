@@ -94,7 +94,7 @@
                                             <form id="login_microsoft">
                                                 <div class="row justify-content-center">
                                                     <div class="col-md-9 text-center"><button id="microsoftsigninbutton" class="btn module-cta-btn btn-warning btn-lg text-center text-break mb-2"><i class="fab fa-windows"></i>&nbsp;Log In With Microsoft</button>
-                                                        <p class="text-center mb-4 text-white-50">Having trouble logging in? Contact us.</p>
+                                                        <p class="text-center mb-4 text-white-50">Having trouble logging in? <a href="mailto:technology@ragingwolfsolutions.com" style="color: yellow; text-decoration: underline;">Contact us.</a></p>
                                                     </div>
                                                 </div>
                                             </form>
