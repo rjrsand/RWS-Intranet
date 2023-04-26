@@ -10,12 +10,12 @@ if (!function_exists('boolval')) {
 
 function formatter_lowercase($val) {
     if ($val == NULL) return NULL;
-    return strtolower(strval($val));
+    return mb_strtolower(strval($val));
 }
 
 function formatter_uppercase($val) {
     if ($val == NULL) return NULL;
-    return strtoupper(strval($val));
+    return mb_strtoupper(strval($val));
 }
 
 function formatter_camelize($val) {
@@ -23,7 +23,7 @@ function formatter_camelize($val) {
     $val = strval($val);
     $val = trim($val);
     $val = preg_replace_callback('/(\-|_|\s)+(.)?/', function($match) {
-        return (isset($match[2]) ? strtoupper($match[2]) : '');
+        return (isset($match[2]) ? mb_strtoupper($match[2]) : '');
     }, $val);
     return $val;
 }
@@ -151,7 +151,7 @@ function formatter_wordCount($val) {
 }
 
 function formatter_length($val) {
-    return strlen(strval($val));
+    return mb_strlen(strval($val));
 }
 
 function formatter_urlencode($val) {

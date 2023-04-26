@@ -144,12 +144,28 @@ if (CONFIG('CORS_ORIGIN') !== FALSE) {
 		$methods = CONFIG('CORS_METHODS');
 		$allowedHeaders = CONFIG('CORS_ALLOWED_HEADERS');
 
-		if ($origin == '*' && isset($_SERVER['HTTP_ORIGIN'])) {
-			$origin = $_SERVER['HTTP_ORIGIN'];
+		if (isset($_SERVER['HTTP_ORIGIN'])) {
+			if ($origin == '*') {
+				$origin = $_SERVER['HTTP_ORIGIN'];
+			}
+
+			$allowedOrigins = explode(',', $origin);
+			if (count($allowedOrigins) > 1) {
+				$origin = FALSE;
+				foreach ($allowedOrigins as $allowedOrigin) {
+					if ($allowedOrigin == $_SERVER['HTTP_ORIGIN']) {
+						$origin = $allowedOrigin;
+						break;
+					}
+				}
+			}
 		}
 		
 		header("HTTP/1.1 204 NO CONTENT");
-		header("Access-Control-Allow-Origin: $origin");
+		if ($origin) {
+			header("Access-Control-Allow-Origin: $origin");
+			header("Vary: Origin");
+		}
 		header("Access-Control-Allow-Methods: $methods");
 		if (CONFIG('CORS_CREDENTIALS') === TRUE) {
 			header("Access-Control-Allow-Credentials: true");
@@ -160,8 +176,21 @@ if (CONFIG('CORS_ORIGIN') !== FALSE) {
 	} else {
 		$origin = CONFIG('CORS_ORIGIN') ?: '*';
 
-		if ($origin == '*' && isset($_SERVER['HTTP_ORIGIN'])) {
-			$origin = $_SERVER['HTTP_ORIGIN'];
+		if (isset($_SERVER['HTTP_ORIGIN'])) {
+			if ($origin == '*') {
+				$origin = $_SERVER['HTTP_ORIGIN'];
+			}
+
+			$allowedOrigins = explode(',', $origin);
+			if (count($allowedOrigins) > 1) {
+				$origin = FALSE;
+				foreach ($allowedOrigins as $allowedOrigin) {
+					if ($allowedOrigin == $_SERVER['HTTP_ORIGIN']) {
+						$origin = $allowedOrigin;
+						break;
+					}
+				}
+			}
 		}
 
 		try {
@@ -180,7 +209,10 @@ if (CONFIG('CORS_ORIGIN') !== FALSE) {
 			// ignore
 		}
 		
-		header("Access-Control-Allow-Origin: $origin");
+		if ($origin) {
+			header("Access-Control-Allow-Origin: $origin");
+			header("Vary: Origin");
+		}
 		if (CONFIG('CORS_CREDENTIALS') === TRUE) {
 			header("Access-Control-Allow-Credentials: true");
 		}
