@@ -57,7 +57,7 @@
                                     <div class="col align-self-end">
                                         <div class="d-flex justify-content-end align-items-end">
                                             <div class="d-flex flex-row-reverse position-relative mb-4">
-                                                <input id="filter_carriers_input" name="text1" type="text" class="form-control bg-light mb-1" placeholder="Search this list..." is="dmx-input" value="">
+                                                <input id="filter_sop" name="text1" type="text" class="form-control bg-light mb-1" placeholder="Search this list..." is="dmx-input" value="">
                                                 <i class="fa fa-search fa-fw position-absolute top-50 translate-middle-y pe-4 pb-1"></i>
                                             </div>
                                         </div>
@@ -70,18 +70,18 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-lg-6 align-self-center">
+                            <div class="col-lg-6 align-self-center sop-row">
                                 <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('https://help.salesforce.com/s/articleView?id=sf.essentials.htm&amp;type=5')">
                                     <div class="d-flex align-items-center w-100p justify-content-center">
                                         <h1 class="mb-0 text-white-50"><i class="fab fa-salesforce"></i></h1>
                                     </div>
                                     <div class="d-flex flex-column w-100">
-                                        <h3 class="text-light">SalesForce Resources</h3>
+                                        <h3 class="text-light">Salesforce Resources</h3>
                                         <p class="mb-0 text-secondary">Use this page to learn general information about using SalesForce.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 sop-row">
                                 <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('assets/Docs/CreditSafe%20SOP%2003-27-2023.pdf')">
                                     <div class="d-flex align-items-center w-100p justify-content-center">
                                         <h1 class="mb-0 text-white-50"><i class="fas fa-credit-card"></i></h1>
@@ -94,7 +94,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-lg-6 align-self-center">
+                            <div class="col-lg-6 align-self-center sop-row">
                                 <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('assets/Docs/Shipping-Order-Tutorial.pdf')">
                                     <div class="d-flex align-items-center w-100p justify-content-center">
                                         <h1 class="mb-0 text-white-50"><i class="fab fa-salesforce"></i></h1>
@@ -105,7 +105,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 sop-row">
                                 <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('assets/Docs/Invoices-POD-Tutorial.pdf')">
                                     <div class="d-flex align-items-center w-100p justify-content-center">
                                         <h1 class="mb-0 text-white-50"><i class="fas fa-file-invoice-dollar"></i></h1>
@@ -126,6 +126,22 @@
     <?php include 'footer.php'; ?>
 
     <script src="bootstrap/5/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#filter_sop').on('input', function () {
+                const filterValue = $(this).val().toLowerCase();
+
+                $('.container .sop-row').filter(function () {
+                    const sopTitle = $(this).find('h3.text-light').text().toLowerCase();
+                    const sopDescription = $(this).find('p.mb-0.text-secondary').text().toLowerCase();
+
+                    $(this).toggle(sopTitle.includes(filterValue) || sopDescription.includes(filterValue));
+                });
+            });
+        });
+    </script>
+
 </body>
 
 </html>

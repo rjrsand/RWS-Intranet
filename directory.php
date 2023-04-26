@@ -158,21 +158,27 @@
 
     <script src="bootstrap/5/js/bootstrap.bundle.min.js"></script>
     <script>
-        document.getElementById('filter_contacts_input').addEventListener('input', function() {
-                const filterValue = this.value.trim().toLowerCase();
-                const contacts = document.querySelectorAll('#contacts .col-4');
-            
-                contacts.forEach(function(contact) {
-                  const name = contact.querySelector('h5').textContent.toLowerCase();
-                  const department = contact.querySelector('h6.text-white-50').textContent.toLowerCase();
-            
-                  if (name.includes(filterValue) || department.includes(filterValue)) {
-                    contact.style.display = '';
-                  } else {
-                    contact.style.display = 'none';
-                  }
-                });
-              });
+        document.addEventListener('DOMContentLoaded', function() {
+    const filterInput = document.getElementById('filter_contacts_input');
+    const contactsContainer = document.getElementById('contacts');
+
+    filterInput.addEventListener('input', function() {
+        const filterValue = filterInput.value.toLowerCase();
+        const contactCards = contactsContainer.querySelectorAll('.col-12.col-xl-4.col-xxl-4.col-sm-12.col-md-6');
+
+        for (const contactCard of contactCards) {
+        const nameElement = contactCard.querySelector('h5.text-light');
+        const nameText = nameElement.textContent.toLowerCase();
+
+        if (nameText.includes(filterValue)) {
+            contactCard.style.display = '';
+        } else {
+            contactCard.style.display = 'none';
+        }
+        }
+    });
+    });
+
     </script>
 </body>
 
