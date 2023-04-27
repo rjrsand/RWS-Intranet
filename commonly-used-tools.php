@@ -89,7 +89,7 @@
         </div>
     </div>
 
-    <?php include 'navbarphp'; ?>
+    <?php include 'navbar.php'; ?>
 
 
     <main class="border-top border-secondary mb-5 pt-5">
