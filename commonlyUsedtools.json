@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "title": "Find & qualify registered freight carriers.",
+        "title": "Qualify registered freight carriers.",
         "img_src": "assets/images/Intranet/carrier411-logo-gray.png",
         "img_alt": "Carrier411",
         "link": "https://www.carrier411.com/",
@@ -118,7 +118,7 @@
     },
     {
         "id": 10,
-        "title": "Qualify carriers with this in-house tool.",
+        "title": "Find carriers with this in-house tool.",
         "img_src": "assets/images/Intranet/carrier-beacon-alphatrac.png",
         "img_alt": "AlphaTrac",
         "link": "https://app.alphatracit.com/login.php",
