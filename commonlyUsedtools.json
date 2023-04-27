@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "title": "Qualify registered freight carriers.",
+        "title": "Qualify any registered freight carriers.",
         "img_src": "assets/images/Intranet/carrier411-logo-gray.png",
         "img_alt": "Carrier411",
         "link": "https://www.carrier411.com/",
@@ -14,7 +14,7 @@
     },
     {
         "id": 7,
-        "title": "Calculate linear feet for truck load.",
+        "title": "Calculate linear feet for partial truck load.",
         "img_src": "assets/images/Intranet/WPGLogoWeb3.png",
         "img_alt": "Linear Foot Calc.",
         "link": "http://www.wpg.org/Member/LinearFootCalc3.asp",
@@ -27,7 +27,7 @@
     },
     {
         "id": 8,
-        "title": "Check credit of customer prospects.",
+        "title": "Check credit for prospective customers.",
         "img_src": "assets/images/Intranet/Creditsafe_Logo.png",
         "img_alt": "CreditSafe",
         "link": "https://mylogin.creditsafe.com/?ReturnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3Dupp%26redirect_uri%3Dhttps%253A%252F%252Fapp.creditsafe.com%252Fcallback%26response_type%3Dtoken%2520id_token%26scope%3Dopenid%2520profile%2520upp_api%2520connect_web%2520ubo_api_gateway%2520ubo_elastic_api%26state%3D9ff0ff02415844bd83d225e1bd4712db%26nonce%3Dcff3bc6842f948bd96812cdf619c8b68",
@@ -92,7 +92,7 @@
     },
     {
         "id": 4,
-        "title": "Quote, book and track LTL shipments.",
+        "title": "Track & manage LTL shipments here.",
         "img_src": "assets/images/Intranet/Forward_Air_Logo.png",
         "img_alt": "ForwardAir",
         "link": "https://www.forwardair.com/login/premier",
@@ -105,7 +105,7 @@
     },
     {
         "id": 5,
-        "title": "Quote, book and track LTL shipments.",
+        "title": "Track and manage LTL shipments.",
         "img_src": "assets/images/Intranet/132052600611026787.png",
         "img_alt": "BlueGrace/BlueShip",
         "link": "https://identity.myblueship.com/Account/Login?ReturnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3Dblueship4%26redirect_uri%3Dhttps%253A%252F%252Fbeta.myblueship.com%252Fauth-callback%26response_type%3Did_token%2520token%26scope%3Dopenid%2520profile%2520blueship-api%26state%3D9219d853608e4070839b073c7a1cf61a%26nonce%3Dac45e660001f453e848dd0ce55e225c1",
@@ -118,7 +118,7 @@
     },
     {
         "id": 10,
-        "title": "Find carriers with this in-house tool.",
+        "title": "Find carriers with this tool.",
         "img_src": "assets/images/Intranet/carrier-beacon-alphatrac.png",
         "img_alt": "AlphaTrac",
         "link": "https://app.alphatracit.com/login.php",
