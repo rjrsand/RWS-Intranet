@@ -11,7 +11,7 @@
                 <h5 class="text-secondary">Raging Wolf</h5>
                 <ul class="list-unstyled text-small">
                     <li><a class="text-muted" href="https://ragingwolfsolutions.com" target="_blank">Official Website</a></li>
-                    <li><a class="text-muted" href="handbook.php" target="_blank">Handbook</a></li>
+                    <li><a class="text-muted" href="handbook.php" target="_blank" dmx-on:click="browser1.goto('https://netorg5121535-my.sharepoint.com/personal/johnathan_ragingwolfsolutions_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fjohnathan%5Fragingwolfsolutions%5Fcom%2FDocuments%2FRaging%20Wolf%20Solutions%2FMISC%2E%20DOCUMENTS%20to%20SHARE%2FOnboarding%2FHandbook%20revisions%20included%5F090721%2Epdf&amp;parent=%2Fpersonal%2Fjohnathan%5Fragingwolfsolutions%5Fcom%2FDocuments%2FRaging%20Wolf%20Solutions%2FMISC%2E%20DOCUMENTS%20to%20SHARE%2FOnboarding')">Handbook</a></li>
                     <li><a class="text-muted" href="mailto:technology@ragingwolfsolutions.com" target="_blank">User Support</a></li>
                 </ul>
             </div>
