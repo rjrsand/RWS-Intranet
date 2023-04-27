@@ -115,5 +115,18 @@
         "username": "RagingRW",
         "password": "Thepack1!",
         "access": ""
+    },
+    {
+        "id": 10,
+        "title": "",
+        "img_src": "assets/images/Intranet/carrier-beacon-alphatrac.png",
+        "img_alt": "AlphaTrac",
+        "link": "app.alphatracit.com/login.php",
+        "button_text": "Open",
+        "view_details": "",
+        "siteName": "AlphaTrac",
+        "username": "",
+        "password": "",
+        "access": ""
     }
 ]
