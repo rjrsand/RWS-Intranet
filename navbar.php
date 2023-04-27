@@ -10,7 +10,7 @@
 
                         <!-- End Quote Modal -->
 
-                        <a class="navbar-brand mt-1 mb-1 align-self-center" href="https://team.ragingwolfsolutions.com" target="_blank">
+                        <a class="navbar-brand mt-1 mb-1 align-self-center" href="https://team.ragingwolfsolutions.com">
                             <img src="assets/images/navbar-logo.png" class="logo-img"></a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1_collapse" aria-controls="navbar1_collapse" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
