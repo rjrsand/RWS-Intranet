@@ -157,7 +157,7 @@ dmx.config({
       "outputType": "object"
     }
   },
-  "index": {
+  "Login": {
     "repeat1": {
       "meta": [
         {

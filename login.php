@@ -5,7 +5,7 @@
     <base href="/">
     <script src="dmxAppConnect/dmxAppConnect.js"></script>
     <meta charset="UTF-8">
-    <title>Untitled Document</title>
+    <title>Who Are You?</title>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Lustria&amp;family=Muli:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet">
@@ -39,8 +39,7 @@
 
 </head>
 
-<body is="dmx-app" id="index" class="body-bg">
-    <!-- Wappler include head-page="index.php" appConnect="local" is="dmx-app" bootstrap5="local" fontawesome_5="cdn" jquery_slim_35="local" components="{dmxBootstrap5Navigation:{}}" -->
+<body is="dmx-app" id="Login" class="body-bg">
     <header id="navbar_main" class="border-top rounded-1 border-secondary rounded-0 pb-0">
         <div class="container-fluid navbar-container pb-1 bg-dark">
             <div class="row bg-dark">
