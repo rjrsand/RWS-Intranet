@@ -115,7 +115,7 @@
                             </div>
                         </div>
                         <div class="row align-items-stretch">
-                            <div class="col-sm-6 col-lg-4 text-white-50 col" dmx-repeat:commonlyusedtools-repeat="jsonDS2.data">
+                            <div class="col-sm-12 col-md-6 col-lg-4 text-white-50 col" dmx-repeat:commonlyusedtools-repeat="jsonDS2.data">
 
 
                                 <div id="tool-container" class="container tile-category h-tile-default text-start text-white-50 flex-column mb-3 pt-3 pb-3 ps-3 pe-3 tile-minheight w-100">
