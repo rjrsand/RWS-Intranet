@@ -37,7 +37,7 @@
     <dmx-value id="firstName"></dmx-value>
     <div is="dmx-browser" id="browser1"></div>
 
-    <?php include 'navbar'; ?>
+    <?php include 'navbar.php'; ?>
 
     <main class="border-top rounded-0 rounded-1 border-secondary pt-5">
         <div class="container">

@@ -42,7 +42,7 @@
 
 <body is="dmx-app" id="index" class="body-bg" onload="loadUserData();">
 
-    <?php include 'navbar'; ?>
+    <?php include 'navbar.php'; ?>
 
     <section class="border-top rounded-1 rounded-0 border-secondary min-vh-75 bg-dark pb-5">
         <img src="assets/images/section-modal-bg-top-stone.png" class="w-100">

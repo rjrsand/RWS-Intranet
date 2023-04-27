@@ -103,7 +103,7 @@
         </div>
     </div>
 
-    <?php include 'navbar'; ?>
+    <?php include 'navbar.php'; ?>
 
     <main class="border-top rounded-0 rounded-1 border-secondary mb-5 pt-5">
         <div class="container">
