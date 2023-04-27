@@ -27,7 +27,7 @@
     },
     {
         "id": 8,
-        "title": "Check credit of new and prospective customers.",
+        "title": "Check credit of customer prospects.",
         "img_src": "assets/images/Intranet/Creditsafe_Logo.png",
         "img_alt": "CreditSafe",
         "link": "https://mylogin.creditsafe.com/?ReturnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3Dupp%26redirect_uri%3Dhttps%253A%252F%252Fapp.creditsafe.com%252Fcallback%26response_type%3Dtoken%2520id_token%26scope%3Dopenid%2520profile%2520upp_api%2520connect_web%2520ubo_api_gateway%2520ubo_elastic_api%26state%3D9ff0ff02415844bd83d225e1bd4712db%26nonce%3Dcff3bc6842f948bd96812cdf619c8b68",
