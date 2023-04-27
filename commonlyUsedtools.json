@@ -121,7 +121,7 @@
         "title": "In-house tool to find & qualify registered freight carriers.",
         "img_src": "assets/images/Intranet/carrier-beacon-alphatrac.png",
         "img_alt": "AlphaTrac",
-        "link": "app.alphatracit.com/",
+        "link": "https://app.alphatracit.com/login.php",
         "button_text": "Open",
         "view_details": "",
         "siteName": "AlphaTrac",
