@@ -136,11 +136,11 @@
                                             <div class="d-flex align-items-center">
                                                 <h5 class="text-nowrap mb-0 me-2 text-warning">Selected Department:&nbsp;</h5>
                                                 <select id="select_dept" class="form-select bg-transparent btn-outline-secondary fw-bolder mb-0 pt-1 pb-1">
-                                                    <option value="All">All</option>
-                                                    <option value="Operations">Operations</option>
-                                                    <option value="Sales">Sales</option>
-                                                    <option value="Accounting">Accounting</option>
-                                                    <option value="Technology">Technology</option>
+                                                    <option class="text-dark" value="All">All</option>
+                                                    <option class="text-dark" value="Operations">Operations</option>
+                                                    <option class="text-dark" value="Sales">Sales</option>
+                                                    <option class="text-dark" value="Accounting">Accounting</option>
+                                                    <option class="text-dark" value="Technology">Technology</option>
                                                 </select>
                                             </div>
                                         </div>
