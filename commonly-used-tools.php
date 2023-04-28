@@ -59,22 +59,22 @@
                                 </div>
                             </div>
                             <div class="row text-nowrap tile-hover" dmx-on:click="browser1.writeTextToClipboard(carrier411_username.value);browser1.alert('Copied to clipboard!')" dmx-bind:title="">
-                                <div class="col-auto w-50">
-                                    <p class="h-100">Username: <span dmx-text="jsonDS1.data.username">wolfpack5</span></p>
+                                <div class="col-lg-9">
+                                    <p class="text-truncate">Username: <span dmx-text="jsonDS1.data.username">wolfpack5</span></p>
                                 </div>
-                                <div class="col"><button class="btn btn-outline-link text-warning pt-0 pb-0" data-bs-toggle="button" dmx-on:click="">
+                                <div class="col-lg-3"><button class="btn btn-outline-link text-warning mb-3 pt-0 pb-0" data-bs-toggle="button" dmx-on:click="">
 
-                                        <span class="badge bg-warning text-dark rounded-pill ms-2" dmx-on:click="">Copy</span></button></div>
+                                        <span class="badge bg-warning text-dark rounded-pill" dmx-on:click="">Copy</span></button></div>
                             </div>
                         </div>
                         <div class="container-fluid gx-0" is="dmx-form-repeat" id="formRepeat2" dmx-bind:items="1">
                             <div class="row text-nowrap tile-hover" dmx-on:click="browser1.writeTextToClipboard(carrier411_password.value);browser1.alert('Copied to clipboard!')">
-                                <div class="col-auto w-50">
-                                    <p class="h-100 ps-0 pe-4">Password: <span dmx-text="jsonDS1.data.password">n/a</span></p>
+                                <div class="col-lg-9">
+                                    <p class="ps-0 pe-4 text-truncate">Password: <span dmx-text="jsonDS1.data.password">n/a</span></p>
                                 </div>
-                                <div class="col"><button class="btn btn-outline-link text-warning pt-0 pb-0" data-bs-toggle="button" dmx-on:click="browser1.writeTextToClipboard(jsonDS1.data.password);browser1.alert('Copied to clipboard!')">
+                                <div class="col-lg-3"><button class="btn btn-outline-link text-warning mb-3 pt-0 pb-0" data-bs-toggle="button" dmx-on:click="browser1.writeTextToClipboard(jsonDS1.data.password);browser1.alert('Copied to clipboard!')">
 
-                                        <span class="badge bg-warning text-dark rounded-pill ms-2">Copy</span></button></div>
+                                        <span class="badge bg-warning text-dark rounded-pill">Copy</span></button></div>
                             </div>
                         </div>
 
@@ -128,8 +128,9 @@
 
                                     <div class="row">
                                         <div class="col">
-                                            <h6 class="style10 text-secondary text-start mb-3" dmx-text="title">
+                                            <h6 class="style10 text-secondary mb-3" dmx-text="title">
                                                 <font color="#6c757d"><span style="font-size: 14px;">Find &amp; qualify registered freight carriers.</span></font>
+
                                             </h6>
                                             <div class="d-flex pt-2">
                                                 <div class="container-fluid gx-0">
