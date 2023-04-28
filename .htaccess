@@ -1,3 +1,11 @@
+# Enable rewrite engine
 RewriteEngine On
-RewriteCond %{HTTPS} !=on
-RewriteRule ^/?(.*) [https://%25%7bSERVER_NAME%7d/$1]https://%{SERVER_NAME}/$1 [R,L]
+
+# Redirect to HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Restrict access to specific IP address
+<RequireAll>
+    Require ip 71.74.97.67
+</RequireAll>
