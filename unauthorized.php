@@ -5,7 +5,9 @@
     <base href="/">
     <script src="dmxAppConnect/dmxAppConnect.js"></script>
     <meta charset="UTF-8">
-    <title>Access Denied</title>
+    <title>Access Denied | Raging Wolf Solutions</title>
+
+    <link rel="icon" href="icons/favicon.ico">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Lustria&amp;family=Muli:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet">
@@ -74,9 +76,9 @@
 
                                             <a><img src="assets/images/Intranet/access_denied-removebg-preview.png" class="img-fluid"></a>
 
-                                            <h1 class="text-warning">'Tis but a flesh wound!</h1>
-                                            <p class="text-center mb-4 text-white-50">You do no have authorization to access this page. Please go back and login using the correct credential.</p>
-                                            <button id="btn1" class="btn align-self-center btn-lg tile-hover fw-bolder bg-warning text-dark active" dmx-on:click="browser1.goto('index.php')">Go Home</button>
+                                            <h1 class="text-warning mt-2">'Tis but a flesh wound!</h1>
+                                            <p class="text-center mb-4 text-white-50">You do no have authorization to access this page.</p>
+                                            <button id="btn1" class="btn align-self-center btn-lg tile-hover bg-warning text-dark active fw-bold" dmx-on:click="browser1.goto('index.php')"><i class="fas fa-arrow-left"></i>&nbsp;Go Back</button>
                                         </div>
                                     </div>
                                 </div>
