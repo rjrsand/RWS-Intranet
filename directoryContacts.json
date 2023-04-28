@@ -7,7 +7,7 @@
         "supervisor": "Rich Metz",
         "title": "Specialist",
         "officePhone": "330-425-1400",
-        "mobilePhone": "812 314 1684"
+        "mobilePhone": "812-314-1684"
     },
     {
         "emailAddress": "richm@ragingwolfsolutions.com",
@@ -17,7 +17,7 @@
         "supervisor": "Scott Brownfield",
         "title": "Manager",
         "officePhone": "330-425-1400",
-        "mobilePhone": "330 858 8280"
+        "mobilePhone": "330-858-8280"
     },
     {
         "emailAddress": "scottb@ragingwolfsolutions.com",
@@ -26,7 +26,7 @@
         "department": "RWS",
         "title": "President",
         "officePhone": "330-425-1400",
-        "mobilePhone": "330 592 6739"
+        "mobilePhone": "330-592-6739"
     },
     {
         "emailAddress": "accounting@ragingwolfsolutions.com",
@@ -34,9 +34,9 @@
         "lastName": "Reyes",
         "department": "Accounting/HR",
         "supervisor": "Scott Brownfield",
-        "title": "Specialist",
+        "title": "Manager",
         "officePhone": "330-425-1400",
-        "mobilePhone": "216 798 6847"
+        "mobilePhone": "216-798-6847"
     },
     {
         "emailAddress": "arianna@ragingwolfsolutions.com",
@@ -46,7 +46,7 @@
         "title": "Specialist",
         "supervisor": "Jenn Reyes",
         "officePhone": "330-425-1400",
-        "mobilePhone": "330 860 7234"
+        "mobilePhone": "330-860-7234"
     },
     {
         "emailAddress": "zakc@ragingwolfsolutions.com",
@@ -56,7 +56,7 @@
         "supervisor": "Rich Metz",
         "title": "Specialist",
         "officePhone": "330-425-1400",
-        "mobilePhone": "330 840 9522"
+        "mobilePhone": "330-840-9522"
     },
     {
         "emailAddress": "brandon@ragingwolfsolutions.com",
@@ -66,7 +66,7 @@
         "supervisor": "Scott Brownfield",
         "title": "VP",
         "officePhone": "330-425-1400",
-        "mobilePhone": "330 592 6902"
+        "mobilePhone": "330-592-6902"
     },
     {
         "emailAddress": "alaura@ragingwolfsolutions.com",
@@ -76,16 +76,16 @@
         "supervisor": "Rich Metz",
         "title": "Specialist",
         "officePhone": "330-425-1400",
-        "mobilePhone": "330 931 1800"
+        "mobilePhone": "330-931-1800"
     },
     {
         "emailAddress": "johnathon@ragingwolfsolutions.com",
-        "firstName": "Johnathon",
+        "firstName": "Johnathan",
         "lastName": "Wierzbicki",
         "department": "I.T.",
         "supervisor": "Scott Brownfield",
         "title": "Manager",
         "officePhone": "330-425-1400",
-        "mobilePhone": "330 687 7662"
+        "mobilePhone": "330-687-7662"
     }
 ]
