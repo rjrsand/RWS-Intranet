@@ -18,7 +18,7 @@
                         <div class="collapse navbar-collapse justify-content-end align-items-stretch" id="navbar1_collapse">
                             <div class="d-flex flex-column justify-content-center">
                                 <h5 class="text-warning align-self-center w-100 text-end mb-0">Hello, <span dmx-text="firstName">n/a</span></h5>
-                                <small class="text-secondary w-100 text-end mb-0" id="logoutbtn">Sign Out.</small>
+                                <small class="text-secondary w-100 text-end mb-0" id="logout-btn">Sign Out.</small>
                             </div>
                             <div class="navbar-nav align-items-stretch text-center">
                                 <a class="nav-item nav-separator ms-2 me-2"></a><a class="nav-item nav-link active rws-nav-item" href="index.php"><i class="fas fa-arrow-left"></i>&nbsp;Go Back</a>
