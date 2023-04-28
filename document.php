@@ -39,6 +39,7 @@
 
     <script src="js/univ.js"></script>
 
+    <link rel="icon" href="icons/favicon.ico">
 </head>
 
 <body is="dmx-app" id="directory" class="body-bg" onload="loadUserData();">
