@@ -27,13 +27,6 @@ class App
     public $response;
     public $session;
 
-    public $db;
-    public $mail;
-    public $auth;
-    public $oauth;
-    public $s3;
-    public $jwt;
-
     public function __construct() {
         $this->WIN = strtoupper(substr(PHP_OS, 0, 3));
 
