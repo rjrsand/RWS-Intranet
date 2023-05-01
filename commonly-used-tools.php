@@ -175,21 +175,22 @@
 
     <script>
         document.getElementById("filter_tools_input").addEventListener("input", function () {
-        filterTools(this.value);
-    });
-    
-    function filterTools(searchValue) {
-        const toolContainers = document.querySelectorAll("#tool-container");
-    
-        toolContainers.forEach((container) => {
-            const toolTitle = container.querySelector(".tool-title");
-            if (toolTitle.alt.toLowerCase().includes(searchValue.toLowerCase())) {
-                container.style.display = "block";
-            } else {
-                container.style.display = "none";
-            }
+            filterTools(this.value);
         });
-    }
+
+        function filterTools(searchValue) {
+            const toolContainers = document.querySelectorAll("#tool-container");
+
+            toolContainers.forEach((container) => {
+                const toolTitle = container.querySelector(".tool-title");
+                const column = container.parentElement;
+                if (toolTitle.alt.toLowerCase().includes(searchValue.toLowerCase())) {
+                    column.style.display = "block";
+                } else {
+                    column.style.display = "none";
+                }
+            });
+        }
     </script>
 
 </body>
