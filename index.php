@@ -80,7 +80,7 @@
                                     </div>
                                     <div class="d-flex flex-column w-100">
                                         <h3 class="text-light">Customer Invoice Approvals</h3>
-                                        <p class="mb-0 text-secondary">Click here to add or edit a customer's invoice.</p>
+                                        <p class="mb-0 text-secondary">Portal to review Salesforce orders in real time.</p>
                                     </div>
                                 </div>
                             </div>
@@ -122,7 +122,7 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-6 card-container">
-                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('https://netorg5121535-my.sharepoint.com/personal/johnathan_ragingwolfsolutions_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fjohnathan%5Fragingwolfsolutions%5Fcom%2FDocuments%2FRaging%20Wolf%20Solutions%2FMISC%2E%20DOCUMENTS%20to%20SHARE%2FTraining&amp;view=0')">
+                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('training.php')">
                                     <div class="d-flex align-items-center w-100p justify-content-center">
                                         <h1 class="mb-0 text-white-50"><i class="fas fa-link"></i></h1>
                                     </div>
