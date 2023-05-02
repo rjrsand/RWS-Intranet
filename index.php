@@ -41,7 +41,7 @@
 
     <?php include 'navbar.php'; ?>
 
-    <main class="border-top rounded-0 rounded-1 border-secondary pt-5 pb-5">
+    <main class="border-top rounded-0 rounded-1 border-secondary pt-5 pb-3">
         <div class="container">
             <div class="row min-vh-75">
                 <div class="col">
