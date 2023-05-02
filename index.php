@@ -41,7 +41,7 @@
 
     <?php include 'navbar.php'; ?>
 
-    <main class="border-top rounded-0 rounded-1 border-secondary pt-5">
+    <main class="border-top rounded-0 rounded-1 border-secondary pt-5 pb-5">
         <div class="container">
             <div class="row min-vh-75">
                 <div class="col">
@@ -85,9 +85,9 @@
                                 </div>
                             </div>
                             <div class="col-lg-6 card-container">
-                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('document.php')">
+                                <div class="d-flex tile-category align-items-center h-tile-default tile-hover mb-3 pt-3 pb-4 ps-2 pe-2" dmx-on:click="browser1.goto('document.php')">
                                     <div class="d-flex align-items-center w-100p justify-content-center">
-                                        <h1 class="mb-0 text-white-50"><i class="far fa-file-alt"></i></h1>
+                                        <h1 class="mb-0 text-white-50"><i class="fas fa-file-alt"></i></h1>
                                     </div>
                                     <div class="d-flex flex-column w-100">
                                         <h3 class="text-light">Document Center</h3>
@@ -122,9 +122,9 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-6 card-container">
-                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('training.php')">
+                                <div class="d-flex tile-category align-items-center h-tile-default tile-hover mb-3 pt-3 pb-3 ps-2 pe-2" dmx-on:click="browser1.goto('training.php')">
                                     <div class="d-flex align-items-center w-100p justify-content-center">
-                                        <h1 class="mb-0 text-white-50"><i class="fas fa-link"></i></h1>
+                                        <h1 class="mb-0 text-white-50"><i class="fas fa-play-circle"></i></h1>
                                     </div>
                                     <div class="d-flex flex-column w-100">
                                         <h3 class="text-light">Video Trainings</h3>
