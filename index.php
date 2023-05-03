@@ -127,7 +127,7 @@
                                         <h1 class="mb-0 text-white-50"><i class="fas fa-play-circle"></i></h1>
                                     </div>
                                     <div class="d-flex flex-column w-100">
-                                        <h3 class="text-light">Video Trainings</h3>
+                                        <h3 class="text-light">Training Resources</h3>
                                         <p class="mb-0 text-secondary">Use this page to view all trainings.</p>
                                     </div>
                                 </div>
