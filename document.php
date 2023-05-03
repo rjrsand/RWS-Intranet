@@ -163,20 +163,20 @@
                                         </div>
 
                                     </div>
-                                    <div class="col-lg-6 align-self-center dept-all">
-                                        <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('https://netorg5121535-my.sharepoint.com/:w:/r/personal/johnathan_ragingwolfsolutions_com/_layouts/15/Doc.aspx?sourcedoc=%7BB57044A2-E59D-4497-AAAF-463AB38A7EEA%7D&amp;file=OT_Request.docx&amp;action=default&amp;mobileredirect=true')">
+
+
+
+                                    <div class="col-lg-6">
+                                        <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('https://ragingwolfsolutions.com/rwscarriers.php')">
                                             <div class="d-flex align-items-center w-100p justify-content-center">
                                                 <h1 class="mb-0 text-white-50"><i class="fas fa-link"></i></h1>
                                             </div>
                                             <div class="d-flex flex-column w-100 document-title">
-                                                <h3 class="text-light">Overtime Request</h3>
+                                                <h3 class="text-light">Download Carrier Packet</h3>
                                                 <p class="mb-0 text-secondary">Click here to open a document.</p>
                                             </div>
                                         </div>
-
                                     </div>
-
-
                                     <div class="col-lg-6 dept-all">
                                         <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('https://netorg5121535-my.sharepoint.com/personal/johnathan_ragingwolfsolutions_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fjohnathan%5Fragingwolfsolutions%5Fcom%2FDocuments%2FRaging%20Wolf%20Solutions%2FMISC%2E%20DOCUMENTS%20to%20SHARE%2FOnboarding%2FHandbook%20revisions%20included%5F090721%2Epdf&amp;parent=%2Fpersonal%2Fjohnathan%5Fragingwolfsolutions%5Fcom%2FDocuments%2FRaging%20Wolf%20Solutions%2FMISC%2E%20DOCUMENTS%20to%20SHARE%2FOnboarding')">
                                             <div class="d-flex align-items-center w-100p justify-content-center">
@@ -273,13 +273,13 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-lg-6 align-self-center dept-operations">
-                                        <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('assets/Docs/CreditSafe%20SOP%2003-27-2023.pdf')">
+                                    <div class="col-lg-6 align-self-center dept-all">
+                                        <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('https://netorg5121535-my.sharepoint.com/:w:/r/personal/johnathan_ragingwolfsolutions_com/_layouts/15/Doc.aspx?sourcedoc=%7BB57044A2-E59D-4497-AAAF-463AB38A7EEA%7D&amp;file=OT_Request.docx&amp;action=default&amp;mobileredirect=true')">
                                             <div class="d-flex align-items-center w-100p justify-content-center">
                                                 <h1 class="mb-0 text-white-50"><i class="fas fa-link"></i></h1>
                                             </div>
                                             <div class="d-flex flex-column w-100 document-title">
-                                                <h3 class="text-light">CreditSafe Tutorial</h3>
+                                                <h3 class="text-light">Overtime Request</h3>
                                                 <p class="mb-0 text-secondary">Click here to open a document.</p>
                                             </div>
                                         </div>
@@ -296,17 +296,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6">
-                                        <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('https://ragingwolfsolutions.com/rwscarriers.php')">
-                                            <div class="d-flex align-items-center w-100p justify-content-center">
-                                                <h1 class="mb-0 text-white-50"><i class="fas fa-link"></i></h1>
-                                            </div>
-                                            <div class="d-flex flex-column w-100 document-title">
-                                                <h3 class="text-light">Download Carrier Packet</h3>
-                                                <p class="mb-0 text-secondary">Click here to open a document.</p>
-                                            </div>
-                                        </div>
-                                    </div>
+
 
                                 </div>
                             </div>
