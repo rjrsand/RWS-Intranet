@@ -117,7 +117,7 @@
 
                             <div class="col-lg-12">
                                 <h5 class="text-warning text-uppercase"><span dmx-text="department">n/a</span> Team</h5>
-                                <h1 class="text-left fw-bold text-light">Video Trainings</h1>
+                                <h1 class="text-left fw-bold text-light">Training Resources</h1>
                                 <p class="mb-4 text-secondary">Here you can find video trainings needed within RWS, if you need additional information or resources, please contact your manager.</p>
 
                             </div>
@@ -183,6 +183,42 @@
                                             <div class="d-flex flex-column w-100 document-title">
                                                 <h3 class="text-light">Shipping Order Tutorial</h3>
                                                 <p class="mb-0 text-white-50">Click here to open the video.</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-6 align-self-center dept-operations">
+                                        <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('assets/Docs/CreditSafe%20SOP%2003-27-2023.pdf')">
+                                            <div class="d-flex align-items-center w-100p justify-content-center">
+                                                <h1 class="mb-0 text-white-50"><i class="fas fa-link"></i></h1>
+                                            </div>
+                                            <div class="d-flex flex-column w-100 document-title">
+                                                <h3 class="text-light">CreditSafe Tutorial</h3>
+                                                <p class="mb-0 text-secondary">Click here to open a document.</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-6 align-self-center dept-operations">
+                                        <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('assets/Docs/Invoices-POD-Tutorial.pdf')">
+                                            <div class="d-flex align-items-center w-100p justify-content-center">
+                                                <h1 class="mb-0 text-white-50"><i class="fas fa-link"></i></h1>
+                                            </div>
+                                            <div class="d-flex flex-column w-100 document-title">
+                                                <h3 class="text-light">Invoice/POD Tutorial</h3>
+                                                <p class="mb-0 text-secondary">Click here to open a document.</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-6 align-self-center dept-operations">
+                                        <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('assets/Docs/Shipping-Order-Tutorial.pdf')">
+                                            <div class="d-flex align-items-center w-100p justify-content-center">
+                                                <h1 class="mb-0 text-white-50"><i class="fas fa-link"></i></h1>
+                                            </div>
+                                            <div class="d-flex flex-column w-100 document-title">
+                                                <h3 class="text-light">Shipping Order Tutorial</h3>
+                                                <p class="mb-0 text-secondary">Click here to open a document.</p>
                                             </div>
                                         </div>
 
