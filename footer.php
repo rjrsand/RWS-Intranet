@@ -1,6 +1,6 @@
 <!-- Wappler include head-page="index.php" appConnect="local" is="dmx-app" bootstrap5="local" fontawesome_5="cdn" jquery_slim_35="cdn" -->
 <section>
-    <h2 class="rounded-circle report-bug-btn text-center text-light bg-dark shadow border "><i class="fa fa-bug fa-fw ps-1 pb-1"></i></h2>
+    <h2 class="rounded-circle report-bug-btn text-center text-light bg-dark shadow border " dmx-on:click="browser1.goto('https://forms.clickup.com/14351633/f/dnz8h-3730/CWCYVE1OEJSCP24N62')"><i class="fa fa-bug fa-fw ps-1 pb-1"></i></h2>
 </section>
 <footer class="wappler-block bg-dark pt-5 border-top border-secondary">
     <div class="container">
