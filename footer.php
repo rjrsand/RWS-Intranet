@@ -26,7 +26,7 @@
                 <ul class="list-unstyled text-small">
                     <li class="text-secondary"><span dmx-text="manager">n/a</span></li>
                     <li class="text-secondary">&lt;MANAGER EMAIL&gt;</li>
-                    <a class="text-muted" href="https://app.clickup.com/14351633/v/fm/dnz8h-3730" target="_blank">Report a Bug</a>
+                    <a class="text-muted" href="https://forms.clickup.com/14351633/f/dnz8h-3730/CWCYVE1OEJSCP24N62" target="_blank">Report a Bug</a>
                 </ul>
             </div>
 
