@@ -1,4 +1,7 @@
 <!-- Wappler include head-page="index.php" appConnect="local" is="dmx-app" bootstrap5="local" fontawesome_5="cdn" jquery_slim_35="cdn" -->
+<section>
+    <h2 class="rounded-circle report-bug-btn text-center text-light bg-dark shadow border "><i class="fa fa-bug fa-fw ms-1"></i></h2>
+</section>
 <footer class="wappler-block bg-dark pt-5 border-top border-secondary">
     <div class="container">
         <div class="row align-items-top">
@@ -12,7 +15,10 @@
                 <ul class="list-unstyled text-small">
                     <li><a class="text-muted" href="https://ragingwolfsolutions.com" target="_blank">Official Website</a></li>
                     <li><a class="text-muted" href="handbook.php" target="_blank" dmx-on:click="browser1.goto('https://netorg5121535-my.sharepoint.com/personal/johnathan_ragingwolfsolutions_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fjohnathan%5Fragingwolfsolutions%5Fcom%2FDocuments%2FRaging%20Wolf%20Solutions%2FMISC%2E%20DOCUMENTS%20to%20SHARE%2FOnboarding%2FHandbook%20revisions%20included%5F090721%2Epdf&amp;parent=%2Fpersonal%2Fjohnathan%5Fragingwolfsolutions%5Fcom%2FDocuments%2FRaging%20Wolf%20Solutions%2FMISC%2E%20DOCUMENTS%20to%20SHARE%2FOnboarding')">Handbook</a></li>
-                    <li><a class="text-muted" href="mailto:technology@ragingwolfsolutions.com" target="_blank">User Support</a></li>
+                    <li><a class="text-muted" href="mailto:technology@ragingwolfsolutions.com" target="_blank">User Support</a>
+
+
+                    </li>
                 </ul>
             </div>
             <div class="col-md-4 col-md text-center">
@@ -20,8 +26,10 @@
                 <ul class="list-unstyled text-small">
                     <li class="text-secondary"><span dmx-text="manager">n/a</span></li>
                     <li class="text-secondary">&lt;MANAGER EMAIL&gt;</li>
+                    <a class="text-muted" href="https://app.clickup.com/14351633/v/fm/dnz8h-3730" target="_blank">Report a Bug</a>
                 </ul>
             </div>
+
         </div>
         <div class="row mt-3 border-top border-secondary">
             <div class="col">

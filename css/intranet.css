@@ -57,3 +57,14 @@ border-radius: 3px;
 .dept-all {
     
 }
+
+.report-bug-btn {
+    position: fixed;
+    right: 3%;
+    display: inline-block;
+    height: 58px;
+    width: 58px;
+    line-height: 60px;
+    bottom: 5%;
+    z-index: 19999;
+}
