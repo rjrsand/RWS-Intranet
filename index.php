@@ -90,7 +90,7 @@
                                         <h1 class="mb-0 text-white-50"><i class="fas fa-file-alt"></i></h1>
                                     </div>
                                     <div class="d-flex flex-column w-100">
-                                        <h3 class="text-light">Document Center</h3>
+                                        <h3 class="text-light">Forms &amp; Documents</h3>
                                         <p class="mb-0 text-secondary">Use this page to access RWS employee documents.</p>
                                     </div>
                                 </div>
