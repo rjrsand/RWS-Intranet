@@ -151,6 +151,28 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-lg-6 sop-row">
+                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('assets/Docs/BlueShip-LTL-Tutorial.pdf')">
+                                    <div class="d-flex align-items-center w-100p justify-content-center">
+                                        <h1 class="mb-0 text-white-50"><i class="fab fa-less"></i></h1>
+                                    </div>
+                                    <div class="d-flex flex-column w-100">
+                                        <h3 class="text-light">BlueShip LTL Tutorial</h3>
+                                        <p class="mb-0 text-secondary">Use this page to learn how to create ltl loads.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 sop-row">
+                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('https://8c37130e-6562-4f21-985f-edce05f66daf.shelf-ssp.com/dat-one-for-brokers-quick-start-guide-0a4695dd')">
+                                    <div class="d-flex align-items-center w-100p justify-content-center">
+                                        <h1 class="mb-0 text-white-50"><i class="fas fa-list-ol"></i></h1>
+                                    </div>
+                                    <div class="d-flex flex-column w-100">
+                                        <h3 class="text-light">DAT Loadboard Tutorial</h3>
+                                        <p class="mb-0 text-secondary">Click here to learn how to use the DAT Load board.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
