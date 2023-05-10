@@ -119,13 +119,35 @@
                                 </div>
                             </div>
                             <div class="col-lg-6 sop-row">
-                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="">
+                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('assets/Docs/Carrier-Customer-Setup-Tutorial.pdf')">
                                     <div class="d-flex align-items-center w-100p justify-content-center">
-                                        <h1 class="mb-0 text-white-50"><i class="fas fa-truck-loading"></i></h1>
+                                        <h1 class="mb-0 text-white-50"><i class="fas fa-truck"></i></h1>
                                     </div>
                                     <div class="d-flex flex-column w-100">
                                         <h3 class="text-light">New Customer/Carrier Tutorial</h3>
                                         <p class="mb-0 text-secondary">Use this page to learn how to upload POD's and Invoices.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 sop-row">
+                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('assets/Docs/BlueJay-Tutorial.pdf')">
+                                    <div class="d-flex align-items-center w-100p justify-content-center">
+                                        <h1 class="mb-0 text-white-50"><i class="fas fa-dove"></i></h1>
+                                    </div>
+                                    <div class="d-flex flex-column w-100">
+                                        <h3 class="text-light">BlueJay Tutorial</h3>
+                                        <p class="mb-0 text-secondary">Use this page to learn how to use BlueJay TMS.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 sop-row">
+                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('assets/Docs/New-Load-Tutorial.pdf')">
+                                    <div class="d-flex align-items-center w-100p justify-content-center">
+                                        <h1 class="mb-0 text-white-50"><i class="fas fa-truck-loading"></i></h1>
+                                    </div>
+                                    <div class="d-flex flex-column w-100">
+                                        <h3 class="text-light">New/Edit Load Tutorial</h3>
+                                        <p class="mb-0 text-secondary">Use this page to learn how to create and edit loads.</p>
                                     </div>
                                 </div>
                             </div>
