@@ -170,7 +170,7 @@
     },
     {
         "id": 14,
-        "title": "IT Admin tools.",
+        "title": "Advanced email security.",
         "img_src": "assets/images/Intranet/proofpoint-logo.png",
         "img_alt": "Proofpoint",
         "link": "https://godaddy.cloud-protect.net/app/login.php",
@@ -183,7 +183,7 @@
     },
     {
         "id": 15,
-        "title": "IT Admin tools.",
+        "title": "Microsoft cloud registry.",
         "img_src": "assets/images/Intranet/Azure.png",
         "img_alt": "Azure",
         "link": "https://portal.azure.com/#home",
