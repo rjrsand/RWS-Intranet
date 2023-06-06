@@ -219,5 +219,18 @@
         "username": "RWS Email",
         "password": "Own PW",
         "access": ""
+    },
+    {
+        "id": 18,
+        "title": "Access RWS VOIP telephone network.",
+        "img_src": "assets/images/Intranet/Nextiva-logo.png",
+        "img_alt": "Nextiva",
+        "link": "myapp://manage.nextiva.com/nx-officemanager/?irpid=2003851&utm_source=impactr&utm_medium=affiliate&utm_campaign=impactr&utm_content=EdgeBingFlow&irclickid=3E2zdESjPxyNRDSRA6QcpzoYUkF0l42RywJpwQ0",
+        "button_text": "Open",
+        "view_details": "Nextiva",
+        "siteName": "Nextiva",
+        "username": "RWS Email",
+        "password": "Own PW",
+        "access": ""
     }
 ]
