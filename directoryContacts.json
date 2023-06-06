@@ -6,7 +6,7 @@
         "department": "Operations/IT",
         "supervisor": "Rich Metz",
         "title": "Specialist",
-        "officePhone": "330-425-1400",
+        "officePhone": "330-425-1400 ext. 03",
         "mobilePhone": "812-314-1684"
     },
     {
@@ -16,7 +16,7 @@
         "department": "Operations",
         "supervisor": "Scott Brownfield",
         "title": "Manager",
-        "officePhone": "330-425-1400",
+        "officePhone": "330-425-1400 ext. 06",
         "mobilePhone": "330-858-8280"
     },
     {
@@ -25,7 +25,7 @@
         "lastName": "Brownfield",
         "department": "RWS",
         "title": "President",
-        "officePhone": "330-425-1400",
+        "officePhone": "330-425-1400 ext. 08",
         "mobilePhone": "330-592-6739"
     },
     {
@@ -55,7 +55,7 @@
         "department": "Operations",
         "supervisor": "Rich Metz",
         "title": "Specialist",
-        "officePhone": "330-425-1400",
+        "officePhone": "330-425-1400 ext. 05",
         "mobilePhone": "330-840-9522"
     },
     {
@@ -65,7 +65,7 @@
         "department": "Sales",
         "supervisor": "Scott Brownfield",
         "title": "VP",
-        "officePhone": "330-425-1400",
+        "officePhone": "330-425-1400 ext. 04",
         "mobilePhone": "330-592-6902"
     },
     {
@@ -75,7 +75,7 @@
         "department": "Operations",
         "supervisor": "Rich Metz",
         "title": "Specialist",
-        "officePhone": "330-425-1400",
+        "officePhone": "330-425-1400 ext. 02",
         "mobilePhone": "330-931-1800"
     },
     {
@@ -85,7 +85,7 @@
         "department": "I.T.",
         "supervisor": "Scott Brownfield",
         "title": "Manager",
-        "officePhone": "330-425-1400",
+        "officePhone": "330-425-1400 ext. 07",
         "mobilePhone": "330-687-7662"
     }
 ]
