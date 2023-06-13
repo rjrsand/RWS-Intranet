@@ -320,6 +320,18 @@
                                         </div>
 
                                     </div>
+                                    <div class="col-lg-6 align-self-center dept-all">
+                                        <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('assets/Docs/Nextiva-Cheat-Sheet.pdf')">
+                                            <div class="d-flex align-items-center w-100p justify-content-center">
+                                                <h1 class="mb-0 text-white-50"><i class="fas fa-file-invoice"></i></h1>
+                                            </div>
+                                            <div class="d-flex flex-column w-100 document-title">
+                                                <h3 class="text-light">Nextiva Cheat Sheet</h3>
+                                                <p class="mb-0 text-secondary">Click here to open a document.</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
                                     <div class="col-lg-6 align-self-center dept-operations">
                                         <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('assets/Docs/Invoices-POD-Tutorial.pdf')">
                                             <div class="d-flex align-items-center w-100p justify-content-center">
