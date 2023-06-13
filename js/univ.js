@@ -31,6 +31,7 @@ function loadUserData() {
                 dmx.app.set("email", email);
                 dmx.app.set("role", role);
                 dmx.app.set("department", department);
+                dmx.app.set("managerEmail", managerEmail);
                 dmx.app.set("manager", manager); // Assign the manager value
 
                 // Update data bindings on web page
