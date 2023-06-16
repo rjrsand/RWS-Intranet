@@ -223,7 +223,7 @@
     {
         "id": 18,
         "title": "Access RWS VOIP telephone network.",
-        "img_src": "assets/images/Intranet/Nextiva-logo.png",
+        "img_src": "assets/images/Intranet/Nextiva-logo.webp",
         "img_alt": "Nextiva",
         "link": "ntcdesk://url=https://ragingwolf.nextos.com",
         "button_text": "Open",
