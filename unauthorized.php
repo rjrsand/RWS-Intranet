@@ -74,7 +74,7 @@
                                     <div class="col-lg-7">
                                         <div class="d-flex flex-column">
 
-                                            <a><img src="assets/images/Intranet/access_denied-removebg-preview.png" class="img-fluid"></a>
+                                            <a><img src="assets/images/Intranet/access_denied-removebg-preview.webp" class="img-fluid"></a>
 
                                             <h1 class="text-warning mt-2">'Tis but a flesh wound!</h1>
                                             <p class="text-center mb-4 text-white-50">You do no have authorization to access this page.</p>
