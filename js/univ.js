@@ -24,6 +24,7 @@ function loadUserData() {
                 var role = doc.data().role;
                 var department = doc.data().department;
                 var manager = doc.data().manager; // Retrieve the manager field
+                var managerEmail = doc.data().managerEmail;
 
                 // Assign values from Firestore data to DMX App Connect variables
                 dmx.app.set("firstName", firstName);
@@ -39,7 +40,7 @@ function loadUserData() {
             });
         } else {
             // No user is signed in, redirect to 'login.php'
-            window.location.href = "login.php";
+            // window.location.href = "login.php";
         }
     });
     document.getElementById("logout-btn").addEventListener("click", function () {
