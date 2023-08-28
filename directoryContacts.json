@@ -87,5 +87,15 @@
         "title": "Manager",
         "officePhone": "330-425-1400 ext. 07",
         "mobilePhone": "330-687-7662"
+    },
+    {
+        "emailAddress": "junior@ragingwolfsolutions.com",
+        "firstName": "Junior",
+        "lastName": "Miller",
+        "department": "Sales",
+        "supervisor": "Brandon Brownfield",
+        "title": "Sr. Account Executive",
+        "officePhone": "330-425-1400 ext. 09",
+        "mobilePhone": "360-931-5220"
     }
 ]
