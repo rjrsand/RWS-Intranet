@@ -85,7 +85,7 @@
                                     <th>Status</th>
                                 </tr>
                             </thead>
-                            <tbody is="dmx-repeat" dmx-generator="bs5table" dmx-bind:repeat="api1.data.top(500)" id="tableRepeat2">
+                            <tbody is="dmx-repeat" dmx-generator="bs5table" dmx-bind:repeat="api1.data.top(700)" id="tableRepeat2">
                                 <tr>
                                     <td dmx-text="Name" class="d-none"></td>
                                     <td dmx-text="Load_Reference__c" class="ps-2 pe-2"></td>
