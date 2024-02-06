@@ -16,14 +16,15 @@
 </head>
 
 <body is="dmx-app" id="trakingph3">
-    <header></header>
-    <main>
+    <main class="min-vh-100 bg-dark text-warning">
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <div class="d-flex justify-content-center mt-5 mb-2">
-                        <button id="btn1" class="btn w-50 border">
-                            <i class="fas fa-arrow-left fa-fw me-2"></i>Return Home</button>
+                    <div class="d-flex justify-content-center mt-5 pb-4">
+                        <a href="https://www.ragingwolfsolutions.com" class="w-50"><button id="btn1" class="btn btn-outline-warning w-100">
+                                <i class="fas fa-arrow-left fa-fw me-2"></i>Return Home
+                            </button></a>
+
 
                     </div>
                     <div class="d-flex justify-content-center mt-4 mb-4">
@@ -33,16 +34,16 @@
                         <table class="table">
                             <tbody>
                                 <tr>
-                                    <th scope="row" class="w-50">Load ID:</th>
-                                    <td class="w-50 fw-bold">Customer PO:</td>
+                                    <th scope="row" class="w-50 text-secondary">Load ID:&nbsp;<span>{Load_Reference__c}</span></th>
+                                    <td class="w-50 fw-bold text-secondary">Customer PO:&nbsp;{<span>PO__c}</span></td>
                                 </tr>
                                 <tr>
-                                    <th scope="row" class="w-50">From:</th>
-                                    <td class="w-50 fw-bold">To:</td>
+                                    <th scope="row" class="w-50 text-secondary">From:&nbsp;<span>{Pickup_Name_Address__c}</span></th>
+                                    <td class="w-50 fw-bold text-secondary">To:&nbsp;<span>{Deliver_Name_Address__c}</span></td>
                                 </tr>
                                 <tr>
-                                    <th scope="row" class="w-50">Current Location:</th>
-                                    <td class="w-50 fw-bold">Approx. Miles Remaining:</td>
+                                    <th scope="row" class="w-50 text-secondary">Current Location:&nbsp;<span>{Location__c}</span></th>
+                                    <td class="w-50 fw-bold text-secondary">Approx. Miles Remaining:&nbsp;<span>{Distance}</span></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -53,10 +54,25 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <div class="d-flex justify-content-center fw-bold mt-3" id="map">Place Map here</div>
+                    <div id="mapCanvas" style="height: 400px; width: 100%;"></div>
                 </div>
             </div>
         </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex justify-content-center mt-5 pb-4">
+                        <a href="https://www.ragingwolfsolutions.com" class="w-50"><button id="btn2" class="btn btn-outline-warning w-100">
+                                <i class="fas fa-arrow-left fa-fw me-2"></i>Return Home
+                            </button></a>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </main>
     <script src="bootstrap/5/js/bootstrap.bundle.min.js"></script>
 </body>
