@@ -35,7 +35,7 @@
                             <tbody>
                                 <tr>
                                     <th scope="row" class="w-50 text-secondary">Load ID:&nbsp;<span>{Load_Reference__c}</span></th>
-                                    <td class="w-50 fw-bold text-secondary">Customer PO:&nbsp;{<span>PO__c}</span></td>
+                                    <td class="w-50 fw-bold text-secondary">Customer PO:&nbsp;<span>{PO__c}</span></td>
                                 </tr>
                                 <tr>
                                     <th scope="row" class="w-50 text-secondary">From:&nbsp;<span>{Pickup_Name_Address__c}</span></th>
