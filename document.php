@@ -356,6 +356,18 @@
                                         </div>
 
                                     </div>
+                                    <div class="col-lg-6 align-self-center dept-operations">
+                                        <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('assets/Docs/Tracking-Setup-Update-Request-Tutorial-V2.pdf')">
+                                            <div class="d-flex align-items-center w-100p justify-content-center">
+                                                <h1 class="mb-0 text-white-50"><i class="fas fa-map-marked-alt"></i></h1>
+                                            </div>
+                                            <div class="d-flex flex-column w-100 document-title">
+                                                <h3 class="text-light">Load Tracking Setup &amp; Update Tutorial</h3>
+                                                <p class="mb-0 text-secondary">Click here to open a document.</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
 
 
                                 </div>
