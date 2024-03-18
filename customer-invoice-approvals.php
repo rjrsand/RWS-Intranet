@@ -71,6 +71,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <dmx-api-datasource id="api1" is="dmx-fetch" url="https://staff.my.salesforce-sites.com/services/apexrest/Loads"></dmx-api-datasource>
+                    <dmx-api-datasource id="api2" is="dmx-fetch" url="https://staff.my.salesforce-sites.com/services/apexrest/PrimarySalesRep"></dmx-api-datasource>
                     <div style="height: 480px; overflow-y: auto;">
                         <table id="loads_table" class="table table-hover table-sm table-dark">
                             <thead>
@@ -83,7 +84,7 @@
                                     <th>Carrier Rate</th>
                                     <th>Created</th>
                                     <th>Status</th>
-                                    <th>Primary Slales Rep.</th>
+                                    <th class="visually-hidden">Primary Slales Rep.</th>
                                 </tr>
                             </thead>
                             <tbody is="dmx-repeat" dmx-generator="bs5table" dmx-bind:repeat="api1.data.top(700)" id="tableRepeat2">
