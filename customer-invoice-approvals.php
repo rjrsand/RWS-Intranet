@@ -83,6 +83,7 @@
                                     <th>Carrier Rate</th>
                                     <th>Created</th>
                                     <th>Status</th>
+                                    <th>Primary Slales Rep.</th>
                                 </tr>
                             </thead>
                             <tbody is="dmx-repeat" dmx-generator="bs5table" dmx-bind:repeat="api1.data.top(700)" id="tableRepeat2">
@@ -95,6 +96,7 @@
                                     <td dmx-text="Total_Carrier_Amount__c.formatCurrency(&quot;$&quot;,&quot;.&quot;,&quot;,&quot;,&quot;2&quot;)"></td>
                                     <td dmx-text="CreatedDate.toDate()"></td>
                                     <td dmx-text="FreightTM__Status__c"></td>
+                                    <td dmx-text="Sales_Rep_Primary__c"></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -136,6 +138,7 @@
     </script>
 
 
+    <script src="bootstrap/5/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
