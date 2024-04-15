@@ -99,7 +99,7 @@
                                     <td dmx-text="Total_Carrier_Amount__c.formatCurrency(&quot;$&quot;,&quot;.&quot;,&quot;,&quot;,&quot;2&quot;)"></td>
                                     <td dmx-text="CreatedDate.toDate().formatDate('yyyy-MM-dd')"></td>
                                     <td dmx-text="Pickup_Arrival_Date__c"></td>
-                                    <td dmx-text="Sales_Rep_Primary__c"></td>
+                                    <td dmx-text="FreightTM__Status__c"></td>
                                 </tr>
                             </tbody>
                         </table>
