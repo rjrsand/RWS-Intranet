@@ -87,5 +87,15 @@
         "title": "Manager",
         "officePhone": "330-425-1400 ext. 07",
         "mobilePhone": "330-687-7662"
+    },
+    {
+        "emailAddress": "moe@ragingwolfsolutions.com",
+        "firstName": "Moe",
+        "lastName": "Clemmons",
+        "department": "Sales",
+        "supervisor": "Rich Metz",
+        "title": "Specialist",
+        "officePhone": "330-425-1400 ext. 09",
+        "mobilePhone": "614-214-9221"
     }
 ]
