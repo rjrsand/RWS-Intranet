@@ -9,6 +9,16 @@
         "mobilePhone": "330-592-6739"
     },
     {
+        "emailAddress": "brandon@ragingwolfsolutions.com",
+        "firstName": "Brandon",
+        "lastName": "Brownfield",
+        "department": "Sales",
+        "supervisor": "Scott Brownfield",
+        "title": "VP",
+        "officePhone": "330-425-1400 ext. 04",
+        "mobilePhone": "330-592-6902"
+    },
+    {
         "emailAddress": "richm@ragingwolfsolutions.com",
         "firstName": "Richard",
         "lastName": "Metz",
@@ -29,16 +39,6 @@
         "mobilePhone": "216-798-6847"
     },
     {
-        "emailAddress": "robs@ragingwolfsolutions.com",
-        "firstName": "Rob",
-        "lastName": "Sandlin",
-        "department": "IT/Operations",
-        "supervisor": "Rich Metz",
-        "title": "Admin/Specialist",
-        "officePhone": "330-425-1400 ext. 03",
-        "mobilePhone": "812-314-1684"
-    },
-    {
         "emailAddress": "arianna@ragingwolfsolutions.com",
         "firstName": "Arianna",
         "lastName": "Vales",
@@ -49,26 +49,6 @@
         "mobilePhone": "330-860-7234"
     },
     {
-        "emailAddress": "zakc@ragingwolfsolutions.com",
-        "firstName": "Zak",
-        "lastName": "Cardillo",
-        "department": "Operations",
-        "supervisor": "Rich Metz",
-        "title": "Specialist",
-        "officePhone": "330-425-1400 ext. 05",
-        "mobilePhone": "330-840-9522"
-    },
-    {
-        "emailAddress": "brandon@ragingwolfsolutions.com",
-        "firstName": "Brandon",
-        "lastName": "Brownfield",
-        "department": "Sales",
-        "supervisor": "Scott Brownfield",
-        "title": "VP",
-        "officePhone": "330-425-1400 ext. 04",
-        "mobilePhone": "330-592-6902"
-    },
-    {
         "emailAddress": "alaura@ragingwolfsolutions.com",
         "firstName": "Alaura",
         "lastName": "Richardson",
@@ -77,6 +57,26 @@
         "title": "Specialist",
         "officePhone": "330-425-1400 ext. 02",
         "mobilePhone": "330-931-1800"
+    },
+    {
+        "emailAddress": "robs@ragingwolfsolutions.com",
+        "firstName": "Rob",
+        "lastName": "Sandlin",
+        "department": "IT/Operations",
+        "supervisor": "Rich Metz",
+        "title": "Admin/Specialist",
+        "officePhone": "330-425-1400 ext. 03",
+        "mobilePhone": "812-314-1684"
+    },
+    {
+        "emailAddress": "zakc@ragingwolfsolutions.com",
+        "firstName": "Zak",
+        "lastName": "Cardillo",
+        "department": "Operations",
+        "supervisor": "Rich Metz",
+        "title": "Specialist",
+        "officePhone": "330-425-1400 ext. 05",
+        "mobilePhone": "330-840-9522"
     },
     {
         "emailAddress": "moe@ragingwolfsolutions.com",
