@@ -5,7 +5,7 @@
     <base href="/">
     <script src="dmxAppConnect/dmxAppConnect.js"></script>
     <meta charset="UTF-8">
-    <title>Video Trainings</title>
+    <title>SF Moduals</title>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Lustria&amp;family=Muli:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet">
@@ -117,7 +117,7 @@
 
                             <div class="col-lg-12">
                                 <h5 class="text-warning text-uppercase"><span dmx-text="department">n/a</span> Team</h5>
-                                <h1 class="text-left fw-bold text-light">Training Resources</h1>
+                                <h1 class="text-left fw-bold text-light">SalesForce Training Resources</h1>
                                 <p class="mb-4 text-secondary">Here you can find video trainings needed within RWS, if you need additional information or resources, please contact your manager.</p>
 
                             </div>
@@ -152,65 +152,85 @@
                             <div class="col-lg-12" id="documents_container">
                                 <div class="row">
                                     <div class="col-lg-6 align-self-center dept-operations">
-                                        <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('salesforce-moduals.php')">
+                                        <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('https://netorg5121535-my.sharepoint.com/personal/johnathan_ragingwolfsolutions_com/_layouts/15/stream.aspx?id=%2Fpersonal%2Fjohnathan%5Fragingwolfsolutions%5Fcom%2FDocuments%2FRaging%20Wolf%20Solutions%2FTraining%20Videos%2FSalesforce%201%2E%20Logging%20into%20Salesforce%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ebbebe765%2D3302%2D46ea%2D954d%2D0a4705b72ced')">
                                             <div class="d-flex align-items-center w-100p justify-content-center">
                                                 <h1 class="mb-0 text-white-50"><i class="far fa-play-circle"></i></h1>
                                             </div>
                                             <div class="d-flex flex-column w-100 document-title">
-                                                <h3 class="text-light">SalesForce Moduals</h3>
-                                                <p class="mb-0 text-white-50">Click here to open the trainings for SalesForce.</p>
+                                                <h3 class="text-light">Logging In</h3>
+                                                <p class="mb-0 text-white-50">Click here to open the video.</p>
                                             </div>
                                         </div>
 
                                     </div>
                                     <div class="col-lg-6 align-self-center dept-operations">
-                                        <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('nextiva-moduals.php')">
+                                        <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('https://netorg5121535-my.sharepoint.com/:v:/g/personal/johnathan_ragingwolfsolutions_com/EeMBwIQS-bdMlGMYKtoq4TUBDXr099IRN_0m8kIUoMs8kQ?e=Nv6WHE')">
                                             <div class="d-flex align-items-center w-100p justify-content-center">
                                                 <h1 class="mb-0 text-white-50"><i class="far fa-play-circle"></i></h1>
                                             </div>
                                             <div class="d-flex flex-column w-100 document-title">
-                                                <h3 class="text-light">Nextiva Moduals</h3>
-                                                <p class="mb-0 text-white-50">Click here to open the trainings for Nextiva.</p>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-6 align-self-center dept-operations">
-                                        <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('clickup-moduals.php')">
-                                            <div class="d-flex align-items-center w-100p justify-content-center">
-                                                <h1 class="mb-0 text-white-50"><i class="far fa-play-circle"></i></h1>
-                                            </div>
-                                            <div class="d-flex flex-column w-100 document-title">
-                                                <h3 class="text-light">Click-Up Moduals</h3>
-                                                <p class="mb-0 text-white-50">Click here to open the trainings for Click-Up.</p>
+                                                <h3 class="text-light">Invoice Tutorial</h3>
+                                                <p class="mb-0 text-white-50">Click here to open the video.</p>
                                             </div>
                                         </div>
 
                                     </div>
                                     <div class="col-lg-6 align-self-center dept-operations">
-                                        <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('apollo-moduals.php')">
+                                        <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('https://netorg5121535-my.sharepoint.com/:v:/g/personal/johnathan_ragingwolfsolutions_com/ERhfcnwwTWRJt85vjQyWS7wBb4Rg5Xp57uoy3UEgiVLRxw?e=6Eiemd')">
                                             <div class="d-flex align-items-center w-100p justify-content-center">
                                                 <h1 class="mb-0 text-white-50"><i class="far fa-play-circle"></i></h1>
                                             </div>
                                             <div class="d-flex flex-column w-100 document-title">
-                                                <h3 class="text-light">Apollo Moduals</h3>
-                                                <p class="mb-0 text-white-50">Click here to open the trainings for Apollo.</p>
+                                                <h3 class="text-light">POD Tutorial</h3>
+                                                <p class="mb-0 text-white-50">Click here to open the video.</p>
                                             </div>
                                         </div>
 
                                     </div>
                                     <div class="col-lg-6 align-self-center dept-operations">
-                                        <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('misc-moduals.php')">
+                                        <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('https://netorg5121535-my.sharepoint.com/:v:/g/personal/johnathan_ragingwolfsolutions_com/EfjAxmSvwP5KgnYZFctRrzIBL3AGM0dgg5GGxE1POtZSlg?e=5cVKHy')">
                                             <div class="d-flex align-items-center w-100p justify-content-center">
                                                 <h1 class="mb-0 text-white-50"><i class="far fa-play-circle"></i></h1>
                                             </div>
                                             <div class="d-flex flex-column w-100 document-title">
-                                                <h3 class="text-light">Miscellaneous Moduals</h3>
-                                                <p class="mb-0 text-white-50">Click here to view moduals regarding BlueJay, DAT, etc.</p>
+                                                <h3 class="text-light">Shipping Order Tutorial</h3>
+                                                <p class="mb-0 text-white-50">Click here to open the video.</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-6 align-self-center dept-operations">
+                                        <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="https://netorg5121535-my.sharepoint.com/personal/johnathan_ragingwolfsolutions_com/_layouts/15/viewer.aspx?sourcedoc=%7B2f8f8215-6e8e-4f42-841c-1dad88d00ad0%7D&referrer=officehome.Web&referrerScenario=Search-Tenant-All.View.4828679b-31e1-84d6-a0e0-484400d7e069">
+                                            <div class="d-flex align-items-center w-100p justify-content-center">
+                                                <h1 class="mb-0 text-white-50"><i class="far fa-play-circle"></i></h1>
+                                            </div>
+                                            <div class="d-flex flex-column w-100 document-title">
+                                                <h3 class="text-light">New Customer/Carrier Tutorial</h3>
+                                                <p class="mb-0 text-white-50">Click here to open the video.</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-6 align-self-center dept-operations">
+                                        <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('https://netorg5121535-my.sharepoint.com/:v:/g/personal/johnathan_ragingwolfsolutions_com/Ed283RDADtBCkN5W1nLFYP4B_QQvI2esOAQKFdKpaemg_A?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&amp;e=ZjWZJf')">
+                                            <div class="d-flex align-items-center w-100p justify-content-center">
+                                                <h1 class="mb-0 text-white-50"><i class="far fa-play-circle"></i></h1>
+                                            </div>
+                                            <div class="d-flex flex-column w-100 document-title">
+                                                <h3 class="text-light">Load Tracking Setup &amp; Update Tutorial</h3>
+                                                <p class="mb-0 text-white-50">Click here to open the video.</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-6 align-self-center dept-operations">
+                                        <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('https://netorg5121535-my.sharepoint.com/personal/johnathan_ragingwolfsolutions_com/_layouts/15/viewer.aspx?sourcedoc=%7Bae26f2e7-56e7-4a76-8f7b-8cc4deae1fdf%7D&referrer=officehome.Web&referrerScenario=Search-Tenant-All.View.4828679b-31e1-84d6-a0e0-484400d7e069')">
+                                            <div class="d-flex align-items-center w-100p justify-content-center">
+                                                <h1 class="mb-0 text-white-50"><i class="far fa-play-circle"></i></h1>
+                                            </div>
+                                            <div class="d-flex flex-column w-100 document-title">
+                                                <h3 class="text-light">All Prospects &amp; Live Prospects</h3>
+                                                <p class="mb-0 text-white-50">Click here to open the video.</p>
                                             </div>
                                         </div>
 
