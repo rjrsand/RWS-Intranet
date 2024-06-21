@@ -224,18 +224,6 @@
 
                                     </div>
                                     <div class="col-lg-6 align-self-center dept-operations">
-                                        <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('https://netorg5121535-my.sharepoint.com/personal/johnathan_ragingwolfsolutions_com/_layouts/15/viewer.aspx?sourcedoc=%7Bae26f2e7-56e7-4a76-8f7b-8cc4deae1fdf%7D&referrer=officehome.Web&referrerScenario=Search-Tenant-All.View.4828679b-31e1-84d6-a0e0-484400d7e069')">
-                                            <div class="d-flex align-items-center w-100p justify-content-center">
-                                                <h1 class="mb-0 text-white-50"><i class="far fa-play-circle"></i></h1>
-                                            </div>
-                                            <div class="d-flex flex-column w-100 document-title">
-                                                <h3 class="text-light">Apollo - All Prospects &amp; Live Prospects</h3>
-                                                <p class="mb-0 text-white-50">Click here to open the video.</p>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="col-lg-6 align-self-center dept-operations">
                                         <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('https://netorg5121535-my.sharepoint.com/personal/johnathan_ragingwolfsolutions_com/_layouts/15/stream.aspx?id=%2Fpersonal%2Fjohnathan%5Fragingwolfsolutions%5Fcom%2FDocuments%2FRaging%20Wolf%20Solutions%2FTraining%20Videos%2FSalesforce%204%2E%20Viewing%20Accounts%20%28Companies%29%20and%20Customer%20Contacts%2Emp4&amp;referrer=StreamWebApp%2EWeb&amp;referrerScenario=AddressBarCopied%2Eview%2E875ec289%2D3682%2D49ee%2Da304%2Dc8091a144a17')">
                                             <div class="d-flex align-items-center w-100p justify-content-center">
                                                 <h1 class="mb-0 text-white-50"><i class="far fa-play-circle"></i></h1>
@@ -254,6 +242,18 @@
                                             </div>
                                             <div class="d-flex flex-column w-100 document-title">
                                                 <h3 class="text-light">Viewing and Managing Prospects in Salesforce</h3>
+                                                <p class="mb-0 text-white-50">Click here to open the video.</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-6 align-self-center dept-operations">
+                                        <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('https://netorg5121535-my.sharepoint.com/personal/johnathan_ragingwolfsolutions_com/_layouts/15/viewer.aspx?sourcedoc=%7Bae26f2e7-56e7-4a76-8f7b-8cc4deae1fdf%7D&referrer=officehome.Web&referrerScenario=Search-Tenant-All.View.4828679b-31e1-84d6-a0e0-484400d7e069')">
+                                            <div class="d-flex align-items-center w-100p justify-content-center">
+                                                <h1 class="mb-0 text-white-50"><i class="far fa-play-circle"></i></h1>
+                                            </div>
+                                            <div class="d-flex flex-column w-100 document-title">
+                                                <h3 class="text-light">Apollo - All Prospects &amp; Live Prospects</h3>
                                                 <p class="mb-0 text-white-50">Click here to open the video.</p>
                                             </div>
                                         </div>
