@@ -200,7 +200,7 @@
 
                                     </div>
                                     <div class="col-lg-6 align-self-center dept-operations">
-                                        <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="https://netorg5121535-my.sharepoint.com/personal/johnathan_ragingwolfsolutions_com/_layouts/15/viewer.aspx?sourcedoc=%7B2f8f8215-6e8e-4f42-841c-1dad88d00ad0%7D&referrer=officehome.Web&referrerScenario=Search-Tenant-All.View.4828679b-31e1-84d6-a0e0-484400d7e069">
+                                        <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('https://netorg5121535-my.sharepoint.com/personal/johnathan_ragingwolfsolutions_com/_layouts/15/stream.aspx?id=%2Fpersonal%2Fjohnathan%5Fragingwolfsolutions%5Fcom%2FDocuments%2FRaging%20Wolf%20Solutions%2FTraining%20Videos%2FSalesforce%205%2E%20Manually%20Creating%20Contacts%20and%20Accounts%2Emp4&amp;referrer=StreamWebApp%2EWeb&amp;referrerScenario=AddressBarCopied%2Eview%2E040df8d3%2D1319%2D4734%2D9f7d%2Dd8465a0b293f')">
                                             <div class="d-flex align-items-center w-100p justify-content-center">
                                                 <h1 class="mb-0 text-white-50"><i class="far fa-play-circle"></i></h1>
                                             </div>
@@ -229,7 +229,7 @@
                                                 <h1 class="mb-0 text-white-50"><i class="far fa-play-circle"></i></h1>
                                             </div>
                                             <div class="d-flex flex-column w-100 document-title">
-                                                <h3 class="text-light">All Prospects &amp; Live Prospects</h3>
+                                                <h3 class="text-light">Apollo - All Prospects &amp; Live Prospects</h3>
                                                 <p class="mb-0 text-white-50">Click here to open the video.</p>
                                             </div>
                                         </div>
