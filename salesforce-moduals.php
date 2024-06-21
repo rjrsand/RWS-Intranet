@@ -235,6 +235,30 @@
                                         </div>
 
                                     </div>
+                                    <div class="col-lg-6 align-self-center dept-operations">
+                                        <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('https://netorg5121535-my.sharepoint.com/personal/johnathan_ragingwolfsolutions_com/_layouts/15/stream.aspx?id=%2Fpersonal%2Fjohnathan%5Fragingwolfsolutions%5Fcom%2FDocuments%2FRaging%20Wolf%20Solutions%2FTraining%20Videos%2FSalesforce%204%2E%20Viewing%20Accounts%20%28Companies%29%20and%20Customer%20Contacts%2Emp4&amp;referrer=StreamWebApp%2EWeb&amp;referrerScenario=AddressBarCopied%2Eview%2E875ec289%2D3682%2D49ee%2Da304%2Dc8091a144a17')">
+                                            <div class="d-flex align-items-center w-100p justify-content-center">
+                                                <h1 class="mb-0 text-white-50"><i class="far fa-play-circle"></i></h1>
+                                            </div>
+                                            <div class="d-flex flex-column w-100 document-title">
+                                                <h3 class="text-light">Viewing Accounts (Companies) and Customer Contacts</h3>
+                                                <p class="mb-0 text-white-50">Click here to open the video.</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-6 align-self-center dept-operations">
+                                        <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('https://netorg5121535-my.sharepoint.com/personal/johnathan_ragingwolfsolutions_com/_layouts/15/stream.aspx?id=%2Fpersonal%2Fjohnathan%5Fragingwolfsolutions%5Fcom%2FDocuments%2FRaging%20Wolf%20Solutions%2FTraining%20Videos%2FSalesforce%203%2E%20Viewing%20and%20Managing%20Prospects%20in%20Salesforce%2Emp4&amp;referrer=StreamWebApp%2EWeb&amp;referrerScenario=AddressBarCopied%2Eview%2Eaa07f2f1%2D1ebf%2D40c7%2Da2e8%2Deb515d7ba10a')">
+                                            <div class="d-flex align-items-center w-100p justify-content-center">
+                                                <h1 class="mb-0 text-white-50"><i class="far fa-play-circle"></i></h1>
+                                            </div>
+                                            <div class="d-flex flex-column w-100 document-title">
+                                                <h3 class="text-light">Viewing and Managing Prospects in Salesforce</h3>
+                                                <p class="mb-0 text-white-50">Click here to open the video.</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
 
 
                                 </div>
