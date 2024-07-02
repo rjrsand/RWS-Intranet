@@ -13,7 +13,7 @@
         "access": ""
     },
     {
-        "id": 7,
+        "id": 2,
         "title": "Calculate linear feet for partial truck load.",
         "img_src": "assets/images/Intranet/WPGLogoWeb3.webp",
         "img_alt": "Linear Foot Calc.",
@@ -26,7 +26,7 @@
         "access": ""
     },
     {
-        "id": 8,
+        "id": 3,
         "title": "Check credit for prospective customers.",
         "img_src": "assets/images/Intranet/Creditsafe_Logo.webp",
         "img_alt": "CreditSafe",
@@ -39,20 +39,7 @@
         "access": ""
     },
     {
-        "id": 3,
-        "title": "Post loads onto online load board.",
-        "img_src": "assets/images/Intranet/Truckstop_Logo.webp",
-        "img_alt": "Truckstop",
-        "link": "https://truckstop.com/",
-        "button_text": "Open",
-        "view_details": "TruckStop",
-        "siteName": "TruckStop",
-        "username": "support@ragingwolfsolutions.com",
-        "password": "J2G4ySep!!",
-        "access": ""
-    },
-    {
-        "id": 9,
+        "id": 4,
         "title": "RWS load board & account info.",
         "img_src": "assets/images/Intranet/Salesforce_Logo.webp",
         "img_alt": "SalesForce",
@@ -65,7 +52,7 @@
         "access": ""
     },
     {
-        "id": 6,
+        "id": 5,
         "title": "Alsides & Sealed Air TMS system.",
         "img_src": "assets/images/Intranet/BluJay_Logo.webp",
         "img_alt": "BluJay",
@@ -78,7 +65,7 @@
         "access": ""
     },
     {
-        "id": 2,
+        "id": 6,
         "title": "Post loads onto online load board.",
         "img_src": "assets/images/Intranet/DAT_Solutions_Logo.webp",
         "img_alt": "DAT",
@@ -91,7 +78,7 @@
         "access": ""
     },
     {
-        "id": 4,
+        "id": 7,
         "title": "Track & manage LTL shipments here.",
         "img_src": "assets/images/Intranet/Forward_Air_Logo.webp",
         "img_alt": "ForwardAir",
@@ -104,7 +91,7 @@
         "access": ""
     },
     {
-        "id": 5,
+        "id": 8,
         "title": "Track and manage LTL shipments.",
         "img_src": "assets/images/Intranet/132052600611026787.webp",
         "img_alt": "BlueGrace/BlueShip",
@@ -117,7 +104,7 @@
         "access": ""
     },
     {
-        "id": 10,
+        "id": 9,
         "title": "Find carriers with this tool.",
         "img_src": "assets/images/Intranet/carrier-beacon-alphatrac.webp",
         "img_alt": "AlphaTrac",
@@ -127,36 +114,10 @@
         "siteName": "AlphaTrac",
         "username": "",
         "password": "",
-        "access": ""
+        "access": "Admin"
     },
     {
-        "id": 11,
-        "title": "Find prospects with this tool.",
-        "img_src": "assets/images/Intranet/zoominfo-logo.webp",
-        "img_alt": "ZoomInfo",
-        "link": "https://login.zoominfo.com/",
-        "button_text": "Open",
-        "view_details": "ZoomInfo",
-        "siteName": "ZoomInfo",
-        "username": "RWS Email",
-        "password": "Own PW",
-        "access": ""
-    },
-    {
-        "id": 12,
-        "title": "LinkedIn tool to find leads.",
-        "img_src": "assets/images/Intranet/alfred-logo-2.2.webp",
-        "img_alt": "Alfred",
-        "link": "https://app.meetalfred.com/auth/login",
-        "button_text": "Open",
-        "view_details": "Alfred",
-        "siteName": "Alfred",
-        "username": "ragingwolfsolutions@gmail.com",
-        "password": "Tpsg4118#",
-        "access": ""
-    },
-    {
-        "id": 13,
+        "id": 10,
         "title": "Find prospects with this tool.",
         "img_src": "assets/images/Intranet/Apollo_Logo.webp",
         "img_alt": "Apollo",
@@ -169,7 +130,7 @@
         "access": ""
     },
     {
-        "id": 14,
+        "id": 11,
         "title": "Advanced email security.",
         "img_src": "assets/images/Intranet/proofpoint-logo.webp",
         "img_alt": "Proofpoint",
@@ -179,10 +140,10 @@
         "siteName": "Proofpoint",
         "username": "RWS Email",
         "password": "Own PW",
-        "access": ""
+        "access": "Admin"
     },
     {
-        "id": 15,
+        "id": 12,
         "title": "Microsoft cloud registry.",
         "img_src": "assets/images/Intranet/Azure.webp",
         "img_alt": "Azure",
@@ -192,10 +153,10 @@
         "siteName": "Microsoft Azure",
         "username": "RWS Email",
         "password": "Own PW",
-        "access": ""
+        "access": "Admin"
     },
     {
-        "id": 16,
+        "id": 13,
         "title": "Camera admin system.",
         "img_src": "assets/images/Intranet/unifi-logo.webp",
         "img_alt": "Unifi Video Control",
@@ -205,10 +166,10 @@
         "siteName": "Unifi",
         "username": "camerws",
         "password": "glt445!#",
-        "access": ""
+        "access": "Admin"
     },
     {
-        "id": 17,
+        "id": 14,
         "title": "Access RWS cloud documentation.",
         "img_src": "assets/images/Intranet/onedrive-logo.webp",
         "img_alt": "OneDrive",
@@ -221,7 +182,7 @@
         "access": ""
     },
     {
-        "id": 18,
+        "id": 15,
         "title": "Access RWS VOIP telephone network.",
         "img_src": "assets/images/Intranet/Nextiva-logo.webp",
         "img_alt": "Nextiva",

@@ -249,4 +249,10 @@ background-position: center;
 }
 
 .style11 {
-    float: right;}
+    float: right;
+    
+}
+
+.admin-access {
+    border: 3px solid red;
+}

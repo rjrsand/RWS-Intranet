@@ -9,7 +9,7 @@
 
     <link rel="icon" href="icons/favicon.ico">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Lustria&amp;family=Muli:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/sansation" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -38,6 +38,7 @@
 </head>
 
 <body is="dmx-app" id="index" class="body-bg" onload="loadUserData();">
+    <dmx-value id="role"></dmx-value>
     <dmx-json-datasource id="jsonDS2" is="dmx-serverconnect" url="commonlyUsedtools.json"></dmx-json-datasource>
 
     <dmx-data-detail id="jsonDS1" key="siteName" dmx-bind:value="activeTool.value" dmx-bind:data="jsonDS2.data"></dmx-data-detail>
@@ -120,7 +121,7 @@
                             <div class="col-sm-12 col-md-6 col-lg-4 text-white-50 col" dmx-repeat:commonlyusedtools-repeat="jsonDS2.data">
 
 
-                                <div id="tool-container" class="container tile-category h-tile-default text-start text-white-50 flex-column mb-3 pt-3 pb-3 ps-3 pe-3 tile-minheight w-100">
+                                <div id="tool-container" class="container tile-category h-tile-default text-start text-white-50 flex-column mb-3 pt-3 pb-3 ps-3 pe-3 tile-minheight w-100" dmx-class:admin-access="access == 'Admin'">
                                     <div class="row">
                                         <div class="col-auto">
                                             <div class="d-flex cut-tool-logo mb-2" style="width: fit-content;"><img src="assets/images/Intranet/carrier411-logo-gray.png" class="img-fluid tool-title" dmx-bind:src="img_src" dmx-bind:alt="img_alt">
