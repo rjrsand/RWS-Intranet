@@ -118,10 +118,10 @@
                             </div>
                         </div>
                         <div class="row align-items-stretch">
-                            <div class="col-sm-12 col-md-6 col-lg-4 text-white-50 col" dmx-repeat:commonlyusedtools-repeat="jsonDS2.data">
+                            <div class="col-sm-12 col-md-6 col-lg-4 text-white-50 col" dmx-repeat:commonlyusedtools-repeat="jsonDS2.data" dmx-on:dmx-repeat-after="applyAdminBorder()">
 
 
-                                <div id="tool-container" class="container tile-category h-tile-default text-start text-white-50 flex-column mb-3 pt-3 pb-3 ps-3 pe-3 tile-minheight w-100" dmx-class:admin-access="access == 'Admin'">
+                                <div id="tool-container" class="container tile-category h-tile-default text-start text-white-50 flex-column mb-3 pt-3 pb-3 ps-3 pe-3 tile-minheight w-100">
                                     <div class="row">
                                         <div class="col-auto">
                                             <div class="d-flex cut-tool-logo mb-2" style="width: fit-content;"><img src="assets/images/Intranet/carrier411-logo-gray.png" class="img-fluid tool-title" dmx-bind:src="img_src" dmx-bind:alt="img_alt">
@@ -193,6 +193,27 @@
                 }
             });
         }
+    </script>
+
+    <script>
+        function applyAdminBorder() {
+    // Get all the tool containers
+    console.log('applyAdminBorder function called!'); // Check if the function is running
+    const toolContainers = document.querySelectorAll('#tool-container');
+    console.log('Number of tool containers:', toolContainers.length);
+
+    // Loop through each container
+    toolContainers.forEach(container => {
+        // Get the access value from the data attribute (assuming it's set by DMXLite)
+        const access = container.getAttribute('data-access'); // Adjust this if necessary
+        console.log(container)
+
+        // Add the 'admin-access' class if access is 'Admin'
+        if (access === 'Admin') {
+            container.classList.add('admin-access');
+        }
+    });
+}
     </script>
 
 </body>

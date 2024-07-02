@@ -215,42 +215,23 @@ background-position: center;
 
 .style2 {
     -ms-flex-wrap: wrap;
-    -ms-flex-line-pack: end;
-    
+    -ms-flex-line-pack: end;    
 }
-
-.style3 {}
-
-.style4 {}
 
 .style5 {
-    font-size: 17px;
-    
+    font-size: 17px;    
 }
 
-.style6 {}
-
 .style7 {
-    float: left;
-    
+    float: left;    
 }
 
 .style8 {
-    float: left;
-    
-}
-
-.style9 {
-    
-}
-
-.style10 {
-    
+    float: left;    
 }
 
 .style11 {
-    float: right;
-    
+    float: right;    
 }
 
 .admin-access {
