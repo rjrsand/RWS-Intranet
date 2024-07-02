@@ -5,7 +5,7 @@
     <base href="/">
     <script src="dmxAppConnect/dmxAppConnect.js"></script>
     <meta charset="UTF-8">
-    <title>The Wolves Den | Raging Wolf Solutions</title>
+    <title>Team Raging Wolf Solutions</title>
 
     <link rel="icon" href="icons/favicon.ico">
 
