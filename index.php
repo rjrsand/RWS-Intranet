@@ -145,6 +145,19 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="col-lg-6 card-container">
+                                <div class="d-flex tile-category align-items-center h-tile-default tile-hover mb-3 pt-3 pb-3 ps-2 pe-2 d-none" dmx-on:click="browser1.goto('admin.php')" id="adminTools">
+                                    <div class="d-flex align-items-center w-100p justify-content-center">
+                                        <h1 class="mb-0 text-white-50"><i class="fas fa-play-circle"></i></h1>
+                                    </div>
+                                    <div class="d-flex flex-column w-100">
+                                        <h3 class="text-light">Admin Tools</h3>
+                                        <p class="mb-0 text-secondary">Only Administrator can access this page.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="row d-none">
 
                             <div class="col-lg-6 card-container">

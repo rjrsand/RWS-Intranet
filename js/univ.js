@@ -37,6 +37,13 @@ function loadUserData() {
 
                 // Update data bindings on web page
                 dmx.parse(document.body);
+
+                // Check for "Admin" role and show/hide the adminTools div
+                if (role === "Admin") {
+                    document.getElementById("adminTools").classList.remove("d-none");
+                } else {
+                    document.getElementById("adminTools").classList.add("d-none");
+                }
             });
         } else {
             // No user is signed in, redirect to 'login.php'
