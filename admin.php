@@ -128,7 +128,7 @@
                                     <div class="d-flex flex-column w-100">
                                         <div class="d-flex justify-content-between">
                                             <h3 class="text-light" dmx-on:click="browser1.goto('https://security.microsoft.com/tenantAllowBlockList?viewid=Sender&tid=8368b021-fc4f-4c05-ad66-58909315ad20')">Allow/Block Lists - Email</h3>
-                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show()" dmx-bind:id="{{title}}" id="cr1">View Details</button>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show();data_detail1.set(jsonDS1.data, '{{title}}');" dmx-bind:id="{{title}}" id="cr1">View Details</button>
                                         </div>
                                         <p class="mb-0 text-secondary">This allows access to the Allow/Block email list for Microsoft Defender, as well as the Quarentine list.</p>
                                     </div>
@@ -147,7 +147,7 @@
                                     <div class="d-flex flex-column w-100">
                                         <div class="d-flex justify-content-between">
                                             <h3 class="text-light">Apollo</h3>
-                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show()" dmx-bind:id="{{title}}" id="cr2">View Details</button>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show();data_detail1.set(jsonDS1.data, '{{title}}');" dmx-bind:id="{{title}}" id="cr2">View Details</button>
                                         </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
@@ -162,7 +162,7 @@
                                     <div class="d-flex flex-column w-100">
                                         <div class="d-flex justify-content-between">
                                             <h3 class="text-light">Avery Design &amp; Print</h3>
-                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show()" dmx-bind:id="{{title}}" id="cr3">View Details</button>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show();data_detail1.set(jsonDS1.data, '{{title}}');" dmx-bind:id="{{title}}" id="cr3">View Details</button>
                                         </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
@@ -179,7 +179,7 @@
                                     <div class="d-flex flex-column w-100">
                                         <div class="d-flex justify-content-between">
                                             <h3 class="text-light">Canva</h3>
-                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show()" dmx-bind:id="{{title}}" id="cr4">View Details</button>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show();data_detail1.set(jsonDS1.data, '{{title}}');" dmx-bind:id="{{title}}" id="cr4">View Details</button>
                                         </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
@@ -194,7 +194,7 @@
                                     <div class="d-flex flex-column w-100">
                                         <div class="d-flex justify-content-between">
                                             <h3 class="text-light">ClickUp</h3>
-                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show()" dmx-bind:id="{{title}}" id="cr5">View Details</button>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show();data_detail1.set(jsonDS1.data, '{{title}}');" dmx-bind:id="{{title}}" id="cr5">View Details</button>
                                         </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
@@ -211,7 +211,7 @@
                                     <div class="d-flex flex-column w-100">
                                         <div class="d-flex justify-content-between">
                                             <h3 class="text-light">Custom Google Map Views</h3>
-                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show()" dmx-bind:id="{{title}}" id="cr6">View Details</button>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show();data_detail1.set(jsonDS1.data, '{{title}}');" dmx-bind:id="{{title}}" id="cr6">View Details</button>
                                         </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
@@ -226,7 +226,7 @@
                                     <div class="d-flex flex-column w-100">
                                         <div class="d-flex justify-content-between">
                                             <h3 class="text-light">Domain/DNS Management</h3>
-                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show()" dmx-bind:id="{{title}}" id="cr7">View Details</button>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show();data_detail1.set(jsonDS1.data, '{{title}}');" dmx-bind:id="{{title}}" id="cr7">View Details</button>
                                         </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
@@ -243,7 +243,7 @@
                                     <div class="d-flex flex-column w-100">
                                         <div class="d-flex justify-content-between">
                                             <h3 class="text-light">Football Pool</h3>
-                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show()" dmx-bind:id="{{title}}" id="cr8">View Details</button>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show();data_detail1.set(jsonDS1.data, '{{title}}');" dmx-bind:id="{{title}}" id="cr8">View Details</button>
                                         </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
@@ -258,7 +258,7 @@
                                     <div class="d-flex flex-column w-100">
                                         <div class="d-flex justify-content-between">
                                             <h3 class="text-light">Google Ads</h3>
-                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show()" dmx-bind:id="{{title}}" id="cr9">View Details</button>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show();data_detail1.set(jsonDS1.data, '{{title}}');" dmx-bind:id="{{title}}" id="cr9">View Details</button>
                                         </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
@@ -275,7 +275,7 @@
                                     <div class="d-flex flex-column w-100">
                                         <div class="d-flex justify-content-between">
                                             <h3 class="text-light">Indeed</h3>
-                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show()" dmx-bind:id="{{title}}" id="cr10">View Details</button>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show();data_detail1.set(jsonDS1.data, '{{title}}');" dmx-bind:id="{{title}}" id="cr10">View Details</button>
                                         </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
@@ -290,7 +290,7 @@
                                     <div class="d-flex flex-column w-100">
                                         <div class="d-flex justify-content-between">
                                             <h3 class="text-light">Koala</h3>
-                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show()" dmx-bind:id="{{title}}" id="cr11">View Details</button>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show();data_detail1.set(jsonDS1.data, '{{title}}');" dmx-bind:id="{{title}}" id="cr11">View Details</button>
                                         </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
@@ -307,7 +307,7 @@
                                     <div class="d-flex flex-column w-100">
                                         <div class="d-flex justify-content-between">
                                             <h3 class="text-light">MailFlow</h3>
-                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show()" dmx-bind:id="{{title}}" id="cr12">View Details</button>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show();data_detail1.set(jsonDS1.data, '{{title}}');" dmx-bind:id="{{title}}" id="cr12">View Details</button>
                                         </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
@@ -322,7 +322,7 @@
                                     <div class="d-flex flex-column w-100">
                                         <div class="d-flex justify-content-between">
                                             <h3 class="text-light">ProofPoint Essentials</h3>
-                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show()" dmx-bind:id="{{title}}" id="cr13">View Details</button>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show();data_detail1.set(jsonDS1.data, '{{title}}');" dmx-bind:id="{{title}}" id="cr13">View Details</button>
                                         </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
@@ -339,7 +339,7 @@
                                     <div class="d-flex flex-column w-100">
                                         <div class="d-flex justify-content-between">
                                             <h3 class="text-light">ShippingEasy</h3>
-                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show()" dmx-bind:id="{{title}}" id="cr14">View Details</button>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show();data_detail1.set(jsonDS1.data, '{{title}}');" dmx-bind:id="{{title}}" id="cr14">View Details</button>
                                         </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
@@ -354,7 +354,7 @@
                                     <div class="d-flex flex-column w-100">
                                         <div class="d-flex justify-content-between">
                                             <h3 class="text-light">Spectrum</h3>
-                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show()" dmx-bind:id="{{title}}" id="cr15">View Details</button>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show();data_detail1.set(jsonDS1.data, '{{title}}');" dmx-bind:id="{{title}}" id="cr15">View Details</button>
                                         </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
@@ -371,7 +371,7 @@
                                     <div class="d-flex flex-column w-100">
                                         <div class="d-flex justify-content-between">
                                             <h3 class="text-light">Support Email</h3>
-                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show()" dmx-bind:id="{{title}}" id="cr16">View Details</button>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show();data_detail1.set(jsonDS1.data, '{{title}}');" dmx-bind:id="{{title}}" id="cr16">View Details</button>
                                         </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
@@ -386,7 +386,7 @@
                                     <div class="d-flex flex-column w-100">
                                         <div class="d-flex justify-content-between">
                                             <h3 class="text-light">WarmUp Inbox</h3>
-                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show()" dmx-bind:id="{{title}}" id="cr17">View Details</button>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show();data_detail1.set(jsonDS1.data, '{{title}}');" dmx-bind:id="{{title}}" id="cr17">View Details</button>
                                         </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
@@ -403,7 +403,7 @@
                                     <div class="d-flex flex-column w-100">
                                         <div class="d-flex justify-content-between">
                                             <h3 class="text-light">WordPress</h3>
-                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show()" dmx-bind:id="{{title}}" id="cr18">View Details</button>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show();data_detail1.set(jsonDS1.data, '{{title}}');" dmx-bind:id="{{title}}" id="cr18">View Details</button>
                                         </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
@@ -418,7 +418,7 @@
                                     <div class="d-flex flex-column w-100">
                                         <div class="d-flex justify-content-between">
                                             <h3 class="text-light">YouTube</h3>
-                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show()" dmx-bind:id="{{title}}" id="cr19">View Details</button>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show();data_detail1.set(jsonDS1.data, '{{title}}');" dmx-bind:id="{{title}}" id="cr19">View Details</button>
                                         </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
@@ -437,26 +437,28 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-                setTimeout(() => {
-            const filterInput = document.getElementById('filter_index_input');
-            const cardContainers = document.querySelectorAll('.card-container');
+            setTimeout(() => {
+                const filterInput = document.getElementById('filter_index_input');
+                const cardContainers = document.querySelectorAll('.card-container');
 
-            filterInput.addEventListener('input', function(event) {
-                const filterText = event.target.value.toLowerCase();
+                if (filterInput) {
+                    filterInput.addEventListener('input', function(event) {
+                        const filterText = event.target.value.toLowerCase();
 
-                cardContainers.forEach(function(cardContainer) {
-                const cardTitle = cardContainer.querySelector('h3').textContent.toLowerCase();
-                const cardDescription = cardContainer.querySelector('p').textContent.toLowerCase();
-                
-                if (cardTitle.includes(filterText) || cardDescription.includes(filterText)) {
-                    cardContainer.style.display = 'block';
-                } else {
-                    cardContainer.style.display = 'none';
+                        cardContainers.forEach(function(cardContainer) {
+                            const cardTitle = cardContainer.querySelector('h3').textContent.toLowerCase();
+                            const cardDescription = cardContainer.querySelector('p').textContent.toLowerCase();
+
+                            if (cardTitle.includes(filterText) || cardDescription.includes(filterText)) {
+                                cardContainer.style.display = 'block';
+                            } else {
+                                cardContainer.style.display = 'none';
+                            }
+                        });
+                    });
                 }
-                });
-            });
-                }, 100);
-        });
+        }, 100);
+    });
 
     </script>
 </body>
