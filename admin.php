@@ -38,7 +38,8 @@
     <div is="dmx-browser" id="browser1"></div>
     <dmx-data-detail id="data_detail1" dmx-bind:data="jsonDS1.data" key="title"></dmx-data-detail>
     <dmx-json-datasource id="jsonDS1" is="dmx-serverconnect" url="admincr.json"></dmx-json-datasource>
-    <div class="modal fw-bolder" id="modal1" tabindex="1" data-bs-toggle="modal">
+
+    <div class="modal fw-bolder" id="modal1" tabindex="1" data-bs-toggle="modal" data-bs-fade="false">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header bg-dark text-warning border-bottom border-secondary border-2">
@@ -53,24 +54,19 @@
                             <tbody class="text-start">
                                 <tr class="border-top-0">
                                     <th scope="row" class="fw-normal">Username:</th>
-                                    <td class="text-light" dmx-on:click="browser1.writeTextToClipboard(data_detail1.data.username);browser1.alert('Copied to clipboard!')">{{data_detail1.data.username}}&nbsp;<i class="far fa-copy"></i></td>
+                                    <td class="text-light"><i class="far fa-copy"></i></td>
                                 </tr>
                                 <tr>
                                     <th scope="row" class="fw-normal">Password:</th>
-                                    <td class="text-light" dmx-on:click="browser1.writeTextToClipboard(data_detail1.data.password);browser1.alert('Copied to clipboard!')">{{data_detail1.data.password}}&nbsp;<i class="far fa-copy"></i></td>
+                                    <td class="text-light"><i class="far fa-copy"></i></td>
                                 </tr>
                                 <tr>
                                     <th scope="row" class="fw-normal">Documentation Link:</th>
-                                    <td class="text-light" dmx-on:click="browser1.writeTextToClipboard(data_detail1.data.docsUrl);browser1.alert('Copied to clipboard!')">{{data_detail1.data.docsUrl}}&nbsp;<i class="far fa-copy"></i></td>
+                                    <td class="text-light"><i class="far fa-copy"></i></td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
-                    <div class="flex-container">
-
-
-                    </div>
-
                 </div>
                 <div class="modal-footer text-warning bg-dark border-0 justify-content-center">
                     <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
@@ -129,7 +125,7 @@
                                     <div class="d-flex flex-column w-100">
                                         <div class="d-flex justify-content-between">
                                             <h3 class="text-light" dmx-on:click="browser1.goto('https://security.microsoft.com/tenantAllowBlockList?viewid=Sender&tid=8368b021-fc4f-4c05-ad66-58909315ad20')">Allow/Block Lists - Email</h3>
-                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="$('#modal1').modal('show');" dmx-bind:id="{{title}}" dmx-bind:text="data_detail1.data.username" id="cr1">View Details</button>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="fetchCredentialData('{{title}}'); $('#modal1').modal('show');" dmx-bind:id="{{title}}" id="cr1">View Details</button>
                                         </div>
                                         <p class="mb-0 text-secondary">This allows access to the Allow/Block email list for Microsoft Defender, as well as the Quarentine list.</p>
                                     </div>
@@ -471,6 +467,84 @@
                 }
             });
         });
+    </script>
+
+    <script>
+        // Add an event listener to the "View Details" button
+        document.getElementById('cr1').addEventListener('click', function() {
+            fetchCredentialData('cr1'); // Call the fetchCredentialData function with the appropriate title
+        });
+        document.getElementById('cr2').addEventListener('click', function() {
+            fetchCredentialData('cr2'); 
+        });
+        document.getElementById('cr3').addEventListener('click', function() {
+            fetchCredentialData('cr3'); 
+        });
+        document.getElementById('cr4').addEventListener('click', function() {
+            fetchCredentialData('cr4'); 
+        });
+        document.getElementById('cr5').addEventListener('click', function() {
+            fetchCredentialData('cr5'); 
+        });
+        document.getElementById('cr6').addEventListener('click', function() {
+            fetchCredentialData('cr6'); 
+        });
+        document.getElementById('cr7').addEventListener('click', function() {
+            fetchCredentialData('cr7'); 
+        });
+        document.getElementById('cr8').addEventListener('click', function() {
+            fetchCredentialData('cr8'); 
+        });
+        document.getElementById('cr9').addEventListener('click', function() {
+            fetchCredentialData('cr9'); 
+        });
+        document.getElementById('cr10').addEventListener('click', function() {
+            fetchCredentialData('cr10'); 
+        });
+        document.getElementById('cr11').addEventListener('click', function() {
+            fetchCredentialData('cr11'); 
+        });
+        document.getElementById('cr12').addEventListener('click', function() {
+            fetchCredentialData('cr12'); 
+        });
+        document.getElementById('cr13').addEventListener('click', function() {
+            fetchCredentialData('cr13'); 
+        });
+        document.getElementById('cr14').addEventListener('click', function() {
+            fetchCredentialData('cr14'); 
+        });
+        document.getElementById('cr15').addEventListener('click', function() {
+            fetchCredentialData('cr15'); 
+        });
+        document.getElementById('cr16').addEventListener('click', function() {
+            fetchCredentialData('cr16'); 
+        });
+        document.getElementById('cr17').addEventListener('click', function() {
+            fetchCredentialData('cr17'); 
+        });
+        document.getElementById('cr18').addEventListener('click', function() {
+            fetchCredentialData('cr18'); 
+        });
+        document.getElementById('cr19').addEventListener('click', function() {
+            fetchCredentialData('cr19'); 
+        });
+    </script>
+
+    <script>
+        function fetchCredentialData(title) {
+            $.getJSON("admincr.json", function (data) {
+                const credential = data.find(item => item.title === title);
+
+                if (credential) {
+                    // Update modal content
+                    $("#modal1 .modal-body .text-light").eq(0).text(credential.username);
+                    $("#modal1 .modal-body .text-light").eq(1).text(credential.password);
+                    $("#modal1 .modal-body .text-light").eq(2).text(credential.docsUrl);
+                } else {
+                    console.error("Credential not found for title:", title);
+                }
+            });
+        }
     </script>
 </body>
 
