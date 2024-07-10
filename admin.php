@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/stylesheet.css" />
     <link rel="stylesheet" href="css/intranet.css" />
+    <script src="bootstrap/5/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="dmxAppConnect/dmxBootstrap5Navigation/dmxBootstrap5Navigation.js" defer></script>
 
@@ -433,8 +434,6 @@
 
     <?php include 'footer.php'; ?>
 
-    <script src="bootstrap/5/js/bootstrap.bundle.min.js"></script>
-
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             setTimeout(() => {
@@ -460,6 +459,18 @@
         }, 100);
     });
 
+    </script>
+
+    <script>
+        $(function () {
+            $('[data-bs-toggle="modal"]').each(function() {
+                const modalId = $(this).data('bs-target');
+                const modalElement = $(modalId);
+                if (modalElement.length) {
+                    new bootstrap.Modal(modalElement);
+                }
+            });
+        });
     </script>
 </body>
 
