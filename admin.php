@@ -34,6 +34,8 @@
 </head>
 
 <body is="dmx-app" id="index" class="body-bg" onload="loadUserData();">
+    <dmx-data-detail id="data_detail1" dmx-bind:data="jsonDS1.data" key="emailAddress"></dmx-data-detail>
+    <dmx-json-datasource id="jsonDS1" is="dmx-serverconnect" url="admincr.json"></dmx-json-datasource>
     <div class="modal fw-bolder" id="modal1" is="dmx-bs5-modal" tabindex="-1">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -48,14 +50,16 @@
                             </thead>
                             <tbody class="text-start">
                                 <tr class="border-top-0">
-                                    <th scope="row" class="fw-normal">username</th>
-                                    <td dmx-text="data_detail1.data.firstName+' '+data_detail1.data.lastName" class="text-light"></td>
+                                    <th scope="row" class="fw-normal">Username:</th>
+                                    <td class="text-light" dmx-on:click="browser1.writeTextToClipboard(data_detail1.data.**);browser1.alert('Copied to clipboard!')">{{**}}&nbsp;<i class="far fa-copy"></i></td>
                                 </tr>
                                 <tr>
-                                    <th scope="row" class="fw-normal">password</th>
-                                    <td class="text-light">{{data_detail1.data.department}}</td>
+                                    <th scope="row" class="fw-normal">Password:</th>
+                                    <td class="text-light" dmx-on:click="browser1.writeTextToClipboard(data_detail1.data.**);browser1.alert('Copied to clipboard!')">{{**}}&nbsp;<i class="far fa-copy"></i>{{data_detail1.data.department}}</td>
                                 </tr>
-                                <td class="tile-hover text-light" dmx-on:click="browser1.writeTextToClipboard(data_detail1.data.**);browser1.alert('Copied to clipboard!')">{{**}}&nbsp;<i class="far fa-copy"></i></td>
+                                <tr>
+                                    <th scope="row" class="fw-normal">Documentation Link:</th>
+                                    <td class="text-light" dmx-on:click="browser1.writeTextToClipboard(data_detail1.data.**);browser1.alert('Copied to clipboard!')">{{**}}&nbsp;<i class="far fa-copy"></i>{{data_detail1.data.department}}</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -102,24 +106,30 @@
                         <div class="row">
                             <div class="col-lg-6 align-self-center card-container">
 
-                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('https://www.amplenote.com/notes/bcaa9814-2cbf-11ef-a5c4-b247aed906a4')">
+                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 h-tile-default tile-hover" dmx-on:click="browser1.goto('https://www.amplenote.com/notes/bcaa9814-2cbf-11ef-a5c4-b247aed906a4')">
                                     <div class="d-flex align-items-center w-100p justify-content-center">
                                         <h1 class="mb-0 text-white-50"><i class="fas fa-id-card-alt"></i></h1>
                                     </div>
                                     <div class="d-flex flex-column w-100">
-                                        <h3 class="text-light">Credentials</h3>
-                                        <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
+                                        <div class="d-flex justify-content-between">
+                                            <h3 class="text-light">Credentials</h3>
+
+                                        </div>
+                                        <p class="mb-0 text-secondary">View all necessary login credentials for every account associated with RWS.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-6 align-self-center card-container">
-                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('https://netorg5121535-my.sharepoint.com/personal/johnathan_ragingwolfsolutions_com/_layouts/15/onedrive.aspx?id=%2Fsites%2FRagingWolf%2DIT%2FShared%20Documents%2FGeneral%2FAdmin&amp;listurl=https%3A%2F%2Fnetorg5121535%2Esharepoint%2Ecom%2Fsites%2FRagingWolf%2DIT%2FShared%20Documents&amp;viewid=18b87225%2Dd2cb%2D4a93%2Daf6f%2Dd81cc060a1b5')">
+                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover">
                                     <div class="d-flex align-items-center w-100p justify-content-center">
                                         <h1 class="mb-0 text-white-50"><i class="fas fa-ban"></i></h1>
                                     </div>
                                     <div class="d-flex flex-column w-100">
-                                        <h3 class="text-light">Allow/Block Lists</h3>
-                                        <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
+                                        <div class="d-flex justify-content-between">
+                                            <h3 class="text-light" dmx-on:click="browser1.goto('https://security.microsoft.com/tenantAllowBlockList?viewid=Sender&tid=8368b021-fc4f-4c05-ad66-58909315ad20)">Allow/Block Lists - Email</h3>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show()" dmx-bind:id="{{title}}" id="cr1">View Details</button>
+                                        </div>
+                                        <p class="mb-0 text-secondary">This allows access to the Allow/Block email list for Microsoft Defender, as well as the Quarentine list.</p>
                                     </div>
                                 </div>
 
@@ -134,7 +144,10 @@
                                         <h1 class="mb-0 text-white-50"><i class="fas fa-sun"></i></h1>
                                     </div>
                                     <div class="d-flex flex-column w-100">
-                                        <h3 class="text-light">Apollo</h3>
+                                        <div class="d-flex justify-content-between">
+                                            <h3 class="text-light">Apollo</h3>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show()" dmx-bind:id="{{title}}" id="cr2">View Details</button>
+                                        </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
                                 </div>
@@ -146,7 +159,10 @@
                                         <h1 class="mb-0 text-white-50"><i class="fas fa-tag"></i></h1>
                                     </div>
                                     <div class="d-flex flex-column w-100">
-                                        <h3 class="text-light">Avery Design &amp; Print</h3>
+                                        <div class="d-flex justify-content-between">
+                                            <h3 class="text-light">Avery Design &amp; Print</h3>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show()" dmx-bind:id="{{title}}" id="cr3">View Details</button>
+                                        </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
                                 </div>
@@ -160,7 +176,10 @@
                                         <h1 class="mb-0 text-white-50"><i class="fas fa-paint-brush"></i></h1>
                                     </div>
                                     <div class="d-flex flex-column w-100">
-                                        <h3 class="text-light">Canva</h3>
+                                        <div class="d-flex justify-content-between">
+                                            <h3 class="text-light">Canva</h3>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show()" dmx-bind:id="{{title}}" id="cr4">View Details</button>
+                                        </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
                                 </div>
@@ -172,7 +191,10 @@
                                         <h1 class="mb-0 text-white-50"><i class="fas fa-mouse"></i></h1>
                                     </div>
                                     <div class="d-flex flex-column w-100">
-                                        <h3 class="text-light">ClickUp</h3>
+                                        <div class="d-flex justify-content-between">
+                                            <h3 class="text-light">ClickUp</h3>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show()" dmx-bind:id="{{title}}" id="cr5">View Details</button>
+                                        </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
                                 </div>
@@ -186,7 +208,10 @@
                                         <h1 class="mb-0 text-white-50"><i class="fas fa-directions"></i></h1>
                                     </div>
                                     <div class="d-flex flex-column w-100">
-                                        <h3 class="text-light">Custom Google Map Views</h3>
+                                        <div class="d-flex justify-content-between">
+                                            <h3 class="text-light">Custom Google Map Views</h3>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show()" dmx-bind:id="{{title}}" id="cr6">View Details</button>
+                                        </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
                                 </div>
@@ -198,7 +223,10 @@
                                         <h1 class="mb-0 text-white-50"><i class="fas fa-server"></i></h1>
                                     </div>
                                     <div class="d-flex flex-column w-100">
-                                        <h3 class="text-light">Domain/DNS Management</h3>
+                                        <div class="d-flex justify-content-between">
+                                            <h3 class="text-light">Domain/DNS Management</h3>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show()" dmx-bind:id="{{title}}" id="cr7">View Details</button>
+                                        </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
                                 </div>
@@ -212,7 +240,10 @@
                                         <h1 class="mb-0 text-white-50"><i class="fas fa-football-ball"></i></h1>
                                     </div>
                                     <div class="d-flex flex-column w-100">
-                                        <h3 class="text-light">Football Pool</h3>
+                                        <div class="d-flex justify-content-between">
+                                            <h3 class="text-light">Football Pool</h3>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show()" dmx-bind:id="{{title}}" id="cr8">View Details</button>
+                                        </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
                                 </div>
@@ -224,7 +255,10 @@
                                         <h1 class="mb-0 text-white-50"><i class="fab fa-google"></i></h1>
                                     </div>
                                     <div class="d-flex flex-column w-100">
-                                        <h3 class="text-light">Google Ads</h3>
+                                        <div class="d-flex justify-content-between">
+                                            <h3 class="text-light">Google Ads</h3>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show()" dmx-bind:id="{{title}}" id="cr9">View Details</button>
+                                        </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
                                 </div>
@@ -238,7 +272,10 @@
                                         <h1 class="mb-0 text-white-50"><i class="far fa-file"></i></h1>
                                     </div>
                                     <div class="d-flex flex-column w-100">
-                                        <h3 class="text-light">Indeed</h3>
+                                        <div class="d-flex justify-content-between">
+                                            <h3 class="text-light">Indeed</h3>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show()" dmx-bind:id="{{title}}" id="cr10">View Details</button>
+                                        </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
                                 </div>
@@ -250,7 +287,10 @@
                                         <h1 class="mb-0 text-white-50"><i class="fas fa-user-alt"></i></h1>
                                     </div>
                                     <div class="d-flex flex-column w-100">
-                                        <h3 class="text-light">Koala</h3>
+                                        <div class="d-flex justify-content-between">
+                                            <h3 class="text-light">Koala</h3>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show()" dmx-bind:id="{{title}}" id="cr11">View Details</button>
+                                        </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
                                 </div>
@@ -264,7 +304,10 @@
                                         <h1 class="mb-0 text-white-50"><i class="fas fa-envelope"></i></h1>
                                     </div>
                                     <div class="d-flex flex-column w-100">
-                                        <h3 class="text-light">MailFlow</h3>
+                                        <div class="d-flex justify-content-between">
+                                            <h3 class="text-light">MailFlow</h3>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show()" dmx-bind:id="{{title}}" id="cr12">View Details</button>
+                                        </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
                                 </div>
@@ -276,7 +319,10 @@
                                         <h1 class="mb-0 text-white-50"><i class="fas fa-server"></i></h1>
                                     </div>
                                     <div class="d-flex flex-column w-100">
-                                        <h3 class="text-light">ProofPoint Essentials</h3>
+                                        <div class="d-flex justify-content-between">
+                                            <h3 class="text-light">ProofPoint Essentials</h3>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show()" dmx-bind:id="{{title}}" id="cr13">View Details</button>
+                                        </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
                                 </div>
@@ -290,7 +336,10 @@
                                         <h1 class="mb-0 text-white-50"><i class="fas fa-mail-bulk"></i></h1>
                                     </div>
                                     <div class="d-flex flex-column w-100">
-                                        <h3 class="text-light">ShippingEasy</h3>
+                                        <div class="d-flex justify-content-between">
+                                            <h3 class="text-light">ShippingEasy</h3>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show()" dmx-bind:id="{{title}}" id="cr14">View Details</button>
+                                        </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
                                 </div>
@@ -302,7 +351,10 @@
                                         <h1 class="mb-0 text-white-50"><i class="fas fa-network-wired"></i></h1>
                                     </div>
                                     <div class="d-flex flex-column w-100">
-                                        <h3 class="text-light">Spectrum</h3>
+                                        <div class="d-flex justify-content-between">
+                                            <h3 class="text-light">Spectrum</h3>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show()" dmx-bind:id="{{title}}" id="cr15">View Details</button>
+                                        </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
                                 </div>
@@ -316,7 +368,10 @@
                                         <h1 class="mb-0 text-white-50"><i class="fas fa-envelope"></i></h1>
                                     </div>
                                     <div class="d-flex flex-column w-100">
-                                        <h3 class="text-light">Support Email</h3>
+                                        <div class="d-flex justify-content-between">
+                                            <h3 class="text-light">Support Email</h3>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show()" dmx-bind:id="{{title}}" id="cr16">View Details</button>
+                                        </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
                                 </div>
@@ -328,7 +383,10 @@
                                         <h1 class="mb-0 text-white-50"><i class="fas fa-inbox"></i></h1>
                                     </div>
                                     <div class="d-flex flex-column w-100">
-                                        <h3 class="text-light">WarmUp Inbox</h3>
+                                        <div class="d-flex justify-content-between">
+                                            <h3 class="text-light">WarmUp Inbox</h3>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show()" dmx-bind:id="{{title}}" id="cr17">View Details</button>
+                                        </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
                                 </div>
@@ -342,7 +400,10 @@
                                         <h1 class="mb-0 text-white-50"><i class="fas fa-server"></i></h1>
                                     </div>
                                     <div class="d-flex flex-column w-100">
-                                        <h3 class="text-light">WordPress</h3>
+                                        <div class="d-flex justify-content-between">
+                                            <h3 class="text-light">WordPress</h3>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show()" dmx-bind:id="{{title}}" id="cr18">View Details</button>
+                                        </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
                                 </div>
@@ -354,7 +415,10 @@
                                         <h1 class="mb-0 text-white-50"><i class="fab fa-youtube"></i></h1>
                                     </div>
                                     <div class="d-flex flex-column w-100">
-                                        <h3 class="text-light">YouTube</h3>
+                                        <div class="d-flex justify-content-between">
+                                            <h3 class="text-light">YouTube</h3>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show()" dmx-bind:id="{{title}}" id="cr19">View Details</button>
+                                        </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
                                 </div>
