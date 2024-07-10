@@ -7,9 +7,9 @@
     },
     {
         "title": "cr2",
-        "username": "",
-        "password": "",
-        "docsUrl": ""
+        "username": "tester2",
+        "password": "test2",
+        "docsUrl": "https://www.google.com"
     },
     {
         "title": "cr3",

@@ -152,14 +152,14 @@
                             </div>
                             <div class="col-lg-6 align-self-center card-container">
 
-                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('')">
+                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover">
                                     <div class="d-flex align-items-center w-100p justify-content-center">
                                         <h1 class="mb-0 text-white-50"><i class="fas fa-tag"></i></h1>
                                     </div>
                                     <div class="d-flex flex-column w-100">
                                         <div class="d-flex justify-content-between">
-                                            <h3 class="text-light">Avery Design &amp; Print</h3>
-                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show();data_detail1.set(jsonDS1.data, '{{title}}');" dmx-bind:id="{{title}}" id="cr3">View Details</button>
+                                            <h3 class="text-light" dmx-on:click="browser1.goto('')">Avery Design &amp; Print</h3>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="fetchCredentialData('{{title}}'); $('#modal1').modal('show');" dmx-bind:id="{{title}}" id="cr3">View Details</button>
                                         </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
@@ -169,14 +169,14 @@
                         <div class="row">
                             <div class="col-lg-6 align-self-center card-container">
 
-                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('')">
+                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover">
                                     <div class="d-flex align-items-center w-100p justify-content-center">
                                         <h1 class="mb-0 text-white-50"><i class="fas fa-paint-brush"></i></h1>
                                     </div>
                                     <div class="d-flex flex-column w-100">
                                         <div class="d-flex justify-content-between">
-                                            <h3 class="text-light">Canva</h3>
-                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show();data_detail1.set(jsonDS1.data, '{{title}}');" dmx-bind:id="{{title}}" id="cr4">View Details</button>
+                                            <h3 class="text-light" dmx-on:click="browser1.goto('')">Canva</h3>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="fetchCredentialData('{{title}}'); $('#modal1').modal('show');" dmx-bind:id="{{title}}" id="cr4">View Details</button>
                                         </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
@@ -184,14 +184,14 @@
                             </div>
                             <div class="col-lg-6 align-self-center card-container">
 
-                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('')">
+                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover">
                                     <div class="d-flex align-items-center w-100p justify-content-center">
                                         <h1 class="mb-0 text-white-50"><i class="fas fa-mouse"></i></h1>
                                     </div>
                                     <div class="d-flex flex-column w-100">
                                         <div class="d-flex justify-content-between">
-                                            <h3 class="text-light">ClickUp</h3>
-                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show();data_detail1.set(jsonDS1.data, '{{title}}');" dmx-bind:id="{{title}}" id="cr5">View Details</button>
+                                            <h3 class="text-light" dmx-on:click="browser1.goto('')">ClickUp</h3>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="fetchCredentialData('{{title}}'); $('#modal1').modal('show');" dmx-bind:id="{{title}}" id="cr5">View Details</button>
                                         </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
@@ -201,14 +201,14 @@
                         <div class="row">
                             <div class="col-lg-6 align-self-center card-container">
 
-                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('https://netorg5121535-my.sharepoint.com/personal/johnathan_ragingwolfsolutions_com/_layouts/15/onedrive.aspx?id=%2Fsites%2FRagingWolf%2DIT%2FShared%20Documents%2FGeneral%2FAdmin&amp;listurl=https%3A%2F%2Fnetorg5121535%2Esharepoint%2Ecom%2Fsites%2FRagingWolf%2DIT%2FShared%20Documents&amp;viewid=18b87225%2Dd2cb%2D4a93%2Daf6f%2Dd81cc060a1b5')">
+                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover">
                                     <div class="d-flex align-items-center w-100p justify-content-center">
                                         <h1 class="mb-0 text-white-50"><i class="fas fa-directions"></i></h1>
                                     </div>
                                     <div class="d-flex flex-column w-100">
                                         <div class="d-flex justify-content-between">
-                                            <h3 class="text-light">Custom Google Map Views</h3>
-                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show();data_detail1.set(jsonDS1.data, '{{title}}');" dmx-bind:id="{{title}}" id="cr6">View Details</button>
+                                            <h3 class="text-light" dmx-on:click="browser1.goto('https://netorg5121535-my.sharepoint.com/personal/johnathan_ragingwolfsolutions_com/_layouts/15/onedrive.aspx?id=%2Fsites%2FRagingWolf%2DIT%2FShared%20Documents%2FGeneral%2FAdmin&amp;listurl=https%3A%2F%2Fnetorg5121535%2Esharepoint%2Ecom%2Fsites%2FRagingWolf%2DIT%2FShared%20Documents&amp;viewid=18b87225%2Dd2cb%2D4a93%2Daf6f%2Dd81cc060a1b5')">Custom Google Map Views</h3>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="fetchCredentialData('{{title}}'); $('#modal1').modal('show');" dmx-bind:id="{{title}}" id="cr6">View Details</button>
                                         </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
@@ -216,14 +216,14 @@
                             </div>
                             <div class="col-lg-6 align-self-center card-container">
 
-                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('')">
+                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover">
                                     <div class="d-flex align-items-center w-100p justify-content-center">
                                         <h1 class="mb-0 text-white-50"><i class="fas fa-server"></i></h1>
                                     </div>
                                     <div class="d-flex flex-column w-100">
                                         <div class="d-flex justify-content-between">
-                                            <h3 class="text-light">Domain/DNS Management</h3>
-                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show();data_detail1.set(jsonDS1.data, '{{title}}');" dmx-bind:id="{{title}}" id="cr7">View Details</button>
+                                            <h3 class="text-light" dmx-on:click="browser1.goto('')">Domain/DNS Management</h3>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="fetchCredentialData('{{title}}'); $('#modal1').modal('show');" dmx-bind:id="{{title}}" id="cr7">View Details</button>
                                         </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
@@ -233,14 +233,14 @@
                         <div class="row">
                             <div class="col-lg-6 align-self-center card-container">
 
-                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('https://netorg5121535-my.sharepoint.com/personal/johnathan_ragingwolfsolutions_com/_layouts/15/onedrive.aspx?id=%2Fsites%2FRagingWolf%2DIT%2FShared%20Documents%2FGeneral%2FAdmin&amp;listurl=https%3A%2F%2Fnetorg5121535%2Esharepoint%2Ecom%2Fsites%2FRagingWolf%2DIT%2FShared%20Documents&amp;viewid=18b87225%2Dd2cb%2D4a93%2Daf6f%2Dd81cc060a1b5')">
+                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover">
                                     <div class="d-flex align-items-center w-100p justify-content-center">
                                         <h1 class="mb-0 text-white-50"><i class="fas fa-football-ball"></i></h1>
                                     </div>
                                     <div class="d-flex flex-column w-100">
                                         <div class="d-flex justify-content-between">
-                                            <h3 class="text-light">Football Pool</h3>
-                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show();data_detail1.set(jsonDS1.data, '{{title}}');" dmx-bind:id="{{title}}" id="cr8">View Details</button>
+                                            <h3 class="text-light" dmx-on:click="browser1.goto('https://netorg5121535-my.sharepoint.com/personal/johnathan_ragingwolfsolutions_com/_layouts/15/onedrive.aspx?id=%2Fsites%2FRagingWolf%2DIT%2FShared%20Documents%2FGeneral%2FAdmin&amp;listurl=https%3A%2F%2Fnetorg5121535%2Esharepoint%2Ecom%2Fsites%2FRagingWolf%2DIT%2FShared%20Documents&amp;viewid=18b87225%2Dd2cb%2D4a93%2Daf6f%2Dd81cc060a1b5')">Football Pool</h3>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="fetchCredentialData('{{title}}'); $('#modal1').modal('show');" dmx-bind:id="{{title}}" id="cr8">View Details</button>
                                         </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
@@ -248,14 +248,14 @@
                             </div>
                             <div class="col-lg-6 align-self-center card-container">
 
-                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('')">
+                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover">
                                     <div class="d-flex align-items-center w-100p justify-content-center">
                                         <h1 class="mb-0 text-white-50"><i class="fab fa-google"></i></h1>
                                     </div>
                                     <div class="d-flex flex-column w-100">
                                         <div class="d-flex justify-content-between">
-                                            <h3 class="text-light">Google Ads</h3>
-                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show();data_detail1.set(jsonDS1.data, '{{title}}');" dmx-bind:id="{{title}}" id="cr9">View Details</button>
+                                            <h3 class="text-light" dmx-on:click="browser1.goto('')">Google Ads</h3>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="fetchCredentialData('{{title}}'); $('#modal1').modal('show');" dmx-bind:id="{{title}}" id="cr9">View Details</button>
                                         </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
@@ -265,14 +265,14 @@
                         <div class="row">
                             <div class="col-lg-6 align-self-center card-container">
 
-                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('https://netorg5121535-my.sharepoint.com/personal/johnathan_ragingwolfsolutions_com/_layouts/15/onedrive.aspx?id=%2Fsites%2FRagingWolf%2DIT%2FShared%20Documents%2FGeneral%2FAdmin&amp;listurl=https%3A%2F%2Fnetorg5121535%2Esharepoint%2Ecom%2Fsites%2FRagingWolf%2DIT%2FShared%20Documents&amp;viewid=18b87225%2Dd2cb%2D4a93%2Daf6f%2Dd81cc060a1b5')">
+                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover">
                                     <div class="d-flex align-items-center w-100p justify-content-center">
                                         <h1 class="mb-0 text-white-50"><i class="far fa-file"></i></h1>
                                     </div>
                                     <div class="d-flex flex-column w-100">
                                         <div class="d-flex justify-content-between">
-                                            <h3 class="text-light">Indeed</h3>
-                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show();data_detail1.set(jsonDS1.data, '{{title}}');" dmx-bind:id="{{title}}" id="cr10">View Details</button>
+                                            <h3 class="text-light" dmx-on:click="browser1.goto('https://netorg5121535-my.sharepoint.com/personal/johnathan_ragingwolfsolutions_com/_layouts/15/onedrive.aspx?id=%2Fsites%2FRagingWolf%2DIT%2FShared%20Documents%2FGeneral%2FAdmin&amp;listurl=https%3A%2F%2Fnetorg5121535%2Esharepoint%2Ecom%2Fsites%2FRagingWolf%2DIT%2FShared%20Documents&amp;viewid=18b87225%2Dd2cb%2D4a93%2Daf6f%2Dd81cc060a1b5')">Indeed</h3>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="fetchCredentialData('{{title}}'); $('#modal1').modal('show');" dmx-bind:id="{{title}}" id="cr10">View Details</button>
                                         </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
@@ -280,14 +280,14 @@
                             </div>
                             <div class="col-lg-6 align-self-center card-container">
 
-                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('')">
+                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover">
                                     <div class="d-flex align-items-center w-100p justify-content-center">
                                         <h1 class="mb-0 text-white-50"><i class="fas fa-user-alt"></i></h1>
                                     </div>
                                     <div class="d-flex flex-column w-100">
                                         <div class="d-flex justify-content-between">
-                                            <h3 class="text-light">Koala</h3>
-                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show();data_detail1.set(jsonDS1.data, '{{title}}');" dmx-bind:id="{{title}}" id="cr11">View Details</button>
+                                            <h3 class="text-light" dmx-on:click="browser1.goto('')">Koala</h3>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="fetchCredentialData('{{title}}'); $('#modal1').modal('show');" dmx-bind:id="{{title}}" id="cr11">View Details</button>
                                         </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
@@ -297,14 +297,14 @@
                         <div class="row">
                             <div class="col-lg-6 align-self-center card-container">
 
-                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('https://netorg5121535-my.sharepoint.com/personal/johnathan_ragingwolfsolutions_com/_layouts/15/onedrive.aspx?id=%2Fsites%2FRagingWolf%2DIT%2FShared%20Documents%2FGeneral%2FAdmin&amp;listurl=https%3A%2F%2Fnetorg5121535%2Esharepoint%2Ecom%2Fsites%2FRagingWolf%2DIT%2FShared%20Documents&amp;viewid=18b87225%2Dd2cb%2D4a93%2Daf6f%2Dd81cc060a1b5')">
+                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover">
                                     <div class="d-flex align-items-center w-100p justify-content-center">
                                         <h1 class="mb-0 text-white-50"><i class="fas fa-envelope"></i></h1>
                                     </div>
                                     <div class="d-flex flex-column w-100">
                                         <div class="d-flex justify-content-between">
-                                            <h3 class="text-light">MailFlow</h3>
-                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show();data_detail1.set(jsonDS1.data, '{{title}}');" dmx-bind:id="{{title}}" id="cr12">View Details</button>
+                                            <h3 class="text-light" dmx-on:click="browser1.goto('https://netorg5121535-my.sharepoint.com/personal/johnathan_ragingwolfsolutions_com/_layouts/15/onedrive.aspx?id=%2Fsites%2FRagingWolf%2DIT%2FShared%20Documents%2FGeneral%2FAdmin&amp;listurl=https%3A%2F%2Fnetorg5121535%2Esharepoint%2Ecom%2Fsites%2FRagingWolf%2DIT%2FShared%20Documents&amp;viewid=18b87225%2Dd2cb%2D4a93%2Daf6f%2Dd81cc060a1b5')">MailFlow</h3>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="fetchCredentialData('{{title}}'); $('#modal1').modal('show');" dmx-bind:id="{{title}}" id="cr12">View Details</button>
                                         </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
@@ -312,14 +312,14 @@
                             </div>
                             <div class="col-lg-6 align-self-center card-container">
 
-                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('')">
+                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover">
                                     <div class="d-flex align-items-center w-100p justify-content-center">
                                         <h1 class="mb-0 text-white-50"><i class="fas fa-server"></i></h1>
                                     </div>
                                     <div class="d-flex flex-column w-100">
                                         <div class="d-flex justify-content-between">
-                                            <h3 class="text-light">ProofPoint Essentials</h3>
-                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show();data_detail1.set(jsonDS1.data, '{{title}}');" dmx-bind:id="{{title}}" id="cr13">View Details</button>
+                                            <h3 class="text-light" dmx-on:click="browser1.goto('')">ProofPoint Essentials</h3>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="fetchCredentialData('{{title}}'); $('#modal1').modal('show');" dmx-bind:id="{{title}}" id="cr13">View Details</button>
                                         </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
@@ -329,14 +329,14 @@
                         <div class="row">
                             <div class="col-lg-6 align-self-center card-container">
 
-                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('https://netorg5121535-my.sharepoint.com/personal/johnathan_ragingwolfsolutions_com/_layouts/15/onedrive.aspx?id=%2Fsites%2FRagingWolf%2DIT%2FShared%20Documents%2FGeneral%2FAdmin&amp;listurl=https%3A%2F%2Fnetorg5121535%2Esharepoint%2Ecom%2Fsites%2FRagingWolf%2DIT%2FShared%20Documents&amp;viewid=18b87225%2Dd2cb%2D4a93%2Daf6f%2Dd81cc060a1b5')">
+                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover">
                                     <div class="d-flex align-items-center w-100p justify-content-center">
                                         <h1 class="mb-0 text-white-50"><i class="fas fa-mail-bulk"></i></h1>
                                     </div>
                                     <div class="d-flex flex-column w-100">
                                         <div class="d-flex justify-content-between">
-                                            <h3 class="text-light">ShippingEasy</h3>
-                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show();data_detail1.set(jsonDS1.data, '{{title}}');" dmx-bind:id="{{title}}" id="cr14">View Details</button>
+                                            <h3 class="text-light" dmx-on:click="browser1.goto('https://netorg5121535-my.sharepoint.com/personal/johnathan_ragingwolfsolutions_com/_layouts/15/onedrive.aspx?id=%2Fsites%2FRagingWolf%2DIT%2FShared%20Documents%2FGeneral%2FAdmin&amp;listurl=https%3A%2F%2Fnetorg5121535%2Esharepoint%2Ecom%2Fsites%2FRagingWolf%2DIT%2FShared%20Documents&amp;viewid=18b87225%2Dd2cb%2D4a93%2Daf6f%2Dd81cc060a1b5')">ShippingEasy</h3>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="fetchCredentialData('{{title}}'); $('#modal1').modal('show');" dmx-bind:id="{{title}}" id="cr14">View Details</button>
                                         </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
@@ -344,14 +344,14 @@
                             </div>
                             <div class="col-lg-6 align-self-center card-container">
 
-                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('')">
+                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover">
                                     <div class="d-flex align-items-center w-100p justify-content-center">
                                         <h1 class="mb-0 text-white-50"><i class="fas fa-network-wired"></i></h1>
                                     </div>
                                     <div class="d-flex flex-column w-100">
                                         <div class="d-flex justify-content-between">
-                                            <h3 class="text-light">Spectrum</h3>
-                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show();data_detail1.set(jsonDS1.data, '{{title}}');" dmx-bind:id="{{title}}" id="cr15">View Details</button>
+                                            <h3 class="text-light" dmx-on:click="browser1.goto('')">Spectrum</h3>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="fetchCredentialData('{{title}}'); $('#modal1').modal('show');" dmx-bind:id="{{title}}" id="cr15">View Details</button>
                                         </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
@@ -361,14 +361,14 @@
                         <div class="row">
                             <div class="col-lg-6 align-self-center card-container">
 
-                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('https://netorg5121535-my.sharepoint.com/personal/johnathan_ragingwolfsolutions_com/_layouts/15/onedrive.aspx?id=%2Fsites%2FRagingWolf%2DIT%2FShared%20Documents%2FGeneral%2FAdmin&amp;listurl=https%3A%2F%2Fnetorg5121535%2Esharepoint%2Ecom%2Fsites%2FRagingWolf%2DIT%2FShared%20Documents&amp;viewid=18b87225%2Dd2cb%2D4a93%2Daf6f%2Dd81cc060a1b5')">
+                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover">
                                     <div class="d-flex align-items-center w-100p justify-content-center">
                                         <h1 class="mb-0 text-white-50"><i class="fas fa-envelope"></i></h1>
                                     </div>
                                     <div class="d-flex flex-column w-100">
                                         <div class="d-flex justify-content-between">
-                                            <h3 class="text-light">Support Email</h3>
-                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show();data_detail1.set(jsonDS1.data, '{{title}}');" dmx-bind:id="{{title}}" id="cr16">View Details</button>
+                                            <h3 class="text-light" dmx-on:click="browser1.goto('https://netorg5121535-my.sharepoint.com/personal/johnathan_ragingwolfsolutions_com/_layouts/15/onedrive.aspx?id=%2Fsites%2FRagingWolf%2DIT%2FShared%20Documents%2FGeneral%2FAdmin&amp;listurl=https%3A%2F%2Fnetorg5121535%2Esharepoint%2Ecom%2Fsites%2FRagingWolf%2DIT%2FShared%20Documents&amp;viewid=18b87225%2Dd2cb%2D4a93%2Daf6f%2Dd81cc060a1b5')">Support Email</h3>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="fetchCredentialData('{{title}}'); $('#modal1').modal('show');" dmx-bind:id="{{title}}" id="cr16">View Details</button>
                                         </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
@@ -376,14 +376,14 @@
                             </div>
                             <div class="col-lg-6 align-self-center card-container">
 
-                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('')">
+                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover">
                                     <div class="d-flex align-items-center w-100p justify-content-center">
                                         <h1 class="mb-0 text-white-50"><i class="fas fa-inbox"></i></h1>
                                     </div>
                                     <div class="d-flex flex-column w-100">
                                         <div class="d-flex justify-content-between">
-                                            <h3 class="text-light">WarmUp Inbox</h3>
-                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show();data_detail1.set(jsonDS1.data, '{{title}}');" dmx-bind:id="{{title}}" id="cr17">View Details</button>
+                                            <h3 class="text-light" dmx-on:click="browser1.goto('')">WarmUp Inbox</h3>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="fetchCredentialData('{{title}}'); $('#modal1').modal('show');" dmx-bind:id="{{title}}" id="cr17">View Details</button>
                                         </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
@@ -393,14 +393,14 @@
                         <div class="row">
                             <div class="col-lg-6 align-self-center card-container">
 
-                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('https://netorg5121535-my.sharepoint.com/personal/johnathan_ragingwolfsolutions_com/_layouts/15/onedrive.aspx?id=%2Fsites%2FRagingWolf%2DIT%2FShared%20Documents%2FGeneral%2FAdmin&amp;listurl=https%3A%2F%2Fnetorg5121535%2Esharepoint%2Ecom%2Fsites%2FRagingWolf%2DIT%2FShared%20Documents&amp;viewid=18b87225%2Dd2cb%2D4a93%2Daf6f%2Dd81cc060a1b5')">
+                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover">
                                     <div class="d-flex align-items-center w-100p justify-content-center">
                                         <h1 class="mb-0 text-white-50"><i class="fas fa-server"></i></h1>
                                     </div>
                                     <div class="d-flex flex-column w-100">
                                         <div class="d-flex justify-content-between">
-                                            <h3 class="text-light">WordPress</h3>
-                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show();data_detail1.set(jsonDS1.data, '{{title}}');" dmx-bind:id="{{title}}" id="cr18">View Details</button>
+                                            <h3 class="text-light" dmx-on:click="browser1.goto('https://netorg5121535-my.sharepoint.com/personal/johnathan_ragingwolfsolutions_com/_layouts/15/onedrive.aspx?id=%2Fsites%2FRagingWolf%2DIT%2FShared%20Documents%2FGeneral%2FAdmin&amp;listurl=https%3A%2F%2Fnetorg5121535%2Esharepoint%2Ecom%2Fsites%2FRagingWolf%2DIT%2FShared%20Documents&amp;viewid=18b87225%2Dd2cb%2D4a93%2Daf6f%2Dd81cc060a1b5')">WordPress</h3>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="fetchCredentialData('{{title}}'); $('#modal1').modal('show');" dmx-bind:id="{{title}}" id="cr18">View Details</button>
                                         </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
@@ -408,14 +408,14 @@
                             </div>
                             <div class="col-lg-6 align-self-center card-container">
 
-                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="browser1.goto('')">
+                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover">
                                     <div class="d-flex align-items-center w-100p justify-content-center">
                                         <h1 class="mb-0 text-white-50"><i class="fab fa-youtube"></i></h1>
                                     </div>
                                     <div class="d-flex flex-column w-100">
                                         <div class="d-flex justify-content-between">
-                                            <h3 class="text-light">YouTube</h3>
-                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show();data_detail1.set(jsonDS1.data, '{{title}}');" dmx-bind:id="{{title}}" id="cr19">View Details</button>
+                                            <h3 class="text-light" dmx-on:click="browser1.goto('')">YouTube</h3>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="fetchCredentialData('{{title}}'); $('#modal1').modal('show');" dmx-bind:id="{{title}}" id="cr19">View Details</button>
                                         </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
