@@ -144,7 +144,7 @@
                                     <div class="d-flex flex-column w-100">
                                         <div class="d-flex justify-content-between">
                                             <h3 class="text-light">Apollo</h3>
-                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show();data_detail1.set(jsonDS1.data, '{{title}}');" dmx-bind:id="{{title}}" id="cr2">View Details</button>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="fetchCredentialData('{{title}}'); $('#modal1').modal('show');" dmx-bind:id="{{title}}" id="cr2">View Details</button>
                                         </div>
                                         <p class="mb-0 text-secondary">View all necessary login credential for every account associated with RWS.</p>
                                     </div>
