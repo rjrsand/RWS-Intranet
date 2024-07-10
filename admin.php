@@ -34,6 +34,7 @@
 </head>
 
 <body is="dmx-app" id="index" class="body-bg" onload="loadUserData();">
+    <div is="dmx-browser" id="browser1"></div>
     <dmx-data-detail id="data_detail1" dmx-bind:data="jsonDS1.data" key="emailAddress"></dmx-data-detail>
     <dmx-json-datasource id="jsonDS1" is="dmx-serverconnect" url="admincr.json"></dmx-json-datasource>
     <div class="modal fw-bolder" id="modal1" is="dmx-bs5-modal" tabindex="-1">
@@ -51,15 +52,15 @@
                             <tbody class="text-start">
                                 <tr class="border-top-0">
                                     <th scope="row" class="fw-normal">Username:</th>
-                                    <td class="text-light" dmx-on:click="browser1.writeTextToClipboard(data_detail1.data.**);browser1.alert('Copied to clipboard!')">{{**}}&nbsp;<i class="far fa-copy"></i></td>
+                                    <td class="text-light" dmx-on:click="browser1.writeTextToClipboard(data_detail1.data.username);browser1.alert('Copied to clipboard!')">{{data_detail1.data.username}}&nbsp;<i class="far fa-copy"></i></td>
                                 </tr>
                                 <tr>
                                     <th scope="row" class="fw-normal">Password:</th>
-                                    <td class="text-light" dmx-on:click="browser1.writeTextToClipboard(data_detail1.data.**);browser1.alert('Copied to clipboard!')">{{**}}&nbsp;<i class="far fa-copy"></i>{{data_detail1.data.department}}</td>
+                                    <td class="text-light" dmx-on:click="browser1.writeTextToClipboard(data_detail1.data.password);browser1.alert('Copied to clipboard!')">{{data_detail1.data.password}}&nbsp;<i class="far fa-copy"></i></td>
                                 </tr>
                                 <tr>
                                     <th scope="row" class="fw-normal">Documentation Link:</th>
-                                    <td class="text-light" dmx-on:click="browser1.writeTextToClipboard(data_detail1.data.**);browser1.alert('Copied to clipboard!')">{{**}}&nbsp;<i class="far fa-copy"></i>{{data_detail1.data.department}}</td>
+                                    <td class="text-light" dmx-on:click="browser1.writeTextToClipboard(data_detail1.data.docsUrl);browser1.alert('Copied to clipboard!')">{{data_detail1.data.docsUrl}}&nbsp;<i class="far fa-copy"></i></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -80,7 +81,7 @@
     <dmx-value id="lastName"></dmx-value>
     <dmx-value id="firstName"></dmx-value>
     <dmx-value id="role"></dmx-value>
-    <div is="dmx-browser" id="browser1"></div>
+
 
     <?php include 'navbar.php'; ?>
 
@@ -126,7 +127,7 @@
                                     </div>
                                     <div class="d-flex flex-column w-100">
                                         <div class="d-flex justify-content-between">
-                                            <h3 class="text-light" dmx-on:click="browser1.goto('https://security.microsoft.com/tenantAllowBlockList?viewid=Sender&tid=8368b021-fc4f-4c05-ad66-58909315ad20)">Allow/Block Lists - Email</h3>
+                                            <h3 class="text-light" dmx-on:click="browser1.goto('https://security.microsoft.com/tenantAllowBlockList?viewid=Sender&tid=8368b021-fc4f-4c05-ad66-58909315ad20')">Allow/Block Lists - Email</h3>
                                             <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="modal1.show()" dmx-bind:id="{{title}}" id="cr1">View Details</button>
                                         </div>
                                         <p class="mb-0 text-secondary">This allows access to the Allow/Block email list for Microsoft Defender, as well as the Quarentine list.</p>
@@ -436,6 +437,7 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+                setTimeout(() => {
             const filterInput = document.getElementById('filter_index_input');
             const cardContainers = document.querySelectorAll('.card-container');
 
@@ -453,6 +455,7 @@
                 }
                 });
             });
+                }, 100);
         });
 
     </script>
