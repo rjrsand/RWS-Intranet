@@ -38,7 +38,7 @@
     <div is="dmx-browser" id="browser1"></div>
     <dmx-data-detail id="data_detail1" dmx-bind:data="jsonDS1.data" key="title"></dmx-data-detail>
     <dmx-json-datasource id="jsonDS1" is="dmx-serverconnect" url="admincr.json"></dmx-json-datasource>
-    <div class="modal fw-bolder" id="modal1" tabindex="-1" data-bs-toggle="modal">
+    <div class="modal fw-bolder" id="modal1" tabindex="1" data-bs-toggle="modal">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header bg-dark text-warning border-bottom border-secondary border-2">
@@ -129,7 +129,7 @@
                                     <div class="d-flex flex-column w-100">
                                         <div class="d-flex justify-content-between">
                                             <h3 class="text-light" dmx-on:click="browser1.goto('https://security.microsoft.com/tenantAllowBlockList?viewid=Sender&tid=8368b021-fc4f-4c05-ad66-58909315ad20')">Allow/Block Lists - Email</h3>
-                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="data_detail1.set(jsonDS1.data, '{{title}}');$('#modal1').modal('show');" dmx-bind:id="{{title}}" id="cr1">View Details</button>
+                                            <button class="btn ml-auto border border-white-50 text-white-50 bg-transparent btn-secondary d-flex align-items-center h-75" dmx-on:click="$('#modal1').modal('show');" dmx-bind:id="{{title}}" dmx-bind:text="data_detail1.data.username" id="cr1">View Details</button>
                                         </div>
                                         <p class="mb-0 text-secondary">This allows access to the Allow/Block email list for Microsoft Defender, as well as the Quarentine list.</p>
                                     </div>
@@ -470,12 +470,6 @@
                     new bootstrap.Modal(modalElement);
                 }
             });
-        });
-    </script>
-
-    <script>
-        $(function () {
-            $('#modal1').modal('show'); // This will initialize the modal
         });
     </script>
 </body>
