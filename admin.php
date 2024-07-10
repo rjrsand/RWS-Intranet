@@ -37,7 +37,7 @@
     <div is="dmx-browser" id="browser1"></div>
     <dmx-data-detail id="data_detail1" dmx-bind:data="jsonDS1.data" key="emailAddress"></dmx-data-detail>
     <dmx-json-datasource id="jsonDS1" is="dmx-serverconnect" url="admincr.json"></dmx-json-datasource>
-    <div class="modal fw-bolder" id="modal1" is="dmx-bs5-modal" tabindex="-1">
+    <div class="modal fw-bolder" id="modal1" is="dmx-bs5-modal" tabindex="-1" data-bs-toggle="modal">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header bg-dark text-warning border-bottom border-secondary border-2">
