@@ -44,72 +44,91 @@
 
 <body is="dmx-app" id="directory" class="body-bg" onload="loadUserData();">
     <div class="modal" id="PTO" is="dmx-bs5-modal" tabindex="-1">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl" role="document">
             <div class="modal-content">
                 <iframe src="https://usebasin.com/form/b261aef3c8a3/view/54a55660cca9?iframe=true" frameborder="0" style="border: none; overflow: hidden;" onload="var self = this; self.contentWindow.postMessage('getHeight', '*'); setInterval(function() { self.contentWindow.postMessage('getHeight', '*'); }, 500); window.addEventListener('message', function(event) { if (event.data.action === 'setHeight') { self.style.height = event.data.height + 'px'; } });" width="100%"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="OT" is="dmx-bs5-modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl" role="document">
+            <div class="modal-content" style="overflow-y: auto; background-color: #303030; color: white;">
+                <div style="text-align: center; font-size: 24px; font-weight: bold; margin-bottom: 25px; margin-top: 20px;">Employee Overtime Request</div>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                    <div class="ms-2 me-2 mt-2">Select Your Name:</div>
+                    <select class="ms-2 me-2 mb-2" style="flex: 1; padding: 5px; border: 1px solid; border-radius: 5px; font-size: 16px; background-color: #181818; color: white; border-color: black;">
+                        <option value="Select">Select your name</option>
+                        <option value="Alaura Richardson">Alaura Richardson</option>
+                        <option value="Arianna Vales">Arianna Vales</option>
+                        <option value="Brandon Brownfield">Brandon Brownfield</option>
+                        <option value="Jeffrey Waters">Jeffrey Waters</option>
+                        <option value="Jenn Reyes">Jenn Reyes</option>
+                        <option value="Moe Clemmons">Moe Clemmons</option>
+                        <option value="Rich Metz">Rich Metz</option>
+                        <option value="Rob Sandlin">Rob Sandlin</option>
+                        <option value="Zak Cardillo">Zak Cardillo</option>
+                    </select>
+                </div>
+                <table class="ms-2 me-2 mb-3 mt-2">
+                    <thead>
+                        <tr class="text-center">
+                            <th style="padding: 5px; border: 1px solid black; border-radius: 5px; font-size: 16px;">DAY OF WEEK</th>
+                            <th style="padding: 5px; border: 1px solid black; border-radius: 5px; font-size: 16px;">DATE</th>
+                            <th style="padding: 5px; border: 1px solid black; border-radius: 5px; font-size: 16px;">Over Time Hours</th>
+                            <th style="padding: 5px; border: 1px solid black; border-radius: 5px; font-size: 16px;">WORK COMPLETED</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-center" id="tableBody">
+                        <tr class="primary-row">
+                            <td style="padding: 5px; border: 1px solid black; border-radius: 5px; font-size: 16px;">
+                                <select style="padding: 5px; border: 1px solid black; border-radius: 5px; border-color: black; font-size: 16px; background-color: #181818; color: white;">
+                                    <option value="Select">Select</option>
+                                    <option value="Monday">Monday</option>
+                                    <option value="Tuesday">Tuesday</option>
+                                    <option value="Wednesday">Wednesday</option>
+                                    <option value="Thursday">Thursday</option>
+                                    <option value="Friday">Friday</option>
+                                    <option value="Saturday">Saturday</option>
+                                    <option value="Sunday">Sunday</option>
+                                </select>
+                            </td>
+                            <td style="padding: 5px; border: 1px solid black; border-radius: 5px; font-size: 16px;"><input type="date" style="padding: 5px; border: 1px solid black; border-radius: 5px; border-color: black; font-size: 16px; background-color: #181818; color: white;"></td>
+                            <td style="padding: 5px; border: 1px solid black; border-radius: 5px; font-size: 16px;"><input type="number" style="padding: 5px; border: 1px solid black; border-radius: 5px; border-color: black; font-size: 16px; background-color: #181818; color: white;"></td>
+                            <td style="padding: 5px; border: 1px solid black; border-radius: 5px; font-size: 16px;"><textarea style="padding: 5px; border: 1px solid black; border-radius: 5px; border-color: black; font-size: 16px; background-color: #181818; color: white;"></textarea></td>
+                        </tr>
+                        <tr class="initial-row">
+                            <td style="padding: 5px; border: 1px solid black; border-radius: 5px; font-size: 16px;">TOTAL</td>
+                            <td style="padding: 5px; border: 1px solid black; font-size: 16px;" class="bg-dark"></td>
+                            <td style="padding: 5px; border: 1px solid black; border-radius: 5px; font-size: 16px;"></td>
+                            <td style="padding: 5px; border: 1px solid black; font-size: 16px;" class="bg-dark"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <script src="overtime-modal.js"></script>
+                <div>
+                    <button id="addRowButton" class="ms-2 me-2 mb-2" style="padding: 10px 10px; background-color: #dc3545; color: #fff; border: none; border-radius: 5px; cursor: pointer; font-size: 14px;">Add Day</button>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                    <div style="flex: 1; display: flex; flex-direction: column;" class="ms-2 me-2">
+                        <div style="margin-bottom: 5px;">Employee Signature:</div>
+                        <input type="text" style="width: 100%; padding: 5px; font-size: 16px; background-color: #181818; color: white;" placeholder="Signature" readonly>
+                        <div style="margin-top: 10px; margin-bottom: 5px;">Supervisor Signature:</div>
+                        <input type="text" style="width: 100%; padding: 5px; font-size: 16px; background-color: #181818; color: white;" placeholder="Signature" readonly>
+                        <div style="margin-top: 10px; margin-bottom: 5px;">President Signature:</div>
+                        <input type="text" style="width: 100%; padding: 5px; font-size: 16px; background-color: #181818; color: white;" placeholder="Signature" readonly>
+                    </div>
+                    <div style="flex: 1; display: flex; flex-direction: column;" class="ms-2 me-2">
+                        <div style="margin-bottom: 5px;">Date:</div>
+                        <input type="date" style="width: 100%; padding: 5px; background-color: #181818; color: white;">
+                    </div>
+                </div>
+                <button class="ms-2 me-2 mb-2" style="padding: 10px 20px; background-color: #007bff; color: #fff; border: none; border-radius: 5px; cursor: pointer; font-size: 18px; transition: background-color 0.3s ease;">Submit</button>
             </div>
         </div>
     </div>
     <dmx-data-detail id="data_detail1" dmx-bind:data="jsonDS1.data" key="emailAddress"></dmx-data-detail>
     <dmx-json-datasource id="jsonDS1" is="dmx-serverconnect" url="directoryContacts.json"></dmx-json-datasource>
     <div is="dmx-browser" id="browser1"></div>
-
-    <div class="modal fw-bolder" id="modal1" is="dmx-bs5-modal" tabindex="-1">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header bg-dark text-warning border-bottom border-secondary border-2">
-                    <h5 class="modal-title text-light" id="Details">Details</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body bg-dark text-warning">
-                    <div class="container text-center">
-                        <table class="table table-sm text-secondary border-secondary">
-                            <thead>
-                            </thead>
-                            <tbody class="text-start">
-                                <tr class="border-top-0">
-                                    <th scope="row" class="fw-normal">Full Name</th>
-                                    <td dmx-text="data_detail1.data.firstName+' '+data_detail1.data.lastName"></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="fw-normal">Department</th>
-                                    <td>{{data_detail1.data.department}}</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="fw-normal">Supervisor</th>
-                                    <td>{{data_detail1.data.supervisor}}<br></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="fw-normal">Title</th>
-                                    <td>{{data_detail1.data.title}}</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="fw-normal">Office Phone<br></th>
-                                    <td dmx-on:click="browser1.writeTextToClipboard(data_detail1.data.officePhone);browser1.alert('Copied to clipboard!')" class="tile-hover">{{data_detail1.data.officePhone}}</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="fw-normal">Mobile Phone</th>
-                                    <td dmx-on:click="browser1.writeTextToClipboard(data_detail1.data.mobilePhone);browser1.alert('Copied to clipboard!')" class="tile-hover">{{data_detail1.data.mobilePhone}}</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="fw-normal">Email</th>
-                                    <td class="tile-hover" dmx-on:click="browser1.writeTextToClipboard(data_detail1.data.emailAddress);browser1.alert('Copied to clipboard!')">{{data_detail1.data.emailAddress}}<i class="far fa-copy"></i></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="flex-container">
-
-
-                    </div>
-
-                </div>
-                <div class="modal-footer text-warning bg-dark border-0 justify-content-center">
-                    <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <?php include 'navbar.php'; ?>
 
