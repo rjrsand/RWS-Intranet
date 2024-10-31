@@ -84,9 +84,12 @@ class core extends Module
 
     public function _while($options) {
         option_require($options, array('while', 'exec'));
+        option_default($options, 'max', PHP_INT_MAX);
 
+        $i = 0;
         while ($this->app->parseObject($options->while)) {
             $this->app->exec($options->exec, TRUE);
+            if (++$i == $options->max) break;
         }
     }
 
@@ -174,10 +177,15 @@ class core extends Module
         $this->app->response->end($options->status, $options->data);
     }
 
+    public function end($options) {
+        $this->app->response->json($this->app->data);
+    }
+
     public function error($options) {
 		option_require($options, 'message');
 
-        $this->app->response->error($options->message);
+        //$this->app->response->error($options->message);
+        throw new \Exception($options->message);
     }
 
     public function redirect($options) {

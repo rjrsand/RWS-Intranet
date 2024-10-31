@@ -1,7 +1,7 @@
-dmx.Attribute('bs-popover', 'mounted', function (node, attr) {
+dmx.Attribute('bs-popover', 'mounted', function(node, attr) {
   let popover = bootstrap.Popover.getInstance(node);
 
-  this.$watch(attr.value, function (value) {
+  this.$watch(attr.value, function(value) {
     node.setAttribute('data-bs-content', value || '');
   });
 
@@ -13,9 +13,9 @@ dmx.Attribute('bs-popover', 'mounted', function (node, attr) {
     });
   }
 
-  this.addEventListener('destroy', () => {
+  return () => {
     if (popover) {
       popover.dispose();
     }
-  });
+  };
 });
