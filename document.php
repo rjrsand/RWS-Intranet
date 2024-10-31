@@ -52,7 +52,7 @@
     </div>
     <div class="modal" id="OT" is="dmx-bs5-modal" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl" role="document">
-            <div class="modal-content" style="overflow-y: auto; background-color: #303030; color: white;">
+            <div class="modal-content" style="overflow-y: auto; background-color: #303030; color: white; overflow-x: auto;">
                 <div style="text-align: center; font-size: 24px; font-weight: bold; margin-bottom: 25px; margin-top: 20px;">Employee Overtime Request</div>
                 <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
                     <div class="ms-2 me-2 mt-2">Select Your Name:</div>
@@ -104,7 +104,6 @@
                         </tr>
                     </tbody>
                 </table>
-                <script src="overtime-modal.js"></script>
                 <div>
                     <button id="addRowButton" class="ms-2 me-2 mb-2" style="padding: 10px 10px; background-color: #dc3545; color: #fff; border: none; border-radius: 5px; cursor: pointer; font-size: 14px;">Add Day</button>
                 </div>
@@ -453,6 +452,7 @@
         });
     </script>
     <script src="bootstrap/5/js/bootstrap.bundle.min.js"></script>
+    <script src="overtime-modal.js"></script>
 </body>
 
 </html>

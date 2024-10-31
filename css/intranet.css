@@ -34,6 +34,18 @@ border-radius: 3px;
     background-color: #1B1B1B;
 }
 
+/* Style the 'Carrier' column to be 25% wide */
+.table td:nth-child(5) { 
+  width: 25%;
+}
+
+/* Prevent word wrapping in the 'Created' and 'Pickup' columns */
+.table td:nth-child(7), .table td:nth-child(8) { 
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Add ellipsis for truncation if needed */
+}
+
 .tile-minheight {
     min-height: 198px !important;
 }
