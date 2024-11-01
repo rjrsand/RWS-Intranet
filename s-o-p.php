@@ -175,11 +175,11 @@
                                 </div>
                             </div>
                             <div class="col-lg-6 sop-row">
-                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover">
+                                <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default">
                                     <div class="d-flex align-items-center w-100p justify-content-center" dmx-on:click="browser1.goto('assets/Training%20Videos/Ivia-Tracking-Setup.mp4')">
-                                        <h1 class="mb-0 text-white-50"><i class="far fa-play-circle fa-fw fa-lg"></i></h1>
+                                        <h1 class="mb-0 text-white-50"><i class="far fa-play-circle fa-fw fa-lg tile-hover"></i></h1>
                                     </div>
-                                    <div class="d-flex flex-column w-100" dmx-on:click="browser1.goto('assets/Docs/Ivia-How-To-Setup-Tracking.pdf')">
+                                    <div class="d-flex flex-column w-100 tile-hover" dmx-on:click="browser1.goto('assets/Docs/Ivia-How-To-Setup-Tracking.pdf')">
                                         <h3 class="text-light">Enable Ivia Load Tracking</h3>
                                         <p class="mb-0 text-secondary">Click here or Play to learn how to Enable Ivia Load Tracking.</p>
                                     </div>
