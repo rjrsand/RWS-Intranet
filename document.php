@@ -39,6 +39,8 @@
 
     <script src="js/univ.js"></script>
 
+    <script src="overtime-modal.js"></script>
+
     <link rel="icon" href="icons/favicon.ico">
 </head>
 
@@ -452,7 +454,7 @@
         });
     </script>
     <script src="bootstrap/5/js/bootstrap.bundle.min.js"></script>
-    <script src="overtime-modal.js"></script>
+
 </body>
 
 </html>
