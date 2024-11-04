@@ -39,7 +39,7 @@
 
     <script src="js/univ.js"></script>
 
-    <script src="overtime-modal.js"></script>
+    <script src="js/overtime-modal.js"></script>
 
     <link rel="icon" href="icons/favicon.ico">
 </head>
@@ -107,7 +107,7 @@
                     </tbody>
                 </table>
                 <div>
-                    <button id="addRowButton" class="ms-2 me-2 mb-2" style="padding: 10px 10px; background-color: #dc3545; color: #fff; border: none; border-radius: 5px; cursor: pointer; font-size: 14px;">Add Day</button>
+                    <button id="addRowButton" class="ms-2 me-2 mb-2" style="padding: 10px 10px; background-color: #dc3545; color: #fff; border: none; border-radius: 5px; cursor: pointer; font-size: 14px;" dmx-on:click="">Add Day</button>
                 </div>
                 <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
                     <div style="flex: 1; display: flex; flex-direction: column;" class="ms-2 me-2">
