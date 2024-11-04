@@ -40,10 +40,13 @@ document.addEventListener('DOMContentLoaded', function () {
         workCell.style.fontSize = '16px';
     }
 
-    // Add a row when the button is clicked
     addRowButton.addEventListener('click', () => {
         // Create a new row using your createRow function
         createRow();
+
+        // Insert the new row before the .initial-row
+        const initialRow = tableBody.querySelector('.initial-row');
+        tableBody.insertBefore(tableBody.lastElementChild, initialRow);
 
         // Update total hours calculation
         updateTotalHours();
