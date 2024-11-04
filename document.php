@@ -21,7 +21,7 @@
     <script src="dmxAppConnect/dmxDataTraversal/dmxDataTraversal.js" defer></script>
     <script src="dmxAppConnect/dmxTyped/dmxTyped.js" defer></script>
     <script src="dmxAppConnect/dmxTyped/typed.min.js" defer></script>
-    <script src="dmxAppConnect/dmxBootstrap5Modal/dmxBootstrap5Modal.js" defer></script>
+    <script src="dmxAppConnect/dmxBootstrap5Modal/dmxBootstrap5Modal.js"></script>
     <script src="dmxAppConnect/dmxFormRepeat/dmxFormRepeat.js" defer></script>
     <link rel="stylesheet" href="dmxAppConnect/dmxBootstrap5TableGenerator/dmxBootstrap5TableGenerator.css" />
     <script src="dmxAppConnect/dmxBootstrap5Offcanvas/dmxBootstrap5Offcanvas.js" defer></script>
@@ -50,7 +50,7 @@
             </div>
         </div>
     </div>
-    <div class="modal" id="OT" is="dmx-bs5-modal" tabindex="-1">
+    <div class="modal" id="OT" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl" role="document">
             <div class="modal-content" style="overflow-y: auto; background-color: #303030; color: white; overflow-x: auto;">
                 <div style="text-align: center; font-size: 24px; font-weight: bold; margin-bottom: 25px; margin-top: 20px;">Employee Overtime Request</div>
@@ -93,13 +93,13 @@
                                 </select>
                             </td>
                             <td style="padding: 5px; border: 1px solid black; border-radius: 5px; font-size: 16px;"><input type="date" style="padding: 5px; border: 1px solid black; border-radius: 5px; border-color: black; font-size: 16px; background-color: #181818; color: white;"></td>
-                            <td style="padding: 5px; border: 1px solid black; border-radius: 5px; font-size: 16px;"><input type="number" style="padding: 5px; border: 1px solid black; border-radius: 5px; border-color: black; font-size: 16px; background-color: #181818; color: white;"></td>
+                            <td id="day-hours" style="padding: 5px; border: 1px solid black; border-radius: 5px; font-size: 16px;"><input type="number" style="padding: 5px; border: 1px solid black; border-radius: 5px; border-color: black; font-size: 16px; background-color: #181818; color: white;"></td>
                             <td style="padding: 5px; border: 1px solid black; border-radius: 5px; font-size: 16px;"><textarea style="padding: 5px; border: 1px solid black; border-radius: 5px; border-color: black; font-size: 16px; background-color: #181818; color: white;"></textarea></td>
                         </tr>
                         <tr class="initial-row">
                             <td style="padding: 5px; border: 1px solid black; border-radius: 5px; font-size: 16px;">TOTAL</td>
                             <td style="padding: 5px; border: 1px solid black; font-size: 16px;" class="bg-dark"></td>
-                            <td style="padding: 5px; border: 1px solid black; border-radius: 5px; font-size: 16px;"></td>
+                            <td id="total-hours" style="padding: 5px; border: 1px solid black; border-radius: 5px; font-size: 16px;"></td>
                             <td style="padding: 5px; border: 1px solid black; font-size: 16px;" class="bg-dark"></td>
                         </tr>
                     </tbody>
@@ -299,7 +299,7 @@
                                     </div>
 
                                     <div class="col-lg-6 align-self-center dept-all">
-                                        <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="OT.show()">
+                                        <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" data-bs-toggle="modal" data-bs-target="#OT">
                                             <div class="d-flex align-items-center w-100p justify-content-center">
                                                 <h1 class="mb-0 text-white-50"><i class="fas fa-link"></i></h1>
                                             </div>

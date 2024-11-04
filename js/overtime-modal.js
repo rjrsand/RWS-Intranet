@@ -1,10 +1,10 @@
 // JavaScript Document
-
 // overtime-modal.js
 
 document.addEventListener('DOMContentLoaded', function () {
     const tableBody = document.getElementById('tableBody');
     const addRowButton = document.getElementById('addRowButton');
+    const totalHoursElement = document.getElementById('total-hours');
 
     // Function to create a new table row
     function createRow() {
@@ -40,26 +40,31 @@ document.addEventListener('DOMContentLoaded', function () {
         workCell.style.fontSize = '16px';
     }
 
-    // Initially hide all rows except the first and the "TOTAL" row
-    const rows = tableBody.querySelectorAll('tr');
-    rows.forEach(row => {
-        if (!row.classList.contains('primary-row') && !row.classList.contains('initial-row')) {
-            row.style.display = 'none';
-        }
-    });
-
     // Add a row when the button is clicked
     addRowButton.addEventListener('click', () => {
-        // Clone the primary row
-        const primaryRow = tableBody.querySelector('.primary-row');
-        const newRow = primaryRow.cloneNode(true);
+        // Create a new row using your createRow function
+        createRow();
 
-        // Remove any content from the cloned row
-        newRow.querySelectorAll('input, select, textarea').forEach(input => {
-            input.value = '';
-        });
-
-        // Insert the cloned row after the primary row
-        tableBody.insertBefore(newRow, primaryRow.nextSibling);
+        // Update total hours calculation
+        updateTotalHours();
     });
+
+    // Function to update total hours
+    function updateTotalHours() {
+        let totalHours = 0;
+        const hourInputs = tableBody.querySelectorAll('input[type="number"]');
+        hourInputs.forEach(input => {
+            totalHours += parseInt(input.value) || 0; // Handle empty inputs
+        });
+        totalHoursElement.textContent = totalHours;
+    }
+
+    // Initially, show all rows (no need to hide any rows)
+    // Remove the following code block:
+    // const rows = tableBody.querySelectorAll('tr');
+    // rows.forEach(row => {
+    //     if (!row.classList.contains('primary-row') && !row.classList.contains('initial-row')) {
+    //         row.style.display = 'none';
+    //     }
+    // });
 });
