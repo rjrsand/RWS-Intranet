@@ -40,6 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
         workCell.style.fontSize = '16px';
     }
 
+    // Add a row when the button is clicked
     addRowButton.addEventListener('click', () => {
         // Create a new row using your createRow function
         createRow();
@@ -61,4 +62,11 @@ document.addEventListener('DOMContentLoaded', function () {
         });
         totalHoursElement.textContent = totalHours;
     }
+
+    // Event listener for changes in number input fields
+    tableBody.addEventListener('input', function (event) {
+        if (event.target.tagName === 'INPUT' && event.target.type === 'number') {
+            updateTotalHours(); // Update the total hours on each input change
+        }
+    });
 });
