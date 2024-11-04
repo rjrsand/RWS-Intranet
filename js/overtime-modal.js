@@ -58,13 +58,4 @@ document.addEventListener('DOMContentLoaded', function () {
         });
         totalHoursElement.textContent = totalHours;
     }
-
-    // Initially, show all rows (no need to hide any rows)
-    // Remove the following code block:
-    // const rows = tableBody.querySelectorAll('tr');
-    // rows.forEach(row => {
-    //     if (!row.classList.contains('primary-row') && !row.classList.contains('initial-row')) {
-    //         row.style.display = 'none';
-    //     }
-    // });
 });
