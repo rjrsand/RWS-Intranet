@@ -18,11 +18,13 @@ document.addEventListener('DOMContentLoaded', function () {
         // ... 
 
         // Add input event listener to the new hours input field
+        // (After hoursCell.innerHTML is set)
+        hoursCell.innerHTML = '<input type="number" style="padding: 5px; border: 1px solid black; border-radius: 5px; border-color: black; font-size: 16px; background-color: #181818; color: white;">';
         hoursCell.querySelector('input[type="number"]').addEventListener('input', function (event) {
             updateTotalHours();
         });
 
-        return newRow; // Return the new row
+        return newRow;
     }
 
     // Add a row when the button is clicked
