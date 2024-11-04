@@ -53,14 +53,14 @@ document.addEventListener('DOMContentLoaded', function () {
         updateTotalHours();
     });
 
-    // Function to update total hours
+    // Function to update total hours (REPLACEMENT)
     function updateTotalHours() {
         let totalHours = 0;
         const hourInputs = tableBody.querySelectorAll('input[type="number"]');
         hourInputs.forEach(input => {
-            totalHours += parseInt(input.value) || 0; // Handle empty inputs
+            totalHours += parseFloat(input.value) || 0; // Handle empty inputs and ensure parseFloat is used
         });
-        totalHoursElement.textContent = totalHours;
+        totalHoursElement.textContent = totalHours.toFixed(1); // Round to one decimal
     }
 
     // Event listener for changes in number input fields
