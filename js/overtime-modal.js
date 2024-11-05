@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', function () {
         // Add day cell with close icon and select element
         const dayCell = newRow.insertCell();
         dayCell.innerHTML = `
-            <i class="far fa-window-close fa-lg fa-fw align-self-left" style="color: red;"></i>
-            <select style="padding: 5px; border: 1px solid black; border-radius: 5px; border-color: black; font-size: 16px; background-color: #181818; color: white;">
+            <i class="far fa-window-close fa-lg fa-fw" style="color: red;"></i>
+            <select style="padding: 5px; font-size: 16px; background-color: #181818; color: white;">
                 <option value="Select">Select</option>
                 <option value="Monday">Monday</option>
                 <option value="Tuesday">Tuesday</option>
