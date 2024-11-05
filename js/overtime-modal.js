@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const dayCell = newRow.insertCell();
         dayCell.innerHTML = `
             <i class="far fa-window-close fa-lg fa-fw" style="color: red;"></i>
-            <span style="margin-left: 10px;"><select style="padding: 5px; border: 1px solid black; border-radius: 5px; border-color: black; font-size: 16px; background-color: #181818; color: white;">
+            <span style="margin-left: 20px; margin-right: 10px;"><select style="padding: 5px; border: 1px solid black; border-radius: 5px; border-color: black; font-size: 16px; background-color: #181818; color: white;">
                 <option value="Select">Select</option>
                 <option value="Monday">Monday</option>
                 <option value="Tuesday">Tuesday</option>
