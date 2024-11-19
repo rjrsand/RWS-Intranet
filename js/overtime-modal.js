@@ -76,4 +76,87 @@ document.addEventListener('DOMContentLoaded', function () {
         });
         totalHoursElement.textContent = totalHours.toFixed(1);
     }
+
+    function sendEmail() {
+        // Get form data
+        const employeeEmailSelect = document.querySelector('[name="employeeName"]');
+        const employeeEmail = employeeEmailSelect.value;
+        const employeeName = employeeEmailSelect.options[employeeEmailSelect.selectedIndex].text; // Get name from selected option
+
+        // Gather overtime data from the table
+        const overtimeRows = document.querySelectorAll('#tableBody tr'); // Select all rows in the tableBody
+        const overtimeData = [];
+
+        overtimeRows.forEach(row => {
+            if (row.classList.contains('initial-row')) { // If it's the total row
+                overtimeData.push({ // Add total hours
+                    dayOfWeek: 'TOTAL',
+                    date: '',
+                    hours: parseFloat(row.querySelector('#total-hours').textContent), // Get total hours from the cell
+                    workCompleted: ''
+                });
+            } else { // For all other rows
+                const dayOfWeek = row.querySelector('select').value;
+                const date = row.querySelector('input[type="date"]').value;
+                const hours = parseFloat(row.querySelector('input[type="number"]').value);
+                const workCompleted = row.querySelector('textarea').value;
+
+                overtimeData.push({
+                    dayOfWeek: dayOfWeek,
+                    date: date,
+                    hours: hours,
+                    workCompleted: workCompleted
+                });
+            }
+        });
+
+        // Create a unique ID for the overtime request
+        const requestId = Date.now().toString(); // Using a timestamp
+
+        // Create an object for the overtime request
+        const overtimeRequest = {
+            requestId: requestId,
+            employeeName: employeeName,
+            employeeEmail: employeeEmail,
+            overtimeData: overtimeData
+        };
+
+        // Save the request in Local Storage
+        let overtimeRequests = [];
+        if (localStorage.getItem('overtimeRequests')) {
+            overtimeRequests = JSON.parse(localStorage.getItem('overtimeRequests'));
+        }
+        overtimeRequests.push(overtimeRequest);
+        localStorage.setItem('overtimeRequests', JSON.stringify(overtimeRequests));
+
+        // EmailJS Configuration
+        const serviceID = "service_c2thk0c"; // Replace with your EmailJS service ID
+        const templateID = "template_vqpav1p"; // Replace with your EmailJS template ID
+        const publicKey = "xL-FXsZOq4SBGQPlU"; // Replace with your EmailJS public key
+
+        // Data to be sent in the email
+        const templateParams = {
+            to: "supervisor1@example.com, supervisor2@example.com", // Replace with your recipients' emails
+            employeeName: employeeName,
+            employeeEmail: employeeEmail,
+            overtimeData: overtimeData,
+            requestId: requestId
+        };
+
+        // Send the email using EmailJS
+        Email.send(
+            serviceID,
+            templateID,
+            templateParams,
+            publicKey
+        )
+            .then(res => {
+                console.log('Email sent successfully!');
+                // Display a success message to the user
+            })
+            .catch(err => {
+                console.log('Error sending email:', err);
+                // Display an error message to the user
+            });
+    }
 });

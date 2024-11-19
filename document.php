@@ -42,6 +42,8 @@
     <script src="js/overtime-modal.js"></script>
 
     <link rel="icon" href="icons/favicon.ico">
+
+
 </head>
 
 <body is="dmx-app" id="directory" class="body-bg" onload="loadUserData();">
@@ -58,17 +60,17 @@
                 <div style="text-align: center; font-size: 24px; font-weight: bold; margin-bottom: 25px; margin-top: 20px;">Employee Overtime Request</div>
                 <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
                     <div class="ms-2 me-2 mt-2">Select Your Name:</div>
-                    <select class="ms-2 me-2 mb-2" style="flex: 1; padding: 5px; border: 1px solid; border-radius: 5px; font-size: 16px; background-color: #181818; color: white; border-color: black;">
+                    <select class="ms-2 me-2 mb-2" style="flex: 1; padding: 5px; border: 1px solid; border-radius: 5px; font-size: 16px; background-color: #181818; color: white; border-color: black;" dmx-bind:value="employeeName">
                         <option value="Select">Select your name</option>
-                        <option value="Alaura Richardson">Alaura Richardson</option>
-                        <option value="Arianna Vales">Arianna Vales</option>
-                        <option value="Brandon Brownfield">Brandon Brownfield</option>
-                        <option value="Jeffrey Waters">Jeffrey Waters</option>
-                        <option value="Jenn Reyes">Jenn Reyes</option>
-                        <option value="Moe Clemmons">Moe Clemmons</option>
-                        <option value="Rich Metz">Rich Metz</option>
-                        <option value="Rob Sandlin">Rob Sandlin</option>
-                        <option value="Zak Cardillo">Zak Cardillo</option>
+                        <option value="alaura@ragingwolfsolutions.com">Alaura Richardson</option>
+                        <option value="arianna@ragingwolfsolutions.com">Arianna Vales</option>
+                        <option value="brandon@ragingwolfsolutions.com">Brandon Brownfield</option>
+                        <option value="jwaters@ragingwolfsolutions.com">Jeffrey Waters</option>
+                        <option value="accounting@ragingwolfsolutions.com">Jenn Reyes</option>
+                        <option value="moe@ragingwolfsolutions.com">Moe Clemmons</option>
+                        <option value="richm@ragingwolfsolutions.com">Rich Metz</option>
+                        <option value="robs@ragingwolfsolutions.com">Rob Sandlin</option>
+                        <option value="zakc@ragingwolfsolutions.com">Zak Cardillo</option>
                     </select>
                 </div>
                 <table class="ms-2 me-2 mb-3 mt-2">
@@ -112,18 +114,18 @@
                 <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
                     <div style="flex: 1; display: flex; flex-direction: column;" class="ms-2 me-2">
                         <div style="margin-bottom: 5px;">Employee Signature:</div>
-                        <input type="text" style="width: 100%; padding: 5px; font-size: 16px; background-color: #181818; color: white;" placeholder="Signature" readonly>
+                        <input type="text" style="width: 100%; padding: 5px; font-size: 16px; background-color: #181818; color: white;" placeholder="Signature">
                         <div style="margin-top: 10px; margin-bottom: 5px;">Supervisor Signature:</div>
-                        <input type="text" style="width: 100%; padding: 5px; font-size: 16px; background-color: #181818; color: white;" placeholder="Signature" readonly>
+                        <input type="text" style="width: 100%; padding: 5px; font-size: 16px; background-color: #181818; color: white;" placeholder="Signature">
                         <div style="margin-top: 10px; margin-bottom: 5px;">President Signature:</div>
-                        <input type="text" style="width: 100%; padding: 5px; font-size: 16px; background-color: #181818; color: white;" placeholder="Signature" readonly>
+                        <input type="text" style="width: 100%; padding: 5px; font-size: 16px; background-color: #181818; color: white;" placeholder="Signature">
                     </div>
                     <div style="flex: 1; display: flex; flex-direction: column;" class="ms-2 me-2">
                         <div style="margin-bottom: 5px;">Date:</div>
                         <input type="date" style="width: 100%; padding: 5px; background-color: #181818; color: white;">
                     </div>
                 </div>
-                <button class="ms-2 me-2 mb-2" style="padding: 10px 20px; background-color: #007bff; color: #fff; border: none; border-radius: 5px; cursor: pointer; font-size: 18px; transition: background-color 0.3s ease;">Submit</button>
+                <button class="ms-2 me-2 mb-2" style="padding: 10px 20px; background-color: #007bff; color: #fff; border: none; border-radius: 5px; cursor: pointer; font-size: 18px; transition: background-color 0.3s ease;" dmx-on:click="sendEmail()">Submit</button>
             </div>
         </div>
     </div>
