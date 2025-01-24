@@ -54,21 +54,6 @@
                 <script type="text/javascript">
                     window.addEventListener('message', function(event) { if (event.data.action === 'redirect') { window.location.href = event.data.url; } }); 
                 </script>
-                <script type="text/javascript">
-                    window.addEventListener('message', function(event) { if (event.data.action === 'redirect') { window.location.href = event.data.url; } }); 
-                </script>
-                <script type="text/javascript">
-                    window.addEventListener('message', function(event) { if (event.data.action === 'redirect') { window.location.href = event.data.url; } }); 
-                </script>
-                <script type="text/javascript">
-                    window.addEventListener('message', function(event) { if (event.data.action === 'redirect') { window.location.href = event.data.url; } }); 
-                </script>
-                <script type="text/javascript">
-                    window.addEventListener('message', function(event) { if (event.data.action === 'redirect') { window.location.href = event.data.url; } }); 
-                </script>
-                <script type="text/javascript">
-                    window.addEventListener('message', function(event) { if (event.data.action === 'redirect') { window.location.href = event.data.url; } }); 
-                </script>
             </div>
         </div>
     </div>
