@@ -304,8 +304,8 @@
                                             </div>
                                         </div>
                                     </div>
-
-                                    <div class="col-lg-6 align-self-center dept-all">
+                                    <!-- Overtime Request, may remove at some point -->
+                                    <div class="col-lg-6 align-self-center dept-all visually-hidden">
                                         <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" data-bs-toggle="modal" data-bs-target="#OT">
                                             <div class="d-flex align-items-center w-100p justify-content-center">
                                                 <h1 class="mb-0 text-white-50"><i class="fas fa-link"></i></h1>
@@ -323,7 +323,7 @@
                                                 <h1 class="mb-0 text-white-50"><i class="fas fa-link"></i></h1>
                                             </div>
                                             <div class="d-flex flex-column w-100 document-title">
-                                                <h3 class="text-light">PTO Request</h3>
+                                                <h3 class="text-light">PTO/OT Request</h3>
                                                 <p class="mb-0 text-secondary">Click here to open a document.</p>
                                             </div>
                                         </div>
