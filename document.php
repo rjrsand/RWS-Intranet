@@ -51,7 +51,7 @@
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl" role="document">
             <div class="modal-content">
                 <iframe class="basinIframe" src="https://usebasin.com/form/5ab4c4f9c2ff/view/383db0d2837c?iframe=true" frameborder="0" style="border: none; overflow: hidden;" onload="var self = this; self.contentWindow.postMessage('getHeight', '*'); setInterval(function() { self.contentWindow.postMessage('getHeight', '*'); }, 500); window.addEventListener('message', function(event) { if (event.data.action === 'setHeight') { self.style.height = event.data.height + 'px'; } });" width="100%"></iframe>
-                <script type="text/javascript" defer>
+                <script type="text/javascript">
                     window.addEventListener('message', function(event) { if (event.data.action === 'redirect') { window.location.href = event.data.url; } }); 
                 </script>
             </div>
@@ -61,7 +61,7 @@
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl" role="document">
             <div class="modal-content">
                 <iframe class="basinIframe" src="https://usebasin.com/form/6d6d0bbfdc4a/view/938d4a04c1d7?iframe=true" allowtransparency="true" frameborder="0" style="border: none; overflow: hidden;" onload="var self = this; self.contentWindow.postMessage('getHeight', '*'); setInterval(function() { self.contentWindow.postMessage('getHeight', '*'); }, 500); window.addEventListener('message', function(event) { if (event.data.action === 'setHeight') { self.style.height = event.data.height + 'px'; } });" width="100%"></iframe>
-                <script type="text/javascript" defer>
+                <script type="text/javascript">
                     window.addEventListener('message', function(event) { if (event.data.action === 'redirect') { window.location.href = event.data.url; } }); 
                 </script>
             </div>
