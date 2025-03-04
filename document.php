@@ -50,85 +50,20 @@
     <div class="modal" id="PTO" is="dmx-bs5-modal" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl" role="document">
             <div class="modal-content">
-                <iframe class="basinIframe" src="https://usebasin.com/form/6d6d0bbfdc4a/view/938d4a04c1d7?iframe=true" allowtransparency="true" frameborder="0" style="border: none; overflow: hidden;" onload="var self = this; self.contentWindow.postMessage('getHeight', '*'); setInterval(function() { self.contentWindow.postMessage('getHeight', '*'); }, 500); window.addEventListener('message', function(event) { if (event.data.action === 'setHeight') { self.style.height = event.data.height + 'px'; } });" width="100%"></iframe>
+                <iframe class="basinIframe" src="https://usebasin.com/form/43eb8579f1dc/view/1b9d6b475a2f?iframe=true" allowtransparency="true" frameborder="0" style="border: none; overflow: hidden;" onload="var self = this; self.contentWindow.postMessage('getHeight', '*'); setInterval(function() { self.contentWindow.postMessage('getHeight', '*'); }, 500); window.addEventListener('message', function(event) { if (event.data.action === 'setHeight') { self.style.height = event.data.height + 'px'; } });" width="100%"></iframe>
                 <script type="text/javascript">
                     window.addEventListener('message', function(event) { if (event.data.action === 'redirect') { window.location.href = event.data.url; } }); 
                 </script>
             </div>
         </div>
     </div>
-    <div class="modal" id="OT" tabindex="-1">
+    <div class="modal" id="OT" is="dmx-bs5-modal" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl" role="document">
-            <div class="modal-content" style="overflow-y: auto; background-color: #303030; color: white; overflow-x: auto;">
-                <div style="text-align: center; font-size: 24px; font-weight: bold; margin-bottom: 25px; margin-top: 20px;">Employee Overtime Request</div>
-                <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
-                    <div class="ms-2 me-2 mt-2">Select Your Name:</div>
-                    <select class="ms-2 me-2 mb-2" style="flex: 1; padding: 5px; border: 1px solid; border-radius: 5px; font-size: 16px; background-color: #181818; color: white; border-color: black;" dmx-bind:value="employeeName">
-                        <option value="Select">Select your name</option>
-                        <option value="alaura@ragingwolfsolutions.com">Alaura Richardson</option>
-                        <option value="arianna@ragingwolfsolutions.com">Arianna Vales</option>
-                        <option value="brandon@ragingwolfsolutions.com">Brandon Brownfield</option>
-                        <option value="jwaters@ragingwolfsolutions.com">Jeffrey Waters</option>
-                        <option value="accounting@ragingwolfsolutions.com">Jenn Reyes</option>
-                        <option value="moe@ragingwolfsolutions.com">Moe Clemmons</option>
-                        <option value="richm@ragingwolfsolutions.com">Rich Metz</option>
-                        <option value="robs@ragingwolfsolutions.com">Rob Sandlin</option>
-                        <option value="zakc@ragingwolfsolutions.com">Zak Cardillo</option>
-                    </select>
-                </div>
-                <table class="ms-2 me-2 mb-3 mt-2">
-                    <thead>
-                        <tr class="text-center">
-                            <th style="padding: 5px; border: 1px solid black; border-radius: 5px; font-size: 16px;">DAY OF WEEK</th>
-                            <th style="padding: 5px; border: 1px solid black; border-radius: 5px; font-size: 16px;">DATE</th>
-                            <th style="padding: 5px; border: 1px solid black; border-radius: 5px; font-size: 16px;">Over Time Hours</th>
-                            <th style="padding: 5px; border: 1px solid black; border-radius: 5px; font-size: 16px;">WORK COMPLETED</th>
-                        </tr>
-                    </thead>
-                    <tbody class="text-center" id="tableBody">
-                        <tr class="primary-row">
-                            <td style="padding: 5px; border: 1px solid black; border-radius: 5px; font-size: 16px;">
-                                <select style="padding: 5px; border: 1px solid black; border-radius: 5px; border-color: black; font-size: 16px; background-color: #181818; color: white;">
-                                    <option value="Select">Select</option>
-                                    <option value="Monday">Monday</option>
-                                    <option value="Tuesday">Tuesday</option>
-                                    <option value="Wednesday">Wednesday</option>
-                                    <option value="Thursday">Thursday</option>
-                                    <option value="Friday">Friday</option>
-                                    <option value="Saturday">Saturday</option>
-                                    <option value="Sunday">Sunday</option>
-                                </select>
-                            </td>
-                            <td style="padding: 5px; border: 1px solid black; border-radius: 5px; font-size: 16px;"><input type="date" style="padding: 5px; border: 1px solid black; border-radius: 5px; border-color: black; font-size: 16px; background-color: #181818; color: white;"></td>
-                            <td id="day-hours" style="padding: 5px; border: 1px solid black; border-radius: 5px; font-size: 16px;"><input type="number" style="padding: 5px; border: 1px solid black; border-radius: 5px; border-color: black; font-size: 16px; background-color: #181818; color: white;"></td>
-                            <td style="padding: 5px; border: 1px solid black; border-radius: 5px; font-size: 16px;"><textarea style="padding: 5px; border: 1px solid black; border-radius: 5px; border-color: black; font-size: 16px; background-color: #181818; color: white;"></textarea></td>
-                        </tr>
-                        <tr class="initial-row">
-                            <td style="padding: 5px; border: 1px solid black; border-radius: 5px; font-size: 16px;">TOTAL</td>
-                            <td style="padding: 5px; border: 1px solid black; font-size: 16px;" class="bg-dark"></td>
-                            <td id="total-hours" style="padding: 5px; border: 1px solid black; border-radius: 5px; font-size: 16px;"></td>
-                            <td style="padding: 5px; border: 1px solid black; font-size: 16px;" class="bg-dark"></td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div>
-                    <button id="addRowButton" class="ms-2 me-2 mb-2" style="padding: 10px 10px; background-color: #dc3545; color: #fff; border: none; border-radius: 5px; cursor: pointer; font-size: 14px;" dmx-on:click="">Add Day</button>
-                </div>
-                <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
-                    <div style="flex: 1; display: flex; flex-direction: column;" class="ms-2 me-2">
-                        <div style="margin-bottom: 5px;">Employee Signature:</div>
-                        <input type="text" style="width: 100%; padding: 5px; font-size: 16px; background-color: #181818; color: white;" placeholder="Signature">
-                        <div style="margin-top: 10px; margin-bottom: 5px;">Supervisor Signature:</div>
-                        <input type="text" style="width: 100%; padding: 5px; font-size: 16px; background-color: #181818; color: white;" placeholder="Signature">
-                        <div style="margin-top: 10px; margin-bottom: 5px;">President Signature:</div>
-                        <input type="text" style="width: 100%; padding: 5px; font-size: 16px; background-color: #181818; color: white;" placeholder="Signature">
-                    </div>
-                    <div style="flex: 1; display: flex; flex-direction: column;" class="ms-2 me-2">
-                        <div style="margin-bottom: 5px;">Date:</div>
-                        <input type="date" style="width: 100%; padding: 5px; background-color: #181818; color: white;">
-                    </div>
-                </div>
-                <button class="ms-2 me-2 mb-2" style="padding: 10px 20px; background-color: #007bff; color: #fff; border: none; border-radius: 5px; cursor: pointer; font-size: 18px; transition: background-color 0.3s ease;" dmx-on:click="sendEmail()">Submit</button>
+            <div class="modal-content">
+                <iframe class="basinIframe" src="https://usebasin.com/form/6d6d0bbfdc4a/view/938d4a04c1d7?iframe=true" allowtransparency="true" frameborder="0" style="border: none; overflow: hidden;" onload="var self = this; self.contentWindow.postMessage('getHeight', '*'); setInterval(function() { self.contentWindow.postMessage('getHeight', '*'); }, 500); window.addEventListener('message', function(event) { if (event.data.action === 'setHeight') { self.style.height = event.data.height + 'px'; } });" width="100%"></iframe>
+                <script type="text/javascript">
+                    window.addEventListener('message', function(event) { if (event.data.action === 'redirect') { window.location.href = event.data.url; } }); 
+                </script>
             </div>
         </div>
     </div>
@@ -304,9 +239,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- Overtime Request, may remove at some point -->
-                                    <div class="col-lg-6 align-self-center dept-all visually-hidden">
-                                        <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" data-bs-toggle="modal" data-bs-target="#OT">
+                                    <div class="col-lg-6 align-self-center dept-all">
+                                        <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="OT.show()">
                                             <div class="d-flex align-items-center w-100p justify-content-center">
                                                 <h1 class="mb-0 text-white-50"><i class="fas fa-link"></i></h1>
                                             </div>
@@ -317,13 +251,13 @@
                                         </div>
 
                                     </div>
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-6 align-self-center dept-all">
                                         <div class="d-flex tile-category mb-3 pt-3 pb-3 ps-2 pe-2 align-items-center h-tile-default tile-hover" dmx-on:click="PTO.show()">
                                             <div class="d-flex align-items-center w-100p justify-content-center">
                                                 <h1 class="mb-0 text-white-50"><i class="fas fa-link"></i></h1>
                                             </div>
                                             <div class="d-flex flex-column w-100 document-title">
-                                                <h3 class="text-light">PTO/OT Request</h3>
+                                                <h3 class="text-light">PTO/Appt. Request</h3>
                                                 <p class="mb-0 text-secondary">Click here to open a document.</p>
                                             </div>
                                         </div>
