@@ -39,8 +39,6 @@
 
     <script src="js/univ.js"></script>
 
-    <script src="js/overtime-modal.js"></script>
-
     <link rel="icon" href="icons/favicon.ico">
 
 
